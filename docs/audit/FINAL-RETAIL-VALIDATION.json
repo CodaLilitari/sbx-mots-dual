@@ -1,0 +1,399 @@
+{
+  "schema": "sbx-final-retail-validation-v1",
+  "timestamp_utc": "2026-10-23T19:50:03.206166+00:00",
+  "disposition": "BOUNDED_ORIGINAL_RETAIL_SINGLE_PLAYER_VALIDATION_PASSED_WITH_LISTED_LIMITS",
+  "environment": {
+    "binary": "Unmodified owned JKM.EXE",
+    "binary_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+    "runtime": "Wine8.0~repack-4 in isolated Debian i386 chroot; Xvfb offdesktop; private null audio",
+    "renderers": "Original software indexed path and original native accelerated path through llvmpipe",
+    "entry": "Single Player / diagnostic Debug / owned MotS CarbonFreeze laboratory",
+    "map": "Owned JKM_MP.GOO jkl/mdm02_freezer.jkl; private modified scripts/things only",
+    "cmp": "Owned JKMRES.GOO misc/cmp/01narsh.cmp",
+    "cmp_sha256": "225a8fd38249961eaf46bd0a92eda6a7052111e85b8beaa6ddb4171358a89eb3",
+    "media": "Legitimate owned copied resources and original media marker; no executable/media bypass"
+  },
+  "layers": {
+    "base": {
+      "path": "project-artifacts/sources/mots30-zip/sbx-mots v3.goo",
+      "sha256": "49c2d136cffb6b6108ea29165d1245262713a7ff9ace472654768ee0e3e0c449",
+      "bytes": 27418630
+    },
+    "candidate07": {
+      "path": "project-artifacts/candidates/candidate-07/SBX-MotS-Dual-Overlay.goo",
+      "sha256": "811d75ae4530ace2977395fee1c4db090c1bf3df020a1bcecb29302aa05be9cf",
+      "bytes": 21806174
+    },
+    "candidate08": {
+      "path": "project-artifacts/candidates/candidate-08/SBX-MotS-Dual-Overlay.goo",
+      "sha256": "df5ba92b0391dc46c5da6f5b5e8f9dc14ab3cfe6616f15492afb34125ea9e7d9",
+      "bytes": 21814036
+    },
+    "candidate09": {
+      "path": "project-artifacts/candidates/candidate-09/SBX-MotS-Dual-Overlay.goo",
+      "sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479",
+      "bytes": 21836348
+    },
+    "optional_software": {
+      "path": "project-artifacts/generated/software-textures/SBX-MotS-Software-Textures.goo",
+      "sha256": "7ec0c6cdd37af43eb7d036b60c6ecfa0194a24fe949e08deeb8af418279a418a",
+      "bytes": 584804
+    }
+  },
+  "carry_forward": "Dual gameplay was tested on07. Final09 was compiled/executed for smoke and final representative software skin checks. Root packaging audit separately proves unchanged dual code/model/material bytes and08+patch/09+patch equality; this report does not substitute for that proof.",
+  "cases": [
+    {
+      "tag": "sbx-base-02",
+      "directory": "project-artifacts/runtime/cases/sbx-base-02",
+      "result": "Control: stock SBX-MotS3.0 staff/single/long selection, stance messages, off/on and actual primary/alternate input work.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-base-02/report.json",
+        "sha256": "15a06a10e9856694fc2f81a3faca4efe61ff97ee9bda995668a9e3b1ef08b459",
+        "bytes": 27416
+      },
+      "scene_manifest_sha256": "17485450ec93f53b2a35e6b057e64a7477661b4f05bee0c75dad6bfa38de9ce1",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/periodic-0032.png",
+          "sha256": "813d3d27b4eeab7c76c2a5c9536a0edd943c2187be16609622e9e8de7abf9f0d",
+          "bytes": 281322
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/periodic-0039.png",
+          "sha256": "3f90810958c5ac288985e82c4dbb48e3242c017c6a1619d1d3005d44446fc046",
+          "bytes": 166905
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/periodic-0041.png",
+          "sha256": "8e79203c663e70aca9af7c5b8e878fac2783108fa37e637d79f536bba6c258da",
+          "bytes": 279878
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/periodic-0045.png",
+          "sha256": "15e59d5f80b18eb6c6863b214b4ef9d4ea5a627d25e744e0e6621fee4920755a",
+          "bytes": 294050
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/attack-primary-01.png",
+          "sha256": "22d3e010e3220453c377229cc79f4ce0baad5afefe4295e7432cd238363e277c",
+          "bytes": 271803
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-base-02/attack-secondary-02.png",
+          "sha256": "96bc39a5aa7bee195fa505c62bd612d9f2365bd5084ae20eae666dd8831cda19",
+          "bytes": 278906
+        }
+      ],
+      "limits": "Private SP diagnostic grants raw inventory bins125/131/139; no connected multiplayer."
+    },
+    {
+      "tag": "sbx-candidate07-render02",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate07-render02",
+      "result": "Original native accelerated path renders two glowing blades in separate hands, actual primary/alternate swings, color change and dual reentry without crash.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/report.json",
+        "sha256": "f06185bf5cbf3a86619edf4f2f21011717b1d3e4bc922c6c4922fd013c25b90e",
+        "bytes": 40443
+      },
+      "scene_manifest_sha256": "194383cc89b819c16fa4c5293f5511dbc933ca414a27bfcd6dde01aa487feea8",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/display-before.png",
+          "sha256": "91daef4317c7a363acff7ab6c7e57e551c601ed2446d86c6cc196aa551c7af0d",
+          "bytes": 204680
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/display-accel-selected.png",
+          "sha256": "3fcb6804564050c264e470013f6eb4c567476163c9e685c3c86e6d6f19731667",
+          "bytes": 204436
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/route-external.png",
+          "sha256": "7edcd806a96470912bb873e2d5b42034287dd900956b3232a2f47dd51a24b0c5",
+          "bytes": 406885
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/attack-primary-01.png",
+          "sha256": "a5c144ab95fc43524c98a78b421ae42b11cd56570da63a73d54444f6ae8416d4",
+          "bytes": 410349
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/attack-secondary-02.png",
+          "sha256": "770f47d938253455f57502938ce33251e50ffddee6853f723a3db56ede0a00d3",
+          "bytes": 409169
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/periodic-0057.png",
+          "sha256": "de4a4c69ce82074f5dbe771e7dc61f94b8a20f7e9fa8a3925e204b6dfb69de5e",
+          "bytes": 418541
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/periodic-0069.png",
+          "sha256": "3792312d5cfa76d5434730f13b9632f77d14a270a3210de8b92cd15a3237bcd7",
+          "bytes": 421213
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-render02/periodic-0088.png",
+          "sha256": "6d9b732839c0799e6c991503ee77e57bcd8c011df93cf24fd80a1b54533b55dd",
+          "bytes": 211915
+        }
+      ],
+      "limits": "Native menu toggle proves3D mode; registry request alone did not enable it. Wine llvmpipe, not a physical GPU. Trails-off attacks and flying saber projectile were not established."
+    },
+    {
+      "tag": "sbx-candidate07-life01",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate07-life01",
+      "result": "Dual off/on, switching to single131 and long139, returning to original staff, and final dual reentry execute. Both blades return after reignition.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/report.json",
+        "sha256": "3f4e7423d53c59220c185359f8b16b1c153c1f7c689c87ea2b71bb02d9008a2b",
+        "bytes": 18922
+      },
+      "scene_manifest_sha256": "0b018bc971bcc3398a5349e1eb06e798dda7cb71e5b7c7783a96ac8f522553a4",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/periodic-0023.png",
+          "sha256": "851f4cf5bbe234c3c32965bf2be0ffa309a2a37dc36f637a6d9f7109f4d14ebd",
+          "bytes": 237712
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/periodic-0025.png",
+          "sha256": "3482a7f10c441aea8dff29fe5700735290ae07ca0c22f0616607ad3190d2c502",
+          "bytes": 299725
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/periodic-0027.png",
+          "sha256": "4cd8df1c1064810faefff524568d6e71ef77a5d6d23eeecd8a977013dcbcceaa",
+          "bytes": 149617
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/periodic-0029.png",
+          "sha256": "8da4e13256f8e43c3db3e5325be725f7bcb618854641337e9dc7d74696b29515",
+          "bytes": 305745
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/periodic-0033.png",
+          "sha256": "6787c1d921b0eaa59e48dd44301d834d73cacb27fb84421f7f9c771679e9b328",
+          "bytes": 171687
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-life01/life-finish.png",
+          "sha256": "185303c487aac33dae6f8109de8747307429f34f4052b32b5be5949ad7a7c200",
+          "bytes": 176661
+        }
+      ],
+      "limits": "Single and long were selected unlit in this run. Death/respawn, saved games and campaign transitions were not tested."
+    },
+    {
+      "tag": "sbx-candidate07-extras01",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate07-extras01",
+      "result": "Talisman activates/expires; Object Throw activation/release/bubble guard execute. A private500-health actor falls to250 after actual primary and alternate saber inputs.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/report.json",
+        "sha256": "fd3ca631c506781af78ea68a95ba024967fb7fbc4a05464545e3206fd7c2bd5f",
+        "bytes": 23647
+      },
+      "scene_manifest_sha256": "e198ff50898b5dc51c72d11af6c0c0673642ad36c5c93ca80a74e7abb01636b6",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/route-external.png",
+          "sha256": "e991ca5bb6d3a742532fcc0f915a91a673f14d0c7cde23cbde2ed924c75b2786",
+          "bytes": 280149
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/periodic-0020.png",
+          "sha256": "ab3d31c77e651224d4165cf3ebe0c4e0b58813c92da42fc3ffd1ff2ab50ac4fd",
+          "bytes": 280597
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/periodic-0021.png",
+          "sha256": "4344823301d4cc375bb59e928f4e34cbede9ce090b6bad10bf192d4d15e392bd",
+          "bytes": 282058
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/periodic-0023.png",
+          "sha256": "dec0f79f97b0662673ff2cf90175c01f0d7b1a9f1ba7ecf9e3f053098ae969ba",
+          "bytes": 251289
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate07-extras01/periodic-0038.png",
+          "sha256": "8fb614e8a8839ea6cbe58526f8bd8ac2f9a75f43b833d27613b3e32a77f2cd83",
+          "bytes": 290167
+        }
+      ],
+      "limits": "No diagnostic DamageThing call. One stationary actor and input sequence, not balance validation. Object Throw physical debris movement was not exercised."
+    },
+    {
+      "tag": "sbx-candidate09-smoke01",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate09-smoke01",
+      "result": "Final Push script activates and timer resets; native F3 goggles activate with brighter green view and battery drain.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/report.json",
+        "sha256": "05300961a536e70aa75ac5dea37b23a59cf357133b6c306af65995395680c666",
+        "bytes": 34424
+      },
+      "scene_manifest_sha256": "aee06586d74c05e034e93f396f380607025b79a6dec0cbaa52a328471383ab10",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/route-external.png",
+          "sha256": "d85d714db26644e07c83f0c301929170c88137bfebb8720013c92f0aaae4af33",
+          "bytes": 280300
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/periodic-0033.png",
+          "sha256": "caab0e5803b4f3ddac1656f0384957a2b78a0c6ac78f97e7de992bff80dcd333",
+          "bytes": 281275
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/periodic-0073.png",
+          "sha256": "bd8f2c0dbda9c69cd3163bdd5733da457a176d02a84474667db0251b576274f6",
+          "bytes": 333284
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/goggles-active.png",
+          "sha256": "20225f0877894f96c9cedbec3604a090a4e0863c584c4281771a33bb72197513",
+          "bytes": 333255
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-smoke01/goggles-off.png",
+          "sha256": "e9d373aec35a7da8086abdb9509b4f0d7e487371f6f62962c64192618d157d7d",
+          "bytes": 370326
+        }
+      ],
+      "limits": "Push target was not accepted, so mana stayed200; costs, reach and physical push are source-reviewed only. The goggles-off filename does not prove off: that capture remains active/green. No goggles-off acceptance."
+    },
+    {
+      "tag": "sbx-candidate08-skinsoft01",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate08-skinsoft01",
+      "result": "Exact optional193-MAT layer repairs random texture corruption in representative Mara/Yoda base and dual models in the dark original room.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate08-skinsoft01/report.json",
+        "sha256": "b7a02ed3694678b2642c9533b160634f6bc4294d6947d1d77ef8bc2c0a122c94",
+        "bytes": 23487
+      },
+      "scene_manifest_sha256": "0def84a4965c81becbdd2eaaac684e63becf0649f0de62fe83458473c4e01f35",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate08-skinsoft01/periodic-0033.png",
+          "sha256": "60babfd21d804e6f652dd1e7489e27b8c5731ee3565785751d45bad2e01ea1c9",
+          "bytes": 289470
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate08-skinsoft01/periodic-0037.png",
+          "sha256": "2913925e8790bd294ee2d3aec652259213a5b06bfcb4bcbd2ed451ba1f852de3",
+          "bytes": 173856
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate08-skinsoft01/software-yoda-dual.png",
+          "sha256": "831f3cd7e54f46051ef6caf5edfe5227a5a26d7a16727faa7155f49542f8f60e",
+          "bytes": 164220
+        }
+      ],
+      "limits": "Native indexed light-table shading makes skin ochre in this dark room. Followup full-light control distinguishes shading from corrupt textures."
+    },
+    {
+      "tag": "sbx-candidate09-skinbright01",
+      "directory": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01",
+      "result": "Final candidate09 plus unchanged optional layer renders coherent Mara and Yoda base/dual textures under full sector light. Both dual blades are visible. Default Object Throw154 availability is1 without grant.",
+      "report": {
+        "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/report.json",
+        "sha256": "f5720edcb0d4c8f9511863f9d41fb338c91224123c9d6dd7b5fb6a248092bd3c",
+        "bytes": 16652
+      },
+      "scene_manifest_sha256": "96348f616b870d0c9bf783ce367431abde4c468260c760bd3316f3f0a31b96f4",
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "harness_failure": null,
+      "evidence": [
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/route-external.png",
+          "sha256": "280f16482471cbc02dbce57c620e3d01a7b0d301592012dabc59ece78a4444eb",
+          "bytes": 297847
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/periodic-0017.png",
+          "sha256": "a7904b83b5dae42225ca7a40d9d2da449b3636c03ad0c7f66fece72c8231a58c",
+          "bytes": 299976
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/periodic-0021.png",
+          "sha256": "8faf8a0b05d02f84b778498e3857dbcafe5bb997358cc69ba14250a4e9eff603",
+          "bytes": 288881
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/periodic-0024.png",
+          "sha256": "34dbb64e3bde27dc8825e5298edec8883c8c74e11e785640b77d7a27b0a7c17a",
+          "bytes": 255857
+        },
+        {
+          "path": "project-artifacts/runtime/cases/sbx-candidate09-skinbright01/software-full-light-yoda-dual.png",
+          "sha256": "b77b6dc4c377e1ebe5705ada71ea4b9cb9853d80c49cbfcf6c0f7a0c5e5c96e5",
+          "bytes": 271711
+        }
+      ],
+      "limits": "Only the private probe adds SetSectorLight(currentSector,1.0,0.0). Indexed palette colors and light-table shading differ from16-bit originals. Representative skins, not every skin/level."
+    }
+  ],
+  "palette_followup": {
+    "calculation": {
+      "path": "project-artifacts/audit/software-yoda-palette-evidence.json",
+      "sha256": "f97de67ed2049b6592d018da1f64e2ead447e42aee7a72a9d0f61cc2f219288b",
+      "bytes": 4902
+    },
+    "comparison": {
+      "path": "project-artifacts/audit/software-yoda-palette-comparison.png",
+      "sha256": "f19cd08b2c262ad1225612ee910f5b45625ba628cdafe4adb6af66fa2739fbc6",
+      "bytes": 25517
+    },
+    "finding": "Exact native01narsh CMP confirmed. Full-light source/converted Yoda means are close; native mid-light ramps shift olive indices toward brown. Direct full-light runtime control restores pale olive/yellow-green Yoda and pale Mara skin. Patch remains unchanged."
+  },
+  "not_tested": [
+    "Connected multiplayer, remote-client synchronization and checksum exchange",
+    "Full campaign or normal character-selector workflow",
+    "All178 skins and every saber color/animation combination",
+    "Physical GPU/Windows driver behavior and audible sound",
+    "Death/respawn, save/load and campaign lifecycle",
+    "Trails-off actual attacks and a visible thrown-saber flight",
+    "Object Throw physical debris handling",
+    "Force Push mana costs, physical reach/force and target immunities in runtime",
+    "Goggles toggleoff/death cleanup"
+  ],
+  "historical_failures": "Earlier candidate crashes and fallback diagnoses remain in review-notes.json. They are not accepted builds. The original128-resource COG limit, dynamic model capacity and blank native blade materials were isolated and corrected in later candidates.",
+  "harness_correction": "Candidate07-render01 stopped on a Windows/WSL atomic file replacement PermissionError, not a game crash. Bounded retry was added and tested; later cases finish cleanly.",
+  "cleanup": {
+    "all_task_cases_stopped": true,
+    "case_count": 19,
+    "all_source_inputs_unchanged": true,
+    "audit": {
+      "path": "project-artifacts/runtime/stopped-state.json",
+      "sha256": "4c7feabd106dbe73ffe83bd0725597d3ad4961964448d4cf40a3ab310bb60273",
+      "bytes": 15595
+    },
+    "scope": "Each cleanup used its exact Wine prefix and owned child process handles. No user application or other project process was terminated. Shared proc mount is retained as a prerequisite."
+  },
+  "private_artifacts": "The complete runtime tree includes owned stock map/executable test material. Keep private and exclude it from the distributable.",
+  "_public_edition": {
+    "original_receipt_sha256": "5946027bdb5c3b0947d79cdd4fbdf20a88ad80e37c3b5567e1f7e161c91d361c",
+    "change": "Project-local absolute paths replaced by logical provenance labels; no source hashes or test conclusions changed.",
+    "raw_fixture_evidence_included": false,
+    "context": "../../PUBLIC-EDITION.md"
+  }
+}

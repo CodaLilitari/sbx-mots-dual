@@ -1,0 +1,5 @@
+8349ba16398d2058048ac83b109a121d2ed662fb236ee9081cb4f684b2a85eb5  SBX-MotS-Dual-Overlay.zip
+8c5bce94b17aae453d91a4e1a6d4498e6809bba286dc6aec04a39a4cd8f56a15  SBX-MotS-Software-Texture-Fix.zip
+af9b3c1134f805dc1b05275a9e102fa6da639ee11d419333a3d40bcc594bf315  SBX-MotS-Dual-Builder.zip
+d98a02e5c8deb9851d3cb194c924543b58dd20567fa4d85508a79d45dac7fece  release-writeup.md
+1a7229be5d42fe5e21f741cef91c17e4cfffa5c550620f90f7cf6bd618e6ac1b  public-edition-receipt.json

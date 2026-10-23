@@ -1,0 +1,9 @@
+{
+  "candidate08_plus_software_identical_to_candidate09_plus_software": true,
+  "changed_paths": [
+    "3do/mat/mwdback.mat",
+    "3do/mat/mwdchest.mat"
+  ],
+  "all_previous_mip_bytes_retained": true,
+  "main_archive_sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479"
+}

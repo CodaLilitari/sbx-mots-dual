@@ -1,0 +1,229 @@
+{
+  "scope": "Offline palette calculation; the rightmost panel uses native light table32 and is not an engine screenshot.",
+  "image_columns": [
+    "original RGB565 full color",
+    "converted indexed RGB full color",
+    "original RGB multiplied by0.5",
+    "converted indices through native01narsh lighting level32"
+  ],
+  "source_material": "3do/mat/yodahdfr.mat",
+  "source_sha256": "1be17aaa0c3e56f44ef822aab516be1c6f6002fa9f1c5e0e90a88b21891909cd",
+  "output_sha256": "c988cd31e5ab3d15718542f8218f8aaa8da9c0c80e938bb11ece6cb30ed91c3c",
+  "native_cmp_sha256": "225a8fd38249961eaf46bd0a92eda6a7052111e85b8beaa6ddb4171358a89eb3",
+  "mean_source_rgb": [
+    176.515,
+    174.235,
+    77.917
+  ],
+  "mean_output_rgb": [
+    177.968,
+    174.812,
+    77.533
+  ],
+  "mean_output_shaded_rgb": [
+    111.684,
+    80.914,
+    25.156
+  ],
+  "most_used_indices": [
+    {
+      "index": 115,
+      "count": 937,
+      "full_rgb": [
+        179,
+        207,
+        75
+      ],
+      "native_half_light_index": 169,
+      "native_half_light_rgb": [
+        123,
+        91,
+        31
+      ]
+    },
+    {
+      "index": 164,
+      "count": 657,
+      "full_rgb": [
+        195,
+        163,
+        99
+      ],
+      "native_half_light_index": 170,
+      "native_half_light_rgb": [
+        111,
+        79,
+        23
+      ]
+    },
+    {
+      "index": 116,
+      "count": 585,
+      "full_rgb": [
+        167,
+        191,
+        51
+      ],
+      "native_half_light_index": 169,
+      "native_half_light_rgb": [
+        123,
+        91,
+        31
+      ]
+    },
+    {
+      "index": 165,
+      "count": 560,
+      "full_rgb": [
+        183,
+        147,
+        83
+      ],
+      "native_half_light_index": 171,
+      "native_half_light_rgb": [
+        95,
+        67,
+        15
+      ]
+    },
+    {
+      "index": 166,
+      "count": 410,
+      "full_rgb": [
+        167,
+        135,
+        71
+      ],
+      "native_half_light_index": 171,
+      "native_half_light_rgb": [
+        95,
+        67,
+        15
+      ]
+    },
+    {
+      "index": 114,
+      "count": 335,
+      "full_rgb": [
+        191,
+        223,
+        103
+      ],
+      "native_half_light_index": 168,
+      "native_half_light_rgb": [
+        139,
+        103,
+        43
+      ]
+    },
+    {
+      "index": 167,
+      "count": 174,
+      "full_rgb": [
+        151,
+        119,
+        55
+      ],
+      "native_half_light_index": 172,
+      "native_half_light_rgb": [
+        79,
+        55,
+        11
+      ]
+    },
+    {
+      "index": 163,
+      "count": 104,
+      "full_rgb": [
+        211,
+        179,
+        119
+      ],
+      "native_half_light_index": 170,
+      "native_half_light_rgb": [
+        111,
+        79,
+        23
+      ]
+    },
+    {
+      "index": 117,
+      "count": 100,
+      "full_rgb": [
+        159,
+        175,
+        31
+      ],
+      "native_half_light_index": 170,
+      "native_half_light_rgb": [
+        111,
+        79,
+        23
+      ]
+    },
+    {
+      "index": 113,
+      "count": 75,
+      "full_rgb": [
+        207,
+        239,
+        135
+      ],
+      "native_half_light_index": 168,
+      "native_half_light_rgb": [
+        139,
+        103,
+        43
+      ]
+    },
+    {
+      "index": 168,
+      "count": 56,
+      "full_rgb": [
+        139,
+        103,
+        43
+      ],
+      "native_half_light_index": 172,
+      "native_half_light_rgb": [
+        79,
+        55,
+        11
+      ]
+    },
+    {
+      "index": 169,
+      "count": 33,
+      "full_rgb": [
+        123,
+        91,
+        31
+      ],
+      "native_half_light_index": 173,
+      "native_half_light_rgb": [
+        67,
+        43,
+        7
+      ]
+    }
+  ],
+  "mara_arms": {
+    "paths": [
+      "3do/mat/maraarm.mat",
+      "3do/mat/mara4arm.mat"
+    ],
+    "already_indexed8": true,
+    "not_in_conversion_patch": true
+  },
+  "fixture": {
+    "case": "sbx-candidate08-skinsoft01",
+    "source_episode": "owned MotS JKM_MP.GOO",
+    "map_member": "jkl/mdm02_freezer.jkl",
+    "map_sha256": "8585a11a830a12ed01591d86de34c69af154059af5fac1c833016791e36693b6",
+    "colormap_section": "World Colormaps 1\r\n0: 01narsh.cmp",
+    "staged_loose_cmp_count": 0,
+    "native_cmp_member": "misc/cmp/01narsh.cmp",
+    "loaded_resolution_evidence": "Native episode colormap and absence of staged CMP override independently checked; harness additionally confirms unique archive member in owned native installation."
+  },
+  "interpretation": "Source-faithful full-light conversion; native light-table mapping produces low-light hue shifts. Mara arm/forearm already indexed8 and unchanged by patch. No builder algorithm or API change made; brighter native control requested."
+}

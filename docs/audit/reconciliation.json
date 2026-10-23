@@ -1,0 +1,4855 @@
+{
+  "schema": 1,
+  "scope": "Static source reconciliation; not retail execution or connected multiplayer proof.",
+  "base_registry_rows": 676,
+  "merged_registry_rows": 728,
+  "base_unique_models": 165,
+  "merged_unique_models": 178,
+  "added_models": [
+    {
+      "source_label": 0,
+      "model": "adigalliac.3do",
+      "sound": "kyfemale.snd",
+      "personality": null,
+      "comment": "#\"C. Adi\""
+    },
+    {
+      "source_label": 6,
+      "model": "angel.3do",
+      "sound": "ky.snd",
+      "personality": null,
+      "comment": "#\"J. Angel\""
+    },
+    {
+      "source_label": 7,
+      "model": "angel2.3do",
+      "sound": "ky.snd",
+      "personality": null,
+      "comment": "#\"S. Angel\""
+    },
+    {
+      "source_label": 8,
+      "model": "bartender.3do",
+      "sound": "bar.snd",
+      "personality": null,
+      "comment": "#\"Bar Tend\""
+    },
+    {
+      "source_label": 17,
+      "model": "callista.3do",
+      "sound": "wm1.snd",
+      "personality": null,
+      "comment": "#\"Callista\""
+    },
+    {
+      "source_label": 41,
+      "model": "hal.3do",
+      "sound": "kymp1.snd",
+      "personality": null,
+      "comment": "#\"Hal\""
+    },
+    {
+      "source_label": 81,
+      "model": "luuz.3do",
+      "sound": "wm1.snd",
+      "personality": null,
+      "comment": "#\"Luuz\""
+    },
+    {
+      "source_label": 84,
+      "model": "mara.3do",
+      "sound": "kyfemale.snd",
+      "personality": null,
+      "comment": "#\"Mara\""
+    },
+    {
+      "source_label": 90,
+      "model": "jkcmikos.3do",
+      "sound": "kymp2.snd",
+      "personality": null,
+      "comment": "#\"Mikos\""
+    },
+    {
+      "source_label": 99,
+      "model": "obiwan2c.3do",
+      "sound": "kymp3.snd",
+      "personality": null,
+      "comment": "#\"J.ObiWan\""
+    },
+    {
+      "source_label": 132,
+      "model": "tokohikaru.3do",
+      "sound": "wm1.snd",
+      "personality": null,
+      "comment": "#\"Toko\""
+    },
+    {
+      "source_label": 146,
+      "model": "yarah.3do",
+      "sound": "kymp3.snd",
+      "personality": null,
+      "comment": "#\"Yarah\""
+    },
+    {
+      "source_label": 148,
+      "model": "yoda.3do",
+      "sound": "yoda.snd",
+      "personality": null,
+      "comment": "#\"Yoda\""
+    }
+  ],
+  "class_counts": {
+    "1": 178,
+    "0": 16,
+    "2": 178,
+    "3": 178,
+    "4": 178
+  },
+  "preserved_original_rows": true,
+  "preserved_mots_only_resources": 208,
+  "original_duplicate_labels": [
+    {
+      "ordinal": 673,
+      "label": 663
+    }
+  ],
+  "stock_defense_evidence": {
+    "archive": "local-game-inputs/MotS/JKMRES.GOO",
+    "member": "cog/force_defense.cog",
+    "sha256": "27d065075417c0216f54677c00fec63af2fcb82ccd7e01accfbb068eb39b6ae3",
+    "formula": "damage * (1 - rank * 0.125)",
+    "sbx_original": "damage * (rank * 0.25)",
+    "corrected": "damage * (1 - rank * 0.25)",
+    "returned_fraction_by_rank": [
+      1,
+      0.75,
+      0.5,
+      0.25,
+      0
+    ]
+  },
+  "native_shield_evidence": {
+    "member": "cog/pow_supershield.cog",
+    "sha256": "98e54cea36bc0d46a5b41d8738cf47688cbabaa4b2eee550563dfed6cb7774cb",
+    "duration_seconds": 20,
+    "actor_invulnerability_flag": 8,
+    "thing_magnetic_flag": 4,
+    "changes": "Guard only two magnetic-bit clears against active bin153; Talisman cleanup separately guards active bin62."
+  },
+  "delta_dispositions": [
+    {
+      "path": "3do/adigallia.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/adigalliac.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/anakin.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/angel.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/angel2.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/bartender.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/callista.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/depa.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/exarkun.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/hal.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/jeru.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/jkcmikos.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/kiadi.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/kkruhk.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/koth.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/kya18.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/kya19.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mace.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/maceduel.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mara.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/00cab01.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adg4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgbutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgchest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgchestr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adghdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adghdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adghdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgneck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adgthigh.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adi4arm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adiarm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adiback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adibootrim.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adibutt.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adichest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adifoot.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adihdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adihdfr2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adihdfr3.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adihdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adihip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adileg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/adithigh.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/angelhdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/angelhdsd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjarm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjchest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjfoot.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjhip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjneck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/anjthigh.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/archchst2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/archhip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/archuleg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/archulegr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barbodyb2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barbodyf2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barfacebk.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barfaceft.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barfacesd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barneck2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/barrarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/blackhair.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/buryback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/burychst.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/buryhip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/burylleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/buryuleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/clear.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/depahdtp.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/dmfacetop.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/dragback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/dragchst.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/dragfoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eeth4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eetharm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eethback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eethbutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eethchestr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eethleg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/eeththigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gi4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/giarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/giback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gibutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gichest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gicol.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gifoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gihand.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gihip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gileg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gineck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/gipad.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/githigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/halface3.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/halfaceb.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/halfacesd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/halfacetp.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jeruarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jeruhdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jeruhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jeruhdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jeruhdtp.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/jtbodb.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/k4arm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/karm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/karm2.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kbutt.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kface.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kfaceb.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kfacesd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kfacetp.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kfoot.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/khip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kitail.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kpad.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/krukhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/krukthigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kthigh.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kthigh2.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/kunhdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzchst.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzlbutt.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzlhip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzlleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzshlder.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzubutt.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzuhip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/luuzuleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mace4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macearm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maceback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macebutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macechest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macechestr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macefoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macehip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maceleg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maceneck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/macethigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mara4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maraarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maraback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marabutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marachest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marafoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marahdbk.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marahdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marahdsd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marahip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/maraleg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/marathigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mcwhdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mcwhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mcwhdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/mcwhdtp.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/nomihdb.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/nomihdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/nomihdsd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/ob3chest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objk4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkarm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkbutt.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkchest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkchestr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkfoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkhip.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkleg.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/objkthigh.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/ojerhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/ojerhdsd3.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/ploarm.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/ploback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plochest.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plohdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plohdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plohdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plohdtp.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plohip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plorobe.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/plospike.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/pxhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quin4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinchest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinfoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinhdbk.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinhdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinhdsd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinhip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinleg.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinneck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/quinthigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/robe.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/robearm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/robeback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/sblack.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/senback.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/senchst.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/senfoot.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/vdochest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/vdothigh.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/vdothigu.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yanhdbk.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yanhdfr.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yanhdsd.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yanhdtp.mat",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yoda4arm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodaarm.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodaback.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodachest.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodaear.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodafoot.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodahdbk.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodahdfr.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodahdsd.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodahip.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodaneck.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/mat/yodarobe.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/obiknight.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/obiwan.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/obiwan2.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/obiwan2c.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/oldben.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/oldjeru.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/oppo.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/plo.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/plorobe.3do",
+      "change": "changed",
+      "disposition": "include-asset-repaired",
+      "reason": "Include JK3.1 revision; repair the inconsistent head child19 link to native MotS -1 without changing any other bytes."
+    },
+    {
+      "path": "3do/poof.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/quigon.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/quiknight.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/quinlanvos.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/rsdragon.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/saesee.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/vestl.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/vodosioskbaas.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/xizor.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/yarah.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/ymuroo.3do",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "3do/yoda.3do",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "cog/force_blinding.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/force_jump.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/force_push.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/force_saberthrow.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/force_speed.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/force_throw.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/glowcolor.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/item_bacta.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/item_fieldlight.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/item_irgoggles.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/kyle.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/pow_darkside.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/pow_lightside.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/pow_powerboost.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/pow_supershield.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/saberdamage.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/saberstance.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/toggletrails.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/weap_bryar.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/weap_longsaber.cog",
+      "change": "added",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/weap_raildet.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/weap_saber.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "cog/weap_sithsaber.cog",
+      "change": "changed",
+      "disposition": "reviewed-target-specific",
+      "reason": "See feature dispositions and COG notes; do not overwrite MotS COGs with JK variants."
+    },
+    {
+      "path": "jkl/static.jkl",
+      "change": "changed",
+      "disposition": "delegated-template-merge",
+      "reason": "Native MotS template graph retained; compatible weapon delta integration belongs to main builder."
+    },
+    {
+      "path": "mat/ad2strt1.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "mat/ad2strt2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "mat/ad2trso2.mat",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/items.dat",
+      "change": "changed",
+      "disposition": "preserve-mots-inventory",
+      "reason": "JK inventory and hotkey renumbering cannot replace native MotS bins, classes, powers and weapon ordinals."
+    },
+    {
+      "path": "misc/models.dat",
+      "change": "changed",
+      "disposition": "merge-registry",
+      "reason": "Append missing skins while preserving native personality roles and all MotS-only rows."
+    },
+    {
+      "path": "misc/snd/bar.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/boc.snd",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/ky.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/kymp1.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/kymp2.snd",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/kymp3.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/kymp4.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/maw.snd",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/mn1.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/wm1.snd",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "misc/snd/yoda.snd",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "patchinfo.txt",
+      "change": "changed",
+      "disposition": "preserve-attribution-separately",
+      "reason": "Historical JK package metadata retained as source documentation, not installed over MotS."
+    },
+    {
+      "path": "sound/expl_06.wav",
+      "change": "changed",
+      "disposition": "preserve-mots",
+      "reason": "MotS-specific explosion audio differs from both JK versions; preserve native sound."
+    },
+    {
+      "path": "sound/expl_07.wav",
+      "change": "changed",
+      "disposition": "preserve-mots",
+      "reason": "MotS-specific explosion audio differs from both JK versions; preserve native sound."
+    },
+    {
+      "path": "sound/extsaberoff01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberhit01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberhit06.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberhit12.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberoff01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberon01.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing01.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing02.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing03.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing04.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing05.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing06.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing07.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswing08.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswingdbl01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswingdbl02.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/ltsaberswingrstab01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/saberthrow.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberoff01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberon01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberswing01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberswing02.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberswing03.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberswing04.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/sithsaberswingdbl01.wav",
+      "change": "changed",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "sound/yodahurt.wav",
+      "change": "added",
+      "disposition": "include-asset",
+      "reason": "Bring forward actual 3.1 media improvements and additions."
+    },
+    {
+      "path": "ui/bm/bkmulti.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icdatad16.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icdatad8.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icwrchb16.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icwrchb8.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icwrchy16.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/bm/icwrchy8.bm",
+      "change": "added",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    },
+    {
+      "path": "ui/jkstrings.uni",
+      "change": "changed",
+      "disposition": "preserve-mots-interface",
+      "reason": "JK menu/label/icon replacement is tied to its different inventory scheme; retain native MotS control names and layout."
+    }
+  ],
+  "reverse_removal_dispositions": [
+    {
+      "path": "3do/jkcsolomon.3do",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/adihdfr.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/bensab1.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/draghdfr.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/kothchest.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/kunfacef.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mcwchest.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mcwfoot.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mcwhip.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mcwleg.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mcwthigh.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdarm.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdback.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdchest.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdhip.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdleg.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/mwdthigh.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/plorbchest.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "3do/mat/yunfacesd.mat",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "cog/weap_extsaber.cog",
+      "disposition": "preserved-native-equivalent",
+      "reason": "Native MotS extended-saber COG retained and updated by weapon builder; JK bin variant is not installed."
+    },
+    {
+      "path": "mat/clear.mat",
+      "disposition": "preserved-relocated-identical",
+      "reason": "Exact same bytes are provided at 3do/mat/clear.mat; both are standard material lookup locations."
+    },
+    {
+      "path": "mat/sblack.mat",
+      "disposition": "preserved-relocated-identical",
+      "reason": "Exact same bytes are provided at 3do/mat/sblack.mat; both are standard material lookup locations."
+    },
+    {
+      "path": "sound/forcehalt.wav",
+      "disposition": "include-jk30-only",
+      "reason": "Preserve removed3.0resource as additional optional content without assigning it over3.1orMotS."
+    },
+    {
+      "path": "sound/ltsaberhit03.wav",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "sound/ltsaberhit07.wav",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "sound/ltsaberhit14.wav",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "sound/theforce.wav",
+      "disposition": "preserved-native-base",
+      "reason": "Still supplied by SBX MotS3.0; overlay does not remove it."
+    },
+    {
+      "path": "ui/bm/fospeed.bm",
+      "disposition": "preserved-native-retail",
+      "reason": "Native MotS resource/sound archive supplies this path; retain target UI/audio."
+    },
+    {
+      "path": "ui/bm/icf_spe16.bm",
+      "disposition": "preserved-native-retail",
+      "reason": "Native MotS resource/sound archive supplies this path; retain target UI/audio."
+    },
+    {
+      "path": "ui/bm/icf_spe8.bm",
+      "disposition": "preserved-native-retail",
+      "reason": "Native MotS resource/sound archive supplies this path; retain target UI/audio."
+    }
+  ],
+  "emitted_members": [
+    {
+      "path": "misc/models.dat",
+      "reason": "Preserve all native rows; append missing JK3.1 skins in classes 1-4; repair duplicate textual row labels without reordering.",
+      "source": "merge",
+      "sha256": "f6cd047749dbffa06d3c3a1ec7b0a7dca3b7a61429fcf40772f30de534604805",
+      "base_sha256": "771b76a5fc407bbdd5946bc1f90deb3dbc0e8b9ee0ccfee84b3aa90b4fcfdd94"
+    },
+    {
+      "path": "3do/adigallia.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1ec04a60f8ff797ea3f570c892c5e5464ed1f63c7d93620ed938b6e4b3be33e0",
+      "base_sha256": "bf6d1b4ce1ceca9c241c2f55a673c8118f699640dd136bd5570ea0f99228a6ea"
+    },
+    {
+      "path": "3do/adigalliac.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0b864d81470ec20676cd952d97630f0e3faea037d104cc8a4f79af8702fd8fd6",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/anakin.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "953b371c6edfca253e37359cd44becf383c1a2e63573791d5062e2eb161a2840",
+      "base_sha256": "ecae424bd23e8c0dd3c41363d6776e38ea1ac2da8b33e095f76f8528a68525e2"
+    },
+    {
+      "path": "3do/angel.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5036d4a73a7b5c92c64701affdc66de1018b38dcf052290d36f2ef2dda0cf176",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/angel2.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "46005851d5baad073ccbab036d6200426b370d7744e5191c94ffbed4792bb483",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/bartender.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1e262f6986702e5b8b47fc10601a437f1e3d8720f8d7eb45696cf87dfeb0c12f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/callista.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2a8c8c15d4a17e6bdcbcc7349bc9cddb6c556f3e2da367e9ac20d3718cccdb30",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/depa.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5d054d8fc35503aa28108aa2a5c4f32f01ce1efe605d93c7c655d5e12416e63f",
+      "base_sha256": "1b56124545b53982f7dc8eae8361695f4c379120e8e0dde9f7afd20b17620e73"
+    },
+    {
+      "path": "3do/exarkun.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5fbc1579154b794606ab37a1fa25d47847947cec3bb7c4451d6d2942b6d9b307",
+      "base_sha256": "73a87df2c168cb500dd18d29eada525521fb97a0c5fc5563f85c1f2ac1834d77"
+    },
+    {
+      "path": "3do/hal.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d90625bcf0f6081d33a207e4dc77e2b6b3c28df3050c1bb4724cf87e7edc6830",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/jeru.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c989fb9a07d1f49c9d775d74c4590bff72f163fc1faf448c0043684e39a13f6b",
+      "base_sha256": "fb430af183a7361d5d0fe2a17d0288aaefc550c54279ff17e98a09f6f58741e7"
+    },
+    {
+      "path": "3do/jkcmikos.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0e1384bd51e12997158d077c09941375e2e672e35751d21810b70a6e59737ff3",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/kiadi.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "013d1a54ac0a67d0ec70633be433c6f632994397d1efcc7a1bae2ec567b7d34b",
+      "base_sha256": "6ad8db630e7a3a78ef341c735f40babf2c03d7fcd0b38fc8ac1fb484197a7f28"
+    },
+    {
+      "path": "3do/kkruhk.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3a4de0f349817af781dfaee6362c68303fff18723097c61a9d8964e639e3671c",
+      "base_sha256": "f72eb62886c4c03234b53e04c1249645665e9415b2f8e6f4d12212d53cc4053d"
+    },
+    {
+      "path": "3do/koth.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "57e3f3f66ffb6fb9bdcc49dde066d711dff7e9b2b95058c939ee1434e7bb4f32",
+      "base_sha256": "08bd2f50d1dfd93a1e018797b3081b80d66a9f9580a6dcd56630cff29b128b95"
+    },
+    {
+      "path": "3do/kya18.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5e7495c455fb2d2e7ca073a2d32c7a6cf7906b317440c6b2ef775b8fbd4f0648",
+      "base_sha256": "ad75761699d65fa9f6fa120a1f75c06ddb79590296a8b28957b6a91362eacae1"
+    },
+    {
+      "path": "3do/kya19.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "74d74f186ff98a18b78bdead4f5f640ef1a3b6bc598dee55435a3f421e13f71a",
+      "base_sha256": "19ab8fa0321783c18fdb94e948e736b6d9e553ed0936587b7f7b42169584d4db"
+    },
+    {
+      "path": "3do/mace.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "269cb00c485a6e7099d90b125c4eb493d532c87444121e19f0b5d643487243ff",
+      "base_sha256": "0de208a0e81cf62aa1eaa603a7f271deb9a6e4e74ac1d26a61d144a9d0ad212d"
+    },
+    {
+      "path": "3do/maceduel.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "68fde15bbbe99a80a4c226aeb3408194069b38d3d620644e08b3c21f8c972013",
+      "base_sha256": "432f40d18c1ca10070b281aef02e5e75b8d5c090688da882e09a3293e48e2124"
+    },
+    {
+      "path": "3do/mara.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "8436e6112e03169325532e947fbdf6161c119272ab58c55395740c039fa422d2",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/00cab01.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "dd3fa907eff25a85c40bf08d558ffe255937e2a36f3b187d8e6d43258b991499",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adg4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "030c6dc2a094f9ec6e20fbf7253f9db808f8893f8cf13a3e803cd5d1b02c4f66",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adgarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "eaf50d536839e1bea2feb2d2c86f442fa48d9465880f18c91c230a088d9366c1",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adgback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a191eec52e27109f9aaded1425152970ef69740fd1a2fae868ed941cd7286c66",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adgbutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d21f9f5a1bcb377fa78f2affd04e373e60486df20c1730196eef820df77133fa",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adgchest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "26eb591c3ee244bee1d2a4d8af916e7d8d949f6bad7ae02287c72bdb6b4eb34b",
+      "base_sha256": "6a6f6031d0acf1718be08847a7ef6f25ce7f43ff666b562de7e0d4a573367fc6"
+    },
+    {
+      "path": "3do/mat/adgchestr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a78ef36d382c6a5483f617104469e4b005827a93f0f8d5588880cb6f8486f4d6",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adghdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1d0920e0110c28ebd20ba0d5e7b329f711f09b10ac03643aa8cfec6f5cd21b64",
+      "base_sha256": "d6c28a54606fb111ff2a9bece1966ec708c5bf78c93ef1b27fb6bde1435596d2"
+    },
+    {
+      "path": "3do/mat/adghdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "98ffe3c4c60416be33729304a6d6fcbd76b3d09247eacf0596b465c59bd24ec9",
+      "base_sha256": "18b52d468dff4acb410c891c3d79633af9e12d493ddf2019c6ac4bc9fac21aea"
+    },
+    {
+      "path": "3do/mat/adghdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1699cabdd1b54cdbf46a8ddd216c5ac749e466be502be53f566361f7748f26f6",
+      "base_sha256": "f3c8b70db8dd3c82d9f135289cd4b9f2d9a49a8d3df267063a4b2ef8741167be"
+    },
+    {
+      "path": "3do/mat/adgleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4b9bd7cee12a28336241994de9ab8121e360ec93c9be905a5d40ead97923bf21",
+      "base_sha256": "e58a48a0604168a28e840ca5685310c8c522572b6ca5ee50c584aa5c971d3342"
+    },
+    {
+      "path": "3do/mat/adgneck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "42fcaffb57df2b0dc9ed5fbd45f4cddbdbe38f4dda6291050e5f660e2844f867",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adgthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "46d909767e8b9833e6b6ddd31643ed95366979fd44be06f17af12abcc5e7c8aa",
+      "base_sha256": "936538bb832a5610cc7a5f969bbe68d1a3956bcd515843910f36d5ac94f64287"
+    },
+    {
+      "path": "3do/mat/adi4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "bf69b445f348f22f2efbf7ac1857b04d05db3bc40ce564b5de7b4eb3d06a79cd",
+      "base_sha256": "f353d9492418c9331a142fe1d389facdd567de8dff749371d7438a3f8c3c041a"
+    },
+    {
+      "path": "3do/mat/adiarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "524d7df60e34ec63d4c9d58288a8f71e713330efe36956bb4e6651572b389bc6",
+      "base_sha256": "9a2e4d708a910bab83a14640c1c3d5f2649bb91e3ace93d99d0a9751d67bb9ad"
+    },
+    {
+      "path": "3do/mat/adiback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1adf036d6b5386423a29c00c9f5b275025512bda5ea59abff665ee98bfc60db3",
+      "base_sha256": "5acfcc47ccf485df86fc1fa6f561881d1fa7d7112194fb2dad8831c8e52fae41"
+    },
+    {
+      "path": "3do/mat/adibootrim.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "f27cd17092296d3b1b187fbaef3f70356013e7f33763b84de82f62e51fae8d68",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adibutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e1f4c9eb0e0754d9ee6e0cf701b54843af5ea6f2948e33b946d58232d0f15631",
+      "base_sha256": "12bc6479c916a3fd4c5ad69267cdd2c0281cb30893392cdbbbd31614f33635e3"
+    },
+    {
+      "path": "3do/mat/adichest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b39a748a3cb23e3e8d13bf82f2b3d02f8e48bdc44c16cb5b3f1e780ff2f85ac8",
+      "base_sha256": "f265513833127bf0fd621dcd96603e48ca0217c743961c3b0b273ddb4c3a7037"
+    },
+    {
+      "path": "3do/mat/adifoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9ce59c04221ad1a27c6689bf881458ce705febaf79b8360284de50b57e374f12",
+      "base_sha256": "c085254669fa82086e6120328c87868acecfbaa34728299c325f6609d2cd817d"
+    },
+    {
+      "path": "3do/mat/adihdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "646e0b894ad0ad9646af428a6e4e6d78713af2f20970a51c2c48df5df47c9486",
+      "base_sha256": "aa4bf50e5fc77ae92c3560518f82f3a6b9eb5481b424dfa2669bcdeddb463fb0"
+    },
+    {
+      "path": "3do/mat/adihdfr2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c04a833238c1d05b70e7c543ba6748b3755028beab57037658a35d9929ce0c12",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adihdfr3.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "38bda461d102ec16143e54c252b54905c16e10058d7ba3c829348b67ecb3c155",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/adihdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4eb8bd6879642b8d0fcdcbc62adffa023b6b9d7495b774fcad3f2fb928b9cda4",
+      "base_sha256": "6a6941d4d8548fa714b8201e35c1caacf08fbf66fbafe8459d0dba8fbcff8586"
+    },
+    {
+      "path": "3do/mat/adihip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "62696a69458882e5ee57dd9a0435c3e8ab63522b6e9cf53703b51842530a64d5",
+      "base_sha256": "6b40c04e30c93c8bc043aeac27782fa8d8a4c196a5e3090d459e41af802abffb"
+    },
+    {
+      "path": "3do/mat/adileg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c95c7f7860b7b838bc92a4f56c8b8fc574809fa1e1cfcf4511fff956375baba9",
+      "base_sha256": "0cb1f489afaaf52b419073aca2c703674dbd013aa49caa9a0e50061611d45578"
+    },
+    {
+      "path": "3do/mat/adithigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "800d4eabb4800b4deb4da12b437b9d1715533a5faa972f3e6e69c171b71a39e2",
+      "base_sha256": "8969e7dc71e8f2a9f8b1ba6ef1a8b9c4e4dceaa796698438c7cfa6c56c208950"
+    },
+    {
+      "path": "3do/mat/angelhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1a7e0428711d1d8efc09179ed7a371e4c9d580544edad4704bd0b6a880abc109",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/angelhdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2526b77e87ad666238eba692954377f1648a0edfd9279001cd96cc5bc50c7922",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/anjarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "22d0ec6dd16bad5ff80d42565b60ada11239156d987cceab885bd1295e72a204",
+      "base_sha256": "11947e964278b3f10b7059dd34e156e78aca917deb0608abbba69f67f4662342"
+    },
+    {
+      "path": "3do/mat/anjback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d53d422a5dc7a359967c84c37b703753183da4c5941f760768cd87cfe3907238",
+      "base_sha256": "7c5e73cec1d8aeef4e509a6d6654d5bbdddf105ca74103175bc53b6e1a769937"
+    },
+    {
+      "path": "3do/mat/anjchest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6a99adcf2dff843c7f1777f0fb878d8a9bc778b29a8bcafe269effc41412fc7c",
+      "base_sha256": "87b845e350cfedc4b281ad01b30cc9b54580fcb71f56e55b75dc6010314a8777"
+    },
+    {
+      "path": "3do/mat/anjfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b39c6ef393ea845d9ac1b37b0b68587df0fbac24eff365fb1135e77c29c47a98",
+      "base_sha256": "189b246a6406c026167771f597965bd1f64c7034a824929fe56453c04dd7b566"
+    },
+    {
+      "path": "3do/mat/anjhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "da1a9e8596121b9113b57bcf2b709338c414209329ec856e789b4c551b8e1560",
+      "base_sha256": "7b0586d4f7a459a861d327dd9aa0696549413c1d42ef171c1a9453c1b45b0096"
+    },
+    {
+      "path": "3do/mat/anjleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "fc727c2008c056d3151ec6e9ac764e605a208cdd94f150026bdd5480bb74a1cf",
+      "base_sha256": "cdaa011f6d011e2c0137b11ece8fae58e976cd68c333c33ba184dae1376555c1"
+    },
+    {
+      "path": "3do/mat/anjneck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "81ebf6b3de06c98fae9d79f352d7c9269f64acc50490a7950b692d0e3638dfad",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/anjthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "80bdc8206ce11fe23a9ff7978128a2ae199229aeb71ec3429650ca1d0b104256",
+      "base_sha256": "c0ea2661e3e39de318d82150391a2b99ac5a65148b1b4f2a78de125b1e8fd174"
+    },
+    {
+      "path": "3do/mat/archchst2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b70b2acd93fdb5462df759e2008a8ca3ae77a607496656b86414eb0246fc8f7a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/archhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "fa46aff5593f7360195eb6e75ccff74c0d47153d46a3e774f527fb6545aa36e7",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/archuleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6ed89cf2663eae10fd416051d36a86958818c550744559e644bd55ea61695285",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/archulegr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "837a0507aca34c9fa6ef5bc518cc3ff5fade614a65637757c2bb8517367d2c92",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9f96799c99f213e19ea7b5ed706afb462ffc5b4e86907ced114bc9d370d08b33",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barbodyb2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b82fe490b7f3cd338cb65672ccc0f39ef41edccf90fb56d631d295458b131a3c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barbodyf2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "301827b3bcc05761d80c3bbd9467adbcb6b5722485eb3e6ca47159bac103ae1c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barfacebk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b7713b2c9e6779a47b917ff3238ea23d6f5c737fbbd54170cbc4fd8095d05a56",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barfaceft.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e0a704ea68b2501ea9b04f7f948906523db13bf12428531dcf19e9b31f7d9a7c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barfacesd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "97ad6cfc97d61b3ecabda1c978d3debd48d1b064e2c06fd5103fa8c6db56367f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barneck2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "13ca113ebcf210091e162edf34cefcc6e9f7d2c5d5e85ab707e60f395a2c3f3c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/barrarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "72df4541946dd77c868f3796ad1ee90dbd8cc7f73e4bfee0b4f76490d56575a0",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/blackhair.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "50b689831574412a729d4342e3f0a56c0d3d6fd7ae30be0797b6bb400190c475",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/buryback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "00229f3cc4cb9f2353318bfe89e532c3cd387e9b81be4cef32e4462aeca47b72",
+      "base_sha256": "e670a1d7084edb979e597962123156eebc89bee37c16b852cd046096ceb2d526"
+    },
+    {
+      "path": "3do/mat/burychst.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "efbb7fc8a7852b109f96206434d8fff0e09e4f7fb0c42d5cf56a14ae738769c0",
+      "base_sha256": "b3613021db1539cb9af5881f15183c6452d615fcb15e7b177fc959ec5b6815d2"
+    },
+    {
+      "path": "3do/mat/buryhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cb7e42fc96f49b1bfae86d84a2a4259b401066a838cf92e1218763b78aa6be87",
+      "base_sha256": "d9dd7ad191811ddbfe746e65f37bda2d8f022bee031cfdf99f23a609f55d42cc"
+    },
+    {
+      "path": "3do/mat/burylleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b1a6ddafe516b6272cd23f8a9ebbb354bc832ef29ec070ef7e283c7f66ec49f4",
+      "base_sha256": "129f4c4367f1613c545de38c529d9411db5cdffc76fe1a8e5213da92a02c7c15"
+    },
+    {
+      "path": "3do/mat/buryuleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b655a5f0081246bf726f0da26031a1e2efd252141ae016a934ed98bc2a9e0cd4",
+      "base_sha256": "ab39e075cb396c1126f95644131e75ec928ab87ac19c710ab917891765159f31"
+    },
+    {
+      "path": "3do/mat/depahdtp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "26e58f31d1d15a40b3121515c5b7bf69cb672151d1621197d6f7bc8ed49048a3",
+      "base_sha256": "e9fde3ef74a857b34bb7a0fb22babb7d761f31fc8fb878cea2c9a34af9705796"
+    },
+    {
+      "path": "3do/mat/dmfacetop.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "46a16c2262fd36fdef7b548f4ed72b6c91b0a0253ddfe13bf85faf8b2aa08913",
+      "base_sha256": "3da56a49f1ce95028af60eeee67fd1ab00bf85bf854ee8e9ca3aa8b4a053ff3c"
+    },
+    {
+      "path": "3do/mat/dragback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "bf8cc0c208c21d296a0af2868c466203a9aa897c2a2ae5171a3bf0d6b33806b4",
+      "base_sha256": "5011f17a365059733cef820060192892a190558973ae190922ba54228a21a2a9"
+    },
+    {
+      "path": "3do/mat/dragchst.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "94ccca658de77d9337397b713b4e7dbf91445c93017c924bbc3bd53ce4e0e878",
+      "base_sha256": "37037ba1eae6ee14a07056fa54d54eeb082b1e32a4a2299e554520594f8882c6"
+    },
+    {
+      "path": "3do/mat/dragfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "189b246a6406c026167771f597965bd1f64c7034a824929fe56453c04dd7b566",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eeth4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c31f5498f4803a46e37e4bd0d75f815c0577f48f897d9eb768ecc7dd2c12d8a6",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eetharm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9df444a54e0ad698264fae9d03c27af630ef35c541dd35ed771fbb348bf1819e",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eethback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "56949b55707ac57003c1ec2245486eb19eb277cdff09b3d1166dcfd3ef9e35ba",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eethbutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c886faebdabb68d99bf90714fd4b322c5ff0e740943748f9dd0e09b7d0a613d3",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eethchestr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4aea2e217e6e933dec502de5dda628548c54454f8eb91e8523513b111eb13011",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eethleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "86a3d1a87b43b4b337a6d23c18fee229c8bf32495e314868fddcd62ca0d1ecbe",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/eeththigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b695cb1d38246bc1d9e5b3a5a9f1fc3105e1e25311b31351bdf09f99766da858",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gi4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a971a18c4415dc9f0290b4d8dc2425a3a10ec29c6b8c2fa5da6750a2ae4a4ccf",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/giarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5d4b812b0d39d92fc3976479fb6016c94765e874885921db12ab4d6fb9e6dbdf",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/giback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "96d212746aeb4dc0f569d514624a5278c3b490d3a8c8d1367f99f9382f1c233b",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gibutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "fc716a4ef3438b8bb3b62c8f4ecff93e61979111e18f08e67f9ed003c3851b9a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gichest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ed5599164f42c6166db49b807e1a998804127dbb949271ce90daf68f10fba58a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gicol.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e3afeeaea47eabb5efe6602220d52ff66b0f15e23bd69ad60b098e6aecab7b93",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gifoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "42a345eeccbd77ac43a79bbc8ef2cc4ecbbcfac16080566255f8878ffaafb0b8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gihand.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2b06e53b13517ecc2888bcd38050345dbeedbc37506398d9f4fd3dd18fe9d558",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gihip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6128ddfe29fd1091622eccdd84ad8a948f68753e9a5b1eb477ecffc5dc922501",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gileg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b08be34ff0ca114caf0f039ffeaa4fd7f1419445e8f2fba8bc456d3193bdf402",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gineck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3ce81998bdc07a99007785dc67ac4f4cfaa0480e3c949552556d848d86651dcc",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/gipad.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cf92d3f373bc21e3190d5fc374e82198992f5ed9cba74553ab4d5cca8fbd5c0b",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/githigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "53e608a220e509206d8fb75e9b5eab11ba3c6bca3021e537105bc532eb319ae8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/halface3.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b0cf9d20b3aeab2b4d3368cf776c457fd726db9f8411b60fc90f541a4ca3095b",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/halfaceb.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "03b8dd437b866934a9b5f480713d7d3799b3cff1ece1232d1c0952957d8a0de6",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/halfacesd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b68ae0c72a37bf53947e2d94ab05fd8451755c4daed592f0ca63ea2a8e719ef8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/halfacetp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "911c5f20e69e31ceeffb2a7dd66a167e111d687a23714b61105049bc32a4a4d7",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/jeruarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "11947e964278b3f10b7059dd34e156e78aca917deb0608abbba69f67f4662342",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/jeruhdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b701ea5c34259bffb2c41614c9be8723a446be7e750d3cd18b9af374bb9c6df2",
+      "base_sha256": "d76ffa33e6c8c3736bc7af44eb3d6d88a9cc6d3ed997177a9bed537573167057"
+    },
+    {
+      "path": "3do/mat/jeruhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "579e69c96b1f312b84f6665316d9ed596672f6c45e68883fbf8d78392518ee94",
+      "base_sha256": "5a344e4265f46f9fa11d155c88918737f8990fe17a1aa73381112deb6efbbdab"
+    },
+    {
+      "path": "3do/mat/jeruhdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "dde596aafcb73e2af7889c443beed123304291a00681c62da889fac38091d635",
+      "base_sha256": "cc0fbe767249867d4ba00bad866a6e4f102aceb2bd8749f951da2f7cdc452ee7"
+    },
+    {
+      "path": "3do/mat/jeruhdtp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "066749243b1add4d982631d9eb564f15573dd968c6af3506c8aa7218c3498927",
+      "base_sha256": "a0bccc167f1cbf3f9038219fbb07433d0cb81660a1d5693bd1539983716b8ac4"
+    },
+    {
+      "path": "3do/mat/jtbodb.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a776734afec499241df39998f239a02047562db6e6ae87ec521c25d2c9b232f0",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/k4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "f056480418bb0a0da28bdf2b7367278e858ab872ef8e4debcd3561c169548f76",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/karm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b6a75fbfd0f178d85ce1fb9f98c4c1bb442d088388d072c8377580155b9b23e7",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/karm2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "99bc2583320f334eb1003076ffd75a18d812946905785e21d6ed5778aa263d3e",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kbutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9ce74eb3e174a551555bbb3d578059869f7abfe1959fb088311105bb289bd638",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kface.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "931b8ddb1b8701c05e12b89118f60f47761f6965cd2e634695e81a5efbed71ed",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kfaceb.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3dbfac5f24a994eb57d7bb0765dc825387e3bfa4a220e313145bd9ecde196ca8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kfacesd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5e9437c5c4ca05cc7fb90ba72137baaba66c34f32b610de5efad089bc0825358",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kfacetp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "51e16dec4cda586f7397f68d45d3fb604181b9c5e329a3de4b0340876321073f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d4a1dc7643a4c6b126d343d883551bf0de31215a464ccf05471aafbb30453f4d",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/khip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5dd016b616007535cd5d7e96affe34d637c3537013031b88297235fe6c532afb",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kitail.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "672e13c988d86707b02f3da0aeb725a0a313b0d5ce620c00e7e9ccd075e07296",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "52c59b246a862fb93f77ef31cfac7bec3bed42db444d5a542177de24d395d680",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kpad.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "900b2838c91e6363475cec693a6cb88fc0e846ad2615e5dc3cb7bc352adb0041",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/krukhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3d4cb649116d29f2ad9ac6474ae4a29ebf8dbc526511b41c72099ab6d648fbad",
+      "base_sha256": "42d34fee086dcffb1eb7bd9d8cc0185421c6e91c64499b54e152803509343a87"
+    },
+    {
+      "path": "3do/mat/krukthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "00f89b9cd3e849b4b4823c1cffb9238b6fe07b146f0ee642a063cc97ff8df071",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9090061dd92f50a35184c7dc514d34302c1c1faee1fea0e6bd135d65331ac5f8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kthigh2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "52b0abe694c60afe2bba365c1ba95896abeec218cf3cf5e8cb6b803631c51858",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kunhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "8670c84a1ce60c16d9c505a43518c63eeaaa7b03e8de14cd47320dfd245846de",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/luuzback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "8e677520886b11d15ed40a79840752c4621616ea53c274edd04085774ec31df7",
+      "base_sha256": "692f64e9eee8dafdaa0745e187d09dc0f4017477b37f26c6119cb1bdf3f7bb95"
+    },
+    {
+      "path": "3do/mat/luuzchst.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7a9be243f3fea2ac58bc74c916af47053cf6753a460ef600d4738404ecd69a04",
+      "base_sha256": "db31533de1e0b9fb5434abfccfa95b129bd6818cea0664c016e03c97d2e3f3f7"
+    },
+    {
+      "path": "3do/mat/luuzhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9a60325ebcba0629406d0d007aae4ade33c5e3edfb3c4df559dc06cb878dc4b2",
+      "base_sha256": "d7abae98827e975cf1b3795042019bc86122a1f8c4312fe8c22351eb86e8b24c"
+    },
+    {
+      "path": "3do/mat/luuzlbutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "450c55cd35bf218d7d96ac6079f264d89edcdebc3e6dee75625e5d0f6aa5ffa3",
+      "base_sha256": "88014f6a173edcbae60bf6e3fb711dce09935663e3b3d2da9a20df5881613b49"
+    },
+    {
+      "path": "3do/mat/luuzlhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "450c55cd35bf218d7d96ac6079f264d89edcdebc3e6dee75625e5d0f6aa5ffa3",
+      "base_sha256": "88014f6a173edcbae60bf6e3fb711dce09935663e3b3d2da9a20df5881613b49"
+    },
+    {
+      "path": "3do/mat/luuzlleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5e3c8454cd8227b385610c27f8930b0af6130066fc7893869dc6475913a509c5",
+      "base_sha256": "551dae6b06bb7c5c36d2735a891a78374a5c548da42550f8b0ab27e11fe67cdf"
+    },
+    {
+      "path": "3do/mat/luuzshlder.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5ffdf55b63e755042868ede8ac0c615b118cb5870a3535ba967f1e5e314201e1",
+      "base_sha256": "77d4fdbe2c2a509bdb7580d80cd68a7a90e3ab89c30503eb17b3181713e2392c"
+    },
+    {
+      "path": "3do/mat/luuzubutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d03a2d41a9a6d2e9f966cfd36e4bda81bcc4a61edf3e18745b3dcdc93fb1ecc3",
+      "base_sha256": "317f992c70bb5987c27703ec85b746b304e89ee20f7470073961e5d3e769b114"
+    },
+    {
+      "path": "3do/mat/luuzuhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0c6a2dbebbbc0b092fbb3696ad991d4e534ce8a9cc43aa08dbc085bfa669ac66",
+      "base_sha256": "9b00717c7b166379c4df4102b9f4b37c9b12b65d1b80ebc5a13b4ef02ca41583"
+    },
+    {
+      "path": "3do/mat/luuzuleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6cfcc049c194f9ed312ef8b6abdaf025630d583676e0f5be3e14039ebfee815c",
+      "base_sha256": "870835582e925f7ed44b17d4d36957531c88d603c069fd924e78ce52fabebc9b"
+    },
+    {
+      "path": "3do/mat/mace4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2055b4e36020dc7fcde40e8a7cb07dcfadaa563471e838ae93ba3eae7617f0f9",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macearm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0dbed8c15ba09e68f44289952fa76e3362d5838058ac9f04a94459beb3b3a429",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maceback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "f18f46fa2cde405d0e854ebe5f7663785429bfeda89343139ac7e032193083f2",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macebutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "312af9ab3df2a4d5e1086b59d09766cb0782860b51d75f4fb7ab44b370562732",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macechest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "bb5a7e5db9922ec9b801f7fce67aa4749c28429b24100ca9f1618216f4ab3dd1",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macechestr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "156438c5b2bf148ac230d473507c9ba6c8f768138587b4bc04d611bbead9d19d",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macefoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2e8e7cc835f04e73cbbeef1558a18239206fe3ba73fbd01ebb486f776832f4f0",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macehip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1b161a181a919eb419d359a0d562be7295da3e90b89910547e471cfd781fd578",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maceleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "94890ab6271c2606727d52a01d1df1bcdabb8bcc701d65bf37bc9753d7cff1e2",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maceneck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "111ed8adb98f5085c0833cee765db943a267db8d66cbb77b1cc2bd504d9fc9b9",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/macethigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "f71672f644c0bdd9b49b83de96fe1e7d188477d5a32637fc82e3dcc0ee671e19",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/mara4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ccb42d1a5663176aba21866177e50855918f85c6d5cde475fbc807a99816e46f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maraarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e9e5d6d4cb756f7a634c7b2a443c6a5376e579710a475a9594225756cfbadece",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maraback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "33419201ab6dbb355a00ee39e61981378548cbd63f5ace7a53cf13abd4d9fb03",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marabutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6f5cc919de375249a85201d7a626d9bfc3916f516faeb5885ab09081dc04310a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marachest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "91a3745fe4a232325d5f5d0a02b48a338a662e5193946f264a454fe8edef461c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marafoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "574ddac287ea5e4f617a8194249d4400e7e3a852bfa9638040ebd4827f588641",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marahdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c1422ac19067ed8901e9ee799487c2891dbcd29aec61c4b9ff010e7d4107ecd8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marahdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ceaffcfd4aab9bfb18aee80a462a4feec8888532163df3f0bfb8c6d8d698758c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marahdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4197b85103debb8c29c84bb9df88d80616d5a805d4cc93c5a63cfe59db3ac799",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marahip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "443f898013de22db59402a895543b7affd11404308e5d270254584ff9f94e015",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/maraleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1b5995a39985f31618890fcce6ffacb4c8d775934fc30becf27504dfa47d84de",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/marathigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ae8a176e8edc2d56c55d51f0c9b0b8da6cce344b5e285a5e08362cc27c13e859",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/mcwhdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "652b76801b277d99d84cc09b07aed8116a7a3408a03f2e1b92cfb6e68acc363a",
+      "base_sha256": "e2895ac994c36eb1df4294fc49734fbe0f55eba999239d692f3938f2047872fa"
+    },
+    {
+      "path": "3do/mat/mcwhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "caa377ee92d68f35e2ec8b5f6feff634db78f3cf71a1a13009f46548a92bfab3",
+      "base_sha256": "7625740f1b169151b373bdf1a7f4fceffea42ed449666b0d2c4eb8fe5889aaae"
+    },
+    {
+      "path": "3do/mat/mcwhdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b7641fdfd2870aa64ba5016bc357696fd40e7167af14b69c16ef17e08d846cc8",
+      "base_sha256": "a64a67ed919d29e481e92e79ed532c396f934091b3f84437e62c732e0e5a075b"
+    },
+    {
+      "path": "3do/mat/mcwhdtp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cdb10da695ab3fc152c5a3cc3cfd5e62cca187ed8810ac99b03aa55f84f0a64f",
+      "base_sha256": "a74e7bb31a102a94fcd53d8e44cd0e25db6438c585b4dbc5b40cbe5d976a260e"
+    },
+    {
+      "path": "3do/mat/nomihdb.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4fc18e3a94fab438202d3a1e480bafca0daac7180e676595de9b2d10cf48e714",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/nomihdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0c5d27651ee2e6c0e091257e0e726daa2ebec7a9ac3adc2df0a9ff0a037a44ff",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/nomihdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "622ae0b3eeb2b619eca32cbb5aa6f1dbb058804411ebacfcabf4c0bd3b073054",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/ob3chest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b785c25f34a4a102a78c4eee33d3fd247b0b8f25ae8a52499029eb604d7ec36f",
+      "base_sha256": "c16717bcb7d58adf4f0a933414634e7bfe9e78bd2b7eabe06d7f9bb9060588ba"
+    },
+    {
+      "path": "3do/mat/objk4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6c32b41c3a4a6943278ca9cbff82b9ad70d4f5c4911aaf249039d92f6e010a52",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/objkarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "70c3f74cd2c3f16f492b6f66778301fb32728b2792c324700c9f51e5673752f7",
+      "base_sha256": "c35e184a326c28e2d3de8b5b058921fb242a07b459ac70d57853f4f103b9457f"
+    },
+    {
+      "path": "3do/mat/objkback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a267b90ca478dacbc19e63f8de5b436885db5b3437d84e7f25db859ef9adf689",
+      "base_sha256": "e60ba9e8e4b90ab7f0b451c85963976cd6a64e337c717158bf154d5c7bb43256"
+    },
+    {
+      "path": "3do/mat/objkbutt.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a1adbd646fa6bde85a494d6d2f8a145318f8a7d2f4aebaee16a4649756366d58",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/objkchest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "772aefed51905f1992426bce2b11ff852a0906d5f86001a691fe717edd33cdaf",
+      "base_sha256": "9a9ab98a8f49019cf7a51a8fc6eeee205fbb6e3a7bf96efb2f9275783547b1dc"
+    },
+    {
+      "path": "3do/mat/objkchestr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e8744658555b9b9874c519e84e524e43398415d8828b81004deedcc366cc7326",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/objkfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6fbed34e70d3edd7d1d62527ca49be9765b9477a1414800b5b8e2e20c99f138f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/objkhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2080118ee1572021160fcf2e87695ab1776d1d6492d3ce03c9df175a9558e94b",
+      "base_sha256": "fbde2d74ec71116954471b4130c14b4df8a222880fda7af43e2abd5c3cd8fda0"
+    },
+    {
+      "path": "3do/mat/objkleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "80e389b0f20cb4396ddfdd1daae831c87956b22d0d58e88311949c052527707f",
+      "base_sha256": "6af3ae6be0d44394179ca3c5e62174f45b0971c36a7cf296ed8fda890d9ac31a"
+    },
+    {
+      "path": "3do/mat/objkthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c57f6cc3738ffcaa867ceccee42dfa6c43a5212129a4a4d72154decdfbcccefb",
+      "base_sha256": "0728f2578c16796cd08525a7c8f3b6f944b18ae0366b06526615fbf66612c7a6"
+    },
+    {
+      "path": "3do/mat/ojerhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ea11038d284504c4048a705e037966935d663a335f1209907c4f60ac2f3469ac",
+      "base_sha256": "01e8c7cfb740af7a4ecd48a1de8ac3ea603b370b7d61170c731d310b03fb4234"
+    },
+    {
+      "path": "3do/mat/ojerhdsd3.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4649b710d07b4005e6a4000ba795af58a965135d30897a851ff12faabd6bf519",
+      "base_sha256": "636d3becb2d05dc4584332f321c642da948ec38e94d3dd46e1a474d2adf495a5"
+    },
+    {
+      "path": "3do/mat/ploarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "81f478e8ae608e11fe5037c39a0488d331d04486209856751fd6d7fd92854df4",
+      "base_sha256": "6bba8b3740aae8080d18255b668e28b4df89e7784ba65b97a16659c149eb42e5"
+    },
+    {
+      "path": "3do/mat/ploback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2a3b9618a37e36c4cbd328523467c58b831d0a0fe24f28a0b53ca83a67ae7311",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/plochest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "8d3c61cd45b9df8ae0caa78e4ee0931040f6f8be819024152d1d998a48835e4a",
+      "base_sha256": "9298c8be642ca8d80e4b86db584ef5f32cb038cdba0a1da8eb02716ee7a1955c"
+    },
+    {
+      "path": "3do/mat/plohdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "29cc9421406066440caeb5958f1802ca9e6db4258888965dbc4a0074138ab71e",
+      "base_sha256": "82948df50ddbeb8f62a7b1a35cc46d557c56b0e69a5f545a1b7cb2586e38a3cd"
+    },
+    {
+      "path": "3do/mat/plohdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "90323c1b793af6c1dc3b9425a40ef66f261e4b91e0233efc21b49b18305cf5ae",
+      "base_sha256": "64cd8af82cb592b200f831f97cbc8d1d225785873b9f80feadb381dafa9ea504"
+    },
+    {
+      "path": "3do/mat/plohdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "94f5bc5e4b8e0e26c72b8b7629cd4de008f791598dd81604bb169db25414fcd6",
+      "base_sha256": "3a83db943a4a9365cfdcfa4b4083457f639947a274fbeb95f40ca6b087e716cf"
+    },
+    {
+      "path": "3do/mat/plohdtp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5a423889f339be344eb496ba4f0730851120d9e6fa92a1d23c380813af0af818",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/plohip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "58a53cd55ce2440a8daa54677dcf20d28c9a2ecb59f84d3f1c989f671de77367",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/plorobe.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2eb6beaa35d832323e076a7328027b9b0e2dce3bf3fb13bd67bf5f801077c5da",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/plospike.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "032c420dd8a29e39d99428b6821b861f29f7c4ae4695c28caf317868f74d347a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/pxhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e9caa24eb0693b90e108f6977ebc60e187d26bfe9febc7a71b662165b8f65a75",
+      "base_sha256": "311dd4d9d41886d597f5961f7f14e8e6ddf5032970a3078ab3a4a7e9e42ff3f1"
+    },
+    {
+      "path": "3do/mat/quin4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3c291d913dc1929b62a3af6b8407ee5c7a0418c823ae8f35d4518e179294b497",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0dbed8c15ba09e68f44289952fa76e3362d5838058ac9f04a94459beb3b3a429",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2eff257d7f4b9996823807e2643655678c2528386933f5c413a356852c43885d",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinchest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "55b6a7b585c1b7300f001b0b7047d0574ab7d50556105e894b1a8097b4eb6376",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2e8e7cc835f04e73cbbeef1558a18239206fe3ba73fbd01ebb486f776832f4f0",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinhdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "45f953ec52baa2861c61048b8b562df3e352cc5c238a55e0da009cbdd3abea98",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1bd61417157111453a8c30375aedc1b005d4bf8a8708764d5634c4b3951b56ce",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinhdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cdba6dd9276905fd3bb87e3cf8f3cd8722b55d8fe23543b009399becb66c1d5c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinhip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4506dae907053ffce4afdc32c9816bfd7d9b4198b1dd17f699ba818d6dea5b1f",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinleg.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c5ee17c0b8dcec626758f8a3b670c243b16f61e96c1c91b2f4767d72cca49c8e",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinneck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "67bafe421f3f240ecdbada106a43357cf060b563021e4837c072b8cda73dbdd9",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/quinthigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0251b1113db1cadaa80375e69a881efbb7edd830b5e45fd82c079303d8b6fea8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/robe.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1be2ecf1361554088dbc08d4ec9e8cb93ec3e74a6587a820a1107dde6b978ae0",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/robearm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "73f170c4e13ef91a0e0a8646cbb36135c626218cf595de162ae48e01c0f0f382",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/robeback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "03f7c10b83d4a3b847f140cbfe993c00104af5e84a5bb9ed220a73c866877902",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/senback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d8f0ec7037fcadbe2c0f76b7329a99a59c60f674e941e5f7b978bdf843af7b34",
+      "base_sha256": "5d04719af95aafa7cd8584d9454515a0ef7cd0e8de890bb31b76f2d635aafaaa"
+    },
+    {
+      "path": "3do/mat/senchst.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "79e5b0879e52905c7f4e3b3de5d937a23e9fd8a662bec2df7f98039bc187c5d0",
+      "base_sha256": "77c2d7d9974935c93e35c792cc40f0005c52a9fe6fbe9a20a2df0559fab68b63"
+    },
+    {
+      "path": "3do/mat/senfoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7dfa6f8e12e79be9c0a25d674a2535c9bd86779467d54588ea743172920fdb0b",
+      "base_sha256": "ca0f9a1401d9241e1ed969ee90bff09775c3c30e822910c634cc444a466908b1"
+    },
+    {
+      "path": "3do/mat/vdochest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "673bfd868c27a1c0c00cccf3b6ef8257735418b29899901ef4a8c4c2aa25a57e",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/vdothigh.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "00f89b9cd3e849b4b4823c1cffb9238b6fe07b146f0ee642a063cc97ff8df071",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/vdothigu.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7ad4625ccd10c403a6d3a5b6f83991502ba9db385ccb602eea7bc203541dabf5",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yanhdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c1083d580e55038d28709a1b4a2e3309368d81946376654560c4180a3e282ae8",
+      "base_sha256": "d109782f162039ebf3b33ba250b190c8e1ffb4b10878df643c39058d6ab8a4bc"
+    },
+    {
+      "path": "3do/mat/yanhdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e72581564f7deee38caba01e07f99849e99597f266bb5262d07d1983c06c05ae",
+      "base_sha256": "684aeb189e364cf9a926b8aa87601f76c45055fb9ddde01c29b697be8959ca8d"
+    },
+    {
+      "path": "3do/mat/yanhdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d89f6da2d5413de18fefd4aa3c5a035dde202c544ea867b558c7f2d9f28e9f59",
+      "base_sha256": "91eaf6074507de276841356938eb3af8c70ff29d3da33c1a752606e58b15ef64"
+    },
+    {
+      "path": "3do/mat/yanhdtp.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "73feb21b7a3a7c352920900657948d9570b6abdb107e33b47236a3a3db6c56a2",
+      "base_sha256": "521f7f2c6de769d5532d5ad30739c8ac85f8381e5ebe750cf287181fc9848fa8"
+    },
+    {
+      "path": "3do/mat/yoda4arm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "09b2414e44f9300f13fee5e5937d7a172419bcbdb3f68f541fdad820466a9f0c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodaarm.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "02805f2a9200935f7b494ef8ee65c870950ab29c4707ce305a3845a3bb0e763d",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodaback.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1204520120a71eaf032c3131c453581553578beb929b7b89193f794960f4e9b8",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodachest.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cd23fb205f94c71693dcf83bff9acebc09e03ef09831031607bd494ac437ce8d",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodaear.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "bdd2e7a58e964cce3cb34c9d092dd037bde693612b54fdc3af3066885797d60c",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodafoot.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "fd3b70bb99e2b5e4ef1f72461b321e8f8d08548a8664d2d49a098ada91dbc842",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodahdbk.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9dcc5a76d2459ed1e7179c67d88b154e4940e25ae055d430ba4a63e0ba1d80e4",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodahdfr.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "1be17aaa0c3e56f44ef822aab516be1c6f6002fa9f1c5e0e90a88b21891909cd",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodahdsd.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a56c7d690b380227a2be38cd7b4ed3d425328e0c17d7393af838ad12fc20bbf6",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodahip.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "690e6043bb510f24926c8833986217f54c7ef58a7d1731664b5ae98d0f92b420",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodaneck.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "d3f43347bc17141a9d33afb5cb61f213b100c48f573b0854c77c00c40db3cb3a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yodarobe.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4bfeac5e731ed74e6d67aa91fe387d66b4e669d993b1618359f3989d99ed1bde",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/obiknight.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "6e2faf6c547e2e581de161d43024f92e92ebeb3441613f889e7bdcbba52f97dc",
+      "base_sha256": "f31b3d7fa2f4456cced4cff6bdeb5e4992ea78c1721d740b17f4d3ec61123c83"
+    },
+    {
+      "path": "3do/obiwan.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5932c90da465d24d9533a3d150fb77da097383e8aea96f779d0f368730286d29",
+      "base_sha256": "477982792931be165861a0043cf2a4acc06805261cd8110c145a6063256d9fbf"
+    },
+    {
+      "path": "3do/obiwan2.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "97419bee0bc3ef99ae8d24ca487b069c01981091b970907d8f2a6bead0c34886",
+      "base_sha256": "4434cca74a504f0ccbc529d1b6ad54954bfaa02898e9a41b3cb29666e3ff5190"
+    },
+    {
+      "path": "3do/obiwan2c.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "787ec51534e6a27ca5c9c67abe8496fd72bee629f53cdc23b69959f22fa9fa1a",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/oldben.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9b1b6f0490aacb5a7c9deb4c89671efbb4a4c9c9edfe49d40788eb45913cca53",
+      "base_sha256": "6e68907d2c91e4572dce51582189a1f8c4ab132949aab4e3385867fed8a4436f"
+    },
+    {
+      "path": "3do/oldjeru.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cc9a8442a0abd205f3882c236d67752100f942d36181c2db43f45cda589b6e17",
+      "base_sha256": "0ed36e0c7ffd5ad4849264e5a56b6712b30cd5638ece681f12d4dd8d4ffb4314"
+    },
+    {
+      "path": "3do/oppo.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "fc46aa2be12ebf0d1bfb07bd675c287e922ecccc9e1367ba9ab9f6904eecabd7",
+      "base_sha256": "8faf1feb977f40d398a3c79934714cbcb668995ea33f6b3c5232559de15a4e0f"
+    },
+    {
+      "path": "3do/plo.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3c40ce29edcb0ea677f7a9006ba5563ac567185979cca5ee19017e320f427aa8",
+      "base_sha256": "47440aaa7bfad4a7240c626ec740ad066b0a7224c9fadf701735bd2ea9296af0"
+    },
+    {
+      "path": "3do/plorobe.3do",
+      "reason": "JK3.1 skin update with native hierarchy repair: head node15 child19 becomes-1; child count0 and right-hand parent12 of node19 retained.",
+      "source": "jk31-native-hierarchy-repair",
+      "sha256": "355155c65302729437f0ff6d847f95a6f061459077b2beb16d347006ba840ddf",
+      "base_sha256": "2ce09970775cd7547bee1ae47aedb9fc81ff2152b1ac83ace511008bca0694c9"
+    },
+    {
+      "path": "3do/poof.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "39c59919a31b6b66f115e09dac5765a015a58c2cb54750895722c6d374827c41",
+      "base_sha256": "6a3724a691285acdcc7247c0089c1d16e1347d31fd5aad17ce7070c53fcb351a"
+    },
+    {
+      "path": "3do/quigon.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a730f730ee1a14492561ed1b12724bd2d04e875c72f502c0c54a1f4d28a40f4b",
+      "base_sha256": "e06a0d2342bb76306825c474a476dc9ba1de84fffc0a85a4ee5d89f348d4045d"
+    },
+    {
+      "path": "3do/quiknight.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "708b98ee039c418c6d4ef0096421f2afc39c862eeddef82b2ba6cdfac5bc5f9d",
+      "base_sha256": "c50bac5385dab152c98933f497f7334032e626ec8d75637fbd4c2a5271c297c6"
+    },
+    {
+      "path": "3do/quinlanvos.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c145c461c978d03ff0e0dce968dda0ae940552fa1239618d25985529cfbe32b9",
+      "base_sha256": "2ba92d9fff8e6bfcf5f9e17eae41688e8c501283de66f402d500647313c9ae82"
+    },
+    {
+      "path": "3do/rsdragon.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3d3698ecae88a41eeeb6a3c785deb625b1407cf1c77dbb580509868c12b1b653",
+      "base_sha256": "5e48b24bbefcb00736d2b824e581b5b19a0a7b3302938b66673374d72e265f68"
+    },
+    {
+      "path": "3do/saesee.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "301610a899293760b97408deccb46355220a3d6a9b25d898ba581642be1bec31",
+      "base_sha256": "d0869525c877736cb2211b4f5c90733bfe95a30d345bdcb7c4ced69e7f4e5466"
+    },
+    {
+      "path": "3do/vestl.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a991520616320c4dcdfa81260095785e17899cced4a507513241d0f3b0195181",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/vodosioskbaas.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "bb7882088f211ddfe6a201809242d167a3c2499c17b9747281110f0a2e99824e",
+      "base_sha256": "01bce0007f1cd09f0304a3d1a1e3117f934bee591f6c23972fa072db1b3bab85"
+    },
+    {
+      "path": "3do/xizor.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2dcf544246c5afcde70279cd7c142afc734e926164ec72967447771a33f4fbb4",
+      "base_sha256": "269b803cabfa78f6685ab2df2e17f307f7d1effc9312bc7edaf52ad32e4b8562"
+    },
+    {
+      "path": "3do/yarah.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "cebfdcde497085f45e1f9d4d5b6ce400e2b57d3079dd84274c4b2a13ad64a874",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/ymuroo.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b452d0e0b1184f64d0bc8c42271676168dd290c0c27ee32dcf5a91c4342719b5",
+      "base_sha256": "9cf99e594a5fdcd533abe16156c6fa5ea42536bee5825b61fd3b091fcb337a46"
+    },
+    {
+      "path": "3do/yoda.3do",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "78286689327116924150c2221dcfb65d0abfa2d5f6d9d7b751df1a14e60c725d",
+      "base_sha256": null
+    },
+    {
+      "path": "mat/ad2strt1.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "66511a145ffae845a5de324bf816da6c0d6974537f5ce6010c23ce1d1aeefe64",
+      "base_sha256": null
+    },
+    {
+      "path": "mat/ad2strt2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0b37cf01c5d298759879ae7efb527dd2d203f7cdaf74d152ed059863bbf49150",
+      "base_sha256": null
+    },
+    {
+      "path": "mat/ad2trso2.mat",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a4ace80fb11355df0bae5d59da11a0572f013cd4df20b235ebbef7d87360ea4b",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/bar.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "845a0e9906d01da8b34dccad678bdf5ef8994a9cb66efe4eb7b2916437523459",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/boc.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "0a8a8e61eaafc35482c50b7c465ae05bddf7d0efcb509d8e9d3e6c7611dec346",
+      "base_sha256": "c6b5b2b33f2dba42225c8b626b6d8ea1e9615a5c979dd6501004423c16d28454"
+    },
+    {
+      "path": "misc/snd/ky.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "91636520483ea263480bfdbe08cc44fb1ccdd0577b73d141dcf05a82da3f6fc2",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/kymp1.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ee1dedbd9ca02f5926f5ba0c82b365d0b2ef4ca51e6671bbf11357a316e53c5e",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/kymp2.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7f339f8c2600b80fbf8ded3010cdced7e001563cb8128c8b9ad4e47d6a24927b",
+      "base_sha256": "24df09a82f063ad472e06744d85dee3ab7a3c322072b35d8909919194a6d0450"
+    },
+    {
+      "path": "misc/snd/kymp3.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b6bb02cd34c30cf55072a33b40bfae074fb844aab2f0cc5f76839d5e0cd19de6",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/kymp4.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "32770110bbe308e71ac3eb0beaccd6935b7d8dec52720dc8f34614df5668be9b",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/maw.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "92c4a8d5d2f4838594ea3beada53e1b73e1277ecb8ad3093321ecd410218bbb1",
+      "base_sha256": "8cc12d89699c85461e762169c4886bf670098972983f62c7bd2b3ba74824abb2"
+    },
+    {
+      "path": "misc/snd/mn1.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c1c172fb5bc38d3044b6e1907772de0dc05dac28650e1c0ce5873ee4faef45ee",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/wm1.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "2a3fc631c39ff12b2e8683388248c709a44f6242a948342ef92b416d76a5dce3",
+      "base_sha256": null
+    },
+    {
+      "path": "misc/snd/yoda.snd",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "26e7d819df915ec45ebe35cfe1d6122194d3593759f5fe72bb65f40009f4bcb0",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/extsaberoff01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "ee0bde0d1f7886ee42d61c91ffdf686f8e93646e104a46d718d6ef0d3115cbf1",
+      "base_sha256": "30ee99348c7ba255ab9ac04b23816d6fb349cae22289160deccd397e08a7fd14"
+    },
+    {
+      "path": "sound/ltsaberhit01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7310e11e5d1b3b99f17457d6c36bc73cb905832eb856e72a768ed7b211e8250e",
+      "base_sha256": "5cd14bdb09991fa7df0f83d966996c6859f4650f7631a7e86e0d8e83bfcb941a"
+    },
+    {
+      "path": "sound/ltsaberhit06.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "f3e39445667599ac9697cca054ac28a6208626870590a2276767fbe7cc82ccaa",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberhit12.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "74ca48334a24bb580edf7ec92b77f95c0a266fd46d1ee954008e38a149ccbbd4",
+      "base_sha256": "edbb00fa7fbc21adfecfb2576408a2ae43424f9b663c56f22fe939a22eca4467"
+    },
+    {
+      "path": "sound/ltsaberoff01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "4fed3fd8fbcc89355f25d83a3ab499de107e5e002d6fad02a539b07e28485bb9",
+      "base_sha256": "7c1dcf6a3030289cb46e071120fada8d57e691e3cfb05cf84e6445490021c355"
+    },
+    {
+      "path": "sound/ltsaberon01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "dc1a929c38f41204c6cfc7f044bfee5ab9fb0a854a61622fe3c55b0d8da912ee",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "728ddff20e4c4f5c32b05300c51f3853b8168fb2f8aa796f41337d627dfec355",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing02.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "87e35261835ffa989b06803f3bf3f7c46b2c008884497a8d1ccab566ad808e68",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing03.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "3eb8469cf870301043ee80dc2e4373efa769e554d8df82c3b4af37a0409a116b",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing04.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a8d815c25b55fd32a06a62cd5ac432cb40f2970a76721d6f514cfe50b1f11135",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing05.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "c1c12e8ea09e6c4aeb8e1bc7118ab8db9718be14755e2822a14f0dae92ca59b3",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing06.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "b796bf3e3885aa8b3f2317fed263dab4158175e251855aaa3d6a1958fa7a710a",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing07.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7ebab8fe29b2d5d5280847aad09885958ef175d146255a68e3b8215076b6f1b1",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswing08.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "031d023436c6f5859692d7f19c99d92775ed662bf34947915a782cf25f4b943a",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/ltsaberswingdbl01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "aa54baf271b2f3b096ee0fa07c24a939617cb7e8e283fca4b1f92c2e0943a1b3",
+      "base_sha256": "310c7bcf34adc93a07c47dfa5a585b50ed09f385909be011f88d037755c2216d"
+    },
+    {
+      "path": "sound/ltsaberswingdbl02.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "7dd4c5377a669a49c40e1b94c8bf91895989a1c3fbe3bc3833aa87bef20b5d43",
+      "base_sha256": "4b1ce07678a77dafc6a0dc69c7ae6281a5e1dc0fac3c1e785cc054762887027b"
+    },
+    {
+      "path": "sound/ltsaberswingrstab01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "9626f2d970017468bad97b558ceb73aa35a6d3160cccd31a5096dbb1a674d404",
+      "base_sha256": "295d0a478bf6ba5f7b1d873cadd43641eb772b782e359009c9f946da116ab406"
+    },
+    {
+      "path": "sound/saberthrow.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "a666d4d07f74896a3fee454ad5f084f819926c541dd2ad84cc1e7c0d1918a805",
+      "base_sha256": "ab58da7850e9101790c2a0e6c153a7014ba457b963fad6e6ce527b9b146d1a15"
+    },
+    {
+      "path": "sound/sithsaberoff01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "352dcfe430dcd143d8a3985718bb233a0823227a24faf795e73b36fac0bea21c",
+      "base_sha256": "c6e57cb6b61c59374e298048662ad0ed4c1a7a2f120d59919deb12e9123abb75"
+    },
+    {
+      "path": "sound/sithsaberon01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "dc4d4645096250ac838945278be01d88b43367aa5d3c7a87fdcad40464e02681",
+      "base_sha256": "ddd4dfe78edd73ca593d5c90c236a9bdadcd3f30a4af76ad7e1aceb75435f1ef"
+    },
+    {
+      "path": "sound/sithsaberswing01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "10cd09602496671b6a09a5fde5f4c073f5e60728e1beaa5f543fb87805eb02f7",
+      "base_sha256": "28eb3bd1933aacef333e9c899514c709873eafd0802cbb0ec1c52b53a693608b"
+    },
+    {
+      "path": "sound/sithsaberswing02.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "041605be7c7ada173b55ff5b0de58c4ea90d6c795de4b3cd37f3ddddf1ab3d2f",
+      "base_sha256": "ca25686b6b5143236b8616c1790983d759b73372ea39149b501a77ba3d714a4c"
+    },
+    {
+      "path": "sound/sithsaberswing03.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5a5d93d1dd48f0b981ed5049ce3e8a39a508b3316c491b0922e87362eb4cc927",
+      "base_sha256": "2e0fa48113b284446f9fd7a0e3cc20a324d364bbd5dcbf4e1d54c3e044e7d2fd"
+    },
+    {
+      "path": "sound/sithsaberswing04.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "e25084eea0e3e54f1ca487dadd6f5c0326c8789b0580c328e54e85371cea518f",
+      "base_sha256": "7f946b3404088971d9cfba96e60fc854941fc97aa0fb9387193134da848721fb"
+    },
+    {
+      "path": "sound/sithsaberswingdbl01.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "5bf534a7514a13e2a3a34b5b724da49dbadf4fa95cbdba5ac62a7fa59d4a2461",
+      "base_sha256": "65c3c5a1aab7d4792af186188e0190fe006cca222642263c85d4ae04f76c9cba"
+    },
+    {
+      "path": "sound/yodahurt.wav",
+      "reason": "True JK3.0-to-3.1 asset addition/update; shared MotS bytes are JK3.0 where applicable.",
+      "source": "jk31",
+      "sha256": "81ba462210bfde218d9d04351905613b6b39b26e9e63097e1c7b136a1623c493",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/forcehalt.wav",
+      "reason": "JK3.0-only content absent from both JK3.1 and native MotS resources.",
+      "source": "jk30-retained",
+      "sha256": "bd66f80752f5dce2d8b50bafeaf2848a9bfd096fd385ad34d5fc812944a405d5",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00ky71z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kyjk.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "04efad917d636471fe83bb5c89a8c09b59a6e86657a58d3218a4c0c4ee4d4411",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm08z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "b0ea02dbc3391c07f2db0bc7563021c56dd6fbfc02cd97ccd49b75f3460642ff",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm04z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "198f21ba20d2666f33bbdf7b6c0d4ee4eb9e8c51c84962bd22335e158eb0c199",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm05z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "97b5d6fc9e6aa0d05f67cfd1050cf7e68e36cc73d2ca9f06e1d466fcf3a78e37",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm06z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "b2e4bd7f90888d54185181b17a0336e90099566133801fac0e69d2f6119137d7",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm01z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "b860b34c3ed62ac34cb38355cfd349fb16f81d1d43e5d124fd075ceddcad76c9",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm07z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "bc83307e2bcef5396856f6a0878ed8cc742e0f6739cb561d1e6a7d397965c943",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm14z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "c538e3ef289eb10d1cbd1aac2f5dabd9608be2a0dc4357d971aaca0b5998a9bf",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm10z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "730f6088ffbb5fb4295140fa99701095ea6073ce27b4173e451b954df4b0ee08",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm15z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "37e4db36cb5a3da70f4614fc4d6f6242cf4bf904f65b1b1ebe700e8277024f85",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm02z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "302e1212d3263e36d8f8c7203b6b426bbca1fbeb2e760bcd9336d51eec2ccde4",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm03z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "2074dfb04b94f7c391b3627e1c8709ce132c1ada32a75f5126bd4b38aaea0da3",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm11z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "d8592d535cf5b602711b38e79de9f582db3b27abd64e97b475f9490fb118ce03",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm12z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "4ae1fa7924b94f70d1bc50995674d698b52f7c5a572eb90b173685d0f20907b1",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm13z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "a28a1622edb3bc81186f0f6c7a96ae456e08b000469e6b232eeb0ec259ef2e0e",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00wm17z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/wm1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "e814421da391e8196f617f09f3c186af15635d19746a1031a0cf0f9b65b09a2d",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn08z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "997a5fbfd3591d540e69b4a3a000cdc9feb9044110696609d48294b1d4913d8c",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn04z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "e9d4a6711c7c714da63edf7ac3dbd12dc6e04c9f6e270707ab0e887c39de2ccd",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn05z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "671bfabb951f6a69a2a7797fb9b74641fc37a0898c287f3d99179d9c32315cbf",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn06z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "cebb403b903d182ee688f710c0ccb1bdf2b7b94296e78f5509b43e37c47c4358",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn01z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "1024706ea56af155bb0a7f4df1975436ad144e59a69eac12e2d833195191556a",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn07z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "94908c8a21c22cf05fb34434647ebb24bea6dad692e09a1ddf56a881dc7c6e8f",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn14z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "8b4af9ec31c9787028e14b9b020d8d456c2ec88219bb8c87c11887c492dbbd42",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn02z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "b19f78e77a935309b783ab1c4cda17d865e4ef1ef05bd6eafbb587d967d427cc",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn03z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "66bd145cb62dbcb9e7bc5403014da250e77a2cbbb95d6b6fe8af36c2b2585d79",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn17z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "60359947b77384eb124da66c012c0774804ff6e8a08054045926be3cdb9cf7ed",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn10z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "de93e7aa532f6eeb8e1c5ba5717b4b842e649bae64e8ee2d199d18f2b13abcfc",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn12z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "1ff8d61b03e53a746a14fb76aabc2fc934a31b917ac636f1bb601f762baeb117",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn13z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn18z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "d831dc4fef506c1e21046e582fcbc61d7085b1fd257888cbc90560c1f4535b73",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00mn19z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "879878504ec20b30f1982a37414a26dfbd6457836b944ed0c32cd3302fbeffaa",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00ic20z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp4.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "8a77e95b7e533c5241901a6d2df50c31e7d000617273a1c4b717fa283d2829c0",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00ic18z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp4.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "e85443e3f4e289325a5f78afa9f24e940a80e2940302cdc4419d4e12b5c748f3",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00ic17z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp4.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "1b2a63e26be6eba6c73a7acc112c30a541312bfe36d8896e4ab0f14f9db1bfa3",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00ic19z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp4.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "641f57c14c0264ead1c0543ceed813f04cccc44b013c32a56eeeef5d025443b4",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00o109z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp4.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "a04414e471275606590da5f52884fc6664238efa04f2fa422aa2b0912704bd75",
+      "base_sha256": null
+    },
+    {
+      "path": "voice/i00o209z.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/kymp3.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "2fd1f951a8a47800bddbef320cb47c4b9b5b9e5d7c03fd7c47f23963afe648ee",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/kyljpd.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/ky.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "8e034b7ac58813496a25cc7e9008986ab5e283cb496e87b34e462b7d87722e9b",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/kylgtsc.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/ky.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "878180419f9eb6ae1060b8f572ffc96ee57bbc088262524e6b6e0afb01877650",
+      "base_sha256": null
+    },
+    {
+      "path": "sound/kyljpa.wav",
+      "reason": "Locally derived owned JK sound dependency for misc/snd/ky.snd; omit bytes from portable distribution.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "da5fb5f77376d2b8fc01bdee0748d4b8254205256e93e5e2d664661d2cbd7fcb",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadchest.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "a76df242f9430e9e4145df27ab5fd03aea079c78922e8e4ec4e55dbd90126e80",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadhip.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "71ea847663e3f6ede1f812819561230ae2e06c36aed7a153a92cead57a4e0e08",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadulleg.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "163a3f4bb85be5bfd62c87b9244df54f00f92e7e5adb06e5c23821c098744ce4",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadlleg.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "3d0ad7c987fbbefe5dc288587c98289e6a7b7a3e7791014e389cea1466ec0288",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadhdfr.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "63fd7e93b9fda3b1839a4fa23bae83cb17ad3c335d23ce3a54f37a5ce6593daf",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadhdsd.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "af58f617cdede39989cec2fa6c2101b73edf75f4b22911e8580ffeffb521b158",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/yadhdbk.mat",
+      "reason": "Dependency closure for 3do/yarah.3do.",
+      "source": "jk31",
+      "sha256": "89fcd834209d1a71742194a3d9a31eb6e385712cc372920d33dee4789f9b6522",
+      "base_sha256": null
+    },
+    {
+      "path": "3do/mat/kneck.mat",
+      "reason": "Dependency closure for 3do/quiknight.3do.",
+      "source": "jk31",
+      "sha256": "07480adc9c844541e39e1eb5cd94b1607de4d979a7d78e989803feea486580b3",
+      "base_sha256": null
+    },
+    {
+      "path": "cog/force_defense.cog",
+      "reason": "Restore native decreasing-damage direction while retaining SBX 25-percent-per-rank balance.",
+      "source": "mots30-corrected",
+      "sha256": "d173c49e5b199b3ec7286ba1a32f89da18ab2d526848274f29291aec7363b80b",
+      "base_sha256": "cba1d0e95bcf84cb5ac36c797a4002afdf8879777847d0178762a5f83e741767"
+    },
+    {
+      "path": "cog/weap_bryar_m.cog",
+      "reason": "Repair MotS Bryar autoselection: test native weapon bin122 via GetWeaponBin(2), preserving original priority200 and all other behavior.",
+      "source": "mots30-corrected",
+      "sha256": "ffe06f06f6eac8d2486cdc794985b32854cd4cf403ef61dff6c3f07ded7bc2b4",
+      "base_sha256": "458612289e6b90c4cf7a32c3b2e0c6fcfde178f9dfffe5df056f67d55c211526"
+    },
+    {
+      "path": "cog/force_jump.cog",
+      "reason": "Port JK3.1 Force Push/slowfall sound choice; retain native MotS Jump lifecycle and bins.",
+      "source": "mots30-merged",
+      "sha256": "dd7f0e745716a645564c9b36369796b44cfd42a9949c6b61276faae5d71f3627",
+      "base_sha256": "acb1a374278bc76ed29e7afccf752e990b37d310b15991060d142a775deb2204"
+    },
+    {
+      "path": "sound/forcepush.wav",
+      "reason": "Sound dependency for updated slowfall cue.",
+      "source": "jk31",
+      "sha256": "374bcba49fcba1ee24d0479ee0622b41a3bae0e9ac86934caa809ff54da18408",
+      "base_sha256": null
+    },
+    {
+      "path": "cog/item_irgoggles.cog",
+      "reason": "Port JK3.1 brighter IR effect; retain native goggles controls, battery and newplayer cleanup.",
+      "source": "mots30-merged",
+      "sha256": "0cfa46e569bbf3ff0e93a67a115ac716358e16beb2a53342287c16339d9c5f31",
+      "base_sha256": "a553fd1359c1f2a5853c3443bfbea9520f989b525f5a2c3f002cef33ded16fe2"
+    },
+    {
+      "path": "cog/force_push.cog",
+      "reason": "Port JK3.1 Jedi-potential cost30/50/60, actor invulnerability exclusion and either-Surge mana exemption. Preserve native bin38/rank/reach/force120/actor-player scope/bubble handling; enforce Talisman immunity and repair iterator filter bypass.",
+      "source": "mots30-merged",
+      "sha256": "cc4f7e133b71ad723c8b98746f438f740d1d0820ba619f6f4c36f7d6e6e38dbd",
+      "base_sha256": "ff6281b919c73919e1b47020b812c3498af76e39cf7968590163ff01ec632189"
+    },
+    {
+      "path": "cog/sbxd_talisman.cog",
+      "reason": "Optional 15-second Sith Talisman lifecycle, separate bin153, magnetic seal and mana drain.",
+      "source": "authored-native-adaptation",
+      "sha256": "f17d2445dda3b5f5dfe78324695eca6a414b6b223e53fa0f1a2d044512b14df4",
+      "base_sha256": null
+    },
+    {
+      "path": "cog/sbxd_tal_pick.cog",
+      "reason": "Optional Talisman pickup; no original MotS pickup or powerup is replaced.",
+      "source": "authored-native-adaptation",
+      "sha256": "ca7267f87776cebe283aa806a704c6b7fd13259feb68225ac79729d5b2ae0776",
+      "base_sha256": null
+    },
+    {
+      "path": "cog/pow_supershield.cog",
+      "reason": "Locally derived native Super Shield with two seal-clear guards so overlap never cancels active Talisman; native duration/invulnerability/shieldbonus unchanged.",
+      "source": "owned-mots-retail-derived-local-only",
+      "sha256": "d9e07c7a00c19a221678e7dbcbc407c890efa2fe7cc5442dcd5f7dc7e720d3fa",
+      "base_sha256": null
+    },
+    {
+      "path": "ui/jkstrings.uni",
+      "reason": "Merge COG_00153/154 labels and increment original MSGS allocation by2; preserve native strings.",
+      "source": "mots30-merged",
+      "sha256": "1a192bf6c8af9909f5d29934bac49e80030f38ff88ed97d0c83cdf61ea43b9ee",
+      "base_sha256": "620d3a867e6ccbed28c09567a5ca9bbf1bac89f65c05a067270b0e0106d2abcd"
+    },
+    {
+      "path": "cog/sbxd_objthrow.cog",
+      "reason": "JK3.1 object Throw adapted to inventory-only bin154, native MotS eligibility/bubbles/EWEB, true2secondcooldown.",
+      "source": "authored-native-adaptation",
+      "sha256": "4fce004a547d9373a2d0cc26fdec5720c1a3359b4b76b5d7b4471860d4381629",
+      "base_sha256": null
+    },
+    {
+      "path": "ui/bm/icobjth8.bm",
+      "reason": "Locally derived owned JK Force Throw icon, renamed for inventory name objthrow; no hotkey.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "0ce41e3f9f8f5afecf46c0d87ba31680467fd0a69c88af5113d593ee6ed7d384",
+      "base_sha256": null
+    },
+    {
+      "path": "ui/bm/icobjth16.bm",
+      "reason": "Locally derived owned JK Force Throw icon, renamed for inventory name objthrow; no hotkey.",
+      "source": "owned-jk-retail-local-only",
+      "sha256": "eb95e3af59e6b8a62037a471f47a06325dd307a6a0d9f6173c5d9143ded150b9",
+      "base_sha256": null
+    },
+    {
+      "path": "cog/force_destruction.cog",
+      "reason": "Use namespaced native MotS projectile/explosion clones, clearing only explosion no-shooter-damage0x40. Avoid map override precedence.",
+      "source": "mots30-merged",
+      "sha256": "9fd1c58a938c0acfc1d0555d05a0c0050a8d419840a0f35efd6fc48c1dba1aff",
+      "base_sha256": "21378c2e863cda3e2525c30b7c561e61a9a55b89a73c0fae57fb468f9ec07457"
+    },
+    {
+      "path": "cog/luke_m.cog",
+      "reason": "Native Luke gains Talisman checks and JK3.1 blindness while preserving MotS defense/server multipliers.",
+      "source": "mots30-merged",
+      "sha256": "b4a05ba06d50cee36fae26c76f31d0bf357586043ff954820867006ad39f8f2e",
+      "base_sha256": "972d78faaedf1ac64ec2dec06a5226e87a12830b1e4137297cf75e1c511db009"
+    }
+  ],
+  "dependency_unresolved": [],
+  "local_owned_dependencies": {
+    "jk_audio": 40,
+    "jk_icons": 2,
+    "mots_derived_cogs": 1
+  },
+  "native_model_repairs": [
+    {
+      "path": "3do/plorobe.3do",
+      "source_sha256": "3a1e2bcbe3b4bce47985c3a896c763c0f148cb3b6ff61c8087b92758a44274cf",
+      "output_sha256": "355155c65302729437f0ff6d847f95a6f061459077b2beb16d347006ba840ddf",
+      "change": "Hierarchy node15 (k_head) child19 -> -1 only; all other bytes unchanged.",
+      "evidence": "Node15 declares zero children; node19 parent is12 (k_rhand), whose child is19. MotS3.0 node15 child is-1."
+    }
+  ],
+  "integration_hooks": {
+    "actors": "Call transform_actor after dual edits for kyle_m.cog and mara_m.cog. luke_m.cog is emitted here.",
+    "items": "Call transform_items on final MotS items.dat (adds Talisman153 and inventory-only ObjectThrow154).",
+    "static": "Call transform_static on final MotS static.jkl (adds optional Talisman and namespaced native Destruction templates).",
+    "strings": "Call transform_strings if dual UI modifications supersede this module; it adds only COG_00153/154 labels and increments MSGS allocation."
+  },
+  "feature_dispositions": [
+    {
+      "feature": "Copyright date, multiplayer background, general hotkey wording",
+      "disposition": "Preserve MotS interface; original JK3.1 documentation retained."
+    },
+    {
+      "feature": "Move field light/goggles/saber controls to inventory",
+      "disposition": "JK-specific control budget workaround; preserve native MotS controls and bins."
+    },
+    {
+      "feature": "Neutral bonus Push/Throw; restore Speed and object Throw",
+      "disposition": "Native MotS Push, saber Throw and Speed retained with native class/rank contract. Object Throw added as inventory item154 without a new hotkey; native powers remain assigned."
+    },
+    {
+      "feature": "Sith Talisman",
+      "disposition": "Included as optional sbxd_talisman pickup and bin153; native Super Shield62 remains available. Actor/item/template hooks must be called by assembly."
+    },
+    {
+      "feature": "Dark/Light Surge only refill mana; Power Boost15seconds",
+      "disposition": "Preserve MotS native Surge and30secondPowerBoost balance; JK balance reductions remove existing capability and are not applied globally."
+    },
+    {
+      "feature": "13missing skins and29shared revised skins, texture mipmap repairs",
+      "disposition": "Included; all676native registry rows preserved plus52new class-tagged rows. Solomon remains alongside Mikos. Imported plorobe head child link repaired to native -1; all other source bytes retained."
+    },
+    {
+      "feature": "Sith and single-saber audio, hit audio, soundclass variety",
+      "disposition": "Included actual JK3.0-to3.1 asset differences; missing retail sound dependencies derived locally."
+    },
+    {
+      "feature": "Explosion06/07 retouch",
+      "disposition": "Preserve different MotS-specific explosion originals rather than silently replace target-specific audio."
+    },
+    {
+      "feature": "Force Push rumble / Jump slowing cue",
+      "disposition": "Native Jump sound updated; native Push logic retained. Shared sound/forcepush.wav is already in MotS SBX3."
+    },
+    {
+      "feature": "Force Throw rapid-fire/cost change",
+      "disposition": "Ported as bin154 inventory-only object Throw, press/release targeting, native Jedi rank capped4, cost30/50/80/80,2secondcooldown, bubble/EWEB/death cancellation. Own JK icons derived locally."
+    },
+    {
+      "feature": "Inventory and Saber Throw icons",
+      "disposition": "JK bin-specific interface assets retained in source; native MotS control layout preserved."
+    },
+    {
+      "feature": "Force Destruction self damage",
+      "disposition": "Native MotS explosion flags0x53 become0x13, clearing only no-shooter-damage0x40. Native damage/radii0.5/1/1.5/2 retained. Namespaced projectile/explosion/cloud templates and COG references avoid map-definition precedence."
+    },
+    {
+      "feature": "Stronger/shorter Blinding",
+      "disposition": "transform_actor ports252/270/252effect and4+rankduration while retaining native MotS server and defense multipliers."
+    },
+    {
+      "feature": "Sith blocking trails, disabled-trails throwing, quicksave stance repairs, saber priorities",
+      "disposition": "Weapon/controller deltas delegated to main dual builder; not claimed complete by this module."
+    },
+    {
+      "feature": "MotS Force Defense inversion",
+      "disposition": "Fixed from rank*.25 to1-rank*.25; exact stock source independently supports decreasing-damage direction, original stock strength is.125."
+    },
+    {
+      "feature": "MotS Bryar autoselection",
+      "disposition": "Fixed incorrect inventory bin2 lookup to GetWeaponBin(2), which is bin122 in native MotS; priority and all other behavior preserved."
+    },
+    {
+      "feature": "JK3.1 IR goggles brightness",
+      "disposition": "Port EnableIRMode brightness0.3to1.0; native controls, battery and newplayer cleanup preserved."
+    },
+    {
+      "feature": "JK3.1 Force Push deltas",
+      "disposition": "Port Jedi-potential costs30/50/60, invulnerable-actor exclusion and Dark/Light Surge cost exemptions. Native bin38, Force-power rank, range,120*rank force and actor/player-only target scope retained. Explicit player/Talisman immunity and single-step iteration repair prevent rejected targets from bypassing the filter."
+    }
+  ],
+  "_public_edition": {
+    "original_receipt_sha256": "19a8fe22b2939856b516357c5133a9422e144597d721638ecc81fc1b54cc5c9f",
+    "change": "Project-local absolute paths replaced by logical provenance labels; no source hashes or test conclusions changed.",
+    "raw_fixture_evidence_included": false,
+    "context": "../../PUBLIC-EDITION.md"
+  }
+}

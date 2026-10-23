@@ -1,0 +1,46 @@
+[
+  {
+    "path": "3do/mat/mwdback.mat",
+    "source_sha256": "7fb7628f2c29dd9a4db6b7a97759e4260745bf392a1a53dea70f74c8ab07e20c",
+    "sha256": "080f3678b15175738e9d7b5ee023a674f7f152c083b3e1e81140725bcbcabb4e",
+    "repairs": [
+      {
+        "texture": 0,
+        "mip": 3,
+        "width": 8,
+        "height": 8,
+        "method": "2x2 RGB565 box reduction from preceding complete mip; declared level retained"
+      }
+    ],
+    "original_bytes_preserved": true
+  },
+  {
+    "path": "3do/mat/mwdchest.mat",
+    "source_sha256": "99e2c05287f2dcf164b767e97b64a7741dad1bda6cbd8f9db3f2bce3ba2a2866",
+    "sha256": "040d214a531c2a8d9758ee18d6d97830a4dada571ec335dddddeddabef25ee74",
+    "repairs": [
+      {
+        "texture": 0,
+        "mip": 1,
+        "width": 32,
+        "height": 32,
+        "method": "2x2 RGB565 box reduction from preceding complete mip; declared level retained"
+      },
+      {
+        "texture": 0,
+        "mip": 2,
+        "width": 16,
+        "height": 16,
+        "method": "2x2 RGB565 box reduction from preceding complete mip; declared level retained"
+      },
+      {
+        "texture": 0,
+        "mip": 3,
+        "width": 8,
+        "height": 8,
+        "method": "2x2 RGB565 box reduction from preceding complete mip; declared level retained"
+      }
+    ],
+    "original_bytes_preserved": true
+  }
+]

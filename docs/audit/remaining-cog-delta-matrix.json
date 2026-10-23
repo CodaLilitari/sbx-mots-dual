@@ -1,0 +1,828 @@
+{
+  "scope": "Actual effectiveJK30-toJK31 COG deltas, resolving missing override from ownedJKRes2; candidate07 target dispositions. Noimplementation edits.",
+  "rows": [
+    {
+      "file": "cog/weap_raildet.cog",
+      "jk30_effective_sha256": "ff33f2d9346ca84fa6b8242df8b967344d5104b7412d5ae93e742b8643d07cf0",
+      "jk31_effective_sha256": "5830a9179d6d2e48243289fdcf2fd670371d1ba2feabbbc73aba644daa5f2bdf",
+      "actual_delta": "Executable code unchanged between JK30 andJK31; comments/whitespace only. Both have700 autoselect priority versus stock900.",
+      "status_candidate07": "already present",
+      "disposition": "MotS weap_raildet_m already uses700 at allfour ordinary selection sites; preserve MotS alt-fire/native selection contract.",
+      "evidence": [
+        {
+          "source": "sources\\jk30\\cog\\weap_raildet.cog",
+          "matching_lines": [
+            {
+              "line": 200,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 206,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 212,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 218,
+              "text": "ReturnEx(700.0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\jk31\\cog\\weap_raildet.cog",
+          "matching_lines": [
+            {
+              "line": 188,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 194,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 200,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 206,
+              "text": "ReturnEx(700.0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\weap_raildet_m.cog",
+          "matching_lines": [
+            {
+              "line": 208,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 214,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 220,
+              "text": "ReturnEx(700.0);"
+            },
+            {
+              "line": 226,
+              "text": "ReturnEx(700.0);"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": []
+    },
+    {
+      "file": "cog/force_push.cog",
+      "jk30_effective_sha256": "607d6ea34f11fb898575bf060b8214f9f09f0f3eb7594d10acca78a51130b2e5",
+      "jk31_effective_sha256": "4cfc2e295d859c52b67b0c871641fe91946081f2659ddd22f4f3ef49f8fa76ef",
+      "actual_delta": "Migrates bin30 to38; adds Jedi-level20 costs30/50/60; excludes victim typeflags8; adds LightSurge65 alongside DarkSurge64 mana exemption.",
+      "status_candidate07": "partly present; explicit omissions found",
+      "disposition": "Native MotS alreadybin38 and native ranks/bubble/class controls. Recommend add actor invulnerability8 exclusion and both-surge exemption. Cost60 is a deliberate target balance preservation only if explicitly accepted/documented; not equivalent to upstream30/50/60.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\force_push.cog",
+          "matching_lines": [
+            {
+              "line": 72,
+              "text": "if(level == 1) cost = 30;"
+            },
+            {
+              "line": 73,
+              "text": "else if(level == 2) cost = 50;"
+            },
+            {
+              "line": 74,
+              "text": "else cost = 60;"
+            }
+          ]
+        },
+        {
+          "source": "sources\\jk31\\cog\\force_push.cog",
+          "matching_lines": [
+            {
+              "line": 102,
+              "text": "!(GetItemFlags(victim) & 8) &&"
+            }
+          ]
+        },
+        {
+          "source": "sources\\jk31\\cog\\force_push.cog",
+          "matching_lines": [
+            {
+              "line": 119,
+              "text": "if((GetInv(player, 65) != 1) && (GetInv(player, 64) != 1)) ChangeInv(player, 14, -cost);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\force_push.cog",
+          "matching_lines": [
+            {
+              "line": 22,
+              "text": "flex        cost=60.0                        local"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\force_push.cog",
+          "matching_lines": [
+            {
+              "line": 111,
+              "text": "if(GetInv(player, 64) != 1) ChangeInv(player, 14, -cost);"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -5,4 +5,5 @@\n",
+        " flex cost=60.0 local",
+        " int rank local",
+        "+int level local",
+        " flex mana local",
+        " int active=0 local",
+        "@@ -31,8 +32,12 @@\n",
+        " if (active == 1) Return;",
+        " mana = GetInv(player, 14);",
+        "-rank = GetInv(player, 30);",
+        "+rank = GetInv(player, 38);",
+        "+level = GetInv(player, 20);",
+        "+if(level == 1) cost = 30;",
+        "+else if(level == 2) cost = 50;",
+        "+else cost = 60;",
+        " if(mana >= cost)",
+        " {",
+        "-SetInvActivated(player, 30, 1);",
+        "+SetInvActivated(player, 38, 1);",
+        " SetPulse(0.1);",
+        " }",
+        "@@ -52,4 +57,5 @@\n",
+        " (VectorDist(GetThingPos(player), GetThingPos(victim)) <= (rank / 4)) &&",
+        " !(GetThingFlags(victim) & 0x200) &&",
+        "+!(GetItemFlags(victim) & 8) &&",
+        " !((jkGetFlags(victim) & 0x20) && !IsInvActivated(player, 23))",
+        " )",
+        "@@ -68,5 +74,5 @@\n",
+        " else PlayKey(player, pushAnim, 0, 0x38);",
+        " PlaySoundThing(pushSound, player, 1.0, -1, -1, 0x80);",
+        "-if(GetInv(player, 64) != 1) ChangeInv(player, 14, -cost);",
+        "+if((GetInv(player, 65) != 1) && (GetInv(player, 64) != 1)) ChangeInv(player, 14, -cost);",
+        " active = 1;",
+        " type = GetThingType(victim);",
+        "@@ -74,5 +80,5 @@\n",
+        " {",
+        " if(!(GetThingFlags(victim) & 0x200))",
+        "-retval = SkillTarget(victim, player, 30, rank);",
+        "+retval = SkillTarget(victim, player, 38, rank);",
+        " }",
+        " else",
+        "@@ -93,5 +99,5 @@\n",
+        " Return;",
+        " selected:",
+        "-jkPrintUNIString(player, 30);",
+        "+jkPrintUNIString(player, 38);",
+        " Return;",
+        " killed:",
+        "@@ -105,5 +111,5 @@\n",
+        " active = 0;",
+        " victim = -1;",
+        "-SetInvActivated(player, 30, 0);",
+        "+SetInvActivated(player, 38, 0);",
+        " Return;",
+        " end"
+      ],
+      "additional_target_contract": {
+        "actor_flags": "GetItemFlags/GetTypeFlags returns actorParams.flags for native actor type2 and player type10. Thus upstream bit8 maps to actor invulnerability8 within MotS target mask0x404.",
+        "magnetic_seal": "Thing flag4 is a separate magnetic-seal bit used by Talisman and native Super Shield. Native direct ApplyForce bypasses SkillTarget; the target filter needs an explicit exclusion.",
+        "loop_defect": "A rejected victim advances to NextThingInView and is then processed under only LOS/self checks. Filtering only the first candidate is insufficient. One advance per iteration and application inside the eligibility branch is the recommended repair.",
+        "scope": "JK30 and JK31 both use FirstThingInView mask-1 for all types. MotS uses0x404 for actor2/player10 only, and force magnitude120*rank rather than100*rank. Retaining MotS scope/magnitude is a deliberate target-native choice, not an upstream31 addition.",
+        "parent_decision": "Parent announced intended port of goggles1.0, Push costs30/50/60 by level20, actor invulnerability8 filter, both-surge exemption, and magnetic-seal exclusion; implementation not inspected by this candidate07 audit."
+      },
+      "status_candidate08": "Ported costs30/50/60, actor invulnerability8, both Surge exemptions; repaired eligibility iteration and added guarded player Talisman immunity.",
+      "final_disposition": "Native MotS bin38, power rank/range/force120 and actor/player target scope retained; all actual JK31 Push delta features accounted for. General all-type targeting was shared by both JK releases and is deliberately not copied."
+    },
+    {
+      "file": "cog/force_saberthrow.cog",
+      "jk30_effective_sha256": "763da4d595702cc7f85dcac76119ad865a2d369d4dee64cf2b813ccca8ad154f",
+      "jk31_effective_sha256": "52e216e714358c299dcce1cad2265cfb8507d3f1fe44ae7e771f17c1f830d77d",
+      "actual_delta": "Corrects active-bin test, selected label and cleanup22 to37.",
+      "status_candidate07": "already native",
+      "disposition": "MotS already37 and routes sabers to native item bins125/131/139; preserves bubble cancellation. No JK ordinal9/10 copy.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\force_saberthrow.cog",
+          "matching_lines": [
+            {
+              "line": 9,
+              "text": "#  Bin 37"
+            },
+            {
+              "line": 46,
+              "text": "if(!IsInvActivated(player, 37))"
+            },
+            {
+              "line": 59,
+              "text": "jkPrintUNIString(player, 37);"
+            },
+            {
+              "line": 76,
+              "text": "SetInvActivated(player, 37, 0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\force_saberthrow.cog",
+          "matching_lines": [
+            {
+              "line": 8,
+              "text": "#  Bin 37"
+            },
+            {
+              "line": 62,
+              "text": "jkPrintUNIString(player, 37);"
+            },
+            {
+              "line": 92,
+              "text": "SetInvActivated(player, 37, 0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\force_saberthrow.cog",
+          "matching_lines": [
+            {
+              "line": 38,
+              "text": "saberCog = GetInvCog(player, 131);"
+            },
+            {
+              "line": 39,
+              "text": "lightstaffCog = GetInvCog(player, 125);"
+            },
+            {
+              "line": 40,
+              "text": "extsaberCog = GetInvCog(player, 139);"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -19,5 +19,5 @@\n",
+        " Return;",
+        " activated:",
+        "-if(!IsInvActivated(player, 22))",
+        "+if(!IsInvActivated(player, 37))",
+        " {",
+        " if(GetCurWeapon(GetLocalPlayerThing()) == 5) SendMessage( sithsaberCog, user0 );",
+        "@@ -27,5 +27,5 @@\n",
+        " Return;",
+        " selected:",
+        "-jkPrintUNIString(player, 22);",
+        "+jkPrintUNIString(player, 37);",
+        " Return;",
+        " killed:",
+        "@@ -35,5 +35,5 @@\n",
+        " Return;",
+        " stop_power:",
+        "-SetInvActivated(player, 22, 0);",
+        "+SetInvActivated(player, 37, 0);",
+        " Return;",
+        " end"
+      ]
+    },
+    {
+      "file": "cog/glowcolor.cog",
+      "jk30_effective_sha256": "efc1b336b9ae63f56b8eaad44b9a8235a88b01562d87ea7d1edadaee2d819e57",
+      "jk31_effective_sha256": "790527c8bdde579fce33494bfbbef58bf7a71757e52ed07b30381fe3f77b50fd",
+      "actual_delta": "Caches local player atstartup and adds selected label55 for JK inventory relocation. Same three weapon dispatches.",
+      "status_candidate07": "native controls preserved",
+      "disposition": "MotS has dedicated actionbin116; refreshes player in eachdispatch and native ordinals11/5/19, item bins131/125/139. No missing color capability. JK selected label does not apply to unchanged MotS hotkey.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\glowcolor.cog",
+          "matching_lines": [
+            {
+              "line": 44,
+              "text": "jkPrintUNIString(player, 55);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\glowcolor.cog",
+          "matching_lines": [
+            {
+              "line": 16,
+              "text": "if(GetCurWeapon(GetLocalPlayerThing()) == 11) SendMessage(GetInvCog(GetLocalPlayerThing(), 131), user4);"
+            },
+            {
+              "line": 18,
+              "text": "if(GetCurWeapon(GetLocalPlayerThing()) == 5) SendMessage(GetInvCog(GetLocalPlayerThing(), 125), user4);"
+            },
+            {
+              "line": 20,
+              "text": "if(GetCurWeapon(GetLocalPlayerThing()) == 19) SendMessage(GetInvCog(GetLocalPlayerThing(), 139), user4);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 253,
+              "text": "change_color\t\t116             1\t\t1\t  0x120\tcog=glowcolor.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -1,12 +1,21 @@\n",
+        " symbols",
+        "+thing player local",
+        "+message startup",
+        " message activated",
+        "+message selected",
+        " end",
+        " code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        " activated:",
+        "-if(GetCurWeapon(GetLocalPlayerThing()) == 10) SendMessage(GetInvCog(GetLocalPlayerThing(), 10), user4);",
+        "+if(GetCurWeapon(player) == 10) SendMessage(GetInvCog(player, 10), user4);",
+        " else",
+        "-if(GetCurWeapon(GetLocalPlayerThing()) == 5) SendMessage(GetInvCog(GetLocalPlayerThing(), 5), user4);",
+        "+if(GetCurWeapon(player) == 5) SendMessage(GetInvCog(player, 5), user4);",
+        " else",
+        "-if(GetCurWeapon(GetLocalPlayerThing()) == 9) SendMessage(GetInvCog(GetLocalPlayerThing(), 9), user4);",
+        "+if(GetCurWeapon(player) == 9) SendMessage(GetInvCog(player, 9), user4);",
+        "+Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 55);",
+        " Return;",
+        " end"
+      ]
+    },
+    {
+      "file": "cog/saberdamage.cog",
+      "jk30_effective_sha256": "7c679b9a6962c3d130e59f9db1db501b6cfc3835893126175853fd7ec376aa2f",
+      "jk31_effective_sha256": "9b28b10bb1589b7ebf2f8650a5fb62fadc708ae05e84408790c99d1a48694855",
+      "actual_delta": "Moves playerlookup tostartup and adds selected label56; same toggle dispatches.",
+      "status_candidate07": "native controls preserved",
+      "disposition": "MotS dedicated actionbin144 dispatches to allthree native weaponCOGs; same gameplay capability. Retain peractivation lookup and no irrelevant JK inventory selected label.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\saberdamage.cog",
+          "matching_lines": [
+            {
+              "line": 45,
+              "text": "jkPrintUNIString(player, 56);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\saberdamage.cog",
+          "matching_lines": [
+            {
+              "line": 20,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 131), user2);"
+            },
+            {
+              "line": 21,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 125), user2);"
+            },
+            {
+              "line": 22,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 139), user2);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 260,
+              "text": "saberdamage\t\t\t144             1\t\t1\t  0x120\tcog=saberdamage.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -1,15 +1,22 @@\n",
+        " symbols",
+        " thing player local",
+        "+message startup",
+        " message activated",
+        "+message selected",
+        " end",
+        " code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        " activated:",
+        "-player = GetLocalPlayerThing();",
+        " if( (GetCurWeapon(player) == 10) || (GetCurWeapon(player) == 5) || (GetCurWeapon(player) == 9) )",
+        " {",
+        "-SendMessage(GetInvCog(GetLocalPlayerThing(), 10), user2);",
+        "-SendMessage(GetInvCog(GetLocalPlayerThing(), 5), user2);",
+        "-SendMessage(GetInvCog(GetLocalPlayerThing(), 9), user2);",
+        "+SendMessage(GetInvCog(player, 10), user2);",
+        "+SendMessage(GetInvCog(player, 5), user2);",
+        "+SendMessage(GetInvCog(player, 9), user2);",
+        " }",
+        " Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 56);",
+        "+Return;",
+        " end"
+      ]
+    },
+    {
+      "file": "cog/item_bacta.cog",
+      "jk30_effective_sha256": "5f8a22f023819621b2c8af0ed037b10b1b115393364bebdc2e9311eab84f16d7",
+      "jk31_effective_sha256": "d95b362dd4ac5b7ad375e3d73ac5bddb0689b7e3bde3e9bba3faeac5b366a9bb",
+      "actual_delta": "New archive override versus defaultJK: caches local player atstartup, adds selected label40. Heal30/maxhealth100/charge consumption unchanged.",
+      "status_candidate07": "native functionality already present",
+      "disposition": "MotS stock item_bacta already same heal30 and depletion behavior. Preserve native source-player event and assigned Bacta control; selected-label override unnecessary.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\item_bacta.cog",
+          "matching_lines": [
+            {
+              "line": 46,
+              "text": "HealThing(player, 30.0);"
+            }
+          ]
+        },
+        {
+          "source": "local-game-inputs/MotS/JKMRES.GOO :: cog/item_bacta.cog",
+          "matching_lines": [
+            {
+              "line": 34,
+              "text": "HealThing(player, 30.0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 144,
+              "text": "bactatank               40              0       5       0x102   cog=item_bacta.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -1,10 +1,14 @@\n",
+        " symbols",
+        "+thing player local",
+        " sound bactaSnd=BactaUse01.WAV",
+        "-thing player",
+        "+message startup",
+        " message activated",
+        "+message selected",
+        " end",
+        " code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        " activated:",
+        "-player = GetSourceRef();",
+        " if(GetInv(player, 40) > 0.0)",
+        " {",
+        "@@ -19,3 +23,6 @@\n",
+        " }",
+        " Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 40);",
+        "+Return;",
+        " end"
+      ]
+    },
+    {
+      "file": "cog/item_fieldlight.cog",
+      "jk30_effective_sha256": "bd81a39f19d25dfe04463ee281b8bb98f98c59725417d31beb8c091bfa7ccd54",
+      "jk31_effective_sha256": "1c7f6d98a59393d89152a367a14a8244bbb85032293b8166f6ce68a207fa26a4",
+      "actual_delta": "New override versus defaultJK: startup local-player cache and selected label42. Light behavior and1.5second drain unchanged; restored inventory slot afterJK30 usedit for saber switch.",
+      "status_candidate07": "native functionality already present",
+      "disposition": "MotS alreadyfieldlight42 withnative controls; retains lamp actorflag4 and powerdrain. No lost light feature; noJK inventory relocation needed.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\item_fieldlight.cog",
+          "matching_lines": [
+            {
+              "line": 65,
+              "text": "SetPulse(1.5);"
+            }
+          ]
+        },
+        {
+          "source": "local-game-inputs/MotS/JKMRES.GOO :: cog/item_fieldlight.cog",
+          "matching_lines": [
+            {
+              "line": 55,
+              "text": "SetPulse(1.5);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 146,
+              "text": "fieldlight              42              1       1       0x122   cog=item_fieldlight.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -1,14 +1,18 @@\n",
+        " symbols",
+        "-thing player",
+        "+thing player local",
+        " int actorFlags",
+        "+message startup",
+        " message activated",
+        " message pulse",
+        " message killed",
+        "+message selected",
+        " sound lightActivate=activate04.wav",
+        " sound lightDeactivate=deactivate04.wav",
+        " end",
+        " code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        " activated:",
+        "-player = GetSourceRef();",
+        " actorFlags = GetActorFlags(player);",
+        " if(GetInv(player, 42))",
+        "@@ -52,5 +56,4 @@\n",
+        " Return;",
+        " killed:",
+        "-player = GetLocalPlayerThing();",
+        " if(GetSenderRef() != player) Return;",
+        " if(IsInvActivated(player, 42) == 1)",
+        "@@ -61,3 +64,6 @@\n",
+        " }",
+        " Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 42);",
+        "+Return;",
+        " end"
+      ]
+    },
+    {
+      "file": "cog/item_irgoggles.cog",
+      "jk30_effective_sha256": "719033e45d1b77df68e84260cf561f883bb9b0b9cb5998cc55a7ee566284457a",
+      "jk31_effective_sha256": "ceefca6869c91142dbcad1c27d5e3fbaea20bc9d47f6292ca6624d262aa1ece9",
+      "actual_delta": "New override versus defaultJK: startup cache, selected label41,newplayercleanup and EnableIRMode firstargument0.3 to1.0. Restoresgoggles afterJK30 usedslot forglowcolor.",
+      "status_candidate07": "newplayer already present; IR1.0 omitted",
+      "disposition": "MotS alreadyownsfunctional goggles andnewplayercleanup. Recommend exact EnableIRMode(0.3,1) to(1.0,1) port, withnative controls/battery behavior retained.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\item_irgoggles.cog",
+          "matching_lines": [
+            {
+              "line": 55,
+              "text": "EnableIRMode(1.0, 1);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\item_irgoggles.cog",
+          "matching_lines": [
+            {
+              "line": 48,
+              "text": "EnableIRMode(0.3, 1);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\item_irgoggles.cog",
+          "matching_lines": [
+            {
+              "line": 107,
+              "text": "newplayer:"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 145,
+              "text": "irgoggles               41              0       1       0x102   cog=item_irgoggles.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -1,14 +1,19 @@\n",
+        " symbols",
+        "-thing player",
+        "+thing player local",
+        " int effectHandle=-1",
+        "+message startup",
+        " message activated",
+        " message pulse",
+        " message killed",
+        "+message newplayer",
+        "+message selected",
+        " sound goggleActivate=activate01.wav",
+        " sound goggleDeactivate=deactivate03.wav",
+        " end",
+        " code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        " activated:",
+        "-player = GetSourceRef();",
+        " if(GetInv(player, 41))",
+        " {",
+        "@@ -21,5 +26,5 @@\n",
+        " PlaySoundThing(goggleActivate, player, 1.0, -1, -1, 0x80);",
+        " effectHandle = newColorEffect(0, 1, 0, 0, 0, 0, 0, 0, 0, 1.0);",
+        "-EnableIRMode(0.3, 1);",
+        "+EnableIRMode(1.0, 1);",
+        " SetPulse(1.5);",
+        " }",
+        "@@ -55,5 +60,4 @@\n",
+        " Return;",
+        " killed:",
+        "-player = GetLocalPlayerThing();",
+        " if(GetSenderRef() != player) Return;",
+        " if(IsInvActivated(player, 41) == 1)",
+        "@@ -65,3 +69,12 @@\n",
+        " }",
+        " Return;",
+        "+newplayer:",
+        "+SetPulse(0);",
+        "+SetInvActivated(player, 41, 0);",
+        "+DisableIRMode();",
+        "+if(effectHandle!=-1) freeColorEffect(effectHandle);",
+        "+Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 41);",
+        "+Return;",
+        " end"
+      ],
+      "status_candidate08": "Exact EnableIRMode first argument1.0 port verified; all other MotS30 source bytes retained."
+    },
+    {
+      "file": "cog/toggletrails.cog",
+      "jk30_effective_sha256": null,
+      "jk31_effective_sha256": "86e87d3cc88af5903c13da31fa0114cc1b1fa5217c3124306d79f9380d35e926",
+      "actual_delta": "NewJK31 inventory dispatcher toggles allthree saberCOGs viauser5 and prints selected label57. JK30 had trails option throughdifferent controlbudget.",
+      "status_candidate07": "already present",
+      "disposition": "MotS30 alreadytoggletrails.cog assignedaction118 withnativeCOGbins. Weapon user5immediate steadyblade restore separatelyported inoverlay.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\toggletrails.cog",
+          "matching_lines": [
+            {
+              "line": 34,
+              "text": "SendMessage(GetInvCog(player, 10), user5);"
+            },
+            {
+              "line": 35,
+              "text": "SendMessage(GetInvCog(player, 5), user5);"
+            },
+            {
+              "line": 36,
+              "text": "SendMessage(GetInvCog(player, 9), user5);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\toggletrails.cog",
+          "matching_lines": [
+            {
+              "line": 20,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 131), user5);"
+            },
+            {
+              "line": 21,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 125), user5);"
+            },
+            {
+              "line": 22,
+              "text": "SendMessage(GetInvCog(GetLocalPlayerThing(), 139), user5);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\misc\\items.dat",
+          "matching_lines": [
+            {
+              "line": 255,
+              "text": "toggle_trails\t\t118\t\t    1\t\t1\t  0x120\tcog=toggletrails.cog"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -0,0 +1,22 @@\n",
+        "+symbols",
+        "+thing player local",
+        "+message startup",
+        "+message activated",
+        "+message selected",
+        "+end",
+        "+code",
+        "+startup:",
+        "+player = GetLocalPlayerThing();",
+        "+Return;",
+        "+activated:",
+        "+if( (GetCurWeapon(player) == 10) || (GetCurWeapon(player) == 5) || (GetCurWeapon(player) == 9) )",
+        "+{",
+        "+SendMessage(GetInvCog(player, 10), user5);",
+        "+SendMessage(GetInvCog(player, 5), user5);",
+        "+SendMessage(GetInvCog(player, 9), user5);",
+        "+}",
+        "+Return;",
+        "+selected:",
+        "+jkPrintUNIString(player, 57);",
+        "+Return;",
+        "+end"
+      ]
+    },
+    {
+      "file": "cog/weap_bryar.cog",
+      "jk30_effective_sha256": "066e48483ac08da081acd7034a9c9a43c44be64320457594305a0a6fe7a79a31",
+      "jk31_effective_sha256": "df9672591339e479d605e531b3939a5b50e676c8abd4c8d82bba081f848b4030",
+      "actual_delta": "Newoverride versus defaultJK changesautoselect500 to200 only.",
+      "status_candidate07": "already present",
+      "disposition": "MotS weap_bryar_m already200; preserve itsnativeSBX trigger2projectile andMotSaltfire.",
+      "evidence": [
+        {
+          "source": "sources\\jk31\\cog\\weap_bryar.cog",
+          "matching_lines": [
+            {
+              "line": 177,
+              "text": "ReturnEx(200.0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\weap_bryar_m.cog",
+          "matching_lines": [
+            {
+              "line": 199,
+              "text": "ReturnEx(200.0);"
+            }
+          ]
+        },
+        {
+          "source": "sources\\mots30\\cog\\weap_bryar_m.cog",
+          "matching_lines": [
+            {
+              "line": 101,
+              "text": "SendTrigger(-1, 2, player, crap, crap, 0);"
+            }
+          ]
+        }
+      ],
+      "normalized_executable_diff": [
+        "--- JK30 effective\n",
+        "+++ JK31 effective\n",
+        "@@ -104,5 +104,5 @@\n",
+        " if(GetInv(player, 11) != 0.0)",
+        " {",
+        "-ReturnEx(500.0);",
+        "+ReturnEx(200.0);",
+        " }",
+        " else"
+      ]
+    }
+  ],
+  "final_review": {
+    "candidate": "candidate-08",
+    "archive_sha256": "df5ba92b0391dc46c5da6f5b5e8f9dc14ab3cfe6616f15492afb34125ea9e7d9",
+    "status": "SOURCE_AND_STATIC_ACCEPTED_FOR_REPORTED_PATCHES"
+  },
+  "_public_edition": {
+    "original_receipt_sha256": "96190ae64260dbebe7dd98f59962f3c2e7e25f037342f57aa586ab137b74be9f",
+    "change": "Project-local absolute paths replaced by logical provenance labels; no source hashes or test conclusions changed.",
+    "raw_fixture_evidence_included": false,
+    "context": "../../PUBLIC-EDITION.md"
+  }
+}

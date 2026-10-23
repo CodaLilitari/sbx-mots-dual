@@ -1,0 +1,32 @@
+[
+  {
+    "file": "native-dual-primary.png",
+    "private_source_case_path": "sbx-candidate07-render02/attack-primary-01.png",
+    "sha256": "a5c144ab95fc43524c98a78b421ae42b11cd56570da63a73d54444f6ae8416d4",
+    "unchanged_original_executable_capture": true
+  },
+  {
+    "file": "native-accelerated-menu.png",
+    "private_source_case_path": "sbx-candidate07-render02/display-accel-selected.png",
+    "sha256": "3fcb6804564050c264e470013f6eb4c567476163c9e685c3c86e6d6f19731667",
+    "unchanged_original_executable_capture": true
+  },
+  {
+    "file": "software-mara-bright.png",
+    "private_source_case_path": "sbx-candidate09-skinbright01/route-external.png",
+    "sha256": "280f16482471cbc02dbce57c620e3d01a7b0d301592012dabc59ece78a4444eb",
+    "unchanged_original_executable_capture": true
+  },
+  {
+    "file": "software-yoda-dual-bright.png",
+    "private_source_case_path": "sbx-candidate09-skinbright01/software-full-light-yoda-dual.png",
+    "sha256": "b77b6dc4c377e1ebe5705ada71ea4b9cb9853d80c49cbfcf6c0f7a0c5e5c96e5",
+    "unchanged_original_executable_capture": true
+  },
+  {
+    "file": "native-goggles-active.png",
+    "private_source_case_path": "sbx-candidate09-smoke01/goggles-active.png",
+    "sha256": "20225f0877894f96c9cedbec3604a090a4e0863c584c4281771a33bb72197513",
+    "unchanged_original_executable_capture": true
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "scope": "Final candidate09 and reproduced payload/package-source comparison; packaging ZIPs not yet inspected.",
+  "main_sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479",
+  "main_members": 602,
+  "software_sha256": "7ec0c6cdd37af43eb7d036b60c6ecfa0194a24fe949e08deeb8af418279a418a",
+  "software_members": 193,
+  "main_exactly_matches_fresh_portable_build": true,
+  "software_layer_equivalence_08_to09": true,
+  "main_source_append_only_repairs": [
+    {
+      "path": "3do/mat/mwdback.mat",
+      "old_bytes": 10892,
+      "new_bytes": 11020,
+      "appended_bytes": 128,
+      "source_bytes_preserved": true
+    },
+    {
+      "path": "3do/mat/mwdchest.mat",
+      "old_bytes": 8332,
+      "new_bytes": 11020,
+      "appended_bytes": 2688,
+      "source_bytes_preserved": true
+    }
+  ],
+  "byte_identical_base_members": 0,
+  "documentation_actionable": [],
+  "runtime_claim_constraint": "Force Push source costs checked; activation/timer observed; no accepted diagnostic victim, thus no runtime cost/physical-push claim.",
+  "tested_final_tool_source": "reproducibility/portable-check-final/tools",
+  "tested_final_tool_files": 20,
+  "tested_final_tool_drift": [],
+  "historical_portable_check_note": "Earlier portable-check is candidate08 history and lacks only the later append-only mip assembler block. This is not the final tested or packaged source.",
+  "documentation_review": {
+    "status": "RESOLVED_IN_FINAL_SOURCE_DOCUMENTS",
+    "checked": [
+      "README-BUILDER.md",
+      "CREDITS.md",
+      "INSTALL.txt",
+      "CHANGES.md",
+      "README-SOFTWARE-TEXTURES.txt",
+      "RETAIL-VALIDATION.md"
+    ],
+    "resolved": [
+      "Draft/runtime-pending language replaced with bounded original-executable acceptance reference.",
+      "RETAIL-VALIDATION.md present and accurately separates source-only Push cost/impulse checks from activation/timer observations.",
+      "Software-palette and first-person/track timing/connected-multiplayer/save-load limits explicitly disclosed."
+    ],
+    "package_pending": "Verify ZIP-relative docs/original, evidence and audit destinations when final archives exist."
+  },
+  "historical_portable_tool_drift": [
+    "assemble_candidate.py"
+  ],
+  "current_tool_source_status": "All20 current tools match reproducibility/portable-check-final/tools byte-for-byte; zero drift."
+}

@@ -1,0 +1,9 @@
+{
+  "final_main_sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479",
+  "changed_base_paths": 142,
+  "additional_paths": 460,
+  "byte_identical_base_members": 0,
+  "complete_base_archive_in_delivery": false,
+  "main_byte_identical_from_portable_tools": true,
+  "software_byte_identical_from_portable_tools": true
+}

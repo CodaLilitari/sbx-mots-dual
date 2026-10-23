@@ -1,0 +1,606 @@
+{
+  "scope": "Source reconciliation only; not original-retail execution, save/load or multiplayer proof.",
+  "pairs": [
+    {
+      "jk30": "sources/jk30/cog/weap_saber.cog",
+      "jk31": "sources/jk31/cog/weap_saber.cog",
+      "text_identical": false,
+      "code_without_comments_identical": false,
+      "diff": "audit/jk30-jk31-weapon-diffs/weap_saber.cog--weap_saber.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/weap_sithsaber.cog",
+      "jk31": "sources/jk31/cog/weap_sithsaber.cog",
+      "text_identical": false,
+      "code_without_comments_identical": false,
+      "diff": "audit/jk30-jk31-weapon-diffs/weap_sithsaber.cog--weap_sithsaber.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/weap_extsaber.cog",
+      "jk31": "sources/jk31/cog/weap_longsaber.cog",
+      "text_identical": false,
+      "code_without_comments_identical": false,
+      "diff": "audit/jk30-jk31-weapon-diffs/weap_extsaber.cog--weap_longsaber.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/saberstance.cog",
+      "jk31": "sources/jk31/cog/saberstance.cog",
+      "text_identical": false,
+      "code_without_comments_identical": false,
+      "diff": "audit/jk30-jk31-weapon-diffs/saberstance.cog--saberstance.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/kyle.cog",
+      "jk31": "sources/jk31/cog/kyle.cog",
+      "text_identical": false,
+      "code_without_comments_identical": false,
+      "diff": "audit/jk30-jk31-weapon-diffs/kyle.cog--kyle.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/force_blinding.cog",
+      "jk31": "sources/jk31/cog/force_blinding.cog",
+      "text_identical": false,
+      "code_without_comments_identical": true,
+      "diff": "audit/jk30-jk31-weapon-diffs/force_blinding.cog--force_blinding.cog.diff"
+    },
+    {
+      "jk30": "sources/jk30/cog/client_weapons.cog",
+      "jk31": "sources/jk31/cog/client_weapons.cog",
+      "text_identical": true,
+      "code_without_comments_identical": true,
+      "diff": "audit/jk30-jk31-weapon-diffs/client_weapons.cog--client_weapons.cog.diff"
+    }
+  ],
+  "features": [
+    {
+      "feature": "Disabled-trails Saber Throw and cleanup",
+      "actual_delta": "JK31 gates the changing Fan1/Fan2 mesh only; timer cleanup and steady blade restoration remain unconditional.",
+      "mots_disposition": "Remove MotS30 broad allowfans wrappers around timer bodies; gate only changing fan meshes. Attack/throw cleanup executes even with trails disabled.",
+      "status": "implemented-source; native execution acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 367,
+          "line_end": 369,
+          "excerpt": "\t// Change to first fan\n\tif(allowfans == 1) jkSetWeaponMesh(player, Fan1[color]);\n\tSleep(fanwait);"
+        },
+        {
+          "path": "tools/build_dual_scripts.py",
+          "line_start": 1,
+          "line_end": 23,
+          "excerpt": "\"\"\"Source-checked MotS integration. All replacements fail closed on drift.\"\"\"\nfrom pathlib import Path\nimport argparse,json,re\nfrom archive_io import digest\n\ndef replace(text,old,new,count=1):\n    actual=text.count(old)\n    if actual!=count:raise ValueError(f'Expected {count} occurrences, got {actual}: {old[:100]!r}')\n    return text.replace(old,new)\n\ndef unwrap_fan_gates(text):\n    # SBX3.0 incorrectly gates timer cleanup as well as visible fan changes.\n    pattern=r'if\\(allowfans\\)\\s*// If trails are enabled\\s*\\{'\n    while match:=re.search(pattern,text):\n        start=match.start();body=match.end();depth=1;i=body\n        while depth:\n            if text[i]=='{':depth+=1\n            elif text[i]=='}':depth-=1\n            i+=1\n        text=text[:start]+text[body:i-1]+text[i:]\n    text=re.sub(r'(?m)^(\\s*)jkSetWeaponMesh\\(player, (Fan[12]\\[color\\])\\);',r'\\1if(allowfans) jkSetWeaponMesh(player, \\2);',text)\n    return text\n"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 367,
+          "line_end": 369,
+          "excerpt": "\t// Change to first fan\n\tif(allowfans) jkSetWeaponMesh(player, Fan1[color]);\n\tSleep(fanwait);"
+        }
+      ]
+    },
+    {
+      "feature": "Instant trail toggle",
+      "actual_delta": "JK31 restores the steady saber mesh in user5 when the current active saber changes trail preference.",
+      "mots_disposition": "All three MotS weapon scripts restore their current steady mesh immediately; staff uses the dual-aware setblade helper.",
+      "status": "implemented-source; native execution acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 1551,
+          "line_end": 1563,
+          "excerpt": "   Return;\n\n#.............................................................................\n\t\nuser5:\n\n   allowfans=(1-allowfans);\n   jkPrintUNIString(player, 58+allowfans);\n\n   if (GetCurWeapon(player) == 10)\n   {\n\tif (active == 1) jkSetWeaponMesh(player, saber[color]);\n   }"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 1593,
+          "line_end": 1599,
+          "excerpt": "\t\nuser5:\n\n\tallowfans=(1-allowfans);\n   if((GetCurWeapon(player) == 11) && (active == 1)) jkSetWeaponMesh(player, saber[color]);\n\tjkPrintUNIString(player, 58+allowfans);\n"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 1461,
+          "line_end": 1467,
+          "excerpt": "\t\nuser5:\n\n\tallowfans=(1-allowfans);\n   if((GetCurWeapon(player) == 5) && (active == 1)) call setblade;\n\n   Return;"
+        }
+      ]
+    },
+    {
+      "feature": "Staff blocking without owning the single saber",
+      "actual_delta": "JK31 changes three erroneous staff timer ownership guards from single saber bin10 to staff bin5.",
+      "mots_disposition": "Native MotS staff guards already use staff inventory bin125, and are retained. No dependency on MotS single-saber bin10 is introduced.",
+      "status": "already-native; preserved",
+      "evidence": [
+        {
+          "path": "sources/jk30/cog/weap_sithsaber.cog",
+          "line_start": 400,
+          "line_end": 402,
+          "excerpt": "      if(GetThingHealth(player) < 1) Return;\n      if(GetInv(player, 10) == 0) Return;\n\tif (active == 0) Return;"
+        },
+        {
+          "path": "sources/jk31/cog/weap_sithsaber.cog",
+          "line_start": 313,
+          "line_end": 315,
+          "excerpt": "      if(GetThingHealth(player) < 1) Return;\n\tif(GetInv(player, 5) == 0) Return;\n\tif (active == 0) Return;"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 328,
+          "line_end": 330,
+          "excerpt": "      if(GetThingHealth(player) < 1) Return;\n\tif(GetInv(player, 125) == 0) Return;\n\tif (active == 0) Return;"
+        }
+      ]
+    },
+    {
+      "feature": "Startup hum channel reset",
+      "actual_delta": "JK31 initializes humChannel to -1 during startup.",
+      "mots_disposition": "All three native MotS weapon startup handlers now initialize humChannel to -1.",
+      "status": "implemented-source; native execution acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 280,
+          "line_end": 282,
+          "excerpt": "   nextAttack = 0;\n   humChannel = -1;\n"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 279,
+          "line_end": 281,
+          "excerpt": "   nextAttack = 0;\n   humChannel = -1;\n"
+        }
+      ]
+    },
+    {
+      "feature": "Saved/uninitialized stance fallback",
+      "actual_delta": "JK31 adds -1 stance recovery in activation and stance rebroadcast handlers.",
+      "mots_disposition": "Supplied dual stance includes the recovery for all three saber families; port retains it with native ordinals11/5/19 and staff inventory125.",
+      "status": "implemented-source; save/load acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/saberstance.cog",
+          "line_start": 39,
+          "line_end": 47,
+          "excerpt": "\n   // If the Lightsaber is the current weapon, switch the stance\n   if(GetCurWeapon(player) == 10)\n   {\n\tif(saberStance == -1)\n\t{\n\t   SendTrigger(-1, 1432, player, -1, -1, 0);\n\t   saberStance = 1;\n\t}"
+        },
+        {
+          "path": "sources/jk31/cog/saberstance.cog",
+          "line_start": 149,
+          "line_end": 151,
+          "excerpt": "   {\n\tif(saberStance == -1) SendTrigger(-1, 1431, player, -1, -1, 0);\n\telse"
+        },
+        {
+          "path": "generated/dual-scripts/cog/saberstance.cog",
+          "line_start": 78,
+          "line_end": 86,
+          "excerpt": "\n   // If the Lightsaber is the current weapon, switch the stance\n   if(GetCurWeapon(player) == 11)\n   {\n\tif(saberStance == -1)\n\t{\n\t   SendTrigger(-1, 1432, player, -1, -1, 0);\n\t   saberStance = 1;\n\t}"
+        },
+        {
+          "path": "generated/dual-scripts/cog/saberstance.cog",
+          "line_start": 229,
+          "line_end": 231,
+          "excerpt": "   {\n\tif(extSaberStance == -1) SendTrigger(-1, 1432, player, -1, -1, 0);\n\telse"
+        }
+      ]
+    },
+    {
+      "feature": "Ignition stance item availability and handle",
+      "actual_delta": "JK31 grants and enables stance item144 on saber ignition.",
+      "mots_disposition": "Grant and enable native MotS stance item143 on ignition, and re-fetch its COG handle to avoid retaining a stale saved handle.",
+      "status": "implemented-source; save/load acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 1598,
+          "line_end": 1602,
+          "excerpt": "\n\t// Make sure we have the damn saber stance COG available!!!\n\tSetInv(player, 144, 1);\n\tSetInvAvailable(player, 144, 1);\n"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 1620,
+          "line_end": 1626,
+          "excerpt": "   // If lightsaber is off, turn it ON\n   if (active == 0)\n   {\n      SetInv(player, 143, 1);\n      SetInvAvailable(player, 143, 1);\n      stanceCog = GetInvCog(player, 143);\n\t// If we're drawing the lightsaber, don't do anything"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 1487,
+          "line_end": 1493,
+          "excerpt": "   // If Sith lightsaber is off, turn it ON\n   if (active == 0)\n   {\n      SetInv(player, 143, 1);\n      SetInvAvailable(player, 143, 1);\n      stanceCog = GetInvCog(player, 143);\n\t// If we're drawing the Sith lightsaber, don't do anything"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_extsaber_m.cog",
+          "line_start": 1606,
+          "line_end": 1612,
+          "excerpt": "   // If extended lightsaber is off, turn it ON\n   if (active == 0)\n   {\n      SetInv(player, 143, 1);\n      SetInvAvailable(player, 143, 1);\n      stanceCog = GetInvCog(player, 143);\n\t// If we're drawing a lightsaber, don't do anything"
+        }
+      ]
+    },
+    {
+      "feature": "Saving with a lit saber",
+      "actual_delta": "JK31 documentation explicitly still requires saving with saber off; active damage and stance reset remain known upstream limitations.",
+      "mots_disposition": "Do not claim the ignition/fallback changes fix saving while lit. Keep the save-with-saber-off limitation until native save/load testing proves a further repair.",
+      "status": "known upstream limitation; not claimed fixed",
+      "evidence": [
+        {
+          "path": "sources/jk31-document-extracted.txt",
+          "line_start": 63,
+          "line_end": 63,
+          "excerpt": "Loading quick saves shouldn\u00e2\u0080\u0099t disrupt your lightsaber stances or cause crashes anymore, although it\u00e2\u0080\u0099s still necessary to save without a saber activated since damage gets turned off and it defaults to the SBX stance."
+        }
+      ]
+    },
+    {
+      "feature": "Saber auto-selection order",
+      "actual_delta": "JK31 gives single1000, staff900, long800, above its guns.",
+      "mots_disposition": "Native MotS has concussion800, so long850/staff900/single1000 preserves the JK31 order above all native guns. Keep selected staff at1001 to prevent the dual pose being deselected by engine auto-selection.",
+      "status": "implemented-source; native execution acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 1486,
+          "line_end": 1488,
+          "excerpt": "   {\n      ReturnEx(1000.0);\n   }"
+        },
+        {
+          "path": "sources/jk31/cog/weap_sithsaber.cog",
+          "line_start": 1220,
+          "line_end": 1222,
+          "excerpt": "   {\n      ReturnEx(900.0);\n   }"
+        },
+        {
+          "path": "sources/jk31/cog/weap_longsaber.cog",
+          "line_start": 1486,
+          "line_end": 1488,
+          "excerpt": "   {\n      ReturnEx(800.0);\n   }"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 1522,
+          "line_end": 1524,
+          "excerpt": "   {\n      ReturnEx(1000.0);\n   }"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 1387,
+          "line_end": 1389,
+          "excerpt": "   {\n      if(GetCurWeapon(player) == 5) ReturnEx(1001.0);\n      else ReturnEx(900.0);"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_extsaber_m.cog",
+          "line_start": 1508,
+          "line_end": 1510,
+          "excerpt": "   {\n      ReturnEx(850.0);\n   }"
+        }
+      ]
+    },
+    {
+      "feature": "Force Saber Throw inventory relocation",
+      "actual_delta": "JK31 relocates Saber Throw activation from22 to37 and stance from118 to144.",
+      "mots_disposition": "Retain native MotS Saber Throw37 and stance143. Keep Evasion142, staff125, native Projection and AI notifications; do not transplant JK inventory indices wholesale.",
+      "status": "native adaptation",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 836,
+          "line_end": 846,
+          "excerpt": "\t   else if(rank == 2) cost = 70;\n\t   else cost = 100;\n\n\t   if(GetInv(player, 14) < cost) Return;\n\n\t   if(!IsInvActivated(player, 37))\n\t   {\n\t      SetInvActivated(player, 37, 1);\n\t\tattack = 1;\n\n\t\tif((GetInv(player, 65) != 1) && (GetInv(player, 64) != 1)) ChangeInv(player, 14, -cost);"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 857,
+          "line_end": 879,
+          "excerpt": "\tif (GetCurWeapon(player) == 11)\n\t{\n\t   rank = GetInv(player, 37);\n\n\t   if(rank == 1) cost = 130;\n\t   else if(rank == 2) cost = 120;\n\t   else if(rank == 3) cost = 100;\n\t   else if(rank == 4) cost = 80;\n\n\t   if(GetInv(player, 14) < cost && GetInv(player, 14) < GetInv(player, 69)) Return;\n\n\t   if(!IsInvActivated(player, 37))\n\t   {\n\t      SetInvActivated(player, 37, 1);\n\t\tattack = 1;\n\n\t      if(GetInv(player, 64) != 1) ChangeInv(player, 14, -cost);\n\n\t      // Send a \"force disturbance\"...\n\t      if(!IsMulti())\n\t         SendMessageExRadius(GetThingPos(player), cost, 0x4, splash, 37, 0, 0, 0);\n\n\t\t// Schedule reinstatement of Evasion and Saber Throw"
+        }
+      ]
+    },
+    {
+      "feature": "Force Saber Throw cost balance",
+      "actual_delta": "JK31 uses Jedi level20 with30/70/100 cost; JK30 uses the old power-rank costs.",
+      "mots_disposition": "Retain native MotS power rank37 and130/120/100/80 cost, including its full-mana exception, native force-disturbance message and existing class contracts. This JK31 balance change is not mirrored.",
+      "status": "intentional native-balance preservation; disclosed difference",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/weap_saber.cog",
+          "line_start": 826,
+          "line_end": 840,
+          "excerpt": "\n\t// If a saber is being drawn or swung right now, return\n\tif(GetInv(player, 89) == 1) Return;\n\tif (attack == 1) Return;\n\n\tif (GetCurWeapon(player) == 10)\n\t{\n\t   rank = GetInv(player, 20);\n\n\t   if(rank == 1) cost = 30;\n\t   else if(rank == 2) cost = 70;\n\t   else cost = 100;\n\n\t   if(GetInv(player, 14) < cost) Return;\n"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_saber_m.cog",
+          "line_start": 849,
+          "line_end": 869,
+          "excerpt": "// This part is called directly from Force Saber Throw\n\nuser0:\n\n\t// If a saber is being drawn or swung right now, return\n\tif(GetInv(player, 89) == 1) Return;\n\tif (attack == 1) Return;\n\n\tif (GetCurWeapon(player) == 11)\n\t{\n\t   rank = GetInv(player, 37);\n\n\t   if(rank == 1) cost = 130;\n\t   else if(rank == 2) cost = 120;\n\t   else if(rank == 3) cost = 100;\n\t   else if(rank == 4) cost = 80;\n\n\t   if(GetInv(player, 14) < cost && GetInv(player, 14) < GetInv(player, 69)) Return;\n\n\t   if(!IsInvActivated(player, 37))\n\t   {"
+        }
+      ]
+    },
+    {
+      "feature": "Force Blinding strength and duration",
+      "actual_delta": "Actual class receiver changes from rank-dependent200/210/200 color to252/270/252, and4*rank to4+rank seconds.",
+      "mots_disposition": "reconcile_sbx.transform_actor applies these exact values after dual actor integration while preserving MotS server and defense multipliers. Its assembly hook is required.",
+      "status": "implemented in reconciliation transform; final assembly acceptance separate",
+      "evidence": [
+        {
+          "path": "sources/jk30/cog/kyle.cog",
+          "line_start": 520,
+          "line_end": 528,
+          "excerpt": "   {\n      if((!force_blinding) && (!IsInvActivated(player, 23)))   // Seeing makes player immune to Blinding\n      {\n         force_blinding = 1;\n         blindingEffectHandle = newColorEffect(0, 0, 0, 0, 0, 0, 200 + 8 * rank, 210 + 10 * rank, 200 + 8 * rank, 1.0);\n         SetActorFlags(player, 0x800);\n         SetTimerEx(4 * rank, 27, player, 0);\n         ReturnEx(1);\n      }"
+        },
+        {
+          "path": "sources/jk31/cog/kyle.cog",
+          "line_start": 537,
+          "line_end": 545,
+          "excerpt": "\t// Can't be blinded more than once and Force Seeing and Sith Talisman make player immune to Blinding\n      if( (!force_blinding) && (!IsInvActivated(player, 23)) && (!IsInvActivated(player, 62)) )\n      {\n         force_blinding = 1;\n         blindingEffectHandle = newColorEffect(0, 0, 0, 0, 0, 0, 252, 270, 252, 1.0);\n         SetActorFlags(player, 0x800);\n         SetTimerEx(4 + rank, 27, player, 0);\n         ReturnEx(1);\n      }"
+        },
+        {
+          "path": "tools/reconcile_sbx.py",
+          "line_start": 361,
+          "line_end": 373,
+          "excerpt": "    # intentionally lacks that flag; bridge class events through ordinary user\n    # messages because native SendMessage disallows event numbers45/46.\n    for label,event in (('enterbubble','user2'),('exitbubble','user3')):\n        pattern=r'(\\n'+label+r':)'\n        text,count=re.subn(pattern,lambda m:m.group(1)+f'\\n   SendMessage(GetInvCog(player, 154), {event});\\n',text,count=1)\n        assert count == 1, f'Missing native {label} forwarding insertion'\n    before='newColorEffect(0, 0, 0, 0, 0, 0, 200 + 8 * rank, 210 + 10 * rank, 200 + 8 * rank, 1.0)'\n    assert text.count(before) == 1\n    text=text.replace(before,'newColorEffect(0, 0, 0, 0, 0, 0, 252, 270, 252, 1.0)')\n    before='SetTimerEx(4 * rank * jkGetMultiParam (31) * defenseFactor, 27, player, 0);'\n    assert text.count(before) == 1\n    text=text.replace(before,'SetTimerEx((4 + rank) * jkGetMultiParam (31) * defenseFactor, 27, player, 0);')\n    return text"
+        }
+      ]
+    },
+    {
+      "feature": "Flash bomb versus Force Blinding",
+      "actual_delta": "JK31 Force Blinding differs in the class receiver. Its pre-existing flash-damage AddDynamicTint formula remains rank-dependent; force_blinding.cog itself changes comments only.",
+      "mots_disposition": "Preserve native MotS flash-bomb behavior. No separate flash-bomb improvement is claimed from JK31.",
+      "status": "no relevant JK31 flash-bomb code change",
+      "evidence": [
+        {
+          "path": "sources/jk30/cog/kyle.cog",
+          "line_start": 292,
+          "line_end": 294,
+          "excerpt": "      // Get the effect ramping down\n      AddDynamicTint(player, 200 + 8 * rank, 210 + 10 * rank, 200 + 8 * rank);\n      ClearActorFlags(player, 0x800);"
+        },
+        {
+          "path": "sources/jk31/cog/kyle.cog",
+          "line_start": 302,
+          "line_end": 304,
+          "excerpt": "      // Get the effect ramping down\n      AddDynamicTint(player, 200 + 8 * rank, 210 + 10 * rank, 200 + 8 * rank);\n      ClearActorFlags(player, 0x800);"
+        }
+      ]
+    },
+    {
+      "feature": "Talisman immunity and neutral power/control changes",
+      "actual_delta": "JK31 class adds Talisman immunity gates, bonus Push/Throw availability and item controls.",
+      "mots_disposition": "Owned by reconcile_sbx: optional Talisman153 and object Throw154 retain native MotS powers and Super Shield. Do not duplicate its actor transformation in the dual builder.",
+      "status": "see reconciliation.md and final assembly; separate owner",
+      "evidence": [
+        {
+          "path": "sources/jk31/cog/kyle.cog",
+          "line_start": 688,
+          "line_end": 704,
+          "excerpt": "   SetInv(player, 50, 1);\n   SetInvAvailable(player, 50, 1);\n\n   // Give Bonus Neutral Powers if we're Force initiated\n   level = GetInv(player, 20);\n   if(level != 0)\n   {\n\t// Give Force Saber Throw\n\tSetInv(player, 37, 4.0);\n\tSetInvAvailable(player, 37, 1);\n\n\t// Give Force Push\n\tSetInv(player, 38, 4.0);\n\tSetInvAvailable(player, 38, 1);\n   }\n\n   jkEndTarget();"
+        },
+        {
+          "path": "audit/reconciliation.md",
+          "line_start": 36,
+          "line_end": 36,
+          "excerpt": "| Sith Talisman | Included as optional sbxd_talisman pickup and bin153; native Super Shield62 remains available. Actor/item/template hooks must be called by assembly. |"
+        },
+        {
+          "path": "audit/reconciliation.md",
+          "line_start": 42,
+          "line_end": 42,
+          "excerpt": "| Force Throw rapid-fire/cost change | Ported as bin154 inventory-only object Throw, press/release targeting, native Jedi rank capped4, cost30/50/80/80,2secondcooldown, bubble/EWEB/death cancellation. Own JK icons derived locally. |"
+        }
+      ]
+    },
+    {
+      "feature": "Native resource-reference capacity repair",
+      "actual_delta": "Not a JK31 feature: inherited MotS single/long COGs declare131 resource references, above native128. Final COG handles would be ignored by original parser.",
+      "mots_disposition": "Remove only five legacy sound declarations proven unused in executable code. Retain all used sounds and contiguous arrays. New counts126/123/126 preserve class/Projection/stance COG references.",
+      "status": "implemented-source; native128 cap independently proven from disassembly and runtime crash",
+      "evidence": [
+        {
+          "path": "tools/build_dual_scripts.py",
+          "line_start": 122,
+          "line_end": 130,
+          "excerpt": "            # Both original MotS single-blade scripts have131 reference records.\n            # Five unused legacy impact sounds are safe to remove; this retains\n            # the final class/Projection/stance COG references below native128.\n            code=text[text.index('\\ncode'):]\n            for symbol in ('hitSound01','hitSound02','hitSound03','hitSound12','hitSound14'):\n                if re.search(r'\\b'+symbol+r'\\b',code,re.I):raise ValueError('Impact sound unexpectedly used: '+symbol)\n                text,n=re.subn(r'(?im)^sound\\s+'+symbol+r'=.*\\n','',text)\n                if n!=1:raise ValueError('Impact sound declaration drift: '+symbol)\n        # Carry the actual JK31 startup repair into the MotS-native script."
+        },
+        {
+          "path": "tools/build_dual_scripts.py",
+          "line_start": 13,
+          "line_end": 35,
+          "excerpt": "    pattern=r'if\\(allowfans\\)\\s*// If trails are enabled\\s*\\{'\n    while match:=re.search(pattern,text):\n        start=match.start();body=match.end();depth=1;i=body\n        while depth:\n            if text[i]=='{':depth+=1\n            elif text[i]=='}':depth-=1\n            i+=1\n        text=text[:start]+text[body:i-1]+text[i:]\n    text=re.sub(r'(?m)^(\\s*)jkSetWeaponMesh\\(player, (Fan[12]\\[color\\])\\);',r'\\1if(allowfans) jkSetWeaponMesh(player, \\2);',text)\n    return text\n\ndef cog_budget(text):\n    \"\"\"Count native declaration slots separately from resource references.\n\n    Original MotS ParseSymbolRef (0x5427db) rejects references after128 even\n    though its local symbol table has256 slots. Local numeric variables do not\n    consume reference records; local models/sounds/keys/cog handles still do.\n    \"\"\"\n    section=re.search(r'(?ims)^\\s*symbols\\s*$(.*?)^\\s*end\\s*$',text)\n    if section is None:raise ValueError('Missing COG symbols section')\n    resources={'thing','surface','sector','sound','template','model','keyframe','cog','material','ai'}\n    numeric={'int','flex','float','vector'}\n    count=0;refs=0;overflow=[]"
+        }
+      ]
+    },
+    {
+      "feature": "Dual track-pressure and hit-list safety adaptation",
+      "actual_delta": "Supplied browser extension overlaps dual attacks at75% of animation duration and depends on enhanced runtime generation.",
+      "mots_disposition": "Exact locally baked native KEYs; four-track adaptation waits full duration, uses UNIQUE/NOLOOP end-removal, rejects failed allocation before hit-list reset, and does not retain attack handles that could later target reused tracks.",
+      "status": "implemented-source; retail animation/damage acceptance separate",
+      "evidence": [
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 1073,
+          "line_end": 1095,
+          "excerpt": "            nextAttack = 1;\n         }\n         else\n         {\n            dualPovKey = povFireAnimL1;\n            dualResult = PlayMode(player, 18);\n            keylen = SendMessageEx(stanceCog, user2, 4, color, 0, 0);\n            nextAttack = 0;\n         }\n         // Allocation can fail during a transient locomotion/action change.\n         // A failed key must not reset the native hit list or start an attack.\n         if(dualResult == -1)\n         {\n            SetFireWait(player, 0.08);\n            Return;\n         }\n         jkPlayPOVKey(player, dualPovKey, 2, 0x38);\n         if(allowdamage == 1) jkEnableSaber(player, 50, 0.123, 1.0);\n         else jkEnableSaber(player, 0, 0.123, 1.0);\n         fanwait = (keylen / 10);\n         SetTimerEx(fanwait, 4, 0, 0);\n\n         shakePos = VectorScale(RandVec(),.001);"
+        },
+        {
+          "path": "generated/dual-scripts/cog/weap_sithsaber_m.cog",
+          "line_start": 1097,
+          "line_end": 1103,
+          "excerpt": "         SetPOVShake(shakePos, shakeAngle, .05, 80.0);\n\n         curSound = PlaySoundThing(swingSoundDbl01, player, 1.0, -1, -1, 0x80);\n         // Full-duration cooldown is the retail four-track adaptation.\n         // The browser add-on overlaps attacks at 75 percent of this length.\n         SetFireWait(player, keylen);\n      }"
+        }
+      ]
+    }
+  ],
+  "files": {
+    "sources/jk30/cog/weap_saber.cog": {
+      "sha256": "33ba287e8f2ad1087f57e3b050220ac3837aaf28af2a619ec819123a3a65ee57",
+      "bytes": 48595
+    },
+    "sources/jk31/cog/weap_saber.cog": {
+      "sha256": "1b81212bc3e0a03412efd1cbd511dd69acb7fa95fc179213cd5aebeed84d4d52",
+      "bytes": 49323
+    },
+    "sources/jk30/cog/weap_sithsaber.cog": {
+      "sha256": "ddc1f5c982eb37e5f4979fb7e8563d15d61b310975dd05070b559af232264815",
+      "bytes": 41645
+    },
+    "sources/jk31/cog/weap_sithsaber.cog": {
+      "sha256": "66e8a3f989a91e862baa997daeb8e801fa2f707c55111eb0ac125adfb77045e9",
+      "bytes": 42205
+    },
+    "sources/jk30/cog/weap_extsaber.cog": {
+      "sha256": "979b95ef3115531b49843cc233737984e3f2ec71f3cb442938f007d6e70f1916",
+      "bytes": 48612
+    },
+    "sources/jk31/cog/weap_longsaber.cog": {
+      "sha256": "f6971531a397f044a178bf2b969f8ec9a6ed51e76d419d80362e4077da9f2ab5",
+      "bytes": 49295
+    },
+    "sources/jk30/cog/saberstance.cog": {
+      "sha256": "1022536b76cf2897967dfcc284e6bdf18b0f381535d905f9e7a74e2a6bcae47b",
+      "bytes": 3528
+    },
+    "sources/jk31/cog/saberstance.cog": {
+      "sha256": "9c16f7b973d37a2df3a3f03c8af37d393f1e1d8ce9bbaa2d5f73aefe27d51ac8",
+      "bytes": 4099
+    },
+    "sources/jk30/cog/kyle.cog": {
+      "sha256": "c76f192d28a47584c5edf2c18ca792816d4f694d897b2951b57033837d8e3afc",
+      "bytes": 19173
+    },
+    "sources/jk31/cog/kyle.cog": {
+      "sha256": "7f34a5f6842c68dae809aee4f92a2f3d0041bca01145ec37c45adbad3820f87d",
+      "bytes": 20822
+    },
+    "sources/jk30/cog/force_blinding.cog": {
+      "sha256": "66cb032e56c24c1f4306b9fd28450d29745a1183a3a20f9d037cf06c037fcbe6",
+      "bytes": 6045
+    },
+    "sources/jk31/cog/force_blinding.cog": {
+      "sha256": "27c8f2af462b0eb7b12847d1d8b3886d0e956a7ec779de7c2df59496e54c784f",
+      "bytes": 6069
+    },
+    "sources/jk30/cog/client_weapons.cog": {
+      "sha256": "0ee7d5fe7bf9864a2204f94ede5e6afcfb9eea5fefaed3ceab357ca1578c8d00",
+      "bytes": 5155
+    },
+    "sources/jk31/cog/client_weapons.cog": {
+      "sha256": "0ee7d5fe7bf9864a2204f94ede5e6afcfb9eea5fefaed3ceab357ca1578c8d00",
+      "bytes": 5155
+    },
+    "tools/build_dual_scripts.py": {
+      "sha256": "a6b8cf5ac995a83631cae2fbb20ade143b7b1528b4848b3b1edaecfd200769ed",
+      "bytes": 19507
+    },
+    "generated/dual-scripts/cog/weap_saber_m.cog": {
+      "sha256": "91949ef6f796c6274d44fa050127dcfa27a37f232d7b44aa4d1c5ff664448fe0",
+      "bytes": 49797
+    },
+    "generated/dual-scripts/cog/weap_sithsaber_m.cog": {
+      "sha256": "0db1c5c02f16d79a9a8642ac4e2cf775a78fc5508411f398b3da44ac6f8412a9",
+      "bytes": 49416
+    },
+    "generated/dual-scripts/cog/saberstance.cog": {
+      "sha256": "5bfba52069195e865eabbb17e55306f9dfd4b3314eb35f1bb2f2ef0931baf8ba",
+      "bytes": 8289
+    },
+    "generated/dual-scripts/cog/weap_extsaber_m.cog": {
+      "sha256": "014572ec4940be004de9ef3b938ff24ac05c64a49349e2f2ac9798bf5c57f9ad",
+      "bytes": 49848
+    },
+    "sources/jk31-document-extracted.txt": {
+      "sha256": "b56d403189a9dc7cd8c14b35973ed08c790f85a28b10156b9125e226d18e7bd8",
+      "bytes": 28304
+    },
+    "tools/reconcile_sbx.py": {
+      "sha256": "0a450204d4dfef662df5518ae69a356c6850c627b5b9eafc1e53f75ee13b4d2c",
+      "bytes": 45115
+    },
+    "audit/reconciliation.md": {
+      "sha256": "8e116ae2f162df42e2ea0788321a2faecd6c4a29747d8c8f3f463cc2c74f6ea9",
+      "bytes": 10455
+    },
+    "generated/dual-scripts/script-build.json": {
+      "sha256": "b6baa43f7894ddf922019a8b23a2b0e835670169a7f9e90cfb453accdc0168a1",
+      "bytes": 4921
+    }
+  },
+  "native_script_budgets": [
+    {
+      "path": "cog/weap_saber_m.cog",
+      "sha256": "91949ef6f796c6274d44fa050127dcfa27a37f232d7b44aa4d1c5ff664448fe0",
+      "reason": "MotS-native weapon retained; JK31 trail cleanup/immediacy, startup hum reset, ignition stance availability/re-fetch; native auto-select order long850/staff900/single1000 (current staff1001); unused sound removal where needed to preserve all COG handles within128 resource references",
+      "native_symbol_budget": {
+        "declared_symbols": 174,
+        "resource_references": 126,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "cog/weap_sithsaber_m.cog",
+      "sha256": "0db1c5c02f16d79a9a8642ac4e2cf775a78fc5508411f398b3da44ac6f8412a9",
+      "reason": "MotS-native weapon retained; JK31 trail cleanup/immediacy, startup hum reset, ignition stance availability/re-fetch; native auto-select order long850/staff900/single1000 (current staff1001); unused sound removal where needed to preserve all COG handles within128 resource references; dual integration uses full-key-duration cooldown instead of browser 75-percent overlap, NOLOOP end-removal, and failed-allocation guard before hit-list reset; no persistent attack track handles; dual-only visible native polylines with hilt-only right mesh replace browser duplicated blade/fan meshes; restores SBX transparent materials on stance exit and all eight disable paths; non-dual fans preserved",
+      "native_symbol_budget": {
+        "declared_symbols": 179,
+        "resource_references": 123,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "cog/weap_extsaber_m.cog",
+      "sha256": "014572ec4940be004de9ef3b938ff24ac05c64a49349e2f2ac9798bf5c57f9ad",
+      "reason": "MotS-native weapon retained; JK31 trail cleanup/immediacy, startup hum reset, ignition stance availability/re-fetch; native auto-select order long850/staff900/single1000 (current staff1001); unused sound removal where needed to preserve all COG handles within128 resource references",
+      "native_symbol_budget": {
+        "declared_symbols": 174,
+        "resource_references": 126,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "cog/saberstance.cog",
+      "sha256": "5bfba52069195e865eabbb17e55306f9dfd4b3314eb35f1bb2f2ef0931baf8ba",
+      "reason": "MotS stance ordinals and bin125; native three-stance cycle; hilt-only right mesh and twenty visible native blade materials, used only by dual stance; browser mesh fans adapted to native static polylines",
+      "native_symbol_budget": {
+        "declared_symbols": 48,
+        "resource_references": 34,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "cog/client_weapons.cog",
+      "sha256": "6972e4bb0f490fc2a8893bdb80fdebe03e6fcdbf831229bf31489d915a780ada",
+      "reason": "Retains MotS projectile handlers, saber damage and hilt palette; adds dual puppet trigger",
+      "native_symbol_budget": {
+        "declared_symbols": 26,
+        "resource_references": 21,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "misc/pup/ky_bo.pup",
+      "sha256": "89cb4003bd08766dfe1a7226aeac714603086ff1b02140b7cb96184c978e8adb",
+      "reason": "MotS ky_ls unarmed/gun/swim modes retained exactly; supplied dual mode2 and native grip anchors; block/hit/Force priorities above upper idle; dual attacks and blocks use NOLOOP end-removal; lower-only locomotion keys prepared locally"
+    },
+    {
+      "path": "cog/kyle_m.cog",
+      "sha256": "8150547bec7a15d74a7f1161dd26fc541edc2a3d74d16c117a5c39069f8476aa",
+      "reason": "Preserves MotS class/campaign logic; dual block uses exact-key UNIQUE and NOLOOP end-removal without retained track handle; original staff path retained",
+      "native_symbol_budget": {
+        "declared_symbols": 151,
+        "resource_references": 76,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    },
+    {
+      "path": "cog/mara_m.cog",
+      "sha256": "1e656e33f814bd8a92742c014aa77db859380158c0d42f408c2cf1c41f01721b",
+      "reason": "Preserves MotS class/campaign logic; dual block uses exact-key UNIQUE and NOLOOP end-removal without retained track handle; original staff path retained",
+      "native_symbol_budget": {
+        "declared_symbols": 149,
+        "resource_references": 76,
+        "resource_reference_limit": 128,
+        "method": "Declaration count only; not full compiled symbol count or VM execution."
+      }
+    }
+  ]
+}

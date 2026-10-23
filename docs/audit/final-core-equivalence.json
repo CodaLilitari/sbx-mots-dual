@@ -1,0 +1,17 @@
+{
+  "from": "candidate07",
+  "to": "candidate09",
+  "changed_overlay_paths": [
+    "cog/sbxd_objthrow.cog"
+  ],
+  "added_overlay_paths": [
+    "3do/mat/mwdback.mat",
+    "3do/mat/mwdchest.mat",
+    "cog/force_push.cog",
+    "cog/item_irgoggles.cog"
+  ],
+  "removed_paths": [],
+  "identical_existing_overlay_resources": 597,
+  "dual_model_key_pup_controller_and_saber_cogs_unchanged": true,
+  "note": "Earlier native dual render/lifecycle/damage tests exercise byte-identical dual resources. Later changes override base Push and goggles, add EWEB cancellation for object Throw, and repair two missing source mip tails. Different candidates are identified explicitly in runtime acceptance."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "archive": "1887-sbxjkv31.zip",
+    "member": "SBX-JK v31.doc",
+    "sha256": "c55f3041c46a88a3f32e34724b6256b9b14247e396ff67319f68d5af1da5ff56"
+  },
+  {
+    "archive": "1887-sbxjkv31.zip",
+    "member": "Saber Fighting 101.doc",
+    "sha256": "3471310fc53edb839639b8121e0368bee8c9bace7eddce89de1108f93d764da0"
+  },
+  {
+    "archive": "1866-sbx-motsv3.zip",
+    "member": "SBX-MotS v3.doc",
+    "sha256": "0c88e8301f28dcfffbe95e78803d867afb6f5d7a3658fee23da96b6e1b457169"
+  },
+  {
+    "archive": "supplied Dual Sabers",
+    "member": "sbx dual sabers readme.txt",
+    "sha256": "c9e6a3a94eeff0fcf02aee3c9a579be27c41d65faa340acf4708c85b84d57909"
+  },
+  {
+    "archive": "supplied Dual Sabers",
+    "member": "sith sabers readme.txt",
+    "sha256": "da168890c01074eef2d091fff2e609ca9a5f535ec6b625558f8197d50b81793d"
+  }
+]

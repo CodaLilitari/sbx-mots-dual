@@ -1,0 +1,3619 @@
+{
+  "status": "candidate_not_runtime_accepted",
+  "base_archive_sha256": "49c2d136cffb6b6108ea29165d1245262713a7ff9ace472654768ee0e3e0c449",
+  "overlay_sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479",
+  "entries": [
+    {
+      "path": "3do/adigallia.3do",
+      "bytes": 57380,
+      "sha256": "1ec04a60f8ff797ea3f570c892c5e5464ed1f63c7d93620ed938b6e4b3be33e0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/adigalliac.3do",
+      "bytes": 63378,
+      "sha256": "0b864d81470ec20676cd952d97630f0e3faea037d104cc8a4f79af8702fd8fd6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/anakin.3do",
+      "bytes": 56333,
+      "sha256": "953b371c6edfca253e37359cd44becf383c1a2e63573791d5062e2eb161a2840",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/angel.3do",
+      "bytes": 60904,
+      "sha256": "5036d4a73a7b5c92c64701affdc66de1018b38dcf052290d36f2ef2dda0cf176",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/angel2.3do",
+      "bytes": 59740,
+      "sha256": "46005851d5baad073ccbab036d6200426b370d7744e5191c94ffbed4792bb483",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/bartender.3do",
+      "bytes": 50028,
+      "sha256": "1e262f6986702e5b8b47fc10601a437f1e3d8720f8d7eb45696cf87dfeb0c12f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/callista.3do",
+      "bytes": 69514,
+      "sha256": "2a8c8c15d4a17e6bdcbcc7349bc9cddb6c556f3e2da367e9ac20d3718cccdb30",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/con0.3do",
+      "bytes": 17265,
+      "sha256": "8707a38ea530b15e1fa81e2c2ca1a9000c3568ffaafddd5a1d4af14bfc909a5e",
+      "reason": "Repair inherited unused material slots red/green1 to existing white and nonexistent root child1 to-1; no geometry or used material changes"
+    },
+    {
+      "path": "3do/depa.3do",
+      "bytes": 72086,
+      "sha256": "5d054d8fc35503aa28108aa2a5c4f32f01ce1efe605d93c7c655d5e12416e63f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/dx000.3do",
+      "bytes": 64831,
+      "sha256": "1be8f132c7a92bad751906b65e347e84a4d9007d5466b70ebb508d398bd8d5f9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx001.3do",
+      "bytes": 70265,
+      "sha256": "3c82ed39fc5eb72b1c481699041c7c2685cdde6b158458464d46e603d7b60216",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx002.3do",
+      "bytes": 77027,
+      "sha256": "9864957c7d9b2ea6918841dd9225ff6c2f14f27a6c1c9f756fccc44d7df6409d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx003.3do",
+      "bytes": 63226,
+      "sha256": "bffcf8e3a1552ad1579d0765af52c070c376630cb15142f2bacc97c0f7c2eae9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx004.3do",
+      "bytes": 68332,
+      "sha256": "1d9aea94ec3241fcbf5e39ddd352fe6674778654632450d94c1cee29bc4617d9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx005.3do",
+      "bytes": 67204,
+      "sha256": "10eed3c279903430a928308ca1ace03e7699ddce4a30d6d0dcb60d078e201dca",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx006.3do",
+      "bytes": 57345,
+      "sha256": "2ca4e1bf79447cbc0b3bee3f5c3f085af88515d2326d54714a47d2c4fbd20fba",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx007.3do",
+      "bytes": 73441,
+      "sha256": "61cefc34184345f0c1bdf940970bfc61b7490c44184bd3bfc4375187e459d8f8",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx008.3do",
+      "bytes": 62220,
+      "sha256": "d2195c65c9288841331cb07a1aff72af027f9a746b9852c6f5ed4008b96b0bf7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx009.3do",
+      "bytes": 75518,
+      "sha256": "b5a929d5ded587837c59e20b726623d99b3c1331215145655876bf4dbcd30f34",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx010.3do",
+      "bytes": 72215,
+      "sha256": "15d762bc13c5140c0d143dcc2882326ad0a6eb87343326087921cf817cdd8e04",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx011.3do",
+      "bytes": 60101,
+      "sha256": "a37b20e6275580309071e37f4142141dddf0ad0ceb52dec042f0a4380bbb443d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx012.3do",
+      "bytes": 61456,
+      "sha256": "bdc83c770af5c88a95eba8ef09b526569550036a6b63135f514f3486a2675c2c",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx013.3do",
+      "bytes": 72163,
+      "sha256": "e668c12148e85a49d9d45b0296f0f9cd45d23b7d3baa6439958c159032d0d158",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx014.3do",
+      "bytes": 79704,
+      "sha256": "93a867a9a607c4bc5f516f51d407968c4b9b9b097b913ff195dedcfb5662282d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx015.3do",
+      "bytes": 78447,
+      "sha256": "b653b42539bc911f5685e93e057d1c2458a05214af02274e48af445b8e9c6b50",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx016.3do",
+      "bytes": 73530,
+      "sha256": "0a8614b77e98c398efe5a0f3038944191d66dd95238cdccc5560b21fe7bfc360",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx017.3do",
+      "bytes": 62664,
+      "sha256": "d656089060ce2d9b2c2e6ff4f5da117628168a67c595a212297ef5c9c71314d4",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx018.3do",
+      "bytes": 70440,
+      "sha256": "8b38593ff73f0cab9538a1a1435dd0f5ef0bfefec16f2029d612b05131628c9b",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx019.3do",
+      "bytes": 69472,
+      "sha256": "89021060f89e6431014c2540f5e69a6b2e132947509c600b1f16b039aada78cd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx020.3do",
+      "bytes": 62401,
+      "sha256": "fb448c5f509d5d4b6cbb7a7f8832452fcb93ab80cee6b3f53d38e33836c69b03",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx021.3do",
+      "bytes": 72160,
+      "sha256": "1808887e8edf1747ce46f0fa7c100b4623928226e9b2649e15747d484ceb2bf0",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx022.3do",
+      "bytes": 79801,
+      "sha256": "a721e1b98b5eb0432893d347c71952a497958781244fa5146a99ee1132a17992",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx023.3do",
+      "bytes": 72166,
+      "sha256": "235d9537d5f4ada8e1bc4a978aca7645ad51d9ef867c9dede752bf4b257a7848",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx024.3do",
+      "bytes": 69715,
+      "sha256": "5902b21783bf1276424f5ac014e627be75edf9982630b2ecb204a37ecb3ecd75",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx025.3do",
+      "bytes": 72166,
+      "sha256": "f7805eb15a5f45f11e3234265fe2ff73a0c59aa1aa40b481d75d6871a16a9d26",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx026.3do",
+      "bytes": 69382,
+      "sha256": "663ea6770adc3258373179c55ac90c620138f56011cc2faf74ac5593d609713d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx027.3do",
+      "bytes": 61439,
+      "sha256": "174a9af1ca9b0717e41364181add33f310b4957d715711fb45df59ae006c312f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx028.3do",
+      "bytes": 72228,
+      "sha256": "64eaa276be4c76a787b0b0a6578ad3cb27ebfb743fefe35fa54638debce932a7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx029.3do",
+      "bytes": 72236,
+      "sha256": "9e5cd97fb064b364be6683798be8594d8d376b1674a877a61300dff0352d5685",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx030.3do",
+      "bytes": 62677,
+      "sha256": "df462e73013068999ef58cd87e8c4ae2b9fb7fdee2c4ac3f1e0f793a055f554e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx031.3do",
+      "bytes": 63280,
+      "sha256": "e0a675083ed22e900e9c1009642312c3a706a271f50d3fb1aaf6401a3cda03de",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx032.3do",
+      "bytes": 72231,
+      "sha256": "55ac406d0705757c3222b11eb7d75faaf07865328ae2879ff892e108f257c68d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx033.3do",
+      "bytes": 68421,
+      "sha256": "2ef6e148fe11589112d11adfcea70ea06103f7863a245f1f8bbd1ccc2c7a6970",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx034.3do",
+      "bytes": 76358,
+      "sha256": "ecc84e24b25158c63a10692f21ca64b847c61f34313467ad2b394ee3e148c70b",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx035.3do",
+      "bytes": 72224,
+      "sha256": "1485b6724ad5bb5b19fc58cab855e1b4eb815f39df9a97cf00913c3732731b9e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx036.3do",
+      "bytes": 63308,
+      "sha256": "95dca084cd9637c8d7b86018781fd5e40e63e68ca05faccc2d3e8e752d9d67f9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx037.3do",
+      "bytes": 72157,
+      "sha256": "002af1cd33003b85dd0a7d4ba66f387c3aa60fef21a39228f7ab0651d5912a62",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx038.3do",
+      "bytes": 48419,
+      "sha256": "bb80e2922492a0a1b5c9829cbe37742e2ab1e4da0964e3d3b68dfe64dedbdf0d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx039.3do",
+      "bytes": 48419,
+      "sha256": "fdb477213aeeedc0fd0db1ba5278890cfaf0fb99ef01af09154edfc3513b7c01",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx040.3do",
+      "bytes": 50289,
+      "sha256": "c6fe9a3306c6b40b5277d5db10e1ec476cdedfdebf52ef46ce61f570cbf656aa",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx041.3do",
+      "bytes": 78751,
+      "sha256": "0a30100f2c1fdd45a17c0abf3ce440b03f386c368a3aff135e2757d8f60f19cc",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx042.3do",
+      "bytes": 52164,
+      "sha256": "bd01bc682fc572f0e0ecf07ad37fb43d3ddb014b966a34646557272081917753",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx043.3do",
+      "bytes": 70273,
+      "sha256": "b33ceb952d61c3cf7bdce063073c99e04fd23f0f773c08e76c11fa3a6fdcb55f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx044.3do",
+      "bytes": 78334,
+      "sha256": "306743a94fdf10b630d7f515351ebb116dba0b7df864a96dbaa96cfa62b364b4",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx045.3do",
+      "bytes": 77508,
+      "sha256": "cd52c7530b525e2f11c21dc6ffa3b4b7451fc59e20d638416e9e3345c4be025c",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx046.3do",
+      "bytes": 72042,
+      "sha256": "407d173804585bb1c4eeca1f5af25df8f680b49a4bfb70896d2eee15e8cb02c2",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx047.3do",
+      "bytes": 76325,
+      "sha256": "ddb3aeb8d45d4f7ca5f893343664c8bafde5afd008b29aa8caf65c9ccb62369d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx048.3do",
+      "bytes": 73711,
+      "sha256": "7feaab0ebcf7b30cb318c207d6ff5c629339c07199d8815bce0f3e2a1ca400d9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx049.3do",
+      "bytes": 81194,
+      "sha256": "fc40e6ad6d315cdc5855b28168a419e02c68c856d97e55af2a50b7f3315c5f51",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx050.3do",
+      "bytes": 74322,
+      "sha256": "79e1f8cc7e781a9aede562da8ed67051fb02b99c8d8efb98d8a03db2233986c3",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx051.3do",
+      "bytes": 77253,
+      "sha256": "b3001212215b9a87e5e50c50d74ef8c37efef25029fab4f68025c6e8aa1e85b5",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx052.3do",
+      "bytes": 72585,
+      "sha256": "3df103fa4a6f08fac89db9c55e2cf2a0d74c406b36cdff15adbf125790b79c7d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx053.3do",
+      "bytes": 79412,
+      "sha256": "49a17033dfc007fb9821840103bd5c8947c5f8e003e349a42bdc93b184f3e23e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx054.3do",
+      "bytes": 72961,
+      "sha256": "c988da63c520713b850acd49d87501c0cb58250db777c367400c34ce9ec234cd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx055.3do",
+      "bytes": 54681,
+      "sha256": "8a4db6fe4056b447915a56d631696f8266284894f6adf040c9e9766d5f15ea0d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx056.3do",
+      "bytes": 50395,
+      "sha256": "cc8061cf53f951a84c9d6983f6d79e50e16e7fdcb9d2a0e1878fe44ea4d20cca",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx057.3do",
+      "bytes": 78064,
+      "sha256": "1c1430e535a08fb6d9f6d8abf3e4428228749b2a421abfe7e4e9b1ccd0109ae1",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx058.3do",
+      "bytes": 78090,
+      "sha256": "cc0aca88908db6f3dd94a8745c853459f5414ce4cff9a0704af8c75509f504a8",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx059.3do",
+      "bytes": 78096,
+      "sha256": "b1352d12b2125b3b98335dbf2f8e2baabdf11e4146e9d447d4b61be0bea15adb",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx060.3do",
+      "bytes": 49600,
+      "sha256": "e76dd533239fb9651e3cd970702a03ec5bff84070be682b01cd793b3d71f702f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx061.3do",
+      "bytes": 78094,
+      "sha256": "6b094b0f91a55e42541c5258bbb32e2d910da6bc1a7bd0e997209c2d302f5be9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx062.3do",
+      "bytes": 78068,
+      "sha256": "55a67413a6043c7f6492277b333bf6c7765abb95751f5048ca443f075ff5dada",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx063.3do",
+      "bytes": 77353,
+      "sha256": "8b5746476b723ddf96cea7d4efa074819afb3814ae9c469cbbac6ab7fcd4b13a",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx064.3do",
+      "bytes": 84772,
+      "sha256": "7e5046f0ccdf6581dc47cdd8eace495b9ea653d4fda581dd69bd752316688d4e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx065.3do",
+      "bytes": 57095,
+      "sha256": "7c7dc9e65dfe42e9a3fdfb4516deb3990912b47900ad604b9ed140bd6de49c3b",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx066.3do",
+      "bytes": 57096,
+      "sha256": "08a9e5efc394919f3a0efc970a46c2d31c21680bf9edfd39d111419bf3aed9e6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx067.3do",
+      "bytes": 57095,
+      "sha256": "3e1d30da64ed24530736ead5d644cdb441a22c019c334a58ea38e41439275785",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx068.3do",
+      "bytes": 57098,
+      "sha256": "c155cd3ce5c42610ec5d5a3eb2be5813ab4b7e5986e0e52bfa38f69756e346c5",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx069.3do",
+      "bytes": 73645,
+      "sha256": "1e680297f4a6052ba68655858381c087d03ded37c7006a747182e2566437ef68",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx070.3do",
+      "bytes": 51831,
+      "sha256": "aa87c721aa89c46d4d237ed25726572f2be85ce4093e803fc5470981bb95042d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx071.3do",
+      "bytes": 77337,
+      "sha256": "4f836a220d31117b276fd061f460892c23cb598b684ffbfa31f5dcddd0166a9d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx072.3do",
+      "bytes": 49643,
+      "sha256": "1f4a0f0e6a1952a20df913aec9f6685ebd18df51eae24c8e19d8d6439758c10e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx073.3do",
+      "bytes": 77334,
+      "sha256": "9513ba3f19e02cc10f2e8c9b9e5143c48b70869c13ffc59b61387c80a374894f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx074.3do",
+      "bytes": 72197,
+      "sha256": "fd340722556bf56b84a9cde64e34a225b516f527235f840c90a93f65e2fc202d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx075.3do",
+      "bytes": 76765,
+      "sha256": "4d40aa128461e970fddff252bdea14af3a1e22efcf50a373a2e9455a3d7036ac",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx076.3do",
+      "bytes": 51811,
+      "sha256": "a3431fa3d2daeb3c79b340eeb27d23888859c3517cf9a9307de77537719e7e10",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx077.3do",
+      "bytes": 51812,
+      "sha256": "33c8abf7b836523041f685054765d3480ca7feeb4984d5c38f505cc41c80631c",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx078.3do",
+      "bytes": 71789,
+      "sha256": "4a2dcbede95b83e4fea0d13e33e1a2bbee8c53b792be32403e4fe30e483c01c8",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx079.3do",
+      "bytes": 51810,
+      "sha256": "7abab753ac6939be6a21acc0ae9d51f68fd668b172d6f084571b9589022d1126",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx080.3do",
+      "bytes": 51813,
+      "sha256": "457509060fd6c7a24d741e8bc4d6cfc7bb88779a5419e5a171d7f4293f99e056",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx081.3do",
+      "bytes": 51588,
+      "sha256": "b9c2b1a0cdb1e2ecc9d0be14f4673d6c3a4cf3e16c8a9f0c2d9f38f6e58f197d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx082.3do",
+      "bytes": 54590,
+      "sha256": "bc6cdfa6d34b4a1328544ea443de2ed59bf1786874f7c55a7771f71fdca92e67",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx083.3do",
+      "bytes": 54617,
+      "sha256": "f4ccb7365d4a8527e85687000d72003d38c79215f5ca5f16509da837e8b2b7a3",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx084.3do",
+      "bytes": 54618,
+      "sha256": "ebdead45aa95d194bf43e3b9177ed8c5745e884b96250e69f85c1d2f4e04759f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx085.3do",
+      "bytes": 54616,
+      "sha256": "4468f450dcdff383d7006eca11b735952c2eb4e442536871f41eba3b45ccb4ec",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx086.3do",
+      "bytes": 54619,
+      "sha256": "1302b135d066a39312e059bdbd12bc017ef1b2744d78bdacda15535feb7545ea",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx087.3do",
+      "bytes": 50802,
+      "sha256": "66daa3c3e541f8d14aa997901319ab5f4c83331eea508b33e57c56815755b0da",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx088.3do",
+      "bytes": 49737,
+      "sha256": "144eae2cd0d693417063b5d1c46949d4f3d3e181878059656550c956be02fa1d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx089.3do",
+      "bytes": 49662,
+      "sha256": "f26c29da9f0f665de10bd406119c82986a867d8359c41a7f7fa54ccba5074b40",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx090.3do",
+      "bytes": 55753,
+      "sha256": "e4f6baefcb5715d6109f9a811235620208dfedbf0a76ab71d8180aa9e6d329d4",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx091.3do",
+      "bytes": 77349,
+      "sha256": "9b95e720ca1fbf095559a9dd8b5da6222169f4f32a06784ca3afd941c521d6cd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx092.3do",
+      "bytes": 50390,
+      "sha256": "bab3bc887a08eabe4760cd813ca9b4a0eddf8c596955b301a677205274c496ec",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx093.3do",
+      "bytes": 77351,
+      "sha256": "22b89f653c892620264ab31a8044c501aed17daeec9a22705b4e310bbbbe52bd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx094.3do",
+      "bytes": 77348,
+      "sha256": "21cd8c5cae297c5d544f87f2cbfd085c4e6d31ac3d8e624c22414b1fff36cbf5",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx095.3do",
+      "bytes": 77350,
+      "sha256": "9d9dfee715061d05b5742dc892d95c0b62b4348eaecd42c0d51c4176860df1db",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx096.3do",
+      "bytes": 54581,
+      "sha256": "1b25a230b9befa9de4e432bc5c78c7d4036f3031de99ebd42e07fec72b52db9a",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx097.3do",
+      "bytes": 77346,
+      "sha256": "6eefe222a9732e2630fc2094a85c84c9d7562b1620a46d508ee908575dcb5bc4",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx098.3do",
+      "bytes": 77350,
+      "sha256": "f3107534ebc23624a0b75a1a1b0f4a5df5241e7c2cb0830fed778a9d85be08f2",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx099.3do",
+      "bytes": 62712,
+      "sha256": "3cf5a9d08dab3317e67ce8283b467d7550ac316b47595e4b4c0ae6a1bcd95206",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx100.3do",
+      "bytes": 62712,
+      "sha256": "17f7862701262809acf8aad860d05c23289846a07d938472eecb878a4c3eca78",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx101.3do",
+      "bytes": 75284,
+      "sha256": "10a1902d9bf453e8f19f96779a30ea217418d738443758c6ea335433a9b4765e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx102.3do",
+      "bytes": 58341,
+      "sha256": "cfe375664f43acee0ab92acdfa4d96f48d90955a5617d5e53e26692d5a30d4f2",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx103.3do",
+      "bytes": 60744,
+      "sha256": "bb4b6cae88a78edc06b9d3b44cc65bd7c8c33a3f07edb0c247fca6775d3981de",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx104.3do",
+      "bytes": 60782,
+      "sha256": "a3217c736bca0ad1fe37077fd3be811088a3bb7efdf44a8b6c6dceb60c4f906d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx105.3do",
+      "bytes": 60710,
+      "sha256": "44235ecd559a0e0d04ddaa55489e6ea8bc364a0b6f63be3c90b55eaf36e4e9f9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx106.3do",
+      "bytes": 60685,
+      "sha256": "8570df04c666d6e13de3b63765b38943a9689dca567df949f0a42d80957ca610",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx107.3do",
+      "bytes": 67949,
+      "sha256": "18d2e919b4b570de1eb61564d21c8dfdf3964086223d88c960fb8ddd00de885a",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx108.3do",
+      "bytes": 70482,
+      "sha256": "6c95c957597f0868c76d7e16c180ee505467750166447cd264acbe5a6e13bd21",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx109.3do",
+      "bytes": 80565,
+      "sha256": "edce7b91b8ff8f9acde6d5574beca355ee5fd0ef5428a1ac166df6099d6070ff",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx110.3do",
+      "bytes": 72182,
+      "sha256": "bbc977f2614df916296942365080dbf3e2237e59ed43f47fed10830665199676",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx111.3do",
+      "bytes": 62319,
+      "sha256": "76a7d48dbbd2b2677ee59ddcc9618d1ab661a73af15923ce5dab2b58ef3f84de",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx112.3do",
+      "bytes": 62306,
+      "sha256": "1a91898c031eebd2de668e504d5a0f3b7d50fc984efb776dc6a7bf9a7d8a3fe3",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx113.3do",
+      "bytes": 72228,
+      "sha256": "ceae2ed08d4bbf858f9d350ceae5bb4997db7cd6bf9313e74bb107dbd2adf7e6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx114.3do",
+      "bytes": 70401,
+      "sha256": "b31fee063d6d66ce09c4fba7bd2c1d87be1120868fc5b13892f362af63c74b80",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx115.3do",
+      "bytes": 66225,
+      "sha256": "673903e356ddc2ae9cfc579185113f8f589e1e6a620f08e1b50917713202bf4e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx116.3do",
+      "bytes": 61567,
+      "sha256": "6a1f07eef5a421d5e7a23a8b0af15f24de018784e8baeedbb634c735fb4a6f86",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx117.3do",
+      "bytes": 75531,
+      "sha256": "f8e5b1feb25b9237ba1f7c8662b745d2cba57a825821e7ba6555aa404dbf0a33",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx118.3do",
+      "bytes": 72170,
+      "sha256": "b5c16f66ff19e5502ab6c3fd526624772de88901011e6420b3282dd317256140",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx119.3do",
+      "bytes": 100271,
+      "sha256": "0f89967e7514dc58920b83bfdae8acd7be9cb5543ac5c15d956a038f20c27705",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx120.3do",
+      "bytes": 65422,
+      "sha256": "f3c2352aaf2ba7eb3ef3171a2e6ffb7f20c2de5d005ead9a659fd7d34fcfc98d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx121.3do",
+      "bytes": 49900,
+      "sha256": "94fdb13bfc9ad000bf75a6db71039c5c484f344ca96eeb31cd709d2c1e2435f7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx122.3do",
+      "bytes": 72038,
+      "sha256": "5a972eca5863936ddd25a2c27abbe512652eea75bbc195f993a1c135ebcc1e4d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx123.3do",
+      "bytes": 61452,
+      "sha256": "16c13538aecfbc2092568d2f459693123b42d03a92d142ab145cd4e3cb9e4f26",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx124.3do",
+      "bytes": 77955,
+      "sha256": "a03e1dcb14da385d30862d494e6144994b7b8faba311adc1e44d64bd2ca7b3e7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx125.3do",
+      "bytes": 52568,
+      "sha256": "bb838dea9b6ef2fa968698ab749c4bb0533ca1aba26cd272b785d4644c6571d6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx126.3do",
+      "bytes": 76379,
+      "sha256": "4d7b89ffe365d568be86e0e4e95e18222f73a966d569ab244ffff1fbf878a4c6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx127.3do",
+      "bytes": 80759,
+      "sha256": "ba5aacf80694b3df5eecff4ba6e6313d9c7a02f761c48478d3c6ad579e00ba53",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx128.3do",
+      "bytes": 69016,
+      "sha256": "76b66489de352960e5c70bd10997704f8042ce84c3779bbb46e842650afd9dd0",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx129.3do",
+      "bytes": 78305,
+      "sha256": "922d03bde5f54847eb0b8bc92021105a95520fe77bd28cdf4a2415523e574047",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx130.3do",
+      "bytes": 67240,
+      "sha256": "7536455e3307461e2f6495db0be32e5aed22f7e18b80dc0a5f037024b1d99fdd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx131.3do",
+      "bytes": 70131,
+      "sha256": "67d69e16b13a0f0c2c707995355b8902a0a353cbedea635e0c11afbbe14a37b9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx132.3do",
+      "bytes": 62110,
+      "sha256": "f633d5b15652e68f2ce315d0b6fd56dcdf2012976da07b83d2d49131bfbb8e79",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx133.3do",
+      "bytes": 65943,
+      "sha256": "b5ef230db44575ab8a96c9eb443c55eb2d215d2b79465641075ce95465dc06ed",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx134.3do",
+      "bytes": 79196,
+      "sha256": "19893c75ea9e69cc1e99c47caa950c4c11bfa2e22e15dfc510b89ce62430b6b7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx135.3do",
+      "bytes": 63367,
+      "sha256": "7101f67eb91c859dfca94ec762fbb6ff24a101e1bbb071acdecf7648b5d01285",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx136.3do",
+      "bytes": 72184,
+      "sha256": "4c57355bf5a647d4e85fe5f0eb67714cd804ef3de3988ecbf260824055dd4097",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx137.3do",
+      "bytes": 69055,
+      "sha256": "9d9c715dd56d0a97321978d1f9137c0e8b436e38578ddb59a158c060f6a34c43",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx138.3do",
+      "bytes": 60616,
+      "sha256": "8bbd4f1ad06669cd2de1b354d05e7d136c595cd713f95b535cf4684b5dea8025",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx139.3do",
+      "bytes": 83319,
+      "sha256": "495bd0a364773a9fb56fa6f9689c4d89095d2d8898841c6fdb7ef59fa66e4cc2",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx140.3do",
+      "bytes": 69007,
+      "sha256": "1145820e7660073301f938168203a6a40073e65c510158893438be85be0febda",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx141.3do",
+      "bytes": 69007,
+      "sha256": "6bcdc7d6010dfc121433ea4525d88c27875d336c871b733f14d0e9572cde0ab6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx142.3do",
+      "bytes": 83101,
+      "sha256": "9a641b59bcaeb0e49e09e9a4bafa80fc92aa6ebe8c07ec1e479ab5c253ca5edd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx143.3do",
+      "bytes": 92559,
+      "sha256": "58680d4dc09d9ddebd098013a654fb89ebf61d98adf203bd519e30f2c87963cb",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx144.3do",
+      "bytes": 76953,
+      "sha256": "9b072956f7295cee5b1c4af20ecee71f6ad7ade6cc56c017c274f1b02ce1c5c8",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx145.3do",
+      "bytes": 72311,
+      "sha256": "65c33c412dffcb6555ce1300a94bc0fc97eed0df170af5d04a729f4e4264f3b7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx146.3do",
+      "bytes": 73925,
+      "sha256": "0dbfa3787ebd980c66a466ca1a5bacc6c2c450069886fc70d9e31c865611b8e9",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx147.3do",
+      "bytes": 65532,
+      "sha256": "5d5845ddd180699ee4bd500667f7902ad92e6e6ea2321f2443bc62b9e189c0ba",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx148.3do",
+      "bytes": 72332,
+      "sha256": "91fceb5e0d3929ac77809256cf9272fdbd14155fafbff69ac7ec1e74cb784503",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx149.3do",
+      "bytes": 74390,
+      "sha256": "9871b7e2565e82c212b437d28e7b9e089a9fcda0c6f8f30d190ed653e047388d",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx150.3do",
+      "bytes": 91217,
+      "sha256": "c7d8a7570457723b9a01efcfe5d214bf0fb56f0246a68c35921fda2bf1c61c48",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx151.3do",
+      "bytes": 77768,
+      "sha256": "f2742d5eba61dcee0ead55d0e920f810a3b4ce04c7713dbf4d70638826e3cfbd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx152.3do",
+      "bytes": 53505,
+      "sha256": "dc7f66bfdf78c3d27c2d5e53b91a78be166bf3762f7652bc34fd8307c7f4717a",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx153.3do",
+      "bytes": 67270,
+      "sha256": "ff63d1c5a127c158bf2f476afcd6eef47fb355eb59aaeb2df895a7fb5f933995",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx154.3do",
+      "bytes": 65250,
+      "sha256": "bb15814435092f87fe30bb55c8911e51bd7821f6cd1df61c719805258c3f4ab2",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx155.3do",
+      "bytes": 72697,
+      "sha256": "55c0cf525a8e6ac0d6b30fa99a74bcd5d58ee262e5fd843e4dca92d6d40130f4",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx156.3do",
+      "bytes": 69938,
+      "sha256": "09391f6d67e95a82fb0e761e85a48a0519cb4a0fa75cf04f29a181385cf1c326",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx157.3do",
+      "bytes": 72017,
+      "sha256": "916e780305944be3379b5303047991a645926f53bf495856e391bab64ca518fd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx158.3do",
+      "bytes": 72158,
+      "sha256": "339c766bd6a2a2d6756b532fab362958e708501b8d2bd54f990ad4a24dddc97e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx159.3do",
+      "bytes": 72046,
+      "sha256": "5c56518284ce60b739fc00a67f159d4754af744ae836154a6d33a79dacbffb0e",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx160.3do",
+      "bytes": 72126,
+      "sha256": "df1c29ac160a2b24cd1d7643e520e159018629317daa9645e9a680c3d0c790bd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx161.3do",
+      "bytes": 61459,
+      "sha256": "21f7fa55bfeb720938e7d596c0db9b84e7b862d384539529c1f8ade685b9606f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx162.3do",
+      "bytes": 61480,
+      "sha256": "3a11b8a6e76b58ddc1bea2a688962b1eaa70641452bd98550d27e4e7f6411923",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx163.3do",
+      "bytes": 49591,
+      "sha256": "408191c97b7affbe2c84d2390b83118a4e625ca239f3bc2811b26c9785492b07",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx164.3do",
+      "bytes": 72166,
+      "sha256": "c955feab608a5615f81f6cbd8268470d47b4877695706d3883b90c894d5063ed",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx165.3do",
+      "bytes": 70871,
+      "sha256": "d549206b6536ca02a5d890d19dc8d946f7224ec99c617fccb96927b14f2f2c7f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx166.3do",
+      "bytes": 72606,
+      "sha256": "44952707c2111f79561773a9ccc3959c6845dbec266ea2090ee85ecc54015414",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx167.3do",
+      "bytes": 62778,
+      "sha256": "2855e3212ab5f2a57b19ca65939c882556ebbd75b1cfedc0c24dacdf4f01bcb8",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx168.3do",
+      "bytes": 58180,
+      "sha256": "9296adc41dd8c75ea9c368d2ac3baf96680f81b6266fc7fafb06419d6c30c0bd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx169.3do",
+      "bytes": 73660,
+      "sha256": "c2aa97722b83a36c0ff0c694064298edb2f2c979042ee68ed49ff2c98ae23056",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx170.3do",
+      "bytes": 49569,
+      "sha256": "d5ee8a21c5360e9c1361a63344a0ae0eba14d772a84f11ee3e057e0cfc90663f",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx171.3do",
+      "bytes": 69754,
+      "sha256": "0fd017ed44f0fe4e2c7dfcd6a3e10a6778638f2bdb3ea6f0ef860c939be6f7f6",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx172.3do",
+      "bytes": 70231,
+      "sha256": "b542bce2cec4524b19777d63e8e9278f3f92908b0264d54d4d80fdfbc49a0fc7",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx173.3do",
+      "bytes": 72156,
+      "sha256": "1ae10dbf8d1e385f9784dafb9fd38d87dddbf54ac9f38b02ce50de912ef814ba",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx174.3do",
+      "bytes": 81783,
+      "sha256": "04cae069a22cdeaf84ec59653e7b30dcb68ead33ce17f41863f5c8c0b60e4f13",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx175.3do",
+      "bytes": 71164,
+      "sha256": "e031736b176234233f44877282ca43aed6a78f0e90b090690fba2845669c1e32",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx176.3do",
+      "bytes": 66978,
+      "sha256": "bfbb79468a986fba464d509fba66b089770f3e6ccdc231738f95085f30c68007",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dx177.3do",
+      "bytes": 72057,
+      "sha256": "897e95927dc7932ebedb8e91ee7095ce8e5cd6a6540f25c1ba3a2bdce0131dcd",
+      "reason": "Locally generated base-skin hilt variant"
+    },
+    {
+      "path": "3do/dxrhilt.3do",
+      "bytes": 12552,
+      "sha256": "72bbbcc4ece1cf4cd4800099914f235b4cb9346afe266ac140456f2930209f2e",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "3do/exarkun.3do",
+      "bytes": 62426,
+      "sha256": "5fbc1579154b794606ab37a1fa25d47847947cec3bb7c4451d6d2942b6d9b307",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/hal.3do",
+      "bytes": 74438,
+      "sha256": "d90625bcf0f6081d33a207e4dc77e2b6b3c28df3050c1bb4724cf87e7edc6830",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/jeru.3do",
+      "bytes": 63968,
+      "sha256": "c989fb9a07d1f49c9d775d74c4590bff72f163fc1faf448c0043684e39a13f6b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/jkcmikos.3do",
+      "bytes": 56069,
+      "sha256": "0e1384bd51e12997158d077c09941375e2e672e35751d21810b70a6e59737ff3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/key/rt_boback.key",
+      "bytes": 66262,
+      "sha256": "9c15612dd4fda03dca1e63a1895c0da7aba23e1da2ee05f29ef4cbbaf096161e",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boblock.key",
+      "bytes": 30319,
+      "sha256": "28b7ea126bcda994e4e174a50263f3df811ac3da935bcb7251e88c88dff8ac6b",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bobolt.key",
+      "bytes": 49670,
+      "sha256": "1b304e3da5102767875991cd31cea863feb8d84fc07b944192f5cfa34fd21fc5",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bochoke.key",
+      "bytes": 44231,
+      "sha256": "c8be96bbb5b7240556f02d201a85b1e11edc69ea16b31f77da9674ac203a0836",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bochop.key",
+      "bytes": 59043,
+      "sha256": "f452511a09d1c5bb8ef9154a81d1f213dfa37b68baf4f9b906aec8ac9ba0828c",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bocrch.key",
+      "bytes": 40401,
+      "sha256": "892fd8f317a0648a6e65616501c0809cd36ca170c49607c9d542a04605a8fd51",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bocrchbk.key",
+      "bytes": 37838,
+      "sha256": "3f2c7181dcd3c3fa3d14b9d5e541ef5d0fef046a22704782aebdc64f9bb8cc8e",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bocut.key",
+      "bytes": 56305,
+      "sha256": "1d747ce764f312b42e5c6955d248148188fc20d1ee1f70187ddd922dd2e636ca",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bodrop.key",
+      "bytes": 26480,
+      "sha256": "1958043047d972051fa922fd95ac0ad7db822cf49011412e0729e76134540631",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bofall.key",
+      "bytes": 48589,
+      "sha256": "75701bc64dbf791f77e2947b223150e4317b2d294b4c6ebb1e7cd798e7ad23fe",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bohit.key",
+      "bytes": 22772,
+      "sha256": "bf808ed4485ed523b17771910be6e79b38e5935e2d26c371f0699f499384aeb8",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bojump.key",
+      "bytes": 87247,
+      "sha256": "d03d44150c8fb8733922abbc66bbf48d7bf4b3fd4a57779fef24b10b630d498a",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boland.key",
+      "bytes": 4010,
+      "sha256": "337294b14406a8c1de7781f29e4b0b3243c78bcd2b35ebb068b4a97d139bf078",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boleap.key",
+      "bytes": 47990,
+      "sha256": "795d4f2507100c653be50ed56ca154757cc2055f39dd5309d66952201a82f2c1",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_borun.key",
+      "bytes": 171318,
+      "sha256": "8dd331a9078521d8b28bf4837cbfd4c83bdc89140020499d900e454a6bc16c2b",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bostand.key",
+      "bytes": 183037,
+      "sha256": "7c33d6487ca5cf919a4ea88d81ebdc211107a57e9b68cda6d0880888966dbd27",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bostrfl.key",
+      "bytes": 75955,
+      "sha256": "5dd490e95853fccd0f50eecf96a9b158b3035e15f78ac62fc9ec393623e6c2d5",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bostrfr.key",
+      "bytes": 71728,
+      "sha256": "063eece842e0185412dddf99649dbd825984721ef80434c015f70a51ad812407",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bothrow.key",
+      "bytes": 53928,
+      "sha256": "c45e52c5ceacb424b4a1ea253924fbef2408672ec869922482e04367951701bb",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boturnl.key",
+      "bytes": 8701,
+      "sha256": "6f3759e03e960251457a1fbc55415a814a467622c6e3712e81aa078bcda2407c",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boturnr.key",
+      "bytes": 8671,
+      "sha256": "3fe13f3e74d1013ace28176f6f6bba17d1b6423cc61db971d05935db050d85cc",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_boupper.key",
+      "bytes": 103593,
+      "sha256": "e2437df189b659df0682c5dacf1c488be01116b9ae1a7c9be7c179735a2bae0e",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bowalk.key",
+      "bytes": 74288,
+      "sha256": "649d84461d29fc06738b98cdce136c347e0524342ea56fb5257f0820f6b8e789",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/rt_bowin.key",
+      "bytes": 299644,
+      "sha256": "085ec3ab7044cbc41fae32274c89a367c14f047c6c73c08832d91bc97cc0d010",
+      "reason": "Exact upstream converter, locally derived owned JK animation"
+    },
+    {
+      "path": "3do/key/sbxd_back.key",
+      "bytes": 47157,
+      "sha256": "a6838a33b6398f1e2eb8d9f97bd44abe8f299190b0e3447388cc4837995cff64",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_fwd.key",
+      "bytes": 131615,
+      "sha256": "faf45ae591f28b4b7076cdb0d19fc304f09e20be944811342d03b31efcfe81fb",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_heavy.key",
+      "bytes": 42932,
+      "sha256": "217e598ce34bfbad97b6c4a004d3dd9ba9afea9a8df9088a9366f3d7cb10aa78",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_left.key",
+      "bytes": 15920,
+      "sha256": "b712efc33c805154e050ec8af492974a7595e7a2107c35ac5128ac47011eab43",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_right.key",
+      "bytes": 16345,
+      "sha256": "354844c9ec1484d21721b15ae3b4a3c9a4178e40635e565231ad1f903505c67b",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_spinl.key",
+      "bytes": 23728,
+      "sha256": "a01c3af77e83cf748a9d3333a8f1ac9e121a9fb15966952ba49ab78c99fea505",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/key/sbxd_spinr.key",
+      "bytes": 23097,
+      "sha256": "bb1c5421bd9c671dff3836c7fdddc7a164daa325985f78385e674d6f71033594",
+      "reason": "Supplied Dual Sabers attack, preserved"
+    },
+    {
+      "path": "3do/kiadi.3do",
+      "bytes": 71303,
+      "sha256": "013d1a54ac0a67d0ec70633be433c6f632994397d1efcc7a1bae2ec567b7d34b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/kkruhk.3do",
+      "bytes": 62626,
+      "sha256": "3a4de0f349817af781dfaee6362c68303fff18723097c61a9d8964e639e3671c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/koth.3do",
+      "bytes": 71419,
+      "sha256": "57e3f3f66ffb6fb9bdcc49dde066d711dff7e9b2b95058c939ee1434e7bb4f32",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/kya18.3do",
+      "bytes": 67333,
+      "sha256": "5e7495c455fb2d2e7ca073a2d32c7a6cf7906b317440c6b2ef775b8fbd4f0648",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/kya19.3do",
+      "bytes": 74133,
+      "sha256": "74d74f186ff98a18b78bdead4f5f640ef1a3b6bc598dee55435a3f421e13f71a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mace.3do",
+      "bytes": 59353,
+      "sha256": "269cb00c485a6e7099d90b125c4eb493d532c87444121e19f0b5d643487243ff",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/maceduel.3do",
+      "bytes": 54129,
+      "sha256": "68fde15bbbe99a80a4c226aeb3408194069b38d3d620644e08b3c21f8c972013",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mara.3do",
+      "bytes": 69512,
+      "sha256": "8436e6112e03169325532e947fbdf6161c119272ab58c55395740c039fa422d2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/00cab01.mat",
+      "bytes": 8332,
+      "sha256": "dd3fa907eff25a85c40bf08d558ffe255937e2a36f3b187d8e6d43258b991499",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adg4arm.mat",
+      "bytes": 4236,
+      "sha256": "030c6dc2a094f9ec6e20fbf7253f9db808f8893f8cf13a3e803cd5d1b02c4f66",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgarm.mat",
+      "bytes": 4236,
+      "sha256": "eaf50d536839e1bea2feb2d2c86f442fa48d9465880f18c91c230a088d9366c1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgback.mat",
+      "bytes": 8332,
+      "sha256": "a191eec52e27109f9aaded1425152970ef69740fd1a2fae868ed941cd7286c66",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgbutt.mat",
+      "bytes": 4236,
+      "sha256": "d21f9f5a1bcb377fa78f2affd04e373e60486df20c1730196eef820df77133fa",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgchest.mat",
+      "bytes": 8332,
+      "sha256": "26eb591c3ee244bee1d2a4d8af916e7d8d949f6bad7ae02287c72bdb6b4eb34b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgchestr.mat",
+      "bytes": 8332,
+      "sha256": "a78ef36d382c6a5483f617104469e4b005827a93f0f8d5588880cb6f8486f4d6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adghdbk.mat",
+      "bytes": 8332,
+      "sha256": "1d0920e0110c28ebd20ba0d5e7b329f711f09b10ac03643aa8cfec6f5cd21b64",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adghdfr.mat",
+      "bytes": 8332,
+      "sha256": "98ffe3c4c60416be33729304a6d6fcbd76b3d09247eacf0596b465c59bd24ec9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adghdsd.mat",
+      "bytes": 8332,
+      "sha256": "1699cabdd1b54cdbf46a8ddd216c5ac749e466be502be53f566361f7748f26f6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgleg.mat",
+      "bytes": 4236,
+      "sha256": "4b9bd7cee12a28336241994de9ab8121e360ec93c9be905a5d40ead97923bf21",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgneck.mat",
+      "bytes": 652,
+      "sha256": "42fcaffb57df2b0dc9ed5fbd45f4cddbdbe38f4dda6291050e5f660e2844f867",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adgthigh.mat",
+      "bytes": 4236,
+      "sha256": "46d909767e8b9833e6b6ddd31643ed95366979fd44be06f17af12abcc5e7c8aa",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adi4arm.mat",
+      "bytes": 4236,
+      "sha256": "bf69b445f348f22f2efbf7ac1857b04d05db3bc40ce564b5de7b4eb3d06a79cd",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adiarm.mat",
+      "bytes": 4236,
+      "sha256": "524d7df60e34ec63d4c9d58288a8f71e713330efe36956bb4e6651572b389bc6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adiback.mat",
+      "bytes": 8332,
+      "sha256": "1adf036d6b5386423a29c00c9f5b275025512bda5ea59abff665ee98bfc60db3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adibootrim.mat",
+      "bytes": 4236,
+      "sha256": "f27cd17092296d3b1b187fbaef3f70356013e7f33763b84de82f62e51fae8d68",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adibutt.mat",
+      "bytes": 4236,
+      "sha256": "e1f4c9eb0e0754d9ee6e0cf701b54843af5ea6f2948e33b946d58232d0f15631",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adichest.mat",
+      "bytes": 8332,
+      "sha256": "b39a748a3cb23e3e8d13bf82f2b3d02f8e48bdc44c16cb5b3f1e780ff2f85ac8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adifoot.mat",
+      "bytes": 4236,
+      "sha256": "9ce59c04221ad1a27c6689bf881458ce705febaf79b8360284de50b57e374f12",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adihdbk.mat",
+      "bytes": 4236,
+      "sha256": "646e0b894ad0ad9646af428a6e4e6d78713af2f20970a51c2c48df5df47c9486",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adihdfr2.mat",
+      "bytes": 8332,
+      "sha256": "c04a833238c1d05b70e7c543ba6748b3755028beab57037658a35d9929ce0c12",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adihdfr3.mat",
+      "bytes": 4236,
+      "sha256": "38bda461d102ec16143e54c252b54905c16e10058d7ba3c829348b67ecb3c155",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adihdsd.mat",
+      "bytes": 4236,
+      "sha256": "4eb8bd6879642b8d0fcdcbc62adffa023b6b9d7495b774fcad3f2fb928b9cda4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adihip.mat",
+      "bytes": 4236,
+      "sha256": "62696a69458882e5ee57dd9a0435c3e8ab63522b6e9cf53703b51842530a64d5",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adileg.mat",
+      "bytes": 4236,
+      "sha256": "c95c7f7860b7b838bc92a4f56c8b8fc574809fa1e1cfcf4511fff956375baba9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/adithigh.mat",
+      "bytes": 4236,
+      "sha256": "800d4eabb4800b4deb4da12b437b9d1715533a5faa972f3e6e69c171b71a39e2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/angelhdfr.mat",
+      "bytes": 4236,
+      "sha256": "1a7e0428711d1d8efc09179ed7a371e4c9d580544edad4704bd0b6a880abc109",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/angelhdsd.mat",
+      "bytes": 2188,
+      "sha256": "2526b77e87ad666238eba692954377f1648a0edfd9279001cd96cc5bc50c7922",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjarm.mat",
+      "bytes": 4236,
+      "sha256": "22d0ec6dd16bad5ff80d42565b60ada11239156d987cceab885bd1295e72a204",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjback.mat",
+      "bytes": 8332,
+      "sha256": "d53d422a5dc7a359967c84c37b703753183da4c5941f760768cd87cfe3907238",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjchest.mat",
+      "bytes": 8332,
+      "sha256": "6a99adcf2dff843c7f1777f0fb878d8a9bc778b29a8bcafe269effc41412fc7c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjfoot.mat",
+      "bytes": 4236,
+      "sha256": "b39c6ef393ea845d9ac1b37b0b68587df0fbac24eff365fb1135e77c29c47a98",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjhip.mat",
+      "bytes": 4236,
+      "sha256": "da1a9e8596121b9113b57bcf2b709338c414209329ec856e789b4c551b8e1560",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjleg.mat",
+      "bytes": 4236,
+      "sha256": "fc727c2008c056d3151ec6e9ac764e605a208cdd94f150026bdd5480bb74a1cf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjneck.mat",
+      "bytes": 2188,
+      "sha256": "81ebf6b3de06c98fae9d79f352d7c9269f64acc50490a7950b692d0e3638dfad",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/anjthigh.mat",
+      "bytes": 4236,
+      "sha256": "80bdc8206ce11fe23a9ff7978128a2ae199229aeb71ec3429650ca1d0b104256",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/archchst2.mat",
+      "bytes": 4236,
+      "sha256": "b70b2acd93fdb5462df759e2008a8ca3ae77a607496656b86414eb0246fc8f7a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/archhip.mat",
+      "bytes": 2188,
+      "sha256": "fa46aff5593f7360195eb6e75ccff74c0d47153d46a3e774f527fb6545aa36e7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/archuleg.mat",
+      "bytes": 2188,
+      "sha256": "6ed89cf2663eae10fd416051d36a86958818c550744559e644bd55ea61695285",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/archulegr.mat",
+      "bytes": 2188,
+      "sha256": "837a0507aca34c9fa6ef5bc518cc3ff5fade614a65637757c2bb8517367d2c92",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barback.mat",
+      "bytes": 4236,
+      "sha256": "9f96799c99f213e19ea7b5ed706afb462ffc5b4e86907ced114bc9d370d08b33",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barbodyb2.mat",
+      "bytes": 4236,
+      "sha256": "b82fe490b7f3cd338cb65672ccc0f39ef41edccf90fb56d631d295458b131a3c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barbodyf2.mat",
+      "bytes": 4236,
+      "sha256": "301827b3bcc05761d80c3bbd9467adbcb6b5722485eb3e6ca47159bac103ae1c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barfacebk.mat",
+      "bytes": 2188,
+      "sha256": "b7713b2c9e6779a47b917ff3238ea23d6f5c737fbbd54170cbc4fd8095d05a56",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barfaceft.mat",
+      "bytes": 4236,
+      "sha256": "e0a704ea68b2501ea9b04f7f948906523db13bf12428531dcf19e9b31f7d9a7c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barfacesd.mat",
+      "bytes": 2188,
+      "sha256": "97ad6cfc97d61b3ecabda1c978d3debd48d1b064e2c06fd5103fa8c6db56367f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barneck2.mat",
+      "bytes": 396,
+      "sha256": "13ca113ebcf210091e162edf34cefcc6e9f7d2c5d5e85ab707e60f395a2c3f3c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/barrarm.mat",
+      "bytes": 2188,
+      "sha256": "72df4541946dd77c868f3796ad1ee90dbd8cc7f73e4bfee0b4f76490d56575a0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/blackhair.mat",
+      "bytes": 4236,
+      "sha256": "50b689831574412a729d4342e3f0a56c0d3d6fd7ae30be0797b6bb400190c475",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/buryback.mat",
+      "bytes": 8332,
+      "sha256": "00229f3cc4cb9f2353318bfe89e532c3cd387e9b81be4cef32e4462aeca47b72",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/burychst.mat",
+      "bytes": 8332,
+      "sha256": "efbb7fc8a7852b109f96206434d8fff0e09e4f7fb0c42d5cf56a14ae738769c0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/buryhip.mat",
+      "bytes": 4236,
+      "sha256": "cb7e42fc96f49b1bfae86d84a2a4259b401066a838cf92e1218763b78aa6be87",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/burylleg.mat",
+      "bytes": 4236,
+      "sha256": "b1a6ddafe516b6272cd23f8a9ebbb354bc832ef29ec070ef7e283c7f66ec49f4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/buryuleg.mat",
+      "bytes": 4236,
+      "sha256": "b655a5f0081246bf726f0da26031a1e2efd252141ae016a934ed98bc2a9e0cd4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/depahdtp.mat",
+      "bytes": 4236,
+      "sha256": "26e58f31d1d15a40b3121515c5b7bf69cb672151d1621197d6f7bc8ed49048a3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/dmfacetop.mat",
+      "bytes": 4236,
+      "sha256": "46a16c2262fd36fdef7b548f4ed72b6c91b0a0253ddfe13bf85faf8b2aa08913",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/dragback.mat",
+      "bytes": 4236,
+      "sha256": "bf8cc0c208c21d296a0af2868c466203a9aa897c2a2ae5171a3bf0d6b33806b4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/dragchst.mat",
+      "bytes": 4236,
+      "sha256": "94ccca658de77d9337397b713b4e7dbf91445c93017c924bbc3bd53ce4e0e878",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/dragfoot.mat",
+      "bytes": 2188,
+      "sha256": "189b246a6406c026167771f597965bd1f64c7034a824929fe56453c04dd7b566",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eeth4arm.mat",
+      "bytes": 4236,
+      "sha256": "c31f5498f4803a46e37e4bd0d75f815c0577f48f897d9eb768ecc7dd2c12d8a6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eetharm.mat",
+      "bytes": 4236,
+      "sha256": "9df444a54e0ad698264fae9d03c27af630ef35c541dd35ed771fbb348bf1819e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eethback.mat",
+      "bytes": 8332,
+      "sha256": "56949b55707ac57003c1ec2245486eb19eb277cdff09b3d1166dcfd3ef9e35ba",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eethbutt.mat",
+      "bytes": 4236,
+      "sha256": "c886faebdabb68d99bf90714fd4b322c5ff0e740943748f9dd0e09b7d0a613d3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eethchestr.mat",
+      "bytes": 8332,
+      "sha256": "4aea2e217e6e933dec502de5dda628548c54454f8eb91e8523513b111eb13011",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eethleg.mat",
+      "bytes": 4236,
+      "sha256": "86a3d1a87b43b4b337a6d23c18fee229c8bf32495e314868fddcd62ca0d1ecbe",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/eeththigh.mat",
+      "bytes": 4236,
+      "sha256": "b695cb1d38246bc1d9e5b3a5a9f1fc3105e1e25311b31351bdf09f99766da858",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gi4arm.mat",
+      "bytes": 2188,
+      "sha256": "a971a18c4415dc9f0290b4d8dc2425a3a10ec29c6b8c2fa5da6750a2ae4a4ccf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/giarm.mat",
+      "bytes": 2188,
+      "sha256": "5d4b812b0d39d92fc3976479fb6016c94765e874885921db12ab4d6fb9e6dbdf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/giback.mat",
+      "bytes": 4236,
+      "sha256": "96d212746aeb4dc0f569d514624a5278c3b490d3a8c8d1367f99f9382f1c233b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gibutt.mat",
+      "bytes": 2188,
+      "sha256": "fc716a4ef3438b8bb3b62c8f4ecff93e61979111e18f08e67f9ed003c3851b9a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gichest.mat",
+      "bytes": 4236,
+      "sha256": "ed5599164f42c6166db49b807e1a998804127dbb949271ce90daf68f10fba58a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gicol.mat",
+      "bytes": 2188,
+      "sha256": "e3afeeaea47eabb5efe6602220d52ff66b0f15e23bd69ad60b098e6aecab7b93",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gifoot.mat",
+      "bytes": 2188,
+      "sha256": "42a345eeccbd77ac43a79bbc8ef2cc4ecbbcfac16080566255f8878ffaafb0b8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gihand.mat",
+      "bytes": 1164,
+      "sha256": "2b06e53b13517ecc2888bcd38050345dbeedbc37506398d9f4fd3dd18fe9d558",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gihip.mat",
+      "bytes": 2188,
+      "sha256": "6128ddfe29fd1091622eccdd84ad8a948f68753e9a5b1eb477ecffc5dc922501",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gileg.mat",
+      "bytes": 396,
+      "sha256": "b08be34ff0ca114caf0f039ffeaa4fd7f1419445e8f2fba8bc456d3193bdf402",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gineck.mat",
+      "bytes": 1164,
+      "sha256": "3ce81998bdc07a99007785dc67ac4f4cfaa0480e3c949552556d848d86651dcc",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/gipad.mat",
+      "bytes": 1164,
+      "sha256": "cf92d3f373bc21e3190d5fc374e82198992f5ed9cba74553ab4d5cca8fbd5c0b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/githigh.mat",
+      "bytes": 2188,
+      "sha256": "53e608a220e509206d8fb75e9b5eab11ba3c6bca3021e537105bc532eb319ae8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/halface3.mat",
+      "bytes": 4236,
+      "sha256": "b0cf9d20b3aeab2b4d3368cf776c457fd726db9f8411b60fc90f541a4ca3095b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/halfaceb.mat",
+      "bytes": 2188,
+      "sha256": "03b8dd437b866934a9b5f480713d7d3799b3cff1ece1232d1c0952957d8a0de6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/halfacesd.mat",
+      "bytes": 2188,
+      "sha256": "b68ae0c72a37bf53947e2d94ab05fd8451755c4daed592f0ca63ea2a8e719ef8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/halfacetp.mat",
+      "bytes": 2188,
+      "sha256": "911c5f20e69e31ceeffb2a7dd66a167e111d687a23714b61105049bc32a4a4d7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jeruarm.mat",
+      "bytes": 2188,
+      "sha256": "11947e964278b3f10b7059dd34e156e78aca917deb0608abbba69f67f4662342",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jeruhdbk.mat",
+      "bytes": 4236,
+      "sha256": "b701ea5c34259bffb2c41614c9be8723a446be7e750d3cd18b9af374bb9c6df2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jeruhdfr.mat",
+      "bytes": 8332,
+      "sha256": "579e69c96b1f312b84f6665316d9ed596672f6c45e68883fbf8d78392518ee94",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jeruhdsd.mat",
+      "bytes": 4236,
+      "sha256": "dde596aafcb73e2af7889c443beed123304291a00681c62da889fac38091d635",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jeruhdtp.mat",
+      "bytes": 4236,
+      "sha256": "066749243b1add4d982631d9eb564f15573dd968c6af3506c8aa7218c3498927",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/jtbodb.mat",
+      "bytes": 4236,
+      "sha256": "a776734afec499241df39998f239a02047562db6e6ae87ec521c25d2c9b232f0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/k4arm.mat",
+      "bytes": 4236,
+      "sha256": "f056480418bb0a0da28bdf2b7367278e858ab872ef8e4debcd3561c169548f76",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/karm.mat",
+      "bytes": 4236,
+      "sha256": "b6a75fbfd0f178d85ce1fb9f98c4c1bb442d088388d072c8377580155b9b23e7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/karm2.mat",
+      "bytes": 4236,
+      "sha256": "99bc2583320f334eb1003076ffd75a18d812946905785e21d6ed5778aa263d3e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kbutt.mat",
+      "bytes": 4236,
+      "sha256": "9ce74eb3e174a551555bbb3d578059869f7abfe1959fb088311105bb289bd638",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kface.mat",
+      "bytes": 8332,
+      "sha256": "931b8ddb1b8701c05e12b89118f60f47761f6965cd2e634695e81a5efbed71ed",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kfaceb.mat",
+      "bytes": 4236,
+      "sha256": "3dbfac5f24a994eb57d7bb0765dc825387e3bfa4a220e313145bd9ecde196ca8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kfacesd.mat",
+      "bytes": 4236,
+      "sha256": "5e9437c5c4ca05cc7fb90ba72137baaba66c34f32b610de5efad089bc0825358",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kfacetp.mat",
+      "bytes": 4236,
+      "sha256": "51e16dec4cda586f7397f68d45d3fb604181b9c5e329a3de4b0340876321073f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kfoot.mat",
+      "bytes": 4236,
+      "sha256": "d4a1dc7643a4c6b126d343d883551bf0de31215a464ccf05471aafbb30453f4d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/khip.mat",
+      "bytes": 4236,
+      "sha256": "5dd016b616007535cd5d7e96affe34d637c3537013031b88297235fe6c532afb",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kitail.mat",
+      "bytes": 4236,
+      "sha256": "672e13c988d86707b02f3da0aeb725a0a313b0d5ce620c00e7e9ccd075e07296",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kleg.mat",
+      "bytes": 4236,
+      "sha256": "52c59b246a862fb93f77ef31cfac7bec3bed42db444d5a542177de24d395d680",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kneck.mat",
+      "bytes": 652,
+      "sha256": "07480adc9c844541e39e1eb5cd94b1607de4d979a7d78e989803feea486580b3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kpad.mat",
+      "bytes": 4236,
+      "sha256": "900b2838c91e6363475cec693a6cb88fc0e846ad2615e5dc3cb7bc352adb0041",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/krukhdfr.mat",
+      "bytes": 4236,
+      "sha256": "3d4cb649116d29f2ad9ac6474ae4a29ebf8dbc526511b41c72099ab6d648fbad",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/krukthigh.mat",
+      "bytes": 2188,
+      "sha256": "00f89b9cd3e849b4b4823c1cffb9238b6fe07b146f0ee642a063cc97ff8df071",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kthigh.mat",
+      "bytes": 4236,
+      "sha256": "9090061dd92f50a35184c7dc514d34302c1c1faee1fea0e6bd135d65331ac5f8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kthigh2.mat",
+      "bytes": 4236,
+      "sha256": "52b0abe694c60afe2bba365c1ba95896abeec218cf3cf5e8cb6b803631c51858",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/kunhdfr.mat",
+      "bytes": 4236,
+      "sha256": "8670c84a1ce60c16d9c505a43518c63eeaaa7b03e8de14cd47320dfd245846de",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzback.mat",
+      "bytes": 8332,
+      "sha256": "8e677520886b11d15ed40a79840752c4621616ea53c274edd04085774ec31df7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzchst.mat",
+      "bytes": 8332,
+      "sha256": "7a9be243f3fea2ac58bc74c916af47053cf6753a460ef600d4738404ecd69a04",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzhdfr.mat",
+      "bytes": 8332,
+      "sha256": "9a60325ebcba0629406d0d007aae4ade33c5e3edfb3c4df559dc06cb878dc4b2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzlbutt.mat",
+      "bytes": 4236,
+      "sha256": "450c55cd35bf218d7d96ac6079f264d89edcdebc3e6dee75625e5d0f6aa5ffa3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzlhip.mat",
+      "bytes": 4236,
+      "sha256": "450c55cd35bf218d7d96ac6079f264d89edcdebc3e6dee75625e5d0f6aa5ffa3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzlleg.mat",
+      "bytes": 4236,
+      "sha256": "5e3c8454cd8227b385610c27f8930b0af6130066fc7893869dc6475913a509c5",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzshlder.mat",
+      "bytes": 2188,
+      "sha256": "5ffdf55b63e755042868ede8ac0c615b118cb5870a3535ba967f1e5e314201e1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzubutt.mat",
+      "bytes": 8332,
+      "sha256": "d03a2d41a9a6d2e9f966cfd36e4bda81bcc4a61edf3e18745b3dcdc93fb1ecc3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzuhip.mat",
+      "bytes": 8332,
+      "sha256": "0c6a2dbebbbc0b092fbb3696ad991d4e534ce8a9cc43aa08dbc085bfa669ac66",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/luuzuleg.mat",
+      "bytes": 4236,
+      "sha256": "6cfcc049c194f9ed312ef8b6abdaf025630d583676e0f5be3e14039ebfee815c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mace4arm.mat",
+      "bytes": 4236,
+      "sha256": "2055b4e36020dc7fcde40e8a7cb07dcfadaa563471e838ae93ba3eae7617f0f9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macearm.mat",
+      "bytes": 4236,
+      "sha256": "0dbed8c15ba09e68f44289952fa76e3362d5838058ac9f04a94459beb3b3a429",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maceback.mat",
+      "bytes": 8332,
+      "sha256": "f18f46fa2cde405d0e854ebe5f7663785429bfeda89343139ac7e032193083f2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macebutt.mat",
+      "bytes": 4236,
+      "sha256": "312af9ab3df2a4d5e1086b59d09766cb0782860b51d75f4fb7ab44b370562732",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macechest.mat",
+      "bytes": 8332,
+      "sha256": "bb5a7e5db9922ec9b801f7fce67aa4749c28429b24100ca9f1618216f4ab3dd1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macechestr.mat",
+      "bytes": 8332,
+      "sha256": "156438c5b2bf148ac230d473507c9ba6c8f768138587b4bc04d611bbead9d19d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macefoot.mat",
+      "bytes": 4236,
+      "sha256": "2e8e7cc835f04e73cbbeef1558a18239206fe3ba73fbd01ebb486f776832f4f0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macehip.mat",
+      "bytes": 4236,
+      "sha256": "1b161a181a919eb419d359a0d562be7295da3e90b89910547e471cfd781fd578",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maceleg.mat",
+      "bytes": 4236,
+      "sha256": "94890ab6271c2606727d52a01d1df1bcdabb8bcc701d65bf37bc9753d7cff1e2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maceneck.mat",
+      "bytes": 2188,
+      "sha256": "111ed8adb98f5085c0833cee765db943a267db8d66cbb77b1cc2bd504d9fc9b9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/macethigh.mat",
+      "bytes": 4236,
+      "sha256": "f71672f644c0bdd9b49b83de96fe1e7d188477d5a32637fc82e3dcc0ee671e19",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mara4arm.mat",
+      "bytes": 2188,
+      "sha256": "ccb42d1a5663176aba21866177e50855918f85c6d5cde475fbc807a99816e46f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maraarm.mat",
+      "bytes": 2188,
+      "sha256": "e9e5d6d4cb756f7a634c7b2a443c6a5376e579710a475a9594225756cfbadece",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maraback.mat",
+      "bytes": 4236,
+      "sha256": "33419201ab6dbb355a00ee39e61981378548cbd63f5ace7a53cf13abd4d9fb03",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marabutt.mat",
+      "bytes": 2188,
+      "sha256": "6f5cc919de375249a85201d7a626d9bfc3916f516faeb5885ab09081dc04310a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marachest.mat",
+      "bytes": 4236,
+      "sha256": "91a3745fe4a232325d5f5d0a02b48a338a662e5193946f264a454fe8edef461c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marafoot.mat",
+      "bytes": 2188,
+      "sha256": "574ddac287ea5e4f617a8194249d4400e7e3a852bfa9638040ebd4827f588641",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marahdbk.mat",
+      "bytes": 8332,
+      "sha256": "c1422ac19067ed8901e9ee799487c2891dbcd29aec61c4b9ff010e7d4107ecd8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marahdfr.mat",
+      "bytes": 8332,
+      "sha256": "ceaffcfd4aab9bfb18aee80a462a4feec8888532163df3f0bfb8c6d8d698758c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marahdsd.mat",
+      "bytes": 8332,
+      "sha256": "4197b85103debb8c29c84bb9df88d80616d5a805d4cc93c5a63cfe59db3ac799",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marahip.mat",
+      "bytes": 2188,
+      "sha256": "443f898013de22db59402a895543b7affd11404308e5d270254584ff9f94e015",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/maraleg.mat",
+      "bytes": 2188,
+      "sha256": "1b5995a39985f31618890fcce6ffacb4c8d775934fc30becf27504dfa47d84de",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/marathigh.mat",
+      "bytes": 2188,
+      "sha256": "ae8a176e8edc2d56c55d51f0c9b0b8da6cce344b5e285a5e08362cc27c13e859",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mcwhdbk.mat",
+      "bytes": 4236,
+      "sha256": "652b76801b277d99d84cc09b07aed8116a7a3408a03f2e1b92cfb6e68acc363a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mcwhdfr.mat",
+      "bytes": 8332,
+      "sha256": "caa377ee92d68f35e2ec8b5f6feff634db78f3cf71a1a13009f46548a92bfab3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mcwhdsd.mat",
+      "bytes": 4236,
+      "sha256": "b7641fdfd2870aa64ba5016bc357696fd40e7167af14b69c16ef17e08d846cc8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mcwhdtp.mat",
+      "bytes": 4236,
+      "sha256": "cdb10da695ab3fc152c5a3cc3cfd5e62cca187ed8810ac99b03aa55f84f0a64f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/mwdback.mat",
+      "bytes": 11020,
+      "sha256": "080f3678b15175738e9d7b5ee023a674f7f152c083b3e1e81140725bcbcabb4e",
+      "reason": "Repair pinned truncated RGB565 mip tail by box reduction; retain all original bytes and full-resolution artwork"
+    },
+    {
+      "path": "3do/mat/mwdchest.mat",
+      "bytes": 11020,
+      "sha256": "040d214a531c2a8d9758ee18d6d97830a4dada571ec335dddddeddabef25ee74",
+      "reason": "Repair pinned truncated RGB565 mip tail by box reduction; retain all original bytes and full-resolution artwork"
+    },
+    {
+      "path": "3do/mat/nomihdb.mat",
+      "bytes": 4236,
+      "sha256": "4fc18e3a94fab438202d3a1e480bafca0daac7180e676595de9b2d10cf48e714",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/nomihdfr.mat",
+      "bytes": 4236,
+      "sha256": "0c5d27651ee2e6c0e091257e0e726daa2ebec7a9ac3adc2df0a9ff0a037a44ff",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/nomihdsd.mat",
+      "bytes": 4236,
+      "sha256": "622ae0b3eeb2b619eca32cbb5aa6f1dbb058804411ebacfcabf4c0bd3b073054",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/ob3chest.mat",
+      "bytes": 4236,
+      "sha256": "b785c25f34a4a102a78c4eee33d3fd247b0b8f25ae8a52499029eb604d7ec36f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objk4arm.mat",
+      "bytes": 4236,
+      "sha256": "6c32b41c3a4a6943278ca9cbff82b9ad70d4f5c4911aaf249039d92f6e010a52",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkarm.mat",
+      "bytes": 4236,
+      "sha256": "70c3f74cd2c3f16f492b6f66778301fb32728b2792c324700c9f51e5673752f7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkback.mat",
+      "bytes": 8332,
+      "sha256": "a267b90ca478dacbc19e63f8de5b436885db5b3437d84e7f25db859ef9adf689",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkbutt.mat",
+      "bytes": 4236,
+      "sha256": "a1adbd646fa6bde85a494d6d2f8a145318f8a7d2f4aebaee16a4649756366d58",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkchest.mat",
+      "bytes": 8332,
+      "sha256": "772aefed51905f1992426bce2b11ff852a0906d5f86001a691fe717edd33cdaf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkchestr.mat",
+      "bytes": 8332,
+      "sha256": "e8744658555b9b9874c519e84e524e43398415d8828b81004deedcc366cc7326",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkfoot.mat",
+      "bytes": 4236,
+      "sha256": "6fbed34e70d3edd7d1d62527ca49be9765b9477a1414800b5b8e2e20c99f138f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkhip.mat",
+      "bytes": 4236,
+      "sha256": "2080118ee1572021160fcf2e87695ab1776d1d6492d3ce03c9df175a9558e94b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkleg.mat",
+      "bytes": 4236,
+      "sha256": "80e389b0f20cb4396ddfdd1daae831c87956b22d0d58e88311949c052527707f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/objkthigh.mat",
+      "bytes": 4236,
+      "sha256": "c57f6cc3738ffcaa867ceccee42dfa6c43a5212129a4a4d72154decdfbcccefb",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/ojerhdfr.mat",
+      "bytes": 8332,
+      "sha256": "ea11038d284504c4048a705e037966935d663a335f1209907c4f60ac2f3469ac",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/ojerhdsd3.mat",
+      "bytes": 4236,
+      "sha256": "4649b710d07b4005e6a4000ba795af58a965135d30897a851ff12faabd6bf519",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/ploarm.mat",
+      "bytes": 4236,
+      "sha256": "81f478e8ae608e11fe5037c39a0488d331d04486209856751fd6d7fd92854df4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/ploback.mat",
+      "bytes": 8332,
+      "sha256": "2a3b9618a37e36c4cbd328523467c58b831d0a0fe24f28a0b53ca83a67ae7311",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plochest.mat",
+      "bytes": 8332,
+      "sha256": "8d3c61cd45b9df8ae0caa78e4ee0931040f6f8be819024152d1d998a48835e4a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plohdbk.mat",
+      "bytes": 4236,
+      "sha256": "29cc9421406066440caeb5958f1802ca9e6db4258888965dbc4a0074138ab71e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plohdfr.mat",
+      "bytes": 8332,
+      "sha256": "90323c1b793af6c1dc3b9425a40ef66f261e4b91e0233efc21b49b18305cf5ae",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plohdsd.mat",
+      "bytes": 4236,
+      "sha256": "94f5bc5e4b8e0e26c72b8b7629cd4de008f791598dd81604bb169db25414fcd6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plohdtp.mat",
+      "bytes": 4236,
+      "sha256": "5a423889f339be344eb496ba4f0730851120d9e6fa92a1d23c380813af0af818",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plohip.mat",
+      "bytes": 8332,
+      "sha256": "58a53cd55ce2440a8daa54677dcf20d28c9a2ecb59f84d3f1c989f671de77367",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plorobe.mat",
+      "bytes": 16524,
+      "sha256": "2eb6beaa35d832323e076a7328027b9b0e2dce3bf3fb13bd67bf5f801077c5da",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/plospike.mat",
+      "bytes": 268,
+      "sha256": "032c420dd8a29e39d99428b6821b861f29f7c4ae4695c28caf317868f74d347a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/pxhdfr.mat",
+      "bytes": 4236,
+      "sha256": "e9caa24eb0693b90e108f6977ebc60e187d26bfe9febc7a71b662165b8f65a75",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quin4arm.mat",
+      "bytes": 4236,
+      "sha256": "3c291d913dc1929b62a3af6b8407ee5c7a0418c823ae8f35d4518e179294b497",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinarm.mat",
+      "bytes": 4236,
+      "sha256": "0dbed8c15ba09e68f44289952fa76e3362d5838058ac9f04a94459beb3b3a429",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinback.mat",
+      "bytes": 8332,
+      "sha256": "2eff257d7f4b9996823807e2643655678c2528386933f5c413a356852c43885d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinchest.mat",
+      "bytes": 8332,
+      "sha256": "55b6a7b585c1b7300f001b0b7047d0574ab7d50556105e894b1a8097b4eb6376",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinfoot.mat",
+      "bytes": 4236,
+      "sha256": "2e8e7cc835f04e73cbbeef1558a18239206fe3ba73fbd01ebb486f776832f4f0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinhdbk.mat",
+      "bytes": 4236,
+      "sha256": "45f953ec52baa2861c61048b8b562df3e352cc5c238a55e0da009cbdd3abea98",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinhdfr.mat",
+      "bytes": 8332,
+      "sha256": "1bd61417157111453a8c30375aedc1b005d4bf8a8708764d5634c4b3951b56ce",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinhdsd.mat",
+      "bytes": 4236,
+      "sha256": "cdba6dd9276905fd3bb87e3cf8f3cd8722b55d8fe23543b009399becb66c1d5c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinhip.mat",
+      "bytes": 4236,
+      "sha256": "4506dae907053ffce4afdc32c9816bfd7d9b4198b1dd17f699ba818d6dea5b1f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinleg.mat",
+      "bytes": 4236,
+      "sha256": "c5ee17c0b8dcec626758f8a3b670c243b16f61e96c1c91b2f4767d72cca49c8e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinneck.mat",
+      "bytes": 2188,
+      "sha256": "67bafe421f3f240ecdbada106a43357cf060b563021e4837c072b8cda73dbdd9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/quinthigh.mat",
+      "bytes": 4236,
+      "sha256": "0251b1113db1cadaa80375e69a881efbb7edd830b5e45fd82c079303d8b6fea8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/robe.mat",
+      "bytes": 16524,
+      "sha256": "1be2ecf1361554088dbc08d4ec9e8cb93ec3e74a6587a820a1107dde6b978ae0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/robearm.mat",
+      "bytes": 4236,
+      "sha256": "73f170c4e13ef91a0e0a8646cbb36135c626218cf595de162ae48e01c0f0f382",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/robeback.mat",
+      "bytes": 8332,
+      "sha256": "03f7c10b83d4a3b847f140cbfe993c00104af5e84a5bb9ed220a73c866877902",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/senback.mat",
+      "bytes": 8332,
+      "sha256": "d8f0ec7037fcadbe2c0f76b7329a99a59c60f674e941e5f7b978bdf843af7b34",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/senchst.mat",
+      "bytes": 8332,
+      "sha256": "79e5b0879e52905c7f4e3b3de5d937a23e9fd8a662bec2df7f98039bc187c5d0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/senfoot.mat",
+      "bytes": 4236,
+      "sha256": "7dfa6f8e12e79be9c0a25d674a2535c9bd86779467d54588ea743172920fdb0b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/vdochest.mat",
+      "bytes": 4236,
+      "sha256": "673bfd868c27a1c0c00cccf3b6ef8257735418b29899901ef4a8c4c2aa25a57e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/vdothigh.mat",
+      "bytes": 2188,
+      "sha256": "00f89b9cd3e849b4b4823c1cffb9238b6fe07b146f0ee642a063cc97ff8df071",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/vdothigu.mat",
+      "bytes": 2188,
+      "sha256": "7ad4625ccd10c403a6d3a5b6f83991502ba9db385ccb602eea7bc203541dabf5",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadchest.mat",
+      "bytes": 4236,
+      "sha256": "a76df242f9430e9e4145df27ab5fd03aea079c78922e8e4ec4e55dbd90126e80",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadhdbk.mat",
+      "bytes": 2188,
+      "sha256": "89fcd834209d1a71742194a3d9a31eb6e385712cc372920d33dee4789f9b6522",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadhdfr.mat",
+      "bytes": 4236,
+      "sha256": "63fd7e93b9fda3b1839a4fa23bae83cb17ad3c335d23ce3a54f37a5ce6593daf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadhdsd.mat",
+      "bytes": 2188,
+      "sha256": "af58f617cdede39989cec2fa6c2101b73edf75f4b22911e8580ffeffb521b158",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadhip.mat",
+      "bytes": 2188,
+      "sha256": "71ea847663e3f6ede1f812819561230ae2e06c36aed7a153a92cead57a4e0e08",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadlleg.mat",
+      "bytes": 2188,
+      "sha256": "3d0ad7c987fbbefe5dc288587c98289e6a7b7a3e7791014e389cea1466ec0288",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yadulleg.mat",
+      "bytes": 2188,
+      "sha256": "163a3f4bb85be5bfd62c87b9244df54f00f92e7e5adb06e5c23821c098744ce4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yanhdbk.mat",
+      "bytes": 4236,
+      "sha256": "c1083d580e55038d28709a1b4a2e3309368d81946376654560c4180a3e282ae8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yanhdfr.mat",
+      "bytes": 8332,
+      "sha256": "e72581564f7deee38caba01e07f99849e99597f266bb5262d07d1983c06c05ae",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yanhdsd.mat",
+      "bytes": 4236,
+      "sha256": "d89f6da2d5413de18fefd4aa3c5a035dde202c544ea867b558c7f2d9f28e9f59",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yanhdtp.mat",
+      "bytes": 4236,
+      "sha256": "73feb21b7a3a7c352920900657948d9570b6abdb107e33b47236a3a3db6c56a2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yoda4arm.mat",
+      "bytes": 4236,
+      "sha256": "09b2414e44f9300f13fee5e5937d7a172419bcbdb3f68f541fdad820466a9f0c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodaarm.mat",
+      "bytes": 4236,
+      "sha256": "02805f2a9200935f7b494ef8ee65c870950ab29c4707ce305a3845a3bb0e763d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodaback.mat",
+      "bytes": 8332,
+      "sha256": "1204520120a71eaf032c3131c453581553578beb929b7b89193f794960f4e9b8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodachest.mat",
+      "bytes": 8332,
+      "sha256": "cd23fb205f94c71693dcf83bff9acebc09e03ef09831031607bd494ac437ce8d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodaear.mat",
+      "bytes": 396,
+      "sha256": "bdd2e7a58e964cce3cb34c9d092dd037bde693612b54fdc3af3066885797d60c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodafoot.mat",
+      "bytes": 2188,
+      "sha256": "fd3b70bb99e2b5e4ef1f72461b321e8f8d08548a8664d2d49a098ada91dbc842",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodahdbk.mat",
+      "bytes": 4236,
+      "sha256": "9dcc5a76d2459ed1e7179c67d88b154e4940e25ae055d430ba4a63e0ba1d80e4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodahdfr.mat",
+      "bytes": 8332,
+      "sha256": "1be17aaa0c3e56f44ef822aab516be1c6f6002fa9f1c5e0e90a88b21891909cd",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodahdsd.mat",
+      "bytes": 8332,
+      "sha256": "a56c7d690b380227a2be38cd7b4ed3d425328e0c17d7393af838ad12fc20bbf6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodahip.mat",
+      "bytes": 8332,
+      "sha256": "690e6043bb510f24926c8833986217f54c7ef58a7d1731664b5ae98d0f92b420",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodaneck.mat",
+      "bytes": 652,
+      "sha256": "d3f43347bc17141a9d33afb5cb61f213b100c48f573b0854c77c00c40db3cb3a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/mat/yodarobe.mat",
+      "bytes": 16524,
+      "sha256": "4bfeac5e731ed74e6d67aa91fe387d66b4e669d993b1618359f3989d99ed1bde",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/obiknight.3do",
+      "bytes": 59593,
+      "sha256": "6e2faf6c547e2e581de161d43024f92e92ebeb3441613f889e7bdcbba52f97dc",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/obiwan.3do",
+      "bytes": 64862,
+      "sha256": "5932c90da465d24d9533a3d150fb77da097383e8aea96f779d0f368730286d29",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/obiwan2.3do",
+      "bytes": 54918,
+      "sha256": "97419bee0bc3ef99ae8d24ca487b069c01981091b970907d8f2a6bead0c34886",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/obiwan2c.3do",
+      "bytes": 58758,
+      "sha256": "787ec51534e6a27ca5c9c67abe8496fd72bee629f53cdc23b69959f22fa9fa1a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/oldben.3do",
+      "bytes": 56134,
+      "sha256": "9b1b6f0490aacb5a7c9deb4c89671efbb4a4c9c9edfe49d40788eb45913cca53",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/oldjeru.3do",
+      "bytes": 66848,
+      "sha256": "cc9a8442a0abd205f3882c236d67752100f942d36181c2db43f45cda589b6e17",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/oppo.3do",
+      "bytes": 75674,
+      "sha256": "fc46aa2be12ebf0d1bfb07bd675c287e922ecccc9e1367ba9ab9f6904eecabd7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/plo.3do",
+      "bytes": 75510,
+      "sha256": "3c40ce29edcb0ea677f7a9006ba5563ac567185979cca5ee19017e320f427aa8",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/plorobe.3do",
+      "bytes": 85693,
+      "sha256": "355155c65302729437f0ff6d847f95a6f061459077b2beb16d347006ba840ddf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/poof.3do",
+      "bytes": 69347,
+      "sha256": "39c59919a31b6b66f115e09dac5765a015a58c2cb54750895722c6d374827c41",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/quigon.3do",
+      "bytes": 67049,
+      "sha256": "a730f730ee1a14492561ed1b12724bd2d04e875c72f502c0c54a1f4d28a40f4b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/quiknight.3do",
+      "bytes": 66703,
+      "sha256": "708b98ee039c418c6d4ef0096421f2afc39c862eeddef82b2ba6cdfac5bc5f9d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/quinlanvos.3do",
+      "bytes": 58081,
+      "sha256": "c145c461c978d03ff0e0dce968dda0ae940552fa1239618d25985529cfbe32b9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/rsdragon.3do",
+      "bytes": 67206,
+      "sha256": "3d3698ecae88a41eeeb6a3c785deb625b1407cf1c77dbb580509868c12b1b653",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/saesee.3do",
+      "bytes": 70116,
+      "sha256": "301610a899293760b97408deccb46355220a3d6a9b25d898ba581642be1bec31",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/vestl.3do",
+      "bytes": 4751,
+      "sha256": "a991520616320c4dcdfa81260095785e17899cced4a507513241d0f3b0195181",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/vodosioskbaas.3do",
+      "bytes": 62580,
+      "sha256": "bb7882088f211ddfe6a201809242d167a3c2499c17b9747281110f0a2e99824e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/xizor.3do",
+      "bytes": 76423,
+      "sha256": "2dcf544246c5afcde70279cd7c142afc734e926164ec72967447771a33f4fbb4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/yarah.3do",
+      "bytes": 63698,
+      "sha256": "cebfdcde497085f45e1f9d4d5b6ce400e2b57d3079dd84274c4b2a13ad64a874",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/ymuroo.3do",
+      "bytes": 59558,
+      "sha256": "b452d0e0b1184f64d0bc8c42271676168dd290c0c27ee32dcf5a91c4342719b5",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "3do/yoda.3do",
+      "bytes": 64817,
+      "sha256": "78286689327116924150c2221dcfb65d0abfa2d5f6d9d7b751df1a14e60c725d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/client_weapons.cog",
+      "bytes": 6026,
+      "sha256": "6972e4bb0f490fc2a8893bdb80fdebe03e6fcdbf831229bf31489d915a780ada",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "cog/force_defense.cog",
+      "bytes": 1546,
+      "sha256": "d173c49e5b199b3ec7286ba1a32f89da18ab2d526848274f29291aec7363b80b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/force_destruction.cog",
+      "bytes": 2636,
+      "sha256": "9fd1c58a938c0acfc1d0555d05a0c0050a8d419840a0f35efd6fc48c1dba1aff",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/force_jump.cog",
+      "bytes": 6581,
+      "sha256": "dd7f0e745716a645564c9b36369796b44cfd42a9949c6b61276faae5d71f3627",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/force_push.cog",
+      "bytes": 4477,
+      "sha256": "cc4f7e133b71ad723c8b98746f438f740d1d0820ba619f6f4c36f7d6e6e38dbd",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/item_irgoggles.cog",
+      "bytes": 3049,
+      "sha256": "0cfa46e569bbf3ff0e93a67a115ac716358e16beb2a53342287c16339d9c5f31",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/kyle_m.cog",
+      "bytes": 46905,
+      "sha256": "4bc0605da4de29b68b89ede25efd545ea7b2ab40423ae9b525f7d6f9009ac5ef",
+      "reason": "MotS class logic, native dual blocking and compatible JK31 actor features"
+    },
+    {
+      "path": "cog/luke_m.cog",
+      "bytes": 43887,
+      "sha256": "b4a05ba06d50cee36fae26c76f31d0bf357586043ff954820867006ad39f8f2e",
+      "reason": "MotS class logic, native dual blocking and compatible JK31 actor features"
+    },
+    {
+      "path": "cog/mara_m.cog",
+      "bytes": 46704,
+      "sha256": "1b5b36a43064505bea672ab8d7f948db50ea86bade2de613b39071a0315189ac",
+      "reason": "MotS class logic, native dual blocking and compatible JK31 actor features"
+    },
+    {
+      "path": "cog/pow_supershield.cog",
+      "bytes": 3200,
+      "sha256": "d9e07c7a00c19a221678e7dbcbc407c890efa2fe7cc5442dcd5f7dc7e720d3fa",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/saberstance.cog",
+      "bytes": 8289,
+      "sha256": "5bfba52069195e865eabbb17e55306f9dfd4b3314eb35f1bb2f2ef0931baf8ba",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "cog/sbxd_map0.cog",
+      "bytes": 4036,
+      "sha256": "2b25a186f42fac43faa8e39559e62ea3ca40362fd1cc63d0bca493eb6bfb17ef",
+      "reason": "Native presentation controller and model lookups"
+    },
+    {
+      "path": "cog/sbxd_map1.cog",
+      "bytes": 4000,
+      "sha256": "76ccc48bf5fd19608a04854f99eee7737da3837df3bb1171cbd8292ee54358b3",
+      "reason": "Native presentation controller and model lookups"
+    },
+    {
+      "path": "cog/sbxd_map2.cog",
+      "bytes": 3940,
+      "sha256": "e866d0182234bf3f57061082a3878ffc2c4d53b0b4959c8c5c7b6751795e49c7",
+      "reason": "Native presentation controller and model lookups"
+    },
+    {
+      "path": "cog/sbxd_objthrow.cog",
+      "bytes": 4320,
+      "sha256": "4fce004a547d9373a2d0cc26fdec5720c1a3359b4b76b5d7b4471860d4381629",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/sbxd_tal_pick.cog",
+      "bytes": 899,
+      "sha256": "ca7267f87776cebe283aa806a704c6b7fd13259feb68225ac79729d5b2ae0776",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/sbxd_talisman.cog",
+      "bytes": 2055,
+      "sha256": "f17d2445dda3b5f5dfe78324695eca6a414b6b223e53fa0f1a2d044512b14df4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/sbxd_view.cog",
+      "bytes": 4611,
+      "sha256": "15a6b2376b8bd0111ee6cbcea250fbc06872eac4ed3c7d7e7c8404a9dbcf391c",
+      "reason": "Native presentation controller and model lookups"
+    },
+    {
+      "path": "cog/weap_bryar_m.cog",
+      "bytes": 6392,
+      "sha256": "ffe06f06f6eac8d2486cdc794985b32854cd4cf403ef61dff6c3f07ded7bc2b4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "cog/weap_extsaber_m.cog",
+      "bytes": 49848,
+      "sha256": "014572ec4940be004de9ef3b938ff24ac05c64a49349e2f2ac9798bf5c57f9ad",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "cog/weap_saber_m.cog",
+      "bytes": 49797,
+      "sha256": "91949ef6f796c6274d44fa050127dcfa27a37f232d7b44aa4d1c5ff664448fe0",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "cog/weap_sithsaber_m.cog",
+      "bytes": 49416,
+      "sha256": "0db1c5c02f16d79a9a8642ac4e2cf775a78fc5508411f398b3da44ac6f8412a9",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "jkl/static.jkl",
+      "bytes": 18263,
+      "sha256": "a367efe2542714a7b682932032d556800135f8fc24e17a383633b9d0c4ca0b4f",
+      "reason": "Preserve MotS tables; preload source/dual models and keys outside per-level capacities; static material capacity4096"
+    },
+    {
+      "path": "mat/ad2strt1.mat",
+      "bytes": 1164,
+      "sha256": "66511a145ffae845a5de324bf816da6c0d6974537f5ce6010c23ce1d1aeefe64",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "mat/ad2strt2.mat",
+      "bytes": 396,
+      "sha256": "0b37cf01c5d298759879ae7efb527dd2d203f7cdaf74d152ed059863bbf49150",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "mat/ad2trso2.mat",
+      "bytes": 1164,
+      "sha256": "a4ace80fb11355df0bae5d59da11a0572f013cd4df20b235ebbef7d87360ea4b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "mat/dxbs0.mat",
+      "bytes": 8332,
+      "sha256": "a14b1b39edfa21a57f31704a21d6e1e07c53cd40fddd3551ecdeb28277ae9a55",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs1.mat",
+      "bytes": 8332,
+      "sha256": "a7da691760d9c2fa25f74344a16120a48a9c3479b260dab925bfcb87967cfaab",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs2.mat",
+      "bytes": 8332,
+      "sha256": "3694b88188575731c31a7afa5de2c5bbc96359aa5a4b48741454dc5fb322f2a0",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs3.mat",
+      "bytes": 8332,
+      "sha256": "d13be8a193fa7e2d46955e4123f9874060375d7a4121aea1b40d865972115474",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs4.mat",
+      "bytes": 8332,
+      "sha256": "c4ba53431d32180714bc6995827bd35d64caa0ce56fc9ecba1335e66fcf58063",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs5.mat",
+      "bytes": 8332,
+      "sha256": "1007ab7674ad835734f84be014517428e3d95d007d9c3adc7fd33ec9774fc85f",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs6.mat",
+      "bytes": 8332,
+      "sha256": "efa3f30c13e70e219e04e7ac15d02fcabf52b3bec52fe64e41b12b8453248359",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs7.mat",
+      "bytes": 8332,
+      "sha256": "54b2b122da29591a12bfa7985f60e328a97d5d45efb9bf52a414ff87f12975f6",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs8.mat",
+      "bytes": 8332,
+      "sha256": "a0814b27baee35596f69c3dafeac4b9e370658525e114bc839a449a40b12cc85",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbs9.mat",
+      "bytes": 8332,
+      "sha256": "6c416dd190ad05be40e0789f3b43aa82bd8008fbfde5e210e9cbe6ac3cbfffbf",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt0.mat",
+      "bytes": 1164,
+      "sha256": "06a82ed5e2f6db31355eec4765d329def00053e5379663148d81f8f05e1184b6",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt1.mat",
+      "bytes": 1164,
+      "sha256": "8f3df2b6b556063fbb180cca5a2a41e31a0e401e016bbd444dee47598e52bc05",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt2.mat",
+      "bytes": 1164,
+      "sha256": "7c0f1e748fb6a580dbd1c4a2de13582471dc161e71c0aa5470ee40fae960afe3",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt3.mat",
+      "bytes": 1164,
+      "sha256": "c591147c1d2dc1d0917d9ed5de2471144f6e64126969cd5a0dd1093cb8d86f5d",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt4.mat",
+      "bytes": 1164,
+      "sha256": "89ec6cd7c8752965496e5819e64e42c904879967334f4654c61b9ab8e836cafa",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt5.mat",
+      "bytes": 1164,
+      "sha256": "acb1e0687c1cab0834749e6d5fe1c2c9751409b375a60b56fe6f5234f40434c8",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt6.mat",
+      "bytes": 1164,
+      "sha256": "cde9d788ec696d3ab4bb96e0f57692fff907303283a4f67670d9035a825e191c",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt7.mat",
+      "bytes": 1164,
+      "sha256": "c0fd24ff1f733b4008dee548f83b162aa4d15eee6d7359480969c1f0979269a2",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt8.mat",
+      "bytes": 1164,
+      "sha256": "1f3d759969b3065838f58c2005f42a01b0dbc766c066419dd7f5ef0920956dcd",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "mat/dxbt9.mat",
+      "bytes": 1164,
+      "sha256": "ead83c95206ef6f89b8be96aa537729137d054ae8a977437a75f1e66ff19a51a",
+      "reason": "Locally derived native dual blade materials and right hilt"
+    },
+    {
+      "path": "misc/items.dat",
+      "bytes": 13610,
+      "sha256": "c9983bea5401d2df22b18d61401c80ccd7a1fe44cdc569f786a2296437974979",
+      "reason": "MotS bins retained, four non-hotkey helper COGs"
+    },
+    {
+      "path": "misc/models.dat",
+      "bytes": 33306,
+      "sha256": "f6cd047749dbffa06d3c3a1ec7b0a7dca3b7a61429fcf40772f30de534604805",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/pup/ky_bo.pup",
+      "bytes": 6307,
+      "sha256": "89cb4003bd08766dfe1a7226aeac714603086ff1b02140b7cb96184c978e8adb",
+      "reason": "MotS dual integration"
+    },
+    {
+      "path": "misc/snd/bar.snd",
+      "bytes": 3229,
+      "sha256": "845a0e9906d01da8b34dccad678bdf5ef8994a9cb66efe4eb7b2916437523459",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/boc.snd",
+      "bytes": 2981,
+      "sha256": "0a8a8e61eaafc35482c50b7c465ae05bddf7d0efcb509d8e9d3e6c7611dec346",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/ky.snd",
+      "bytes": 3610,
+      "sha256": "91636520483ea263480bfdbe08cc44fb1ccdd0577b73d141dcf05a82da3f6fc2",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/kymp1.snd",
+      "bytes": 2889,
+      "sha256": "ee1dedbd9ca02f5926f5ba0c82b365d0b2ef4ca51e6671bbf11357a316e53c5e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/kymp2.snd",
+      "bytes": 2840,
+      "sha256": "7f339f8c2600b80fbf8ded3010cdced7e001563cb8128c8b9ad4e47d6a24927b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/kymp3.snd",
+      "bytes": 2798,
+      "sha256": "b6bb02cd34c30cf55072a33b40bfae074fb844aab2f0cc5f76839d5e0cd19de6",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/kymp4.snd",
+      "bytes": 2890,
+      "sha256": "32770110bbe308e71ac3eb0beaccd6935b7d8dec52720dc8f34614df5668be9b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/maw.snd",
+      "bytes": 1967,
+      "sha256": "92c4a8d5d2f4838594ea3beada53e1b73e1277ecb8ad3093321ecd410218bbb1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/mn1.snd",
+      "bytes": 3747,
+      "sha256": "c1c172fb5bc38d3044b6e1907772de0dc05dac28650e1c0ce5873ee4faef45ee",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/wm1.snd",
+      "bytes": 3658,
+      "sha256": "2a3fc631c39ff12b2e8683388248c709a44f6242a948342ef92b416d76a5dce3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "misc/snd/yoda.snd",
+      "bytes": 2859,
+      "sha256": "26e7d819df915ec45ebe35cfe1d6122194d3593759f5fe72bb65f40009f4bcb0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/extsaberoff01.wav",
+      "bytes": 64906,
+      "sha256": "ee0bde0d1f7886ee42d61c91ffdf686f8e93646e104a46d718d6ef0d3115cbf1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/forcehalt.wav",
+      "bytes": 77958,
+      "sha256": "bd66f80752f5dce2d8b50bafeaf2848a9bfd096fd385ad34d5fc812944a405d5",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/forcepush.wav",
+      "bytes": 47926,
+      "sha256": "374bcba49fcba1ee24d0479ee0622b41a3bae0e9ac86934caa809ff54da18408",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/kylgtsc.wav",
+      "bytes": 24492,
+      "sha256": "878180419f9eb6ae1060b8f572ffc96ee57bbc088262524e6b6e0afb01877650",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/kyljpa.wav",
+      "bytes": 26284,
+      "sha256": "da5fb5f77376d2b8fc01bdee0748d4b8254205256e93e5e2d664661d2cbd7fcb",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/kyljpd.wav",
+      "bytes": 13260,
+      "sha256": "8e034b7ac58813496a25cc7e9008986ab5e283cb496e87b34e462b7d87722e9b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberhit01.wav",
+      "bytes": 43726,
+      "sha256": "7310e11e5d1b3b99f17457d6c36bc73cb905832eb856e72a768ed7b211e8250e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberhit06.wav",
+      "bytes": 46860,
+      "sha256": "f3e39445667599ac9697cca054ac28a6208626870590a2276767fbe7cc82ccaa",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberhit12.wav",
+      "bytes": 26120,
+      "sha256": "74ca48334a24bb580edf7ec92b77f95c0a266fd46d1ee954008e38a149ccbbd4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberoff01.wav",
+      "bytes": 28030,
+      "sha256": "4fed3fd8fbcc89355f25d83a3ab499de107e5e002d6fad02a539b07e28485bb9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberon01.wav",
+      "bytes": 63094,
+      "sha256": "dc1a929c38f41204c6cfc7f044bfee5ab9fb0a854a61622fe3c55b0d8da912ee",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing01.wav",
+      "bytes": 20086,
+      "sha256": "728ddff20e4c4f5c32b05300c51f3853b8168fb2f8aa796f41337d627dfec355",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing02.wav",
+      "bytes": 25078,
+      "sha256": "87e35261835ffa989b06803f3bf3f7c46b2c008884497a8d1ccab566ad808e68",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing03.wav",
+      "bytes": 19446,
+      "sha256": "3eb8469cf870301043ee80dc2e4373efa769e554d8df82c3b4af37a0409a116b",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing04.wav",
+      "bytes": 23830,
+      "sha256": "a8d815c25b55fd32a06a62cd5ac432cb40f2970a76721d6f514cfe50b1f11135",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing05.wav",
+      "bytes": 22070,
+      "sha256": "c1c12e8ea09e6c4aeb8e1bc7118ab8db9718be14755e2822a14f0dae92ca59b3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing06.wav",
+      "bytes": 32430,
+      "sha256": "b796bf3e3885aa8b3f2317fed263dab4158175e251855aaa3d6a1958fa7a710a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing07.wav",
+      "bytes": 27062,
+      "sha256": "7ebab8fe29b2d5d5280847aad09885958ef175d146255a68e3b8215076b6f1b1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswing08.wav",
+      "bytes": 30364,
+      "sha256": "031d023436c6f5859692d7f19c99d92775ed662bf34947915a782cf25f4b943a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswingdbl01.wav",
+      "bytes": 59086,
+      "sha256": "aa54baf271b2f3b096ee0fa07c24a939617cb7e8e283fca4b1f92c2e0943a1b3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswingdbl02.wav",
+      "bytes": 39686,
+      "sha256": "7dd4c5377a669a49c40e1b94c8bf91895989a1c3fbe3bc3833aa87bef20b5d43",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/ltsaberswingrstab01.wav",
+      "bytes": 67700,
+      "sha256": "9626f2d970017468bad97b558ceb73aa35a6d3160cccd31a5096dbb1a674d404",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/saberthrow.wav",
+      "bytes": 74994,
+      "sha256": "a666d4d07f74896a3fee454ad5f084f819926c541dd2ad84cc1e7c0d1918a805",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberoff01.wav",
+      "bytes": 29208,
+      "sha256": "352dcfe430dcd143d8a3985718bb233a0823227a24faf795e73b36fac0bea21c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberon01.wav",
+      "bytes": 65284,
+      "sha256": "dc4d4645096250ac838945278be01d88b43367aa5d3c7a87fdcad40464e02681",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberswing01.wav",
+      "bytes": 37254,
+      "sha256": "10cd09602496671b6a09a5fde5f4c073f5e60728e1beaa5f543fb87805eb02f7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberswing02.wav",
+      "bytes": 23088,
+      "sha256": "041605be7c7ada173b55ff5b0de58c4ea90d6c795de4b3cd37f3ddddf1ab3d2f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberswing03.wav",
+      "bytes": 33612,
+      "sha256": "5a5d93d1dd48f0b981ed5049ce3e8a39a508b3316c491b0922e87362eb4cc927",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberswing04.wav",
+      "bytes": 69204,
+      "sha256": "e25084eea0e3e54f1ca487dadd6f5c0326c8789b0580c328e54e85371cea518f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/sithsaberswingdbl01.wav",
+      "bytes": 46614,
+      "sha256": "5bf534a7514a13e2a3a34b5b724da49dbadf4fa95cbdba5ac62a7fa59d4a2461",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "sound/yodahurt.wav",
+      "bytes": 17590,
+      "sha256": "81ba462210bfde218d9d04351905613b6b39b26e9e63097e1c7b136a1623c493",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "ui/bm/icobjth16.bm",
+      "bytes": 1288,
+      "sha256": "eb95e3af59e6b8a62037a471f47a06325dd307a6a0d9f6173c5d9143ded150b9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "ui/bm/icobjth8.bm",
+      "bytes": 712,
+      "sha256": "0ce41e3f9f8f5afecf46c0d87ba31680467fd0a69c88af5113d593ee6ed7d384",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "ui/jkstrings.uni",
+      "bytes": 72143,
+      "sha256": "1a192bf6c8af9909f5d29934bac49e80030f38ff88ed97d0c83cdf61ea43b9ee",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00ic17z.wav",
+      "bytes": 20780,
+      "sha256": "1b2a63e26be6eba6c73a7acc112c30a541312bfe36d8896e4ab0f14f9db1bfa3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00ic18z.wav",
+      "bytes": 34092,
+      "sha256": "e85443e3f4e289325a5f78afa9f24e940a80e2940302cdc4419d4e12b5c748f3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00ic19z.wav",
+      "bytes": 37036,
+      "sha256": "641f57c14c0264ead1c0543ceed813f04cccc44b013c32a56eeeef5d025443b4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00ic20z.wav",
+      "bytes": 87852,
+      "sha256": "8a77e95b7e533c5241901a6d2df50c31e7d000617273a1c4b717fa283d2829c0",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00ky71z.wav",
+      "bytes": 28564,
+      "sha256": "04efad917d636471fe83bb5c89a8c09b59a6e86657a58d3218a4c0c4ee4d4411",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn01z.wav",
+      "bytes": 69036,
+      "sha256": "1024706ea56af155bb0a7f4df1975436ad144e59a69eac12e2d833195191556a",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn02z.wav",
+      "bytes": 19884,
+      "sha256": "b19f78e77a935309b783ab1c4cda17d865e4ef1ef05bd6eafbb587d967d427cc",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn03z.wav",
+      "bytes": 66988,
+      "sha256": "66bd145cb62dbcb9e7bc5403014da250e77a2cbbb95d6b6fe8af36c2b2585d79",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn04z.wav",
+      "bytes": 18732,
+      "sha256": "e9d4a6711c7c714da63edf7ac3dbd12dc6e04c9f6e270707ab0e887c39de2ccd",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn05z.wav",
+      "bytes": 19628,
+      "sha256": "671bfabb951f6a69a2a7797fb9b74641fc37a0898c287f3d99179d9c32315cbf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn06z.wav",
+      "bytes": 46124,
+      "sha256": "cebb403b903d182ee688f710c0ccb1bdf2b7b94296e78f5509b43e37c47c4358",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn07z.wav",
+      "bytes": 98220,
+      "sha256": "94908c8a21c22cf05fb34434647ebb24bea6dad692e09a1ddf56a881dc7c6e8f",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn08z.wav",
+      "bytes": 66860,
+      "sha256": "997a5fbfd3591d540e69b4a3a000cdc9feb9044110696609d48294b1d4913d8c",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn10z.wav",
+      "bytes": 60204,
+      "sha256": "de93e7aa532f6eeb8e1c5ba5717b4b842e649bae64e8ee2d199d18f2b13abcfc",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn12z.wav",
+      "bytes": 46380,
+      "sha256": "1ff8d61b03e53a746a14fb76aabc2fc934a31b917ac636f1bb601f762baeb117",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn13z.wav",
+      "bytes": 57132,
+      "sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn14z.wav",
+      "bytes": 47660,
+      "sha256": "8b4af9ec31c9787028e14b9b020d8d456c2ec88219bb8c87c11887c492dbbd42",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn17z.wav",
+      "bytes": 52780,
+      "sha256": "60359947b77384eb124da66c012c0774804ff6e8a08054045926be3cdb9cf7ed",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn18z.wav",
+      "bytes": 97692,
+      "sha256": "d831dc4fef506c1e21046e582fcbc61d7085b1fd257888cbc90560c1f4535b73",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00mn19z.wav",
+      "bytes": 119596,
+      "sha256": "879878504ec20b30f1982a37414a26dfbd6457836b944ed0c32cd3302fbeffaa",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00o109z.wav",
+      "bytes": 24876,
+      "sha256": "a04414e471275606590da5f52884fc6664238efa04f2fa422aa2b0912704bd75",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00o209z.wav",
+      "bytes": 40108,
+      "sha256": "2fd1f951a8a47800bddbef320cb47c4b9b5b9e5d7c03fd7c47f23963afe648ee",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm01z.wav",
+      "bytes": 84908,
+      "sha256": "b860b34c3ed62ac34cb38355cfd349fb16f81d1d43e5d124fd075ceddcad76c9",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm02z.wav",
+      "bytes": 29996,
+      "sha256": "302e1212d3263e36d8f8c7203b6b426bbca1fbeb2e760bcd9336d51eec2ccde4",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm03z.wav",
+      "bytes": 83116,
+      "sha256": "2074dfb04b94f7c391b3627e1c8709ce132c1ada32a75f5126bd4b38aaea0da3",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm04z.wav",
+      "bytes": 19116,
+      "sha256": "198f21ba20d2666f33bbdf7b6c0d4ee4eb9e8c51c84962bd22335e158eb0c199",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm05z.wav",
+      "bytes": 41004,
+      "sha256": "97b5d6fc9e6aa0d05f67cfd1050cf7e68e36cc73d2ca9f06e1d466fcf3a78e37",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm06z.wav",
+      "bytes": 58924,
+      "sha256": "b2e4bd7f90888d54185181b17a0336e90099566133801fac0e69d2f6119137d7",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm07z.wav",
+      "bytes": 127404,
+      "sha256": "bc83307e2bcef5396856f6a0878ed8cc742e0f6739cb561d1e6a7d397965c943",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm08z.wav",
+      "bytes": 148908,
+      "sha256": "b0ea02dbc3391c07f2db0bc7563021c56dd6fbfc02cd97ccd49b75f3460642ff",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm10z.wav",
+      "bytes": 51628,
+      "sha256": "730f6088ffbb5fb4295140fa99701095ea6073ce27b4173e451b954df4b0ee08",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm11z.wav",
+      "bytes": 73260,
+      "sha256": "d8592d535cf5b602711b38e79de9f582db3b27abd64e97b475f9490fb118ce03",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm12z.wav",
+      "bytes": 50988,
+      "sha256": "4ae1fa7924b94f70d1bc50995674d698b52f7c5a572eb90b173685d0f20907b1",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm13z.wav",
+      "bytes": 62636,
+      "sha256": "a28a1622edb3bc81186f0f6c7a96ae456e08b000469e6b232eeb0ec259ef2e0e",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm14z.wav",
+      "bytes": 47404,
+      "sha256": "c538e3ef289eb10d1cbd1aac2f5dabd9608be2a0dc4357d971aaca0b5998a9bf",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm15z.wav",
+      "bytes": 33196,
+      "sha256": "37e4db36cb5a3da70f4614fc4d6f6242cf4bf904f65b1b1ebe700e8277024f85",
+      "reason": "JK31/MotS reconciliation"
+    },
+    {
+      "path": "voice/i00wm17z.wav",
+      "bytes": 55724,
+      "sha256": "e814421da391e8196f617f09f3c186af15635d19746a1031a0cf0f9b65b09a2d",
+      "reason": "JK31/MotS reconciliation"
+    }
+  ]
+}

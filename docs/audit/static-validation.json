@@ -1,0 +1,307 @@
+{
+  "schema": "sbx-layered-static-validation-v1",
+  "method": "Archive roundtrip, layered resource closure, MotS inventory preservation, optional lexical registry check; not a compiler or gameplay proof.",
+  "archive_sha256": "05ba963a79d12aba847509fecb3c51d8d4bf770f2d1cb780cabe6b9a648c1479",
+  "members": 602,
+  "bytes": 21754460,
+  "introduced_missing_resources": [],
+  "inherited_missing_resources": [],
+  "duplicate_bins": [],
+  "changed_or_lost_base_bins": [],
+  "byte_identical_base_members": [],
+  "loose_archive_mismatches": [],
+  "lexical_reports": [
+    {
+      "path": "cog/client_weapons.cog",
+      "sha256": "6972e4bb0f490fc2a8893bdb80fdebe03e6fcdbf831229bf31489d915a780ada",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/force_defense.cog",
+      "sha256": "d173c49e5b199b3ec7286ba1a32f89da18ab2d526848274f29291aec7363b80b",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/force_destruction.cog",
+      "sha256": "9fd1c58a938c0acfc1d0555d05a0c0050a8d419840a0f35efd6fc48c1dba1aff",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/force_jump.cog",
+      "sha256": "dd7f0e745716a645564c9b36369796b44cfd42a9949c6b61276faae5d71f3627",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/force_push.cog",
+      "sha256": "cc4f7e133b71ad723c8b98746f438f740d1d0820ba619f6f4c36f7d6e6e38dbd",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/item_irgoggles.cog",
+      "sha256": "0cfa46e569bbf3ff0e93a67a115ac716358e16beb2a53342287c16339d9c5f31",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/kyle_m.cog",
+      "sha256": "4bc0605da4de29b68b89ede25efd545ea7b2ab40423ae9b525f7d6f9009ac5ef",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/luke_m.cog",
+      "sha256": "b4a05ba06d50cee36fae26c76f31d0bf357586043ff954820867006ad39f8f2e",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/mara_m.cog",
+      "sha256": "1b5b36a43064505bea672ab8d7f948db50ea86bade2de613b39071a0315189ac",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/pow_supershield.cog",
+      "sha256": "d9e07c7a00c19a221678e7dbcbc407c890efa2fe7cc5442dcd5f7dc7e720d3fa",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/saberstance.cog",
+      "sha256": "5bfba52069195e865eabbb17e55306f9dfd4b3314eb35f1bb2f2ef0931baf8ba",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_map0.cog",
+      "sha256": "2b25a186f42fac43faa8e39559e62ea3ca40362fd1cc63d0bca493eb6bfb17ef",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_map1.cog",
+      "sha256": "76ccc48bf5fd19608a04854f99eee7737da3837df3bb1171cbd8292ee54358b3",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_map2.cog",
+      "sha256": "e866d0182234bf3f57061082a3878ffc2c4d53b0b4959c8c5c7b6751795e49c7",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_objthrow.cog",
+      "sha256": "4fce004a547d9373a2d0cc26fdec5720c1a3359b4b76b5d7b4471860d4381629",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_tal_pick.cog",
+      "sha256": "ca7267f87776cebe283aa806a704c6b7fd13259feb68225ac79729d5b2ae0776",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_talisman.cog",
+      "sha256": "f17d2445dda3b5f5dfe78324695eca6a414b6b223e53fa0f1a2d044512b14df4",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/sbxd_view.cog",
+      "sha256": "15a6b2376b8bd0111ee6cbcea250fbc06872eac4ed3c7d7e7c8404a9dbcf391c",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/weap_bryar_m.cog",
+      "sha256": "ffe06f06f6eac8d2486cdc794985b32854cd4cf403ef61dff6c3f07ded7bc2b4",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/weap_extsaber_m.cog",
+      "sha256": "014572ec4940be004de9ef3b938ff24ac05c64a49349e2f2ac9798bf5c57f9ad",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/weap_saber_m.cog",
+      "sha256": "91949ef6f796c6274d44fa050127dcfa27a37f232d7b44aa4d1c5ff664448fe0",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    },
+    {
+      "path": "cog/weap_sithsaber_m.cog",
+      "sha256": "0db1c5c02f16d79a9a8642ac4e2cf775a78fc5508411f398b3da44ac6f8412a9",
+      "availability_findings": 0,
+      "calls_absent": [],
+      "messages_absent": [],
+      "warnings": []
+    }
+  ],
+  "native_resource_budgets": {
+    "cog/client_weapons.cog": {
+      "resource_references": 21,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/force_defense.cog": {
+      "resource_references": 2,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/force_destruction.cog": {
+      "resource_references": 6,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/force_jump.cog": {
+      "resource_references": 9,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/force_push.cog": {
+      "resource_references": 3,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/item_irgoggles.cog": {
+      "resource_references": 4,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/kyle_m.cog": {
+      "resource_references": 76,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/luke_m.cog": {
+      "resource_references": 63,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/mara_m.cog": {
+      "resource_references": 76,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/pow_supershield.cog": {
+      "resource_references": 5,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/saberstance.cog": {
+      "resource_references": 34,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_map0.cog": {
+      "resource_references": 120,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_map1.cog": {
+      "resource_references": 120,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_map2.cog": {
+      "resource_references": 116,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_objthrow.cog": {
+      "resource_references": 5,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_tal_pick.cog": {
+      "resource_references": 4,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_talisman.cog": {
+      "resource_references": 2,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/sbxd_view.cog": {
+      "resource_references": 3,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/weap_bryar_m.cog": {
+      "resource_references": 16,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/weap_extsaber_m.cog": {
+      "resource_references": 126,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/weap_saber_m.cog": {
+      "resource_references": 126,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    },
+    "cog/weap_sithsaber_m.cog": {
+      "resource_references": 123,
+      "native_limit": 128,
+      "declarations_rejected_by_capacity": []
+    }
+  },
+  "capacity_failures": [],
+  "reachable_resources_checked": 2937,
+  "model_hierarchy_failures": [],
+  "passed": true
+}

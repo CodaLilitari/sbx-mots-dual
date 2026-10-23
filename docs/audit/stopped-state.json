@@ -1,0 +1,657 @@
+{
+  "schema": "sbx-owned-runtime-stop-audit-v1",
+  "timestamp_utc": "2026-10-23T19:48:41.297292+00:00",
+  "method": "Read-only exact recorded case identities and exact task prefix/audio/display bindings. No termination commands.",
+  "all_stopped": true,
+  "all_source_inputs_unchanged": true,
+  "case_count": 19,
+  "cases": [
+    {
+      "tag": "sbx-base-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 12109,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 11336,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 11334,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-base-02",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 14270,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 13494,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 13492,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate01-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 17235,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 16425,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 16423,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate02-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 18471,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 17695,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 17693,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate04-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 20602,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 19738,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 19736,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate04-model01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 22388,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 21636,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 21634,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate05-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 26150,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 24595,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 24593,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate05-life01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 26358,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 24673,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 24671,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate05-skin01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 28242,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 27471,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 27469,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate07-extras01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 32288,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 30820,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 30818,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate07-life01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 33296,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 32519,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 32517,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate07-render01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "failure",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 32318,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 30737,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 30735,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate07-render02",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 34911,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 34137,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 34135,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate08-skinsoft01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 39286,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 36967,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 36965,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate09-skinbright01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 42288,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 41476,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 41474,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-candidate09-smoke01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 40775,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 39962,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 39960,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-dx042-isolated",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 24276,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 23509,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 23507,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-stock-01",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 9059,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 8276,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 8274,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "tag": "sbx-stock-02",
+      "report_exists": true,
+      "source_inputs_unchanged": true,
+      "stop_reason": "queued_stop",
+      "runner_live": false,
+      "prefix_idle": true,
+      "remaining_owned_processes": [],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 10083,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 9288,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 9286,
+          "exit": 0
+        }
+      ]
+    }
+  ],
+  "scope": "This audit does not inspect or terminate unrelated user applications. Runner cleanup was scoped to each task-owned Wine prefix and exact child process handles."
+}
