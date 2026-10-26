@@ -1,0 +1,21 @@
+{
+  "schema": "sbx-native-key-adapter-build-v1",
+  "upstream_commit": "ac698316da694490e233907709a1a4422fb6802f",
+  "upstream_source_sha256": "e9b9e85cbc0d460b4efcca10f637ed752e01696770fc01c69b1c01b2b7730864",
+  "prefix_sha256": "0d472893aadf7fffe6ae440f041e95a4696f300658251a81682f94aec593d970",
+  "suffix_sha256": "b5920f7a9a85590333c481fc37784c927da477e27dcef6c41c8c1687ecbc78be",
+  "amalgam_sha256": "ea131e6d515b82ca88fb95306e6efe07caa1e207cd3350012b63897c530799f8",
+  "adapter_sha256": "c010680201bdbce7fb3b8c7f8a1d5a1f96c894cd087d1e53027540d0b9223ea9",
+  "compiler": "x86_64-w64-mingw32-gcc (WSL Ubuntu)",
+  "flags": [
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wl,--no-insert-timestamp",
+    "-lm"
+  ],
+  "source_transform": "Remove include directives only; concatenate offline prefix + exact source + native writer suffix.",
+  "warning_count": 0,
+  "runtime_scope": "No game process. Offline resource compiler only."
+}
