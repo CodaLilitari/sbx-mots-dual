@@ -4,7 +4,10 @@ import argparse, json, shutil, zipfile
 from archive_io import digest, extract, read_gob
 
 EXPECTED={
- 'dual':'eb34c78521be8fc2e7c6472e63ab7590b3f9b642e21fc5c47ec0b552e5ebf0e8',
+ # SBX Dual Sabers 17 (25 October 2026): reverse grip, retimed attacks,
+ # second heavy-cut fix, walk footsteps. v1.0.0 used the 22 October release
+ # (eb34c78521be8fc2e7c6472e63ab7590b3f9b642e21fc5c47ec0b552e5ebf0e8).
+ 'dual':'b0ad90b06fc76efd6641d286ff11a27c7f66b94db05c4b33a53fb1287f9e97e6',
  'jk31':'ad3df02e7bb2270ffb7997b57158e3d39f85b0bbabfaec43447cfc5f3f176833',
  'jk30':'2f858fd1b2a43f656935677db6de49fef94a293e4bde7725d532e719f6a57ecf',
  'mots30':'49c2d136cffb6b6108ea29165d1245262713a7ff9ace472654768ee0e3e0c449'}
@@ -40,11 +43,13 @@ def build(args):
     from assemble_candidate import assemble
     from validate_candidate import validate
     from build_software_textures import build as software_textures
+    from build_footsteps import build as footsteps
     reconciled=root/'generated/reconciled'
     reconcile(root,reconciled,args.mots_res,args.jk_res,args.jk_snd,args.mots_snd)
     scripts(root,root/'generated/dual-scripts')
     visuals(root/'sources/jk31',args.mots_res,root/'generated/dual-visuals')
     keys(args.jk_res,root/'sources/jk31',root/'sources/dual/misc/keyretarget.dat',root/'generated-animation-exact-local-03')
+    footsteps(root/'sources/dual/misc/keymarkers.dat',[reconciled,root/'sources/mots30',root/'sources/jk31'],root/'generated/footsteps')
     donor=root/'generated/asset-input/3do/sbxd_donor.3do';donor.parent.mkdir(parents=True)
     shutil.copyfile(root/'sources/jk31/3do/sabg-g.3do',donor)
     model_root=root/'generated/models'

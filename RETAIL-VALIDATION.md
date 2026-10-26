@@ -2,6 +2,15 @@
 
 **Delivery:** 2026-10-23, candidate09, requiring original SBX-MotS v3.0. This delivery passed static validation, deterministic rebuild checks, and bounded tests in the **original MotS executable**. It is not a certification of connected multiplayer, every skin/attack combination, or a complete campaign playthrough.
 
+## v1.1.0 (SBX Dual Sabers 17): what has been run so far
+
+**v1.1.0 has not yet been run in the original JKM.EXE.** Everything below about v1.0.0 still describes v1.0.0's tests. For v1.1.0:
+
+- **Build and static checks.** Two clean builds with the tools in this repository, from the same inputs, produced the same main overlay (`5c8b0d3b7d8ec0b539614b6d9083fc1a7b1837ed4f08ec4ca28b1a5f27a130f1`, 651 members) and the unchanged software layer (`7ec0c6cd…`). Layered static validation passed: 2,963 reachable resources, zero missing dependencies, zero lost or duplicate base bins, zero byte-identical base members, zero model hierarchy or capacity failures, and every changed COG within 128 references (`weap_sithsaber_m.cog` 123). The builder checks each prepared key's nodes, type, frames, rate and markers, and the reverse grip's two anchor entries.
+- **OpenJKDF2 MotS mode, not the original executable.** The overlay ran in the jkdf2mp site's game (browser build cloudflare-51, tristamus/OpenJKDF2 `8ccc356c`) in MotS mode, in Chromium with software WebGL (SwiftShader, about 4 frames a second), from Steam MotS data files, installed as `INSTALL.txt` says (loose overlay beside `sbx-mots v3.goo` in one mod folder). The game hosted multiplayer maps (`mdm07_vaporator`, `mdm15_homestead`, `mdm03_canopy`). A test-only COG, added through one extra `items.dat` row and not part of any package, gave and lit the Sith saber, switched to third person and pressed the stance action every 20 seconds; attacks and movement were real keyboard input. This build does not set the browser's reverse-grip engine flag, and the anchor names don't take its automatic second-hilt path, so the blades were placed by the overlay's own keys, as in JKM.EXE.
+- **Observed there:** the cycle staff → Sariss → dual/Boc → reverse grip → staff; the reverse-grip puppet trigger; in the reverse grip, both blades pointing down from the little-finger side of each fist while standing and walking; the primary attack and the hop and spin playing; no engine errors beyond the string-table count warnings the base has too. Screenshots: `docs/evidence/openjkdf2-mots-reverse-grip-*.png`.
+- **Not yet observed:** the dash (at 4 frames a second the run never stayed above the dash speed long enough, so trigger 1441 never fired; its code is Dual Sabers 17's, and MotS's `walkplayer` has the same `maxthrust` 2 and `surfdrag` 3 as JK's, so the threshold carries over), footstep sounds, the four-track limit under JKM.EXE with the reverse grip's attacks, other skins in motion, and anything over a network.
+
 ## Exact artifacts
 
 | Artifact | SHA-256 |

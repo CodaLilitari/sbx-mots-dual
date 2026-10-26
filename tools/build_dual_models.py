@@ -35,12 +35,28 @@ def hilt_from_saber(model):
     mesh['faces']=faces;mesh['name']='sbxd_lhilt'
     return mesh,[model['materials'][i] for i in mats]
 
-def grip(model,meshes,hand,hilt):
+def fist_center(model,meshes,hand):
     points=meshes[model['nodes'][hand]['mesh']]['vertices']
+    return (min(v[1] for v in points)+max(v[1] for v in points))/2
+
+def grip(model,meshes,hand,hilt):
     low=min(v[1] for v in hilt['vertices'])
     if low>=0:raise ValueError('Unexpected hilt axis')
-    center=(min(v[1] for v in points)+max(v[1] for v in points))/2
+    center=fist_center(model,meshes,hand)
     return max(low,min(-low,center-low/2))
+
+def reverse_grip(model,meshes,hand,hilt):
+    """Dual Sabers 17's reverse grip: the hilt turned end over end about the
+    middle of the fist (half a turn about the hand's up axis), as OpenJKDF2's
+    jkPlayer_GripMatrix does. Returns the anchor's position along the hand's
+    forward axis; its rotation is yaw 180."""
+    return 2*fist_center(model,meshes,hand)-grip(model,meshes,hand,hilt)
+
+def reverse_grip_anchors(data,hilt):
+    """Reverse-grip anchor positions (left node18, right node19) for one
+    player model, from its first geoset, as the upper loop key carries them."""
+    model=parsed(data);meshes=fmt.model_geosets(model)[0]
+    return reverse_grip(model,meshes,6,hilt),reverse_grip(model,meshes,12,hilt)
 
 def variant(data,hilt,materials):
     model=parsed(data);before=copy.deepcopy(model)
@@ -54,10 +70,11 @@ def variant(data,hilt,materials):
         table=[x.lower() for x in model['materials']]
         if material.lower() not in table:model['materials'].append(material)
         remap.append([x.lower() for x in model['materials']].index(material.lower()))
-    offsets=[]
+    offsets=[];reverse=[]
     for meshes in fmt.model_geosets(model):
         if meshes[spare]['vertices'] or meshes[spare]['faces']:raise ValueError('Spare mesh is not empty')
         offsets.append((grip(model,meshes,6,hilt),grip(model,meshes,12,hilt)))
+        reverse.append((reverse_grip(model,meshes,6,hilt),reverse_grip(model,meshes,12,hilt)))
         mesh=copy.deepcopy(hilt)
         for face in mesh['faces']:face['material']=remap[face['material']]
         meshes[spare]=mesh
@@ -73,7 +90,7 @@ def variant(data,hilt,materials):
     # deliberately repurposed anchors. They are not animation transforms.
     for node in nodes:
         for field in ('child','sibling','numChildren'):node.pop(field,None)
-    return model,{'left_grip_offset':left,'right_grip_offset':right,'reused_empty_mesh':spare,'lods':len(offsets),'source_sha256':digest(data)}
+    return model,{'left_grip_offset':left,'right_grip_offset':right,'left_reverse_anchor':reverse[0][0],'right_reverse_anchor':reverse[0][1],'reused_empty_mesh':spare,'lods':len(offsets),'source_sha256':digest(data)}
 
 def serialize_variant(raw,model,spare):
     """Surgical edit: preserve every original visible mesh and its normals."""

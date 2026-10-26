@@ -8,4 +8,6 @@ Original build/runtime receipts remain historical evidence, including their orig
 
 The separately supplied `public-edition-receipt.json` and `SHA256SUMS.txt` identify all three public ZIPs and prove equality with the tested originals: 602 main game files, 193 optional MAT files and 20 builder tool/vendor files. Each ZIP's `PACKAGE-MANIFEST.json` hashes its public members. Packaging does not add gameplay validation. Browser compatibility is expected from source inspection, not a completed browser run; multiplayer, full campaign and save/load coverage remain unverified.
 
+Since this edition, v1.1.0 has replaced `docs/original/sbx dual sabers readme.txt` with Dual Sabers 17's readme (hashes in `docs/original/SOURCE-DOCUMENT-HASHES.json`) and added four screenshots, `docs/evidence/openjkdf2-mots-reverse-grip-*.png`, taken in OpenJKDF2's MotS mode, not the original executable (see `SCREENSHOT-PROVENANCE.json`).
+
 See `RELEASE-NOTES.md`, `CREDITS.md` and `RETAIL-VALIDATION.md`. The original source readmes and OpenJKDF2 license remain unmodified under `docs/original/` and `docs/licenses/`.

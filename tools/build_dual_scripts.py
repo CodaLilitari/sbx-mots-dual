@@ -71,6 +71,9 @@ def build(root,out):
          // A failed key must not reset the native hit list or start an attack.
          if(dualResult == -1)
          {
+            // The reverse grip's second fire armed its hop when asked for
+            // its key (stance user2 9); no key, no hop (user2 13).
+            if(mode != 0) SendMessageEx(stanceCog, user2, 13, 0, 0, 0);
             SetFireWait(player, 0.08);
             Return;
          }
@@ -198,38 +201,77 @@ cleardualvisual:
       ReturnEx(1);
       Return;
    }
+   // What13: the weapon could not start the reverse grip's hop and spin,
+   // so its hop (timer 2, armed by what9) does not happen either.
+   if(what == 13)
+   {
+      KillTimerEx(2);
+      ReturnEx(1);
+      Return;
+   }
    if(what == 0) ReturnEx(bocHilt);''')
     stance=stance.replace("// Boc's stance's meshes, keys and key lengths. Param 0 says which: 0", "// Boc's hilt, keys and key lengths. Param 0 says which: 0")
     stance=stance.replace("// blade, 1 first trail, 2 second trail, 3 chop's length, 4 cut's length,", "// hilt, 1/2 hilt during trail timers, 3 chop's length, 4 cut's length,")
-    stance=stance.replace("// colour.", "// colour. What12 applies the visible native dual material pair.")
-    stance=stance.replace('SBX Dual Sabers is off: this game can\'t make Boc\'s moves.','SBX MotS Dual Sabers: prepared animation files are missing.').replace('SBX Dual Sabers readme.txt says which game it needs.','Run the overlay builder with your owned Jedi Knight Res2.gob.')
-    stance=stance.replace("# Boc's, made at load (misc\\keyretarget.dat)","# Prepared locally from owned JK animations")
+    stance=replace(stance,"   // colour. In the reverse grip,","   // colour. What12 applies the visible native dual material pair and\n   // what13 cancels the reverse grip's hop. In the reverse grip,")
+    # Dual Sabers 17 tells a player once when a stance's keys could not be
+    # made. Here they are prepared files: say which ones are missing.
+    stance=replace(stance,'Print("No Boc\'s stance or reverse grip in this game.");','Print("SBX MotS Dual Sabers: prepared animation files are missing.");')
+    stance=replace(stance,'Print("No reverse grip in this game.");','Print("SBX MotS Dual Sabers: the reverse grip\'s prepared files are missing.");')
+    stance=replace(stance,"# Boc's, made at load (misc\\keyretarget.dat)","# Prepared locally from owned JK animations")
+    stance=replace(stance,"# the reverse grip's, made at load; -1 (startup) on a game that can't draw it, -2 once said so","# Prepared locally; -1 (startup) if missing, -2 once said so")
     stance=stance.replace('// From the Dual Sabers key (dualsabers.cog): the Sith lightsaber\'s stance','// From the retail controller: the Sith lightsaber\'s stance')
-    emit('cog/saberstance.cog',stance,'MotS stance ordinals and bin125; native three-stance cycle; hilt-only right mesh and twenty visible native blade materials, used only by dual stance; browser mesh fans adapted to native static polylines')
+    # The browser build ships 0.01 s stand-ins for keys it makes at load; this
+    # overlay ships the prepared keys, and a missing one loads as -1.
+    stance=replace(stance,'''   // A game that can't make these keys loads this GOB's stand-ins, 0.01 s
+   // long: then they count as missing
+   if(GetKeyLen(bocChop) < 0.05) bocChop = -1;
+   if(GetKeyLen(rgStand) < 0.05) rgStand = -1;
+''','')
+    emit('cog/saberstance.cog',stance,'MotS stance ordinals and bin125; native four-stance cycle (staff, Sariss, dual, reverse grip); hilt-only right mesh and twenty visible native blade materials, used only by the two-saber stances; browser mesh fans adapted to native static polylines; reverse-grip hop cancelled when its key cannot start')
     client=read('mots30','cog/client_weapons.cog')
-    client=replace(client,'message     trigger','keyframe bocStand=rt_bostand.key local\n\nmessage     trigger')
+    client=replace(client,'message     trigger','keyframe bocStand=rt_bostand.key local\nkeyframe rgStand=rt_rgstand.key local\n\nmessage     trigger')
     pos=client.index('\tif(TrigID == 129)')
+    # Dual Sabers 17's reverse grip (1440) and its dash (1441). The browser
+    # turns its blades with an engine flag (jk flag 0x200) that retail does
+    # not have; here the controller's upper loop (rt_rgupper.key) turns the
+    # grip anchors instead, so no flag is set.
     client=client[:pos]+'''\tif(TrigID == 1438)
     {
         if(bocStand != -1) ParseArg(Sender, "puppet=ky_bo.pup");
     }
     else
+\tif((TrigID == 1440) || (TrigID == 1441))
+    {
+        if(rgStand != -1)
+        {
+            if(TrigID == 1441) ParseArg(Sender, "puppet=ky_rgd.pup");
+            else ParseArg(Sender, "puppet=ky_rg.pup");
+        }
+        else
+        if(bocStand != -1) ParseArg(Sender, "puppet=ky_bo.pup");
+    }
+    else
 '''+client[pos:]
-    emit('cog/client_weapons.cog',client,'Retains MotS projectile handlers, saber damage and hilt palette; adds dual puppet trigger')
+    emit('cog/client_weapons.cog',client,'Retains MotS projectile handlers, saber damage and hilt palette; adds dual and reverse-grip puppet triggers (the reverse grip falls back to the dual puppet if its keys are missing)')
     # The dual add-on's general modes were JK-specific. Retain the MotS staff
     # PUP's unarmed, gun and swimming modes, including native casting keys.
-    supplied_pup=read('dual','misc/pup/ky_bo.pup')
-    dual_mode=re.search(r'(?ms)^Mode=2\b.*?(?=^Mode=3\b)',supplied_pup)
-    if dual_mode is None:raise ValueError('Missing supplied dual PUP mode2')
-    pup=read('mots30','misc/pup/ky_ls.pup')
-    pup,n=re.subn(r'(?ms)^Mode=2\b.*?(?=^Mode=3\b)',lambda m:dual_mode[0],pup)
-    if n!=1:raise ValueError('Expected one MotS staff PUP mode2')
-    pup=pup.replace('# Puppet control file for player with lightstaff -- Darth Maul stance','# Retail MotS dual PUP: native staff modes, supplied dual mode2.\n# The rt_ keys are prepared locally from owned JK data before installation.')
-    pup=re.sub(r'(?m)^3=12.*$','3=19 # primary: native right grip in generated variant',pup)
-    pup=re.sub(r'(?m)^4=19.*$','4=18 # secondary: native left grip in generated variant',pup)
-    pup=re.sub(r'(?m)^((?:block2?|hit|magic2?)\s+rt_\w+.key\s+0x28\s+1\s+)3',r'\g<1>4',pup)
-    pup=re.sub(r'(?m)^((?:fire2?|block2?)\s+rt_\w+.key\s+)0x28',r'\g<1>0x0a',pup)
-    emit('misc/pup/ky_bo.pup',pup,'MotS ky_ls unarmed/gun/swim modes retained exactly; supplied dual mode2 and native grip anchors; block/hit/Force priorities above upper idle; dual attacks and blocks use NOLOOP end-removal; lower-only locomotion keys prepared locally')
+    def retail_pup(supplied_name,heading):
+        supplied_pup=read('dual','misc/pup/'+supplied_name)
+        dual_mode=re.search(r'(?ms)^Mode=2\b.*?(?=^Mode=3\b)',supplied_pup)
+        if dual_mode is None:raise ValueError('Missing supplied dual PUP mode2: '+supplied_name)
+        pup=read('mots30','misc/pup/ky_ls.pup')
+        pup,n=re.subn(r'(?ms)^Mode=2\b.*?(?=^Mode=3\b)',lambda m:dual_mode[0],pup)
+        if n!=1:raise ValueError('Expected one MotS staff PUP mode2')
+        pup=replace(pup,'# Puppet control file for player with lightstaff -- Darth Maul stance',heading)
+        pup=re.sub(r'(?m)^3=12.*$','3=19 # primary: native right grip in generated variant',pup)
+        pup=re.sub(r'(?m)^4=19.*$','4=18 # secondary: native left grip in generated variant',pup)
+        pup=re.sub(r'(?m)^((?:block2?|hit|magic2?)\s+r[tg]_\w+.key\s+0x28\s+1\s+)3',r'\g<1>4',pup)
+        pup=re.sub(r'(?m)^((?:fire2?|block2?)\s+r[tg]_\w+.key\s+)0x28',r'\g<1>0x0a',pup)
+        return pup
+    reasons='MotS ky_ls unarmed/gun/swim modes retained exactly; supplied {} mode2 and native grip anchors; block/hit/Force priorities above upper idle; attacks and blocks use NOLOOP end-removal; lower-only locomotion keys prepared locally'
+    emit('misc/pup/ky_bo.pup',retail_pup('ky_bo.pup','# Retail MotS dual PUP: native staff modes, supplied dual mode2.\n# The rt_ keys are prepared locally from owned JK data before installation.'),reasons.format('dual'))
+    emit('misc/pup/ky_rg.pup',retail_pup('ky_rg.pup','# Retail MotS reverse-grip PUP: native staff modes, supplied reverse-grip mode2.\n# The rt_ keys are prepared locally from owned JK data and the add-on\'s own idle.'),reasons.format('reverse-grip'))
+    emit('misc/pup/ky_rgd.pup',retail_pup('ky_rgd.pup','# Retail MotS reverse-grip PUP, dashing: as ky_rg.pup, with the dash for its run.\n# The rt_ keys are prepared locally from owned JK data and the add-on\'s own idle.'),reasons.format('reverse-grip dash'))
     for name in ['kyle_m.cog','mara_m.cog']:
         text=read('mots30','cog/'+name)
         text=replace(text,'symbols\n','symbols\n\nkeyframe bocBlock=rt_boblock.key local\n')

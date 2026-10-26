@@ -9,7 +9,7 @@ static int write_key(const char *name,rdKeyframe *key,int select,int own_clock){
  float fps=own_clock?key->upperFps:key->fps;
  uint32_t count=0;
  for(uint32_t i=0;i<key->numJoints2;i++){int upper=(sithKeyRetarget_state.dst.nodes[i].type&RT_BODY_UPPER)!=0;if(select==1&&!upper)continue;if(select==-1&&upper)continue;count++;}
- fprintf(f,"# Locally derived using OpenJKDF2 retarget source ac698316da694490e233907709a1a4422fb6802f\n# Contains owned JK animation; keep generated output local.\nSECTION: HEADER\nFLAGS 0x%04x\nTYPE 0x%x\nFRAMES %u\nFPS %.9g\nJOINTS %u\nSECTION: MARKERS\n",
+ fprintf(f,"# Locally derived using OpenJKDF2 retarget source 8ccc356c5733a41688982e8e5bcd95bb5826c654\n# Contains owned JK animation; keep generated output local.\nSECTION: HEADER\nFLAGS 0x%04x\nTYPE 0x%x\nFRAMES %u\nFPS %.9g\nJOINTS %u\nSECTION: MARKERS\n",
          key->flags,select==1?RT_BODY_UPPER:key->type,frames,fps,20u);
  if(own_clock){fprintf(f,"MARKERS 1\n0 4\n");}
  else {fprintf(f,"MARKERS %u\n",key->numMarkers);for(uint32_t i=0;i<key->numMarkers;i++)fprintf(f,"%.9g %d\n",key->markers.marker_float[i],key->markers.marker_int[i]);}
@@ -28,15 +28,20 @@ int main(int argc,char **argv){
  if(make_dir(output_root)&&errno!=EEXIST){perror(output_root);return 2;}
  sithKeyRetarget_Reset();
  if(sithKeyRetarget_FindKey("rt_bostand.key")<0)return 3;
- int made_upper=0;
+ /* One persistent upper loop per section: Boc's stand (rt_boupper.key) and,
+  * from the recipe's "own" section, the reverse grip's idle (rt_rgupper.key). */
+ int made_upper=0,has_own=0,made_own_upper=0;
  for(int i=0;i<sithKeyRetarget_state.recipe.numKeys;i++){
   const char *name=sithKeyRetarget_state.recipe.outKeys[i];rdKeyframe key;
+  int own=sithKeyRetarget_state.recipe.bOwn[i];
+  if(own)has_own=1;
   if(!sithKeyRetarget_Build(name,&key))return 4;
   int lower=key.upperFps>0;
   if(!write_key(name,&key,lower?-1:0,0))return 5;
-  if(lower&&!made_upper){if(!write_key("rt_boupper.key",&key,1,1))return 5;made_upper=1;}
+  if(lower&&!own&&!made_upper){if(!write_key("rt_boupper.key",&key,1,1))return 5;made_upper=1;}
+  if(lower&&own&&!made_own_upper){if(!write_key("rt_rgupper.key",&key,1,1))return 5;made_own_upper=1;}
   printf("RETAIL_KEY %s nodes=%u frames=%u fps=%.9g layer=%s upperclock=%u:%.9g\n",name,key.numJoints,key.numFrames,key.fps,lower?"lower":"full",key.upperNumFrames,key.upperFps);
   rdKeyframe_FreeEntry(&key);
  }
- return made_upper?0:6;
+ return (made_upper&&made_own_upper==has_own)?0:6;
 }

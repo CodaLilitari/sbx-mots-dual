@@ -52,7 +52,15 @@ def assemble(root,out,models,controller,reconciled=None,jk_res=None,mots_res=Non
     assert con.count(b'0: 0x0 0x1 0 -1 1 -1 0 ')==1
     con=con.replace(b'0: 0x0 0x1 0 -1 1 -1 0 ',b'0: 0x0 0x1 0 -1 -1 -1 0 ')
     add('3do/con0.3do',con,'Repair inherited unused material slots red/green1 to existing white and nonexistent root child1 to-1; no geometry or used material changes')
-    for p in (dual/'3do/key').glob('*.key'):add('3do/key/'+p.name,p.read_bytes(),'Supplied Dual Sabers attack, preserved')
+    # Dual Sabers 17 also ships 0.01 s stand-ins (rt_*.key) for the keys it
+    # makes at load, for games that cannot make them, and the reverse grip's
+    # idle (rg_antidle.key), which is only the source of rt_rg*.key. Retail
+    # gets the prepared keys above instead: copy only the add-on's attacks.
+    for p in sorted((dual/'3do/key').glob('*.key')):
+        if p.name.startswith('rt_') or p.name=='rg_antidle.key':continue
+        add('3do/key/'+p.name,p.read_bytes(),'Supplied Dual Sabers attack, preserved')
+    footsteps=root/'generated/footsteps'
+    if footsteps.is_dir():tree(footsteps,"SBX walk with Dual Sabers 17's footstep markers (misc/keymarkers.dat)")
     items=entries.get('misc/items.dat',(base/'misc/items.dat').read_bytes()).decode('latin1')
     if reconciled:items=transform_items(items)
     itemrows=(controller/'controller-items.txt').read_text()
@@ -65,7 +73,7 @@ def assemble(root,out,models,controller,reconciled=None,jk_res=None,mots_res=Non
     model_names.update(Path(n).name for n in entries if n.endswith('.3do'))
     static=preload(static,'MODELS',model_names)
     static=preload(static,'KEYFRAMES',[Path(n).name for n in entries if n.endswith('.key')])
-    static=preload(static,'ANIMCLASS',['ky_bo.pup'])
+    static=preload(static,'ANIMCLASS',['ky_bo.pup','ky_rg.pup','ky_rgd.pup'])
     # All registered skins now load together for native model lookup. Their
     # 1600+ distinct materials exceed SBX3.0's 1000 static-material slots.
     static=re.sub(r'(?im)^(World materials)\s+1000\s*$',r'\1 4096',static)

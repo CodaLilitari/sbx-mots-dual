@@ -19,11 +19,15 @@ def build(model_report,out):
             lines += [f'model {stem}{i}={row[key]} local' for i,row in enumerate(group)]
         lines += ['message user0','end','code','user0:','current=GetParam(0);','wanted=GetParam(1);',f'for(i=0; i<{len(group)}; i=i+1)','{',' if((current == base0[i]) || (current == dual0[i]))',' {','  if(wanted) ReturnEx(dual0[i]);','  else ReturnEx(base0[i]);','  Return;',' }','}','ReturnEx(-1);','Return;','end','']
         emit(f'sbxd_map{gi}.cog','\n'.join(lines));item_rows.append(f'sbxd_map{gi} {bins[gi]} 1 1 0x000 cog=sbxd_map{gi}.cog')
-    declarations='\n'.join(f'int {stem}{i}={initial} local' for stem,initial in [('want',0),('track',-1),('signature',-1)] for i in range(32))
+    declarations='\n'.join(f'int {stem}{i}={initial} local' for stem,initial in [('want',0),('track',-1),('signature',-1),('kind',0)] for i in range(32))
     lookups='\n'.join(f' if(mapped == -1) mapped=SendMessageEx(GetInvCog(localplayer,{bins[gi]}),user0,current,visible,0,0);' for gi in range(len(groups)))
     text='''# Retail-native dual hilt variants and persistent upper-body idle.
 # Coda with Andrei. Only local presentation changes; peers reconstruct from
 # existing stance triggers. Every player needs the same overlay installed.
+# want: 1 Boc's stance (trigger 1438), 2 the reverse grip (1440, or 1441
+# dashing). The reverse grip's idle (rt_rgupper.key) also turns both grip
+# anchors end over end about the fist, so its blades point back along the
+# forearms; kind is which idle a player's upper track plays.
 flags=0x240
 symbols
 thing localplayer local
@@ -35,6 +39,8 @@ int current local
 int mapped local
 int newsig local
 keyframe upper=rt_boupper.key local
+keyframe rgupper=rt_rgupper.key local
+int idle local
 DECLARATIONS
 message startup
 message pulse
@@ -48,7 +54,8 @@ startup:
  Return;
 trigger:
  triggerid=GetSourceRef();
- if((triggerid < 1431) || (triggerid > 1438)) Return;
+ if((triggerid < 1431) || (triggerid > 1441)) Return;
+ if(triggerid == 1439) Return;
  actor=GetParam(0);
  slot=GetPlayerNum(actor);
  if((slot < 0) || (slot >= 32)) Return;
@@ -57,8 +64,10 @@ trigger:
  {
   signature0[slot]=newsig;
   track0[slot]=-1;
+  kind0[slot]=0;
  }
  if(triggerid == 1438) want0[slot]=1;
+ else if(triggerid >= 1440) want0[slot]=2;
  else want0[slot]=0;
  Return;
 pulse:
@@ -73,6 +82,7 @@ pulse:
     signature0[slot]=newsig;
     want0[slot]=0;
     track0[slot]=-1;
+    kind0[slot]=0;
    }
    call update;
   }
@@ -80,7 +90,7 @@ pulse:
  Return;
 update:
  visible=0;
- if((want0[slot] == 1) && (GetThingHealth(actor)>0) && ((jkGetFlags(actor)&9) == 1) && ((jkGetFlags(actor)&16) != 0)) visible=1;
+ if((want0[slot] != 0) && (GetThingHealth(actor)>0) && ((jkGetFlags(actor)&9) == 1) && ((jkGetFlags(actor)&16) != 0)) visible=1;
  current=GetThingModel(actor);
  mapped=-1;
 LOOKUPS
@@ -97,12 +107,25 @@ LOOKUPS
  if((mapped != -1) && (mapped != current)) SetThingModel(actor,mapped);
  if(visible == 1)
  {
-  if((track0[slot] == -1) && (upper != -1)) track0[slot]=PlayKey(actor,upper,1,0);
+  // A stance change between Boc's and the reverse grip swaps the idle.
+  if((track0[slot] != -1) && (kind0[slot] != want0[slot]))
+  {
+   StopKey(actor,track0[slot],0.1);
+   track0[slot]=-1;
+  }
+  idle=upper;
+  if(want0[slot] == 2) idle=rgupper;
+  if((track0[slot] == -1) && (idle != -1))
+  {
+   track0[slot]=PlayKey(actor,idle,1,0);
+   kind0[slot]=want0[slot];
+  }
  }
  else
  {
   if(track0[slot] != -1) StopKey(actor,track0[slot],0.1);
   track0[slot]=-1;
+  kind0[slot]=0;
  }
  Return;
 shutdown:

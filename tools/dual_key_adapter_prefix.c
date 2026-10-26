@@ -1,6 +1,6 @@
 /* Offline host shim by Coda, collaborating with Andrei, 2026-10-23.
  * The separately concatenated retarget algorithm is unmodified OpenJKDF2
- * contributor source from tristamus/OpenJKDF2 ac698316da694490e233907709a1a4422fb6802f.
+ * contributor source from tristamus/OpenJKDF2 8ccc356c5733a41688982e8e5bcd95bb5826c654.
  * See the accompanying upstream LICENSE.md. This shim only supplies exact
  * named file loading, native text KEY parsing, allocation and output support.
  */
