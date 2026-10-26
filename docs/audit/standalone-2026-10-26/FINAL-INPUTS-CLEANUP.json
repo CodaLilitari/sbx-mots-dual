@@ -1,0 +1,190 @@
+{
+  "schema": "sbx-retail-final-inputs-cleanup-v1",
+  "cases": [
+    {
+      "tag": "sbx-standalone-ui01",
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "cc8ebdd7d12e464fae5bd3e3688e6f14d99cb0e89de1a8ec5e9d16f2d46ad9b8"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "ee4d4a8fa16a9d41065d079712ebba291d2dd018a486b516224d3a235c50e635"
+        }
+      ],
+      "retained_executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "source_inputs_unchanged": true,
+      "process_cleanup": [
+        {
+          "operation": "owned_process_game",
+          "pid": 1210,
+          "pid_present_after_cleanup": false,
+          "reported_exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 454,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 452,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "runner",
+          "pid": 440,
+          "pid_present_after_cleanup": false
+        }
+      ],
+      "stop_reason": "queued_stop",
+      "failure": null
+    },
+    {
+      "tag": "sbx-standalone-reverse01",
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "cc8ebdd7d12e464fae5bd3e3688e6f14d99cb0e89de1a8ec5e9d16f2d46ad9b8"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "ee4d4a8fa16a9d41065d079712ebba291d2dd018a486b516224d3a235c50e635"
+        }
+      ],
+      "retained_executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "source_inputs_unchanged": true,
+      "process_cleanup": [
+        {
+          "operation": "owned_process_game",
+          "pid": 2361,
+          "pid_present_after_cleanup": false,
+          "reported_exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 1417,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 1415,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "runner",
+          "pid": 1407,
+          "pid_present_after_cleanup": false
+        }
+      ],
+      "stop_reason": "queued_stop",
+      "failure": null
+    },
+    {
+      "tag": "sbx-standalone-life01",
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "efc87afa15a03d8ad31616fd96b0d2b82d8a7b2dbcdec9a928cd30ca742bc6c3"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "3fb793640481b6399e182cbfb24aa34235fd4bc81416ed7ebc3871defeec1f83"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "ee4d4a8fa16a9d41065d079712ebba291d2dd018a486b516224d3a235c50e635"
+        }
+      ],
+      "retained_executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "source_inputs_unchanged": true,
+      "process_cleanup": [
+        {
+          "operation": "owned_process_game",
+          "pid": 3781,
+          "pid_present_after_cleanup": false,
+          "reported_exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 2869,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 2867,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "runner",
+          "pid": 2818,
+          "pid_present_after_cleanup": false
+        }
+      ],
+      "stop_reason": "bounded_deadline",
+      "failure": null
+    },
+    {
+      "tag": "sbx-standalone-damage01",
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "4710e351d4afd1895f4c693703163575703d8b07b72bc098f7aadd6e7f804a31"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "75bed1b4e95497369ebbed750665d80760b21fcc8eb6cdd1607026df25764d60"
+        }
+      ],
+      "retained_executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "source_inputs_unchanged": true,
+      "process_cleanup": [
+        {
+          "operation": "owned_process_game",
+          "pid": 5550,
+          "pid_present_after_cleanup": false,
+          "reported_exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 4783,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 4779,
+          "pid_present_after_cleanup": false,
+          "reported_exit": 0
+        },
+        {
+          "operation": "runner",
+          "pid": 4758,
+          "pid_present_after_cleanup": false
+        }
+      ],
+      "stop_reason": "queued_stop",
+      "failure": null
+    }
+  ],
+  "all_exact_owned_pids_absent": true
+}

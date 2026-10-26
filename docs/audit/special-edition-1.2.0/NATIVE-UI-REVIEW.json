@@ -1,0 +1,322 @@
+{
+  "schema": "sbx-special-edition-native-ui-v1",
+  "target": "Original unmodified MotS JKM.EXE",
+  "scope": "Only menu/title rendering and navigation; no gameplay entered or retested. Existing gameplay evidence applies to unchanged member bytes.",
+  "art_qa": {
+    "schema": "sbx-special-edition-art-qa-v1",
+    "original_png_sha256": "f5ccdeaf41f135bc47c104ed2d5336a86a681107c02377798fe27c0f5fb8c960",
+    "candidate_png_sha256": "0c7e36d1bf01173f1f89b946a7daee594f1c76e17c7053dad9bc0b31cd0c7d6b",
+    "size": [
+      640,
+      480
+    ],
+    "changed_bbox_exclusive": [
+      450,
+      2,
+      615,
+      97
+    ],
+    "changed_pixels": 8845,
+    "expected_region_exclusive": [
+      450,
+      0,
+      616,
+      97
+    ],
+    "outside_expected_region_unchanged": true,
+    "original_logo_shifted_up17_without_resampling": true,
+    "translated_region_difference_pixels": 0,
+    "translated_region_difference_bbox_exclusive": null,
+    "visual_review": "Viewed both complete 640x480 images at original size. Special Edition is legible beneath the existing logo; matching purple serif display treatment. Left MotS wordmark and duel artwork remain unchanged. Native BM/palette and runtime verification pending."
+  },
+  "accelerated_package_qa": {
+    "baseline_archive": "build-01/standalone/accelerated/SBX-MotS-Dual.goo",
+    "baseline_archive_sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111",
+    "baseline_member_count": 2231,
+    "baseline_title": {
+      "bytes": 308104,
+      "sha256": "ece6a840c419146fcaa74165d0e401b02834e25e0188fbb44518129c89248f9c",
+      "version": 70,
+      "flags": 0,
+      "palette_format": 2,
+      "frames": 1,
+      "origin": [
+        0,
+        0
+      ],
+      "transparent_index": 0,
+      "bpp": 8,
+      "width": 640,
+      "height": 480,
+      "pixel_offset": 136,
+      "palette_offset": 307336,
+      "palette_sha256": "60151ca0798c49b165fc2cf5d83e706be21c7d4f41905c25f8838baea25b04ef",
+      "header_sha256": "406d8da7ad692ddc1b3c3036428c06b93c1c9a9feafc2cc9adbafb41c214f391"
+    },
+    "scope": "Read-only package and title inspection; no native launch.",
+    "candidate_archive": "build-03-special-edition/standalone/accelerated/SBX-MotS-Dual.goo",
+    "candidate_archive_sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a",
+    "candidate_member_count": 2231,
+    "candidate_title": {
+      "bytes": 308104,
+      "sha256": "948ec8c96517f7e049a561785c5efe98b8e3c367aba20b4fc0442e395001b85b",
+      "version": 70,
+      "flags": 0,
+      "palette_format": 2,
+      "frames": 1,
+      "origin": [
+        0,
+        0
+      ],
+      "transparent_index": 0,
+      "bpp": 8,
+      "width": 640,
+      "height": 480,
+      "pixel_offset": 136,
+      "palette_offset": 307336,
+      "palette_sha256": "60151ca0798c49b165fc2cf5d83e706be21c7d4f41905c25f8838baea25b04ef",
+      "header_sha256": "406d8da7ad692ddc1b3c3036428c06b93c1c9a9feafc2cc9adbafb41c214f391"
+    },
+    "added_members": [],
+    "removed_members": [],
+    "changed_members": [
+      "ui/bm/bkmain.bm"
+    ],
+    "header_unchanged": true,
+    "palette_unchanged": true,
+    "changed_pixels": 8819,
+    "pixel_change_bbox_inclusive": [
+      450,
+      2,
+      614,
+      96
+    ],
+    "only_title_changed": true
+  },
+  "software_package_qa": {
+    "baseline_archive": "build-01/standalone/software/SBX-MotS-Dual.goo",
+    "baseline_archive_sha256": "efc87afa15a03d8ad31616fd96b0d2b82d8a7b2dbcdec9a928cd30ca742bc6c3",
+    "baseline_member_count": 2231,
+    "baseline_title": {
+      "bytes": 308104,
+      "sha256": "ece6a840c419146fcaa74165d0e401b02834e25e0188fbb44518129c89248f9c",
+      "version": 70,
+      "flags": 0,
+      "palette_format": 2,
+      "frames": 1,
+      "origin": [
+        0,
+        0
+      ],
+      "transparent_index": 0,
+      "bpp": 8,
+      "width": 640,
+      "height": 480,
+      "pixel_offset": 136,
+      "palette_offset": 307336,
+      "palette_sha256": "60151ca0798c49b165fc2cf5d83e706be21c7d4f41905c25f8838baea25b04ef",
+      "header_sha256": "406d8da7ad692ddc1b3c3036428c06b93c1c9a9feafc2cc9adbafb41c214f391"
+    },
+    "scope": "Read-only package and title inspection; no native launch.",
+    "candidate_archive": "build-03-special-edition/standalone/software/SBX-MotS-Dual.goo",
+    "candidate_archive_sha256": "0cffe0dbb703dab7be9f154d71b5a49d553098b015d38355711b012cc0f118a7",
+    "candidate_member_count": 2231,
+    "candidate_title": {
+      "bytes": 308104,
+      "sha256": "948ec8c96517f7e049a561785c5efe98b8e3c367aba20b4fc0442e395001b85b",
+      "version": 70,
+      "flags": 0,
+      "palette_format": 2,
+      "frames": 1,
+      "origin": [
+        0,
+        0
+      ],
+      "transparent_index": 0,
+      "bpp": 8,
+      "width": 640,
+      "height": 480,
+      "pixel_offset": 136,
+      "palette_offset": 307336,
+      "palette_sha256": "60151ca0798c49b165fc2cf5d83e706be21c7d4f41905c25f8838baea25b04ef",
+      "header_sha256": "406d8da7ad692ddc1b3c3036428c06b93c1c9a9feafc2cc9adbafb41c214f391"
+    },
+    "added_members": [],
+    "removed_members": [],
+    "changed_members": [
+      "ui/bm/bkmain.bm"
+    ],
+    "header_unchanged": true,
+    "palette_unchanged": true,
+    "changed_pixels": 8819,
+    "pixel_change_bbox_inclusive": [
+      450,
+      2,
+      614,
+      96
+    ],
+    "only_title_changed": true
+  },
+  "cases": [
+    {
+      "case": "sbx-special-edition-ui01",
+      "executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "goo_sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a",
+      "source_inputs_unchanged": true,
+      "captures": [
+        {
+          "name": "ui-players",
+          "path": "docs/evidence/special-edition-1.2.0/ui-players.png",
+          "sha256": "d42a501aaf54e10e867d987dc5868075e9ce9a25cf18f59a261bda1f23199cc4",
+          "source": "Unedited original JKM.EXE screenshot from private Xvfb; visually inspected."
+        },
+        {
+          "name": "ui-single-player",
+          "path": "docs/evidence/special-edition-1.2.0/ui-single-player.png",
+          "sha256": "cfd5e1f5fdaece99fdf44e5dc60fd023a837a36177cbcb16e38d4f8931f85e5e",
+          "source": "Unedited original JKM.EXE screenshot from private Xvfb; visually inspected."
+        },
+        {
+          "name": "ui-setup",
+          "path": "docs/evidence/special-edition-1.2.0/ui-setup.png",
+          "sha256": "5c57ed78254635718b1ff2212ebee590250cf45b19ccc2ecb704d006cebd68c2",
+          "source": "Unedited original JKM.EXE screenshot from private Xvfb; visually inspected."
+        },
+        {
+          "name": "ui-controls",
+          "path": "docs/evidence/special-edition-1.2.0/ui-controls.png",
+          "sha256": "527766f7c89f0f6a02f7f2b6dfebe51adbafb618ad54664b17d3312c5010d13f",
+          "source": "Unedited original JKM.EXE screenshot from private Xvfb; visually inspected."
+        }
+      ],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 1217,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 448,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 446,
+          "exit": 0
+        }
+      ],
+      "stop_reason": "bounded_deadline",
+      "failure": null,
+      "all_exact_owned_pids_absent": true,
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "cc8ebdd7d12e464fae5bd3e3688e6f14d99cb0e89de1a8ec5e9d16f2d46ad9b8"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "ee4d4a8fa16a9d41065d079712ebba291d2dd018a486b516224d3a235c50e635"
+        }
+      ],
+      "case_report_sha256": "7b1632e52f0d12ab76a766ed706ff50c81b5d0bddaebce2928682c62e0d1c71e"
+    },
+    {
+      "case": "sbx-special-edition-ui02",
+      "executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+      "goo_sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a",
+      "source_inputs_unchanged": true,
+      "captures": [
+        {
+          "name": "ui-main-settled-01",
+          "path": "docs/evidence/special-edition-1.2.0/ui-main.png",
+          "sha256": "2f9051d70c754bec8bf77ad33d30c8a154148bf172c2a779048052c21cc7a9a9",
+          "source": "Unedited original JKM.EXE screenshot from private Xvfb; visually inspected."
+        }
+      ],
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 3441,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 2682,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 2680,
+          "exit": 0
+        }
+      ],
+      "stop_reason": "queued_stop",
+      "failure": null,
+      "all_exact_owned_pids_absent": true,
+      "mod_files": [
+        {
+          "path": "SBX-MotS.goo",
+          "sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a"
+        },
+        {
+          "path": "cog/sbxdiag.cog",
+          "sha256": "cc8ebdd7d12e464fae5bd3e3688e6f14d99cb0e89de1a8ec5e9d16f2d46ad9b8"
+        },
+        {
+          "path": "jkl/mdm02_freezer.jkl",
+          "sha256": "ee4d4a8fa16a9d41065d079712ebba291d2dd018a486b516224d3a235c50e635"
+        }
+      ],
+      "case_report_sha256": "c33375dd32aad33cf80034fea23457f89134d7939220c4f8b6931bf5fdd23ae2"
+    }
+  ],
+  "native_observations": "Players and settled Main visibly render matching Special Edition subtitle below original SBX logo. Single Player, Setup and Controls remain intact and navigation succeeds. No title clipping or menu overlap observed.",
+  "preview_note": "Tool image previews inconsistently appeared to omit parts of complete files. Earlier partial-redraw and overwrite inferences are withdrawn. Final accepted Main header matches encoded BM exactly: zero mismatching pixels. The extra Main-only session is retained; no further launch was needed.",
+  "native_header_bytecheck": {
+    "schema": "sbx-native-header-bytecheck-v1",
+    "capture": "retail-review/cases/sbx-special-edition-ui02/ui-main-settled-01.png",
+    "capture_sha256": "2f9051d70c754bec8bf77ad33d30c8a154148bf172c2a779048052c21cc7a9a9",
+    "crop_box_exclusive": [
+      4,
+      23,
+      644,
+      120
+    ],
+    "encoded_bm_crop_box_exclusive": [
+      0,
+      0,
+      640,
+      97
+    ],
+    "header_pixels_matching_encoded_bm_exactly": true,
+    "mismatching_pixels": 0,
+    "header_nonblack_pixels": 24031,
+    "note": "Final PNG is complete. Inconsistent tool image previews must not be described as file overwrite or native partial redraw; neither claim is supported by these bytes."
+  },
+  "limitations": [
+    "Accelerated distribution GOO launched twice for UI. Software distribution compared byte-for-byte: identical BM; no redundant software launch.",
+    "No new gameplay, connected multiplayer, physical Windows GPU or audible audio claims."
+  ],
+  "public_edition_note": "Private paths replaced by build-relative labels. Embedded art_qa is the earlier artwork stage; final native observations, pixel proof and cleanup supply completed UI validation."
+}

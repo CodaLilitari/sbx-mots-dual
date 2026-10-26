@@ -1,0 +1,33 @@
+{
+  "schema": "sbx-special-edition-reproducibility-v1",
+  "version": "1.2.0",
+  "builds": [
+    "build-03-special-edition",
+    "build-04-special-edition"
+  ],
+  "outputs": [
+    {
+      "edition": "accelerated",
+      "sha256": "d280ddfe89c7ecec950fe64c459e8e9f319b593f35206d861848070a3471539a",
+      "bytes": 47437733,
+      "members": 2231,
+      "build_03_equals_build_04": true,
+      "changed_from_tested_gameplay_baseline": [
+        "ui/bm/bkmain.bm"
+      ]
+    },
+    {
+      "edition": "software",
+      "sha256": "0cffe0dbb703dab7be9f154d71b5a49d553098b015d38355711b012cc0f118a7",
+      "bytes": 46906341,
+      "members": 2231,
+      "build_03_equals_build_04": true,
+      "changed_from_tested_gameplay_baseline": [
+        "ui/bm/bkmain.bm"
+      ]
+    }
+  ],
+  "behavioral_tests_passed": 13,
+  "full_builder_git_guard_added_before_build_04": true,
+  "gameplay_resources_unchanged": true
+}

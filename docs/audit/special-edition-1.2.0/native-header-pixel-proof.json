@@ -1,0 +1,23 @@
+{
+  "schema": "sbx-native-header-pixel-proof-v1",
+  "screenshot": "docs/evidence/special-edition-1.2.0/ui-main.png",
+  "source_capture": "sbx-special-edition-ui02/ui-main-settled-01.png",
+  "screenshot_sha256": "2f9051d70c754bec8bf77ad33d30c8a154148bf172c2a779048052c21cc7a9a9",
+  "native_bm_sha256": "948ec8c96517f7e049a561785c5efe98b8e3c367aba20b4fc0442e395001b85b",
+  "screenshot_crop_xyxy": [
+    4,
+    23,
+    644,
+    120
+  ],
+  "bitmap_crop_xyxy": [
+    0,
+    0,
+    640,
+    97
+  ],
+  "pixels_compared": 62080,
+  "rgb_differences": 0,
+  "nonblack_header_pixels": 24031,
+  "method": "Decode retained screenshot and final native bitmap to RGB; compare the complete title header byte-for-byte. Conflicting tool thumbnails did not reflect the retained screenshot pixels."
+}

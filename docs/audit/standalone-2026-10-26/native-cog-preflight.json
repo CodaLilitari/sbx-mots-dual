@@ -1,0 +1,191 @@
+{
+  "kind": "Measured retail-MotS registry lexical preflight, not execution",
+  "scripts": 23,
+  "findings": [],
+  "rows": [
+    {
+      "sha256": "1063d2a4f190b4069995d537002a1548a38c93dcd279687b70bbff936f5d93e4",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/actor_mn.cog"
+    },
+    {
+      "sha256": "8a359d6d9f0c186ef233bbb65daee078043f9e84e69d0a536c5c25fe77ccb1e8",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/client_weapons.cog"
+    },
+    {
+      "sha256": "d173c49e5b199b3ec7286ba1a32f89da18ab2d526848274f29291aec7363b80b",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/force_defense.cog"
+    },
+    {
+      "sha256": "9fd1c58a938c0acfc1d0555d05a0c0050a8d419840a0f35efd6fc48c1dba1aff",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/force_destruction.cog"
+    },
+    {
+      "sha256": "dd7f0e745716a645564c9b36369796b44cfd42a9949c6b61276faae5d71f3627",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/force_jump.cog"
+    },
+    {
+      "sha256": "cc4f7e133b71ad723c8b98746f438f740d1d0820ba619f6f4c36f7d6e6e38dbd",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/force_push.cog"
+    },
+    {
+      "sha256": "0cfa46e569bbf3ff0e93a67a115ac716358e16beb2a53342287c16339d9c5f31",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/item_irgoggles.cog"
+    },
+    {
+      "sha256": "4bc0605da4de29b68b89ede25efd545ea7b2ab40423ae9b525f7d6f9009ac5ef",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/kyle_m.cog"
+    },
+    {
+      "sha256": "b4a05ba06d50cee36fae26c76f31d0bf357586043ff954820867006ad39f8f2e",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/luke_m.cog"
+    },
+    {
+      "sha256": "1b5b36a43064505bea672ab8d7f948db50ea86bade2de613b39071a0315189ac",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/mara_m.cog"
+    },
+    {
+      "sha256": "d9e07c7a00c19a221678e7dbcbc407c890efa2fe7cc5442dcd5f7dc7e720d3fa",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/pow_supershield.cog"
+    },
+    {
+      "sha256": "23b1511d294c5ba1067aecc985589ba16d30b07db57fbfbe2a41bf26a8e02991",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/saberstance.cog"
+    },
+    {
+      "sha256": "2b25a186f42fac43faa8e39559e62ea3ca40362fd1cc63d0bca493eb6bfb17ef",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_map0.cog"
+    },
+    {
+      "sha256": "76ccc48bf5fd19608a04854f99eee7737da3837df3bb1171cbd8292ee54358b3",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_map1.cog"
+    },
+    {
+      "sha256": "e866d0182234bf3f57061082a3878ffc2c4d53b0b4959c8c5c7b6751795e49c7",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_map2.cog"
+    },
+    {
+      "sha256": "4fce004a547d9373a2d0cc26fdec5720c1a3359b4b76b5d7b4471860d4381629",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_objthrow.cog"
+    },
+    {
+      "sha256": "ca7267f87776cebe283aa806a704c6b7fd13259feb68225ac79729d5b2ae0776",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_tal_pick.cog"
+    },
+    {
+      "sha256": "f17d2445dda3b5f5dfe78324695eca6a414b6b223e53fa0f1a2d044512b14df4",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_talisman.cog"
+    },
+    {
+      "sha256": "030646c20c05dc4f3673c88e959fee51f0127142baea6f2645aaba11c8c4f574",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/sbxd_view.cog"
+    },
+    {
+      "sha256": "ffe06f06f6eac8d2486cdc794985b32854cd4cf403ef61dff6c3f07ded7bc2b4",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/weap_bryar_m.cog"
+    },
+    {
+      "sha256": "014572ec4940be004de9ef3b938ff24ac05c64a49349e2f2ac9798bf5c57f9ad",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/weap_extsaber_m.cog"
+    },
+    {
+      "sha256": "91949ef6f796c6274d44fa050127dcfa27a37f232d7b44aa4d1c5ff664448fe0",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/weap_saber_m.cog"
+    },
+    {
+      "sha256": "182ab61078e1bd34d3dd27138a3a39c70d377b0e28cfcee06b4f6cd07f636435",
+      "availability_findings": 0,
+      "calls_absent_from_target_registry": [],
+      "messages_absent_from_target_registry": [],
+      "warnings": [],
+      "path": "cog/weap_sithsaber_m.cog"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "sbx-standalone-reproducibility-v1",
+  "build_01": "build-01",
+  "build_02": "build-02",
+  "outputs": [
+    {
+      "path": "ready/SBX-MotS-Dual-Overlay.goo",
+      "sha256": "55f109b67b5d7365389dbd3457723cd05339bb131144f54d13705576f7faaf19",
+      "bytes": 24093536,
+      "byte_identical": true
+    },
+    {
+      "path": "ready-software-textures/SBX-MotS-Software-Textures.goo",
+      "sha256": "7ec0c6cdd37af43eb7d036b60c6ecfa0194a24fe949e08deeb8af418279a418a",
+      "bytes": 584804,
+      "byte_identical": true
+    },
+    {
+      "path": "standalone/accelerated/SBX-MotS-Dual.goo",
+      "sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111",
+      "bytes": 47437733,
+      "byte_identical": true
+    },
+    {
+      "path": "standalone/software/SBX-MotS-Dual.goo",
+      "sha256": "efc87afa15a03d8ad31616fd96b0d2b82d8a7b2dbcdec9a928cd30ca742bc6c3",
+      "bytes": 46906341,
+      "byte_identical": true
+    }
+  ],
+  "voice_fallback": {
+    "script_exact_single_binding_replacement": true,
+    "bundled_voice_exact_original_jk_bytes": true,
+    "voice_sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d"
+  },
+  "tools": {
+    "tools\\archive_io.py": "2996933d635031d22444331eadf096ef53ae7dd29ad58bd457d02f3a2f285259",
+    "tools\\assemble_candidate.py": "b2aa9a969e6c218d26d494220ad2d8db40561e10cbf4648b452e8b9144361751",
+    "tools\\audit_weapon_delta.py": "334609a8f88ebcf73bac8d52fc8993e64ab6e539958f5f17dd9bcb9479245a18",
+    "tools\\bake_dual_keys.py": "9847684fa004d2ef8985edb19607167d1e090c5f39219add7dd7dc74c6c408e0",
+    "tools\\build_dual_controller.py": "7292e3aeef0133477993a4283f1e64c9e06d56e7c9ff3e01046cea7c595a7c35",
+    "tools\\build_dual_models.py": "d3812dca3c6e275f278bd82a8773148471e17cdf8e7986f0772db08112e0fa19",
+    "tools\\build_dual_scripts.py": "fbd980144be4a14776281f308a0a19e00d11a2ef2240e3f4cc6c7e2c0fa2c041",
+    "tools\\build_dual_visuals.py": "589e95b054da999a041e5c17617f900122775e8b2a2e2ca2e9774d42ef239fdc",
+    "tools\\build_footsteps.py": "1c11fd29a4f02d1a3ad5000269ebcf7c6153fa296feac4c9891e58fbaf425044",
+    "tools\\build_overlay.py": "fdbe1fef0264f3f219d1feca1956748ac1f29ce03d51e774c105ae4a3fa054fe",
+    "tools\\build_software_textures.py": "2594d80ae06c82ae61d64740d40c0d1baaee607fb2601ac94fb4d9684c89d2ab",
+    "tools\\build_standalone.py": "7a7ce844c27448cbfcfc6c0697c94c7238fd606be15bd28e25bc4f190c6ce5da",
+    "tools\\dual-key-baker-build.json": "2809f0df12ee170574752ea3bd1bff5acd144b0ab9edef6f03b86c767748d7d8",
+    "tools\\dual-key-baker.exe": "872c9934fc854f53c6ba2c642631026aaa0c3dea7f144fe1403c73e3d83f0ab2",
+    "tools\\dual_key_adapter_prefix.c": "968feb5f3ee82b5d6e0944801894348093dd2fe8bc1ecfec88c5bea1c6a7c682",
+    "tools\\dual_key_adapter_suffix.c": "207bf41973a617b54c3f67642b21131b8b77afc43d777c9dad4ad896f72a0dd5",
+    "tools\\dual_key_baker_amalgam.c": "b55385f81db6525b7e4cd8f172c8e3f0d7bbbba109191429279fb8b95dac4bdb",
+    "tools\\jk_formats.py": "731a2028efd526fb2182a7e422b175586e43c1911da6d86224f4f577dfdffd7f",
+    "tools\\reconcile_sbx.py": "c0545bc62813789e1c75c20f7afcd3817b0f696091932a43bdec61bb5fb61767",
+    "tools\\test_standalone.py": "3217a9e6b91ddb9c5d858c3b012f972fc70619fc0b0fb49649ea90fd5fa72fab",
+    "tools\\validate_candidate.py": "a0eb1ccdc627b8f1a9a27263ac1522c58fce2ca01ac788202a99f086e2655f06",
+    "tools\\vendor\\OpenJKDF2-LICENSE.md": "2f4b8fa145aa8f7ca0c75717f480b090ee9d23ae0832a7f6de28b84ee7e38727",
+    "tools\\vendor\\sithKeyRetarget.c": "c2d51fd268673ee1881b8ec9324fdf8c08188ef1a313b767a291a5745e43532e"
+  },
+  "packager_tests": 7
+}

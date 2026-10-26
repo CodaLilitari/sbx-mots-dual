@@ -1,0 +1,10 @@
+﻿{
+    "original_png_sha256":  "f5ccdeaf41f135bc47c104ed2d5336a86a681107c02377798fe27c0f5fb8c960",
+    "generated_wordmark_sha256":  "ac07b98e43c90d9c3f1c44d1050f6d424048bfe0d7a25f6efa338dc6af1562b9",
+    "composed_png_sha256":  "0c7e36d1bf01173f1f89b946a7daee594f1c76e17c7053dad9bc0b31cd0c7d6b",
+    "composition":  "source=2103x748;alpha_bounds=367,197,1753,536;wordmark_destination=463,80,140,14;logo_translation=0,-17",
+    "text":  "Special Edition",
+    "attribution":  "Subtitle lettering generated with OpenAI ImageGen and composited by Coda with Andrei. Original SBX artwork remains attributed to its original creators.",
+    "scope":  "Only the right title block changes. Original Saber Battle X logo is translated upward 17 pixels without resampling; background, left title and control areas remain unchanged.",
+    "palette":  "Use the original embedded BKMAIN palette without changing it when encoding the game bitmap."
+}

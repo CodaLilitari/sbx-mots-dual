@@ -1,0 +1,21 @@
+{
+  "changed_pixels": 8819,
+  "changed_bbox_xyxy": [
+    450,
+    2,
+    615,
+    97
+  ],
+  "header_unchanged": true,
+  "palette_unchanged": true,
+  "width": 640,
+  "height": 480,
+  "input_png_sha256": "0c7e36d1bf01173f1f89b946a7daee594f1c76e17c7053dad9bc0b31cd0c7d6b",
+  "original_bm_sha256": "ece6a840c419146fcaa74165d0e401b02834e25e0188fbb44518129c89248f9c",
+  "output_bm_sha256": "948ec8c96517f7e049a561785c5efe98b8e3c367aba20b4fc0442e395001b85b",
+  "palette_sha256": "60151ca0798c49b165fc2cf5d83e706be21c7d4f41905c25f8838baea25b04ef",
+  "encoding": "Fixed original RGB palette, no dithering, preserve original indices wherever RGB pixels are unchanged",
+  "source": "art/special-edition/bkmain-special-edition.png",
+  "translated_original_title_rgb_pixels_verified": 13280,
+  "translated_original_title_rgb_differences": 0
+}

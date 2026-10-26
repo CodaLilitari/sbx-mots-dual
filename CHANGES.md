@@ -1,13 +1,25 @@
-# SBX Dual Sabers for retail MotS — conversion notes
+# SBX MotS Dual Sabers — Special Edition changes
 
-This is an overlay for the original **SBX-MotS v3.0**. The v1.0.0 main package has **602 game resources: 142 changed base paths and 460 additional paths**. It includes no byte-identical base members, complete base archive, retail executable or retail resource archive.
+## v1.2.0 Special Edition — 26 October 2026
+
+- Package the complete effective SBX base plus conversion into one deterministic GOO, with a separate complete software-renderer edition. Finished gameplay needs only the selected GOO and ordinary MotS.
+- Validate file references across every packaged resource against stock MotS alone. Preserve winner precedence, source hashes and archive round-trip checks.
+- Replace inherited missing `cm60142.wav` with the original JK equivalent for the same actor response and reuse the already bundled `i00mn13z.wav`. This is an explicit fallback; all other actor bytes remain intact.
+- Pass the caller's `--jk-res` argument through reconciliation instead of falling back to the historical workstation path.
+- Match the supplied v17 archive against merge !1. Current original-executable results are recorded in `STANDALONE-VALIDATION.md`.
+- Add Special Edition beneath the original SBX logo. Move that logo upward 17 pixels without resampling; preserve the palette and all pixels outside the right title block. No other GOO member changes from the tested standalone gameplay build.
+
+## Historical overlay releases
+
+
+The historical v1.0.0 release is an overlay for the original **SBX-MotS v3.0**. The v1.0.0 main package has **602 game resources: 142 changed base paths and 460 additional paths**. It includes no byte-identical base members, complete base archive, retail executable or retail resource archive.
 
 ## v1.1.0: SBX Dual Sabers 17
 
 The builder now takes **SBX Dual Sabers 17** (`SBX Dual Sabers.gob`, SHA-256 `b0ad90b06fc76efd6641d286ff11a27c7f66b94db05c4b33a53fb1287f9e97e6`, 25 October 2026) instead of the 22 October release (`eb34c785…`). The main overlay grows to **651 game resources: 165 changed base paths and 486 additional paths**, still with no byte-identical base members. The optional software texture layer is unchanged (193 MAT files, `7ec0c6cd…`). Two clean builds from the same inputs produced the same overlay, `5c8b0d3b7d8ec0b539614b6d9083fc1a7b1837ed4f08ec4ca28b1a5f27a130f1`.
 
 - **Reverse grip.** The Sith saber's stance action now cycles **staff → Sariss → dual/Boc → reverse grip → staff**. Both sabers are held blade-down, each blade leaving the little-finger side of the fist. The stance has its own stand (prepared locally from the add-on's `rg_antidle.key` through the recipe's new `own` section) with SBX's own legs, and its own attacks: standing, forward, left, right and back, and a cyclone each way when turning fast. Second fire is a coil, a hop and a whole turn in the air; the hop starts 0.17 s in, only on the ground and still in this stance, and is cancelled when the weapon cannot start the attack. Running flat out for about half a second switches to the dash puppet (`ky_rgd.pup`) until the player slows down.
-- **Retail blade turn.** Dual Sabers 17 turns the blades in the browser with an engine flag (jk flag `0x200`) that JKM.EXE does not have. Here the reverse grip's persistent upper idle, `rt_rgupper.key`, also carries one constant entry for each grip anchor (`sbxd_left_grip`, `sbxd_right_grip`): yaw 180, the hilt turned end over end about its own middle, as the engine's grip code does. No model, track, flag or hotkey is added; the controller swaps the upper idle when the stance changes between Boc's and the reverse grip. The anchor positions come from SBX Kyle; for 175 of the 178 player models they are within 0.0001 units of the model's own value, and within 0.0007 for the other three (`mara`, `callista`, `kyst`).
+- **Retail blade turn.** Dual Sabers 17 turns the blades in the browser with an engine flag (jk flag `0x200`) that JKM.EXE does not have. Here the reverse grip's persistent upper idle, `rt_rgupper.key`, also carries one constant entry for each grip anchor (`sbxd_left_grip`, `sbxd_right_grip`): yaw 180, the hilt turned end over end about its own middle, as the engine's grip code does. No model, track, flag or hotkey is added; the controller swaps the upper idle when the stance changes between Boc's and the reverse grip. The anchor positions come from SBX Kyle; for 175 of the 178 player models they are within 0.0001 units of the model's own value, and within 0.000708 for the other three (`mara`, `callista`, `kyst`).
 - **Attack timing.** As in Dual Sabers 17: Boc's chop plays 1.1 times as fast as his own and his cut 1.4 times; the Sith Sabers left and right cuts 1.3 times, the back cut 1.07 times and the heavy cut at its own speed (all were 1.5 times). The twin spinning slashes take 1.05 s turning left and 0.8 s turning right.
 - **Heavy cut.** Dual Sabers 17's second fix: two thirds of the way through, the left blade no longer snaps about 55 degrees in an instant.
 - **Footsteps.** SBX 3.1's walk, walk-back and strafe keys carry saber damage markers instead of the original game's footstep markers, and SBX-MotS v3.0 ships the same 23 keys byte for byte, so walking is silent in every stance. The builder adds the footstep frames from Dual Sabers 17's `misc/keymarkers.dat` to those 23 keys (`tools/build_footsteps.py`, the same rules as OpenJKDF2's loader) and to the walks it prepares for Boc's stance and the reverse grip. Only the marker sections change.

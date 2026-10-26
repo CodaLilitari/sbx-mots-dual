@@ -1,0 +1,232 @@
+{
+  "schema": "sbx-standalone-retail-observations-v1",
+  "target": "Original owned MotS JKM.EXE, unmodified",
+  "executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+  "accelerated_goo_sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111",
+  "software_goo_sha256": "efc87afa15a03d8ad31616fd96b0d2b82d8a7b2dbcdec9a928cd30ca742bc6c3",
+  "baseline": "48 manifest-pinned owned MotS files; standalone GOO is sole mod archive; private lab contains exactly owned map and diagnostic COG",
+  "environment": "Wine8 i386 in retained Debian chroot under WSL, private Xvfb150, llvmpipe, null audio",
+  "verified": [
+    {
+      "case": "sbx-standalone-ui01",
+      "result": "Sole-GOO boot and ordinary Players/Main/Single Player/Setup/Controls/Keyboard menus visibly render; developer diagnostics disabled.",
+      "captures": [
+        "ui-players",
+        "ui-main",
+        "ui-single-player",
+        "ui-setup",
+        "ui-controls",
+        "ui-keyboard"
+      ]
+    },
+    {
+      "case": "sbx-standalone-reverse01",
+      "result": "Observed native 16bpp accelerated selection; reverse idle with two native blades; real Ctrl primary and Z alternate hop/spin animate and return to idle.",
+      "captures": [
+        "display-accel-selected",
+        "route-external",
+        "attack-before",
+        "attack-primary-01",
+        "attack-primary-02",
+        "attack-secondary-01",
+        "attack-secondary-02",
+        "attack-after"
+      ]
+    },
+    {
+      "case": "sbx-standalone-reverse01",
+      "result": "Real Shift+W automatically produced trigger1441 dash entry and trigger1440 exit on slowdown/wall; first two attempts did not qualify.",
+      "captures": [
+        "run3-long",
+        "run3-stopped"
+      ],
+      "limit": "The successful dash was brief before wall contact; does not establish long unobstructed dash visual quality."
+    },
+    {
+      "case": "sbx-standalone-reverse01",
+      "result": "Repeated primary with side movement and repeated alternate hop/spin returned to idle; no observed crash/frozen animation.",
+      "captures": [
+        "repeat-moving-01",
+        "repeat-moving-02",
+        "repeat-moving-03",
+        "repeat-hop-01",
+        "repeat-hop-02",
+        "repeat-hop-03",
+        "repeat-recovered"
+      ],
+      "limit": "This samples track contention; maximum four-way attack+locomotion+idle+block exhaustion was not forced."
+    },
+    {
+      "case": "sbx-standalone-life01",
+      "result": "Observed unchecked acceleration and 8bpp menu; visually inspected staff, Sariss, dual, reverse, wrapped staff, reverse re-entry and saber off/on. Weapon switch markers show raw131,139,125.",
+      "captures": [
+        "display-before",
+        "route-external",
+        "periodic-0027",
+        "periodic-0029",
+        "periodic-0031",
+        "periodic-0033",
+        "periodic-0035",
+        "periodic-0037",
+        "periodic-0039",
+        "periodic-0041",
+        "periodic-0044"
+      ],
+      "limit": "Final raw125 return was unlit because diagnostic does not re-ignite after switching weapons; no claim of a lit reverse restoration on that step."
+    },
+    {
+      "case": "sbx-standalone-damage01",
+      "result": "500 health stationary actor fell to450 after ordinary Ctrl primary and Z alternate attack input while in reverse grip. Native saber damage observed; diagnostic contains no DamageThing and target has no AI or scripted damage.",
+      "captures": [
+        "display-accel-selected",
+        "damage-before",
+        "attack-primary-02",
+        "attack-secondary-02",
+        "damage-after"
+      ],
+      "limit": "The combined sequence proves actual reverse native damage but does not isolate which individual swing caused the50 damage or prove every hitbox/attack variant."
+    }
+  ],
+  "pending": [],
+  "not_tested": [
+    "connected clients/checksums and remote visibility",
+    "all178 skins in reverse-grip motion",
+    "complete campaign",
+    "death/respawn",
+    "save/load",
+    "audible audio",
+    "physical Windows GPU",
+    "fully saturated blocking-track allocation"
+  ],
+  "diagnostic_note": "Direct COG calls grant weapons/request stance only; attacks and run are ordinary player input. Raw jk flags include diagnostic invulnerability, so decimal659 is not used as proof of no0x200 dependency.",
+  "case_receipts": [
+    {
+      "case": "sbx-standalone-ui01",
+      "report_sha256": "6544a10dae8afd4ca7045ee9f21ac69674b75d4603310212dfd00aa5958975be",
+      "stop_reason": "queued_stop",
+      "failure": null,
+      "source_inputs_unchanged": true,
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 1210,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 454,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 452,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "case": "sbx-standalone-reverse01",
+      "report_sha256": "70e684fdbdd173207fb0706ea936e65bff65f160d1e739cbc4237cbe9a212307",
+      "stop_reason": "queued_stop",
+      "failure": null,
+      "source_inputs_unchanged": true,
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 2361,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 1417,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 1415,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "case": "sbx-standalone-life01",
+      "report_sha256": "eac900874d0f5ea436511d9910b28fd3e2d473be45434d2c3be4c5c441c6d43a",
+      "stop_reason": "bounded_deadline",
+      "failure": null,
+      "source_inputs_unchanged": true,
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 3781,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 2869,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 2867,
+          "exit": 0
+        }
+      ]
+    },
+    {
+      "case": "sbx-standalone-damage01",
+      "report_sha256": "ce033ada19de7c2ce9187c7ef984186f427ff51e55b1aa9b2bca8b07fdd1ca00",
+      "stop_reason": "queued_stop",
+      "failure": null,
+      "source_inputs_unchanged": true,
+      "cleanup": [
+        {
+          "operation": "scoped_wineserver_-k",
+          "exit": 0
+        },
+        {
+          "operation": "scoped_wineserver_-w",
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_game",
+          "pid": 5550,
+          "exit": -9
+        },
+        {
+          "operation": "owned_process_xvfb",
+          "pid": 4783,
+          "exit": 0
+        },
+        {
+          "operation": "owned_process_private_null_audio",
+          "pid": 4779,
+          "exit": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""Reproduce the minimal MotS overlay from explicitly supplied local archives."""
+"""Reproduce SBX MotS and package standalone GOO editions from local archives."""
 from pathlib import Path
 import argparse, json, shutil, zipfile
 from archive_io import digest, extract, read_gob
@@ -29,6 +29,8 @@ def source(path,tag,root):
 def build(args):
     root=Path(args.output).resolve()
     if root.exists():raise FileExistsError('Choose a new build directory; existing work is never overwritten')
+    if any((p/'.git').exists() for p in [root,*root.parents]):
+        raise ValueError('Put generated build workload outside Git checkouts')
     for name in ['dual','jk30','jk31','mots30','jk_res','jk_snd','mots_res','mots_snd']:
         if not Path(getattr(args,name)).is_file():raise FileNotFoundError(getattr(args,name))
     root.mkdir(parents=True)
@@ -59,21 +61,28 @@ def build(args):
     controller(model_root/'dual-models.json',control)
     candidate=root/'ready'
     assemble(root,candidate,model_root,control,reconciled,args.jk_res,args.mots_res)
+    from build_special_edition import apply as special_edition
+    ui=special_edition(candidate,root/'sources/mots30-zip/sbx-mots v3.goo',Path(__file__).resolve().parents[1],getattr(args,'ui_bitmap',None))
     qa=validate(candidate,root/'sources/mots30-zip/sbx-mots v3.goo',args.mots_res,args.mots_snd)
     if not qa['passed']:raise ValueError('Static validation failed; inspect ready/static-validation.json')
     software=software_textures(candidate/'overlay',root/'sources/mots30-zip/sbx-mots v3.goo',args.mots_res,root/'ready-software-textures')
-    # This local runnable folder is not the redistributable archive. Loose
-    # resources override its unchanged base GOO without archive-order guessing.
+    # SBX archives are build inputs, never runtime prerequisites of this GOO.
+    from build_standalone import build as standalone
+    standalone_result=standalone(root/'sources/mots30-zip/sbx-mots v3.goo',
+        candidate/'SBX-MotS-Dual-Overlay.goo',args.mots_res,args.mots_snd,
+        root/'standalone',root/'ready-software-textures/SBX-MotS-Software-Textures.goo')
     mod=root/'local-mod/SBX-Dual'
-    shutil.copytree(candidate/'overlay',mod)
-    shutil.copyfile(root/'sources/mots30-zip/sbx-mots v3.goo',mod/'sbx-mots v3.goo')
-    result={'status':'BUILT_AND_STATIC_CHECKED','overlay_sha256':qa['archive_sha256'],'members':qa['members'],'models':len(model_report['models']),
+    mod.mkdir(parents=True)
+    shutil.copyfile(root/'standalone/accelerated/SBX-MotS-Dual.goo',mod/'SBX-MotS-Dual.goo')
+    result={'status':'BUILT_AND_STATIC_CHECKED','version':'1.2.0','edition':'Special Edition','ui':ui,'overlay_sha256':qa['archive_sha256'],'members':qa['members'],'models':len(model_report['models']),
             'software_texture_members':software['material_count'],'software_texture_sha256':software['generated_archive_sha256'],
-            'local_mod':str(mod),'private_generated_files':True,'note':'Only the source builder package is intended for redistribution. Generated files include locally derived owned game animation.'}
+            'standalone':standalone_result,'local_mod':str(mod),'private_generated_files':True,
+            'note':'The local mod contains one complete GOO; SBX archives are build inputs only. Publication is a separate reviewed action because generated files include locally derived owned game animation.'}
     (root/'BUILD-RESULT.json').write_text(json.dumps(result,indent=2)+'\n');return result
 
 if __name__=='__main__':
     ap=argparse.ArgumentParser(description=__doc__)
     for tag in ['dual','jk30','jk31','mots30']:ap.add_argument('--'+tag,required=True,help='Audited local ZIP or GOB/GOO')
     for tag in ['jk-res','jk-snd','mots-res','mots-snd','output']:ap.add_argument('--'+tag,required=True)
+    ap.add_argument('--ui-bitmap',help='Optional prepared native BM; defaults to bundled assets/ui/bkmain.bm')
     args=ap.parse_args();print(json.dumps(build(args),indent=2))

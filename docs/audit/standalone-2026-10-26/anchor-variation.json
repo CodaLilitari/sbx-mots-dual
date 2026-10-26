@@ -1,0 +1,1432 @@
+{
+  "reference": [
+    -0.015976,
+    -0.025036000000000003
+  ],
+  "rows": [
+    {
+      "model": "callista.3do",
+      "anchors": [
+        -0.015269000000000001,
+        -0.024951
+      ],
+      "distance_from_kyle": 0.0007069999999999993
+    },
+    {
+      "model": "mara.3do",
+      "anchors": [
+        -0.015269000000000001,
+        -0.024951
+      ],
+      "distance_from_kyle": 0.0007069999999999993
+    },
+    {
+      "model": "kyst.3do",
+      "anchors": [
+        -0.016390500000000002,
+        -0.0255045
+      ],
+      "distance_from_kyle": 0.0004684999999999967
+    },
+    {
+      "model": "kya11.3do",
+      "anchors": [
+        -0.015976,
+        -0.024945500000000002
+      ],
+      "distance_from_kyle": 9.05000000000003e-05
+    },
+    {
+      "model": "kyap.3do",
+      "anchors": [
+        -0.015976,
+        -0.024945500000000002
+      ],
+      "distance_from_kyle": 9.05000000000003e-05
+    },
+    {
+      "model": "kytp.3do",
+      "anchors": [
+        -0.015976,
+        -0.024945500000000002
+      ],
+      "distance_from_kyle": 9.05000000000003e-05
+    },
+    {
+      "model": "adigallia.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "adigalliac.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "aleema.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "depa.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "doneeta.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "emikhan.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "kya10.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "kya17.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "kya9.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "kydm.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "kyp2.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "leia.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "leiabespin.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "leiaboushh.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "leiahoth.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "leiaslave.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "lil2seas.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "lonneke.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "luuz.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "medie.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "medieros.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "mj.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "nitesis.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "oola.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "shada.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "shoanebculu.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "sunrider.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "tokohikaru.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "vima.3do",
+      "anchors": [
+        -0.015981,
+        -0.024951
+      ],
+      "distance_from_kyle": 8.500000000000174e-05
+    },
+    {
+      "model": "micah.3do",
+      "anchors": [
+        -0.015952,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 2.3999999999999716e-05
+    },
+    {
+      "model": "anakin.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "angel.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "angel2.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "bartender.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "bespgard.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "boc.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "cay.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "chewie.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "dengar.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "denkou.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "diath.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "dooku.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "exarkun.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "forcelord.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "gouka.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "hal.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "hayashi.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "highwayman.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "hyougen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jeru.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcakmetan.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcburyoku.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkckage.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkckalvoschi.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcmikos.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcraikhan.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcrangotan.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcsen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcshin.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "jkcsolomon.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kage.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kaggb.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kaggw.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kaip.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kiadi.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kk.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kkruhk.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "koth.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "ky.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kya12.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kya15.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kya16.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kya18.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kya19.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyab.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyb3.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyc5.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyd0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kye6.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyf2.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyg7.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyh4.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyh4b.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyh4g.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyh4r.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyh4y.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyi14.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyj1.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyk7.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kykb.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyl8.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyluke.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13b.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13g.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13ns.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13r.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kym13y.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kypr.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyprb.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyprg.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyprr.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kypry.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyrc.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyrm.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyro.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyt0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyu0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyv0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyw0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kywq.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyx0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "kyy0.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "lando.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "landogen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "landoskif.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "lootaas.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "luke.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "lukeendor.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "lukehoth.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "lukeplayer.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "mace.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "maceduel.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "matias.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "maulnr.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "maw.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "millennium.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "mosep.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "moseprobe.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "newkagegen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "obiknight.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "obiwan.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "obiwan2.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "obiwan2c.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "odanurr.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "oldben.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "oldjeru.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "oldkagegen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "oppo.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "orbkai.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "orbkai2.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "plo.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "plorobe.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "poof.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "quigon.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "quiknight.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "quinlanvos.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "rsdragon.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "rst.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "rswushu.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "saesee.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "satal.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "sekizen.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "sekizennc.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "seodebb.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "seodmyst.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "shiro.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "skylander.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "solo.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "solobesp.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "thrawn.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "toq.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "tusken.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "ulic.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "vader.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "vkarkko.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "vodosioskbaas.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "wilum.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "xizor.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "yarah.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "ymuroo.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    },
+    {
+      "model": "yoda.3do",
+      "anchors": [
+        -0.015976,
+        -0.025036000000000003
+      ],
+      "distance_from_kyle": 0.0
+    }
+  ]
+}

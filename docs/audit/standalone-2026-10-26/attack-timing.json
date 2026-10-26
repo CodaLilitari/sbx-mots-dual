@@ -1,0 +1,44 @@
+[
+  {
+    "key": "sbxd_back.key",
+    "old_seconds": 1.0666666666666667,
+    "new_seconds": 1.5,
+    "changed": true
+  },
+  {
+    "key": "sbxd_fwd.key",
+    "old_seconds": 1.0166666666666666,
+    "new_seconds": 1.0166666666666666,
+    "changed": false
+  },
+  {
+    "key": "sbxd_heavy.key",
+    "old_seconds": 1.0666666666666667,
+    "new_seconds": 1.6,
+    "changed": true
+  },
+  {
+    "key": "sbxd_left.key",
+    "old_seconds": 0.5333333333333333,
+    "new_seconds": 0.6153846153846154,
+    "changed": true
+  },
+  {
+    "key": "sbxd_right.key",
+    "old_seconds": 0.5333333333333333,
+    "new_seconds": 0.6153846153846154,
+    "changed": true
+  },
+  {
+    "key": "sbxd_spinl.key",
+    "old_seconds": 0.8,
+    "new_seconds": 1.0526315789473684,
+    "changed": true
+  },
+  {
+    "key": "sbxd_spinr.key",
+    "old_seconds": 0.65,
+    "new_seconds": 0.8125,
+    "changed": true
+  }
+]

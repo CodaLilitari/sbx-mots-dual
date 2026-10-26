@@ -595,6 +595,25 @@ def reconcile(root=ROOT, out=None, stock=DEFAULT_STOCK, jk_sounds=DEFAULT_JK_SOU
                 else:
                     unresolved.append(dict(owner=name, alternatives=alternatives))
 
+    # Full standalone closure exposes an inherited MotS omission: the male
+    # pedestrian's third response names cm60142.wav, which shipped neither in
+    # MotS nor SBX. Use the same response's original JK voice, explicitly as a
+    # fallback (not a claim to recover the missing MotS recording).
+    pedestrian = base['cog/actor_mn.cog']
+    needle = b'mind=cm60142.wav'
+    assert pedestrian.count(needle) == 1
+    jk_resources = Path(jk_res)
+    jk_resource_index = stock_index(jk_resources)
+    original_pedestrian = stock_member(jk_resources, jk_resource_index, 'cog/actor_mn.cog')
+    assert b'mind=i00mn13z.wav' in original_pedestrian
+    voice_name = 'voice/i00mn13z.wav'
+    emit('cog/actor_mn.cog', pedestrian.replace(needle, b'mind=i00mn13z.wav'),
+         'Replace inherited missing MotS mind-response sound with the source-equivalent original JK response; all other actor bytes preserved.',
+         'mots30-voice-fallback')
+    emit(voice_name, stock_member(jk_sounds, jk_sound_index, voice_name),
+         'Original JK actor_mn mind response, bundled as an explicit fallback for absent cm60142.wav, not a recovered MotS voice.',
+         'owned-jk-retail-local-only')
+
     # SBX accidentally inverted native Force Defense. Stock source independently
     # establishes subtraction (1-rank*.125); retain SBX's intended .25 strength.
     stock_defense = stock_member(stock,index,'cog/force_defense.cog')
@@ -790,7 +809,7 @@ pulse:
 
 def build(root, out, stock=DEFAULT_STOCK, jk_res=None, jk_snd=DEFAULT_JK_SOUNDS, mots_snd=None):
     """Portable builder entry point; stock is used for verification, never copied."""
-    return reconcile(root,out,stock,jk_snd,mots_snd)
+    return reconcile(root,out,stock,jk_snd,mots_snd,jk_res or DEFAULT_JK_RES)
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

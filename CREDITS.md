@@ -1,6 +1,6 @@
 # Credits, source provenance and redistribution scope
 
-This is the attribution record for the retail MotS overlay and its reproducible builder. It distinguishes statements found in the supplied source documents from independently checked file provenance. It does not grant new rights over the original mods or game data, certify an undocumented permission, or replace the original readmes and licenses.
+This is the attribution record for the retail MotS Special Edition and its reproducible builder. It distinguishes statements found in the supplied source documents from independently checked file provenance. It does not grant new rights over the original mods or game data, certify an undocumented permission, or replace the original readmes and licenses.
 
 ## Current conversion
 
@@ -54,7 +54,7 @@ Its credits state:
 
 The separate **Sith Sabers** readme names **EAH_CL0wN** and additionally credits **Al McDonald** for Vader materials, using that spelling. Its permission section says authors may not use the level as a base and permits distribution of the unmodified package with its readme and without charge beyond incidental online costs. The supplied Dual Sabers readme's more specific permission claim is retained as **the add-on author's testimony**. No independent permission correspondence was supplied or verified in this conversion task, and this record does not invent or broaden that permission.
 
-Both original readmes are retained unmodified under `docs/original/` in every public package. The Builder ZIP contains tools and documentation, not game animation files. The separate main overlay includes the attack and locally prepared animation resources needed for this conversion; their source provenance and the permission testimony above remain applicable.
+Both original readmes are retained unmodified under `docs/original/` in the game-download documentation folder and the Builder ZIP. The Builder ZIP contains tools and documentation, not game animation files. The complete game GOO includes the attack and locally prepared animation resources needed for this conversion; their source provenance and the permission testimony above remain applicable.
 
 ## Retarget implementation and headless helper
 
@@ -76,18 +76,20 @@ Jedi Knight: Dark Forces II, Mysteries of the Sith, Boc, their original models/a
 
 The same absence of LucasArts endorsement applies to this conversion. Owned `Res2.gob`, `Res1hi.gob`, `JKMRES.GOO` and `JKMSNDLO.GOO` are explicit local build inputs and are not included in the source-builder delivery.
 
-## Public release scope
+## Special Edition v1.2.0 scope
 
-This public release, prepared at Andrei's request, consists of an on-top game-resource overlay, an optional software-renderer texture layer, and a separate reproducible builder. It requires the user's own MotS installation and the original SBX-MotS v3.0 base. The main overlay contains 602 changed/additional resources; the optional layer contains 193 MAT files. Neither includes a complete base mod, retail executable or retail game archive.
+The 26 October Special Edition combines the SBX-MotS base and the reconciled Dual Sabers resources in one GOO for installation. Ordinary MotS remains required; separate SBX archives are no longer required at play time. An alternate complete GOO supplies indexed software-renderer textures. No retail executable or complete retail game archive is included. The main menu retains the original SBX artwork and palette. A small Special Edition subtitle is added; the original right-hand logo moves upward 17 pixels without resampling.
 
-The overlay includes copied or adapted mod/game resources, including generated KEY animations, models, audio, icons, textures and scripts. Reconciliation derives 40 JK WAVs, two JK icons and an adapted MotS Super Shield COG; assembly also prepares native blade materials and dependencies. These resources are credited to their sources. Generating, transforming or renaming a file does not make it wholly newly authored or grant a new blanket license over it. The original documents' permission text and attributed testimony remain unchanged.
+Antonio Aiello, posting as `tristamus`, submitted merged GitLab request !1 and identified themself there as the add-on author. The v17 reverse-grip adaptation, timing/footstep changes and associated builder update are credited to that contribution. This attribution follows the public merge-request identity and statement, separately from the original readme's unnamed authorship. Coda and Andrei's current work adds standalone packaging, complete-package dependency review, source-based voice fallback, original-executable checking and the Special Edition subtitle integration.
 
-The Builder ZIP contains conversion tools, documentation, the pinned software implementation, its helper/build receipt and software license notices. It takes explicit local mod/game inputs. The entire build tree is not a release package: source archives, extracted inputs, private runtime fixtures and the convenience `local-mod/SBX-Dual` folder containing the unchanged full base GOO are excluded. Use only the separately packaged release artifacts.
+The GOO contains copied or adapted mod/game resources, including baked animation, models, audio, icons, textures and scripts. Original JK voice `i00mn13z.wav` is an explicit fallback for MotS's absent `cm60142.wav`, using the same actor response identified in original JK source. It is not presented as newly authored or as a recovered MotS recording.
 
-This public documentation edition supersedes the earlier local-delivery instructions that described all generated resources as private and only the builder as shareable. It changes packaging documentation and public receipt paths, not the tested game resources, builder tools, original readmes or license. The public-edition receipt records that equality and the prior archive identities. This file describes release scope; it is not itself a publication receipt or independent permission correspondence.
-
-Per-file origins and hashes remain in the manifests. See `RELEASE-NOTES.md` for installation, browser expectations and the optional texture choice.
+The builder includes tools, pinned upstream software and licenses. Full input archives, extracted game data and private runtime fixtures remain outside the delivery. Original documents and permission testimony are retained without expanding their claims. Per-member manifests preserve origins and hashes; historical public-edition receipts refer only to their dated releases.
 
 ## Verification scope
 
 The four mod archive identities, supplied attribution text, pinned retarget source/helper identity, and reconciliation inclusion decisions have been checked against local source files. Historical contributor claims and the add-on author's permission statement remain attributed testimony. Bounded original-executable tests are recorded in RETAIL-VALIDATION.md. Connected multiplayer and complete campaign acceptance remain unverified; neither this credits file nor a successful static build establishes them.
+
+## Special Edition lettering
+
+Coda generated the small Special Edition lettering with OpenAI ImageGen and composited it with Andrei. This is AI-assisted subtitle lettering, not a claim of authorship of the inherited SBX illustration or logo. RS_Dragon retains the original title-layout credit recorded above. The source artwork, composition script, provenance and exact native bitmap are retained in the Builder ZIP.

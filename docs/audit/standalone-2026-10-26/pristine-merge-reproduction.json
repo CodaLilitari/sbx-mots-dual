@@ -1,0 +1,36 @@
+{
+  "schema": "sbx-pristine-merge-reproduction-v1",
+  "merge_commit": "26fc8d82af25a61b3a57896af159ae0ee4f38500",
+  "pristine_source_archive_sha256": "fb426374619a01d65638240964589e1cb8c4fef83189df0c70fd257465cb9264",
+  "pristine_source_files_verified_unchanged": 68,
+  "pristine_build_output": {
+    "path": "pristine-build/ready/SBX-MotS-Dual-Overlay.goo",
+    "sha256": "5c8b0d3b7d8ec0b539614b6d9083fc1a7b1837ed4f08ec4ca28b1a5f27a130f1",
+    "members": 651,
+    "matches_merge_request_claim": true
+  },
+  "current_overlay_output": {
+    "path": "build-02/ready/SBX-MotS-Dual-Overlay.goo",
+    "sha256": "55f109b67b5d7365389dbd3457723cd05339bb131144f54d13705576f7faaf19",
+    "members": 652
+  },
+  "current_vs_pristine": {
+    "added": [
+      "cog/actor_mn.cog"
+    ],
+    "removed": [],
+    "changed": [],
+    "all_651_original_members_byte_identical": true
+  },
+  "voice_existing_in_pristine": {
+    "path": "voice/i00mn13z.wav",
+    "reason": "Locally derived owned JK sound dependency for misc/snd/mn1.snd; omit bytes from portable distribution.",
+    "source": "owned-jk-retail-local-only",
+    "sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d",
+    "base_sha256": null
+  },
+  "conclusion": "The merge request reproducibility claim is confirmed. The original JK voice was already bundled for mn1.snd. The fallback changes its use in one new actor_mn.cog override; it does not add the voice a second time. Subtracting both actor_mn.cog and voice/i00mn13z.wav from the current overlay incorrectly removes an original merge member.",
+  "pristine_full_build_seconds": 58.83,
+  "no_additional_builds_planned": true,
+  "public_edition_note": "Workstation paths replaced by build-relative or descriptive input labels; hashes and observations preserved."
+}

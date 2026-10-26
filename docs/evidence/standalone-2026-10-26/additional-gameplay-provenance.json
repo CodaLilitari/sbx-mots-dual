@@ -1,0 +1,30 @@
+[
+  {
+    "path": "damage-before.png",
+    "case": "sbx-standalone-damage01",
+    "source_name": "damage-before.png",
+    "sha256": "cfbbad4770ade887cbb36497671bdcf5a3710a02b1ee9bca7ff610080041f1ba",
+    "transformation": "none"
+  },
+  {
+    "path": "damage-after.png",
+    "case": "sbx-standalone-damage01",
+    "source_name": "damage-after.png",
+    "sha256": "4eae7c9bef123e11c15a0e019e6ed35df20d1b88f778036c93f5ffcc36fd1e3c",
+    "transformation": "none"
+  },
+  {
+    "path": "software-reverse.png",
+    "case": "sbx-standalone-life01",
+    "source_name": "periodic-0033.png",
+    "sha256": "4a869eb4bf6107cbbfe9bac9dcd102853c1c95689367c19471b619e7f295d60f",
+    "transformation": "none"
+  },
+  {
+    "path": "software-relit.png",
+    "case": "sbx-standalone-life01",
+    "source_name": "periodic-0037.png",
+    "sha256": "5c9f67abce0a126fc125defb184243ba97cd969449672ce865633db04551f0f3",
+    "transformation": "none"
+  }
+]

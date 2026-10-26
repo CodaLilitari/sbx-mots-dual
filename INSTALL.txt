@@ -1,66 +1,33 @@
-SBX DUAL SABERS FOR RETAIL MYSTERIES OF THE SITH
-On-top package for SBX-MotS v3.0
+SBX MOTS DUAL SABERS - SPECIAL EDITION v1.2.0
+26 October 2026
 
-REQUIRED BASE
-Use the original SBX-MotS v3.0 archive, "sbx-mots v3.goo".
-The base mod and retail game archives are not included in these ZIPs.
-Do not use the JK version of SBX as the MotS base.
+Requires your normal owned Mysteries of the Sith installation.
+No separate SBX 3.0/3.1 installation or engine patch is required.
 
-INSTALL
-1. Create an empty folder in your MotS installation:
-      expansions\SBX-Dual
-2. Copy your original "sbx-mots v3.goo" into that folder.
-3. Extract SBX-MotS-Dual-Overlay.zip into that SAME folder.
-   Its 3do, cog, jkl, mat, misc, sound, voice and ui folders must sit
-   directly beside the base GOO. Do not add another "overlay" folder.
-4. For the original software renderer, extract the optional
-   SBX-MotS-Software-Texture-Fix.zip there LAST and allow its MAT files
-   to replace the main overlay's corresponding files.
-   For accelerated rendering, the main overlay retains original textures.
-5. Start from the MotS game directory:
-      JKM.EXE -path expansions/SBX-Dual
+1. Create a fresh empty expansions\SBX-Dual folder in your MotS directory.
+2. Choose ONE download:
+   SBX-MotS-Dual-Special-Edition.zip for the accelerated renderer; or
+   SBX-MotS-Dual-Special-Edition-Software.zip for the software renderer.
+   Copy the selected ZIP's root SBX-MotS-Dual.goo into that mod folder.
+   These are complete alternatives. Do not load both together.
+3. Run from the MotS game directory:
+   JKM.EXE -path expansions/SBX-Dual
 
-CONTROLS
-Equip the Sith lightsaber. Use the existing Lightsaber Stance action:
+Keep older mod folders separately. Do not copy older SBX archives or loose
+overlays into this fresh folder. Run without -path to play without the mod.
+
+Equip the Sith saber and use the existing Lightsaber Stance action:
 staff -> Sariss -> dual/Boc -> reverse grip -> staff.
-Use third-person view to see both separate sabers.
-The first-person model retains the original staff presentation.
-Primary/alternate attacks use the supplied twin-saber moves. Retail uses
-the full animation duration between attacks and native blade glows;
-the browser version's overlapping attacks/duplicated mesh fans differ.
-In the reverse grip both sabers are held blade-down. Primary attacks
-depend on how you move; alternate fire is a hop with a whole turn in the
-air. Running flat out for about half a second breaks into a dash.
+Third person shows both separate blades; first person keeps the staff model.
+Reverse-grip alternate fire hops/spins. Running flat out enters a dash pose.
 
-Force Throw (objects) is available through Inventory Next/Previous and
-Inventory Use: hold to target a living actor, release to throw nearby
-debris. It does not replace MotS's existing Force or Saber Throw controls.
-The optional Sith Talisman template is named sbxd_talisman. It is available
-for custom-map placement; existing campaign pickups are not replaced.
+Extinguish the saber before saving. Turn it off/on if a loaded saber loses damage.
 
-SAVE PRECAUTION
-As in the upstream SBX readme, turn your saber OFF before saving.
-If a loaded saber has inactive damage, turn it off and on again.
+Validation and limitations are included below in the game ZIP's README.
+Full source reports are in the Builder ZIP and project repository.
+Full credits are at docs/CREDITS.md in this game ZIP. Original documents under
+docs/original are retained to honor source-package terms; keep them with any
+redistribution. The game loads only the GOO.
 
-REMOVAL / TEXTURE CHOICE
-Launch without the -path argument to play without the mod.
-To change back from software textures to original textures, build a fresh
-empty mod folder from the base GOO and main overlay only. Keep existing
-folders until you have checked the replacement; no deletion is required.
-
-SCOPE
-These files are the public overlay release. They contain changed and
-additional resources only, not the whole SBX mod. The separate Builder ZIP
-recreates them from the four source mods and your owned game resources.
-See RETAIL-VALIDATION.md for the exact tests and remaining limitations,
-CREDITS.md for attribution, and the original readmes under docs/original.
-
-BROWSER MOTS
-This version ran in the MotS mode of tristamus/OpenJKDF2 (the jkdf2mp
-site's game, 8ccc356c) for the checks listed in RETAIL-VALIDATION.md.
-Load it above the SBX-MotS v3.0 base in the mod list. Do not also load the
-original JK/browser Dual Sabers add-on or its runtime retarget recipe.
-Use the main overlay's original textures for WebGL; the optional software
-patch is not needed there. Connected multiplayer remains unverified.
-See RELEASE-NOTES.md for the public release overview and PUBLIC-EDITION.md
-for the relationship to the tested delivery.
+Project: https://gitlab.com/codalilitari/sbx-mots-dual
+Release: https://gitlab.com/codalilitari/sbx-mots-dual/-/releases/v1.2.0

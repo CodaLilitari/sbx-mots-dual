@@ -1,0 +1,78 @@
+{
+  "archives": {
+    "jk_res": {
+      "path": "local-inputs/Res2.gob",
+      "missing_cm60142": true,
+      "has_original_voice": false
+    },
+    "jk_snd": {
+      "path": "local-inputs/Res1hi.gob",
+      "missing_cm60142": true,
+      "has_original_voice": true
+    },
+    "mots_res": {
+      "path": "local-inputs/JKMRES.GOO",
+      "missing_cm60142": true,
+      "has_original_voice": false
+    },
+    "sbx_mots": {
+      "path": "local-inputs/sbx-mots v3.goo",
+      "missing_cm60142": true,
+      "has_original_voice": false
+    },
+    "mots_snd": {
+      "path": "local-inputs/JKMSNDLO.GOO",
+      "missing_cm60142": true,
+      "has_original_voice": false
+    }
+  },
+  "actors": {
+    "jk_res": {
+      "sha256": "4ce42a3dc64d865786de0b97e8663703f4992e616f8819f9d17de5f27464e326",
+      "mind_references": [
+        {
+          "line": 42,
+          "text": "sound    mind=i00mn13z.wav"
+        },
+        {
+          "line": 89,
+          "text": "      sound = PlaySoundThing(mind, me, 1, -1, -1, 0x10080);"
+        }
+      ]
+    },
+    "mots_res": {
+      "sha256": "ebefe91437fd47c6f7983571f1ef49012600579826504a4fa0bff1b5636dc738",
+      "mind_references": [
+        {
+          "line": 43,
+          "text": "sound    mind=cm60142.wav"
+        },
+        {
+          "line": 91,
+          "text": "      channel = PlaySoundThing(mind, me, 1, -1, -1, 0x10080);"
+        }
+      ]
+    },
+    "sbx_mots": {
+      "sha256": "ce6bba67d23477b14f2fbe929224d41c755d57003b436463a9dd7c8aaa3bb506",
+      "mind_references": [
+        {
+          "line": 43,
+          "text": "sound    mind=cm60142.wav"
+        },
+        {
+          "line": 102,
+          "text": "      channel = PlaySoundThing(mind, me, 1, -1, -1, 0x10080);"
+        }
+      ]
+    }
+  },
+  "fallback_voice": {
+    "bytes": 57132,
+    "sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d",
+    "header_hex": "5249464624df000057415645",
+    "riff_wave": true
+  },
+  "contract": "All three inspected actor_mn sources play the mind symbol in activated when GetThingUserData(me)==3, increment userdata, latch count=1, and set the same 3-second timer. JK declares mind=i00mn13z.wav; both retail MotS and SBX-MotS declare missing mind=cm60142.wav.",
+  "public_edition_note": "Workstation paths replaced by build-relative or descriptive input labels; hashes and observations preserved."
+}

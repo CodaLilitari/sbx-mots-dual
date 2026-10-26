@@ -1,0 +1,286 @@
+{
+  "accelerated": {
+    "path": "build-01/standalone/accelerated/SBX-MotS-Dual.goo",
+    "member_count": 2231,
+    "byte_exact_layer_union": true,
+    "sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111",
+    "independently_rerun_all_roots_closure": {
+      "missing": [],
+      "reachable_count": 3479,
+      "runtime_layers": [
+        "owned MotS resource archive",
+        "owned MotS sound archive",
+        "one standalone GOO"
+      ],
+      "separate_sbx_runtime_archive": false
+    }
+  },
+  "software": {
+    "path": "build-01/standalone/software/SBX-MotS-Dual.goo",
+    "member_count": 2231,
+    "byte_exact_layer_union": true,
+    "sha256": "efc87afa15a03d8ad31616fd96b0d2b82d8a7b2dbcdec9a928cd30ca742bc6c3",
+    "independently_rerun_all_roots_closure": {
+      "missing": [],
+      "reachable_count": 3479,
+      "runtime_layers": [
+        "owned MotS resource archive",
+        "owned MotS sound archive",
+        "one standalone GOO"
+      ],
+      "separate_sbx_runtime_archive": false
+    }
+  },
+  "prepared_keys": {
+    "3do/key/rt_boback.key": {
+      "seconds": 4.0,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boblock.key": {
+      "seconds": 0.5777777777777777,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bobolt.key": {
+      "seconds": 1.4666666666666666,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bochoke.key": {
+      "seconds": 1.3333333333333333,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bochop.key": {
+      "seconds": 1.5757575757575757,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bocrch.key": {
+      "seconds": 2.6666666666666665,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bocrchbk.key": {
+      "seconds": 2.6666666666666665,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bocut.key": {
+      "seconds": 1.1428571428571428,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bodrop.key": {
+      "seconds": 2.066666666666667,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bofall.key": {
+      "seconds": 3.533333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bohit.key": {
+      "seconds": 0.6666666666666666,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bojump.key": {
+      "seconds": 6.666666666666667,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boland.key": {
+      "seconds": 0.26666666666666666,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boleap.key": {
+      "seconds": 1.4,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_borun.key": {
+      "seconds": 12.8,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bostand.key": {
+      "seconds": 5.533333333333333,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bostrfl.key": {
+      "seconds": 4.6,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bostrfr.key": {
+      "seconds": 5.333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bothrow.key": {
+      "seconds": 1.6,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boturnl.key": {
+      "seconds": 0.5333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boturnr.key": {
+      "seconds": 0.5333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_boupper.key": {
+      "seconds": 5.533333333333333,
+      "nodes": 10,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bowalk.key": {
+      "seconds": 5.333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_bowin.key": {
+      "seconds": 8.933333333333334,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgback.key": {
+      "seconds": 4.0,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgcrch.key": {
+      "seconds": 2.6666666666666665,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgcrchbk.key": {
+      "seconds": 2.6666666666666665,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgdrop.key": {
+      "seconds": 2.066666666666667,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgfall.key": {
+      "seconds": 3.533333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgjump.key": {
+      "seconds": 6.666666666666667,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgland.key": {
+      "seconds": 0.26666666666666666,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgrun.key": {
+      "seconds": 12.8,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgstand.key": {
+      "seconds": 2.066666666666667,
+      "nodes": 18,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgstrfl.key": {
+      "seconds": 4.6,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgstrfr.key": {
+      "seconds": 5.333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgturnl.key": {
+      "seconds": 0.5333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgturnr.key": {
+      "seconds": 0.5333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgupper.key": {
+      "seconds": 2.066666666666667,
+      "nodes": 12,
+      "nonempty": true,
+      "not_fallback_stub": true
+    },
+    "3do/key/rt_rgwalk.key": {
+      "seconds": 5.333333333333333,
+      "nodes": 8,
+      "nonempty": true,
+      "not_fallback_stub": true
+    }
+  },
+  "browser_reverse_flag_calls": [],
+  "voice_exact_replacement": true,
+  "fallback_voice_sha256": "c3bf077322bcd3517cda1aee8cb5f21ad7dffb87ae74785450bf6c97fded152d",
+  "authored_attack_and_dash_keys_preserved": {
+    "count": 16,
+    "all_exact": true
+  },
+  "local_mod_files": [
+    "SBX-MotS-Dual.goo"
+  ],
+  "reviewed_test_source": {
+    "path": "source/tools/test_standalone.py",
+    "test_count": 7,
+    "execution": "Packaging agent reports7 passed; this reviewer inspected test source and independently checked real archive bytes/closure, not a duplicate unit-test run."
+  },
+  "public_edition_note": "Workstation paths replaced by build-relative or descriptive input labels; hashes and observations preserved."
+}

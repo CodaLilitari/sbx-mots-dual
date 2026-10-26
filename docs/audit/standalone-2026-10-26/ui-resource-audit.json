@@ -1,0 +1,66 @@
+{
+  "ui_resources": 8,
+  "base_identical": 5,
+  "changes": [
+    {
+      "path": "ui/bm/icobjth16.bm",
+      "sha256": "eb95e3af59e6b8a62037a471f47a06325dd307a6a0d9f6173c5d9143ded150b9",
+      "unchanged_sbx_base": false
+    },
+    {
+      "path": "ui/bm/icobjth8.bm",
+      "sha256": "0ce41e3f9f8f5afecf46c0d87ba31680467fd0a69c88af5113d593ee6ed7d384",
+      "unchanged_sbx_base": false
+    },
+    {
+      "path": "ui/jkstrings.uni",
+      "sha256": "1a192bf6c8af9909f5d29934bac49e80030f38ff88ed97d0c83cdf61ea43b9ee",
+      "unchanged_sbx_base": false
+    }
+  ],
+  "items_stance_rows": [
+    "stance\t\t\t143             1\t\t1\t  0x120\tcog=saberstance.cog"
+  ],
+  "rows": [
+    {
+      "path": "ui/bm/bkmain.bm",
+      "sha256": "ece6a840c419146fcaa74165d0e401b02834e25e0188fbb44518129c89248f9c",
+      "unchanged_sbx_base": true
+    },
+    {
+      "path": "ui/bm/icobjth16.bm",
+      "sha256": "eb95e3af59e6b8a62037a471f47a06325dd307a6a0d9f6173c5d9143ded150b9",
+      "unchanged_sbx_base": false
+    },
+    {
+      "path": "ui/bm/icobjth8.bm",
+      "sha256": "0ce41e3f9f8f5afecf46c0d87ba31680467fd0a69c88af5113d593ee6ed7d384",
+      "unchanged_sbx_base": false
+    },
+    {
+      "path": "ui/jkstrings.uni",
+      "sha256": "1a192bf6c8af9909f5d29934bac49e80030f38ff88ed97d0c83cdf61ea43b9ee",
+      "unchanged_sbx_base": false
+    },
+    {
+      "path": "ui/sft/msgfont.sft",
+      "sha256": "f5b96a6a18cfd0d5db537aa7f210a6abeb06cea73438b80f5d3ea2b83ed2e7d9",
+      "unchanged_sbx_base": true
+    },
+    {
+      "path": "ui/sft/msgfont16.sft",
+      "sha256": "f5b96a6a18cfd0d5db537aa7f210a6abeb06cea73438b80f5d3ea2b83ed2e7d9",
+      "unchanged_sbx_base": true
+    },
+    {
+      "path": "ui/sft/msgfont16s.sft",
+      "sha256": "f5b96a6a18cfd0d5db537aa7f210a6abeb06cea73438b80f5d3ea2b83ed2e7d9",
+      "unchanged_sbx_base": true
+    },
+    {
+      "path": "ui/sft/msgfonts.sft",
+      "sha256": "f5b96a6a18cfd0d5db537aa7f210a6abeb06cea73438b80f5d3ea2b83ed2e7d9",
+      "unchanged_sbx_base": true
+    }
+  ]
+}

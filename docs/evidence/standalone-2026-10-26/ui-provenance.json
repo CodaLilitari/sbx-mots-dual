@@ -1,0 +1,43 @@
+{
+  "executable_sha256": "23cd064217f904d36d896f52d3cdd17635bb85441a12e0415c0637504191d974",
+  "mod_goo_sha256": "ec02b0588233d96f026ffeb0b4eafa05677fd8700c158a2ff06eb3c54fed2111",
+  "ordinary_menus": true,
+  "screens": [
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-main.png",
+      "sha256": "85cd8dee9b644a5b7fb4d2aabbea475138f1b4395feae770c0dcbfd5ef8a7265",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    },
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-players.png",
+      "sha256": "a47244b53dc2ba6b288612dc7cf3689ca1fd0ec3eb4ad7cb846cde0a353f6b62",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    },
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-single-player.png",
+      "sha256": "cfd5e1f5fdaece99fdf44e5dc60fd023a837a36177cbcb16e38d4f8931f85e5e",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    },
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-setup.png",
+      "sha256": "5c57ed78254635718b1ff2212ebee590250cf45b19ccc2ecb704d006cebd68c2",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    },
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-controls.png",
+      "sha256": "527766f7c89f0f6a02f7f2b6dfebe51adbafb618ad54664b17d3312c5010d13f",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    },
+    {
+      "path": "docs/evidence/standalone-2026-10-26/ui-keyboard.png",
+      "sha256": "5ce05e52ad5d8e693c3b2c898e974aafb2ab702a79e73926bccc4d1636567b29",
+      "source_case": "sbx-standalone-ui01",
+      "transformation": "none; original complete private Xvfb screenshot"
+    }
+  ]
+}

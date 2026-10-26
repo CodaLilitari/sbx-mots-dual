@@ -1,8 +1,8 @@
-# SBX Dual Sabers for retail MotS — local overlay builder
+# SBX MotS Dual Sabers — Special Edition v1.2.0 builder
 
-This package builds a minimal local overlay for **Saber Battle X: Mysteries of the Sith v3.0** from the four specified mod releases and your owned Jedi Knight/MotS resources. The delivered resources passed static validation and a bounded original-executable test under Wine/Xvfb. See [RETAIL-VALIDATION.md](RETAIL-VALIDATION.md) for observed behavior and remaining limits. A successful rebuild establishes matching resources and static checks; it does not independently rerun gameplay tests.
+This produces two complete single-GOO editions from explicit historical mods and owned JK/MotS data. Those archives are build inputs only: a player needs the finished GOO and ordinary MotS, with no separate SBX 3.0/3.1 installation.
 
-This Builder ZIP contains build tools and documentation; the ready-to-install overlay is a separate download. It does not contain a complete SBX mod or a prebuilt collection of owned game data. The generated overlay contains only changed/additional files relative to SBX-MotS v3.0, while the separate local runnable folder also contains your unchanged base mod archive.
+Current gameplay acceptance belongs to `STANDALONE-VALIDATION.md`. The builder performs static checks, not gameplay tests. Generated workload must live outside Git checkouts.
 
 ## Requirements
 
@@ -51,44 +51,26 @@ py -3 '.\tools\build_overlay.py' @buildArgs
 
 The final console result should report `BUILT_AND_STATIC_CHECKED`. Check `BUILD-RESULT.json` and `ready\static-validation.json` in the output. If the build stops, retain its reports and resolve the reported input or validation problem before installing anything. Use another new output name for the next attempt; an incomplete directory is not a finished package.
 
-## What the output contains
+The bundled `assets/ui/bkmain.bm` is embedded unchanged. Pillow and image generation are not ordinary build requirements. Optional `--ui-bitmap` accepts a prepared native replacement subject to the same header, palette and title-region checks. `tools/native_ui_bitmap.py` is an artwork-authoring tool requiring Pillow, not part of ordinary rebuilding. Keep the bundled asset and encoding receipt in place.
 
-| Path under your output directory | Purpose |
-| --- | --- |
-| `ready\overlay\` | Minimal loose overlay: changed/additional files only; byte-identical SBX-MotS base members are omitted |
-| `ready\SBX-MotS-Dual-Overlay.goo` | A generated archive of that same overlay, retained for inspection; the installation below uses loose files |
-| `ready\manifest.json` | Member hashes and assembly reasons |
-| `ready\static-validation.json` | Static acceptance report for this assembled candidate |
-| `ready-software-textures\overlay\` | Optional indexed-color MAT overrides for the original software renderer; apply after the main overlay |
-| `ready-software-textures\software-textures.json` | Per-texture source/output hashes, conversion details and repaired mip chains |
-| `local-mod\SBX-Dual\` | Convenience folder containing the loose overlay **and your unchanged SBX-MotS v3.0 GOO**, ready for a local installation |
-| `input-receipt.json` and `BUILD-RESULT.json` | Input identities and final build status |
-| `audit\`, `generated\`, `sources\` | Source reconciliation, generation receipts, intermediate resources and extracted local inputs |
+## Output and installation
 
-**The complete build tree is not the public release.** The separately packaged main overlay and optional texture layer contain only their defined changed/additional resources; the Builder ZIP contains tools and documentation. Keep source archives, extracted inputs, private runtime fixtures and the convenience folder's unchanged full base mod out of release packages. Copied or adapted assets retain their source attribution; see [CREDITS.md](CREDITS.md) and the unmodified original documents for provenance and permission statements. The public documentation edition preserves the tested tools byte-for-byte. Historical workstation fallback paths in internal tools are retained for source identity; the documented command supplies all game inputs explicitly.
+- `standalone/accelerated/SBX-MotS-Dual.goo`: complete original-texture edition.
+- `standalone/software/SBX-MotS-Dual.goo`: complete indexed-texture alternative.
+- Each edition has `PACKAGE-MANIFEST.json` and `SHA256SUMS.txt`, recording member origins/hashes, effective-layer equality and full-package file-reference closure against stock MotS alone.
+- `standalone/STANDALONE-RESULT.json`: packaging/install receipt.
+- `local-mod/SBX-Dual/SBX-MotS-Dual.goo`: convenience copy of the complete accelerated edition; no separate SBX archive or loose overlay.
+- `ready/` and `ready-software-textures/`: intermediate overlay archives and source/generation reports.
+- `sources/`, `generated/` and `audit/`: reproduction inputs/intermediates; not the installation or public delivery.
 
-## Install the local build
+Create a fresh empty `<MotS game folder>/expansions/SBX-Dual` and copy the selected edition's **single GOO** into it. Run `JKM.EXE -path expansions/SBX-Dual` from the game directory. Do not stack editions or add old SBX archives/loose overlays. Preserve old installs separately. To change renderer editions, use a fresh folder with the other complete GOO.
 
-1. Use a separate, initially empty mod folder: `<MotS game folder>\expansions\SBX-Dual`.
-2. Copy the contents of your completed `local-mod\SBX-Dual` folder into it. Alternatively, copy the original SBX-MotS v3.0 GOO into that empty folder, then copy the contents of `ready\overlay` alongside the GOO.
-3. Confirm that the GOO sits beside the loose `cog`, `3do`, `misc`, `jkl`, and other generated directories. Do not create an extra `overlay` directory between the mod folder and those resources.
-4. Start MotS from its game directory with this path:
-
-```powershell
-Set-Location -LiteralPath 'C:\Games\MotS'
-& '.\JKM.EXE' -path 'expansions/SBX-Dual'
-```
-
-The loose resources provide the override layer above the unchanged base GOO. This layout avoids depending on ordering between two GOO archives. Do not also copy `SBX-MotS-Dual-Overlay.goo` into this loose-file installation, and do not mix the original JK Dual Sabers GOB or unrelated mod overrides into it. The builder itself does not install files into your game directory.
-
-For **software rendering**, copy the contents of `ready-software-textures\overlay` into that same mod folder last. These overrides convert the winning 16-bit SBX textures to indexed color using entries shared by the stock MotS map palettes, including animated materials and mipmaps. The main overlay retains the original textures for accelerated rendering, with append-only repairs to two incomplete mip chains. Native indexed lighting can shift hues in dark sectors; for example, Yoda's olive tones become browner under the original MotS lighting table. This patch fixes software-format corruption without recoloring the original artwork or changing level colormaps. To return to the original textures, assemble a fresh empty mod folder from the unchanged base GOO and the main overlay; this avoids accidentally leaving software overrides in place.
-
-To play without this mod, launch MotS without this `-path` argument. Keep the generated build separate from your game installation so its receipts and hashes remain available for diagnosis.
+The accelerated edition retains original textures. The software edition folds in 193 indexed MAT overrides; native lighting can shift hues in dim sectors. Neither edition modifies the executable or includes complete retail game archives. The release ZIPs retain original companion documents; full conversion inputs and private runtime fixtures are excluded.
 
 ## Features and controls
 
 - **Dual sabers:** equip the Sith lightsaber and use SBX's existing **Lightsaber Stance** action. The cycle is **staff → Sariss → dual/Boc → reverse grip → staff**. No twenty-first action key is added. The retail conversion uses locally prepared KEY files and player-model variants instead of requiring the browser engine's runtime conversion.
-- **Reverse grip (v1.1.0):** both sabers blade-down, each blade leaving the little-finger side of the fist. Its stand, attacks (standing, moving forward, left, right and back, and turning fast), second-fire hop and spin, and dash come from SBX Dual Sabers 17, prepared locally like Boc's. The original executable can't turn a hilt round, so the stance's persistent upper idle (`rt_rgupper.key`) also turns both grip anchors end over end about the hilt's middle; positions come from SBX Kyle and fit 175 of the 178 models within 0.0001 units (the other three within 0.0007).
+- **Reverse grip (v1.1.0):** both sabers blade-down, each blade leaving the little-finger side of the fist. Its stand, attacks (standing, moving forward, left, right and back, and turning fast), second-fire hop and spin, and dash come from SBX Dual Sabers 17, prepared locally like Boc's. The original executable can't turn a hilt round, so the stance's persistent upper idle (`rt_rgupper.key`) also turns both grip anchors end over end about the hilt's middle; positions come from SBX Kyle and fit 175 of the 178 models within 0.0001 units (the other three within 0.000708).
 - **Footsteps (v1.1.0):** SBX's 23 walk, walk-back and strafe keys get the original game's footstep markers back from Dual Sabers 17's `misc/keymarkers.dat`, as do the walks prepared for both two-saber stances. Only marker sections change.
 - **View:** use third-person view to see the two separate sabers. The first-person weapon view retains the existing staff presentation.
 - **Retail blade rendering:** dual mode uses two visible native saber polylines and separate hilts. The browser extension's duplicated mesh glow/fan is unavailable in the original executable, so dual mode has the native blade appearance and no mesh fan trails. The original staff, single and long saber mesh fans remain. Seven dual colors use original MotS materials; light-blue, dark-purple and silver use documented palette remaps.
@@ -104,6 +86,6 @@ The build also repairs the SBX MotS Force Defense multiplier direction and Bryar
 
 The SBX3.1 documentation reports that saving with a saber ignited can restore the default stance and leave damage inactive on load. Preserve the established precaution: **turn the saber off before saving**. If a loaded saber lacks damage, turn it off and on again. This conversion retains that inherited precaution; save/load validation for the new stance has not been completed.
 
-Every multiplayer participant should use the same assembled overlay and base release. Connected multiplayer, host/client synchronization, respawn, custom skins outside the merged registry, custom episodes, and compatibility with other resource-changing mods are separate acceptance cases. The supplied browser add-on's statements about joining an unmodified SBX game do not establish that behavior for this retail MotS conversion.
+Every multiplayer participant should use the same complete GOO edition and version. Connected multiplayer, host/client synchronization, respawn, custom skins outside the merged registry, custom episodes, and compatibility with other resource-changing mods are separate acceptance cases. The supplied browser add-on's statements about joining an unmodified SBX game do not establish that behavior for this retail MotS conversion.
 
-**QA status (v1.1.0):** the tools here rebuild the same v1.1.0 overlay from the same inputs and pass the static checks; v1.1.0 has run in OpenJKDF2's MotS mode but not yet in the original executable (see `RETAIL-VALIDATION.md`). **QA status (v1.0.0):** public documentation edition of the final tested delivery, with bounded native-executable validation. The exact final archive was reproduced from the portable builder. Static receipts, runtime scope, and untested cases are retained in `RETAIL-VALIDATION.md` and `docs/audit/`. Connected multiplayer and complete campaign acceptance remain unverified.
+**Current QA:** see `STANDALONE-VALIDATION.md`. Historical v1.0/v1.1 results are preserved separately and are not fresh validation of this edition.
