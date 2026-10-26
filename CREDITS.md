@@ -49,6 +49,7 @@ Its credits state:
 - Changed SBX scripts are derived from ShadowX's work. Twin spinning attacks use the spin and leg movement of his `spinl.key` and `spinr.key`.
 - Left, right, back and heavy twin-saber attacks, and the arm motion in the twin spins, derive from **Sith Sabers by EAH_CL0wN**. The readme says they are **used with permission**.
 - The forward cross-cut was made for the supplied add-on.
+- Since v1.1.0 the input is **SBX Dual Sabers 17**, whose readme has the same credits and adds the reverse grip; it describes the reverse grip's stand, attacks, hop and dash as the add-on's own.
 - Jedi Knight, Boc and his animations are credited to **LucasArts**.
 
 The separate **Sith Sabers** readme names **EAH_CL0wN** and additionally credits **Al McDonald** for Vader materials, using that spelling. Its permission section says authors may not use the level as a base and permits distribution of the unmodified package with its readme and without charge beyond incidental online costs. The supplied Dual Sabers readme's more specific permission claim is retained as **the add-on author's testimony**. No independent permission correspondence was supplied or verified in this conversion task, and this record does not invent or broaden that permission.
@@ -59,13 +60,13 @@ Both original readmes are retained unmodified under `docs/original/` in every pu
 
 The animation baker uses the pinned upstream **OpenJKDF2 `sithKeyRetarget.c`** implementation with a local headless adapter. The associated source license identifies **OpenJKDF2 contributors** and grants permission to use, copy, modify and distribute the software without fee, with its warranty disclaimer. The exact license is included at [`docs/licenses/OpenJKDF2-LICENSE.md`](docs/licenses/OpenJKDF2-LICENSE.md); retain it and the pinned source with the builder.
 
-- Pinned upstream commit: `ac698316da694490e233907709a1a4422fb6802f`
-- Pinned retarget source SHA-256: `e9b9e85cbc0d460b4efcca10f637ed752e01696770fc01c69b1c01b2b7730864`
-- Adapter executable SHA-256 recorded in its build receipt: `c010680201bdbce7fb3b8c7f8a1d5a1f96c894cd087d1e53027540d0b9223ea9`
+- Pinned upstream commit: `8ccc356c5733a41688982e8e5bcd95bb5826c654` (v1.0.0: `ac698316da694490e233907709a1a4422fb6802f`)
+- Pinned retarget source SHA-256: `c2d51fd268673ee1881b8ec9324fdf8c08188ef1a313b767a291a5745e43532e` (v1.0.0: `e9b9e85c…`)
+- Adapter executable SHA-256 recorded in its build receipt: `872c9934fc854f53c6ba2c642631026aaa0c3dea7f144fe1403c73e3d83f0ab2` (v1.0.0: `c0106802…`)
 
 The build receipt records a source transformation that removes include directives and joins the pinned implementation with the local adapter prefix and writer suffix. The Python wrapper verifies the source and helper hashes before running the helper. This establishes which implementation is used; its software license does not provide a license to redistribute the game animations it processes.
 
-The source Dual Sabers readme refers to browser menu build `ba4df7d0`. That historical runtime label is not substituted for the pinned implementation commit above, and this retail conversion does not require that browser game.
+The Dual Sabers 17 readme refers to the browser build `8ccc356c`, which since v1.1.0 is also the pinned implementation commit above (v1.0.0's readme referred to `ba4df7d0`). This retail conversion does not require that browser game.
 
 ## LucasArts/Lucasfilm game data
 

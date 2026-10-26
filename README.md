@@ -6,6 +6,10 @@ This brings the supplied SBX Dual Sabers add-on to original Mysteries of the Sit
 
 The main overlay contains 602 changed or additional game resources. It adds the dual/Boc stance through the existing Lightsaber Stance action, with two native glowing blades, ten colors and prepared dual variants for all 178 merged player models. The reconciliation retains MotS-only content, adds 13 missing skins and carries 29 shared model revisions. It also brings over compatible saber cleanup, trail, goggles and Force changes while preserving MotS's own weapon and Force contracts.
 
+## v1.1.0: SBX Dual Sabers 17 (not packaged yet)
+
+The tools in this repository's `tools/` folder now build v1.1.0 from **SBX Dual Sabers 17**. It adds a fourth Sith-saber stance, the **reverse grip** (both sabers blade-down, with its own stand, attacks, a hop and spin, and a dash), through the same Lightsaber Stance action: **staff → Sariss → dual/Boc → reverse grip → staff**. It also brings Dual Sabers 17's retimed attacks, its second heavy-cut fix and footstep sounds when walking in SBX's stances. The main overlay grows to 651 game resources. JKM.EXE has no engine support for the reverse grip, so the blades are turned by the stance's own idle animation; nothing else is added. See [CHANGES.md](CHANGES.md). v1.1.0 has run in OpenJKDF2's MotS mode but **not yet in the original JKM.EXE**; see [RETAIL-VALIDATION.md](RETAIL-VALIDATION.md). The downloads below are v1.0.0.
+
 ## Downloads
 
 - [SBX-MotS-Dual-Overlay.zip](https://gitlab.com/api/v4/projects/codalilitari%2Fsbx-mots-dual/packages/generic/sbx-mots-dual/1%2E0%2E0/SBX-MotS-Dual-Overlay%2Ezip) — the ready-to-install add-on; requires SBX-MotS v3.0.
@@ -50,6 +54,6 @@ The full SBX contributor credits, original readmes, permission statements and Op
 
 ## Repository contents
 
-This repository contains release documentation, original attribution documents and curated validation evidence. The offline conversion tools and pinned helper are in the [Builder ZIP](https://gitlab.com/api/v4/projects/codalilitari%2Fsbx-mots-dual/packages/generic/sbx-mots-dual/1%2E0%2E0/SBX-MotS-Dual-Builder%2Ezip); download and unpack that complete package to build. No retail game archive or complete SBX base mod is stored here. See [full credits](CREDITS.md) and [retail validation](RETAIL-VALIDATION.md). There is no new blanket license over inherited mod/game resources.
+This repository contains release documentation, original attribution documents, curated validation evidence and, in `tools/`, the offline conversion tools and pinned helper (v1.1.0; the first commit adding them is v1.0.0's, byte for byte). The v1.0.0 tools are also in the [Builder ZIP](https://gitlab.com/api/v4/projects/codalilitari%2Fsbx-mots-dual/packages/generic/sbx-mots-dual/1%2E0%2E0/SBX-MotS-Dual-Builder%2Ezip). No retail game archive or complete SBX base mod is stored here. See [full credits](CREDITS.md) and [retail validation](RETAIL-VALIDATION.md). There is no new blanket license over inherited mod/game resources.
 
 Release: **v1.0.0**, public documentation edition of the tested 2026-10-23 resources. [Standalone release writeup](https://gitlab.com/api/v4/projects/codalilitari%2Fsbx-mots-dual/packages/generic/sbx-mots-dual/1%2E0%2E0/release-writeup%2Emd).

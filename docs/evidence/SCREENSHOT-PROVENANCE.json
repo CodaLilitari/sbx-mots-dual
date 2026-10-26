@@ -28,5 +28,37 @@
     "private_source_case_path": "sbx-candidate09-smoke01/goggles-active.png",
     "sha256": "20225f0877894f96c9cedbec3604a090a4e0863c584c4281771a33bb72197513",
     "unchanged_original_executable_capture": true
+  },
+  {
+    "file": "openjkdf2-mots-reverse-grip-stand.png",
+    "private_source_case_path": "v1.1.0 OpenJKDF2 MotS-mode check, mdm07_vaporator",
+    "sha256": "e0fac52a243198e060c692ed5b7922229c1ba6f4a0e4983d26b4c03ba39629ea",
+    "unchanged_original_executable_capture": false,
+    "engine": "OpenJKDF2 8ccc356c (browser build cloudflare-51), MotS mode, Chromium with SwiftShader WebGL",
+    "shows": "reverse grip, standing (upper idle rt_rgupper.key), third person from behind"
+  },
+  {
+    "file": "openjkdf2-mots-reverse-grip-move.png",
+    "private_source_case_path": "v1.1.0 OpenJKDF2 MotS-mode check, mdm07_vaporator",
+    "sha256": "264353d1b951d242c9a65457ebdda84e075719d1a8495474a105189f3bc2a78c",
+    "unchanged_original_executable_capture": false,
+    "engine": "OpenJKDF2 8ccc356c (browser build cloudflare-51), MotS mode, Chromium with SwiftShader WebGL",
+    "shows": "reverse grip, walking forward"
+  },
+  {
+    "file": "openjkdf2-mots-reverse-grip-attack.png",
+    "private_source_case_path": "v1.1.0 OpenJKDF2 MotS-mode check, mdm07_vaporator",
+    "sha256": "5cdf2a7a8c1732a51a1951949c47450d0aa73bd483e13cea6d20df46eb992f65",
+    "unchanged_original_executable_capture": false,
+    "engine": "OpenJKDF2 8ccc356c (browser build cloudflare-51), MotS mode, Chromium with SwiftShader WebGL",
+    "shows": "reverse grip, primary attack"
+  },
+  {
+    "file": "openjkdf2-mots-reverse-grip-spin.png",
+    "private_source_case_path": "v1.1.0 OpenJKDF2 MotS-mode check, mdm07_vaporator",
+    "sha256": "5b9db9a62f2b665b6e918c9d0f44b2c7b78b3c33369ed585c00dda3cbca14882",
+    "unchanged_original_executable_capture": false,
+    "engine": "OpenJKDF2 8ccc356c (browser build cloudflare-51), MotS mode, Chromium with SwiftShader WebGL",
+    "shows": "reverse grip, second fire (hop and spin)"
   }
 ]

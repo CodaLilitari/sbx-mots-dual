@@ -16,7 +16,7 @@ Once these local inputs and Python are available, the build is offline. It requi
 
 | Argument | Input |
 | --- | --- |
-| `--dual` | The supplied **SBX Dual Sabers (test version)** ZIP, commonly `1-SBX-Dual-Sabers.zip` |
+| `--dual` | **SBX Dual Sabers 17**: `SBX Dual Sabers.gob` (SHA-256 `b0ad90b06fc76efd6641d286ff11a27c7f66b94db05c4b33a53fb1287f9e97e6`), or a ZIP holding exactly that GOB. v1.0.0 took the 22 October release instead. |
 | `--jk30` | **SBX-JK v3.0**, downloaded as `1871-sbxjkv3.zip` |
 | `--jk31` | **SBX-JK v3.1**, downloaded as `1887-sbxjkv31.zip` |
 | `--mots30` | **SBX-MotS v3.0**, downloaded as `1866-sbx-motsv3.zip` |
@@ -36,7 +36,7 @@ Open PowerShell in the unpacked builder directory. Replace the example paths wit
 py -3 --version
 
 $buildArgs = @(
-    '--dual',     'C:\ModInputs\1-SBX-Dual-Sabers.zip',
+    '--dual',     'C:\ModInputs\SBX Dual Sabers.gob',
     '--jk30',     'C:\ModInputs\1871-sbxjkv3.zip',
     '--jk31',     'C:\ModInputs\1887-sbxjkv31.zip',
     '--mots30',   'C:\ModInputs\1866-sbx-motsv3.zip',
@@ -87,7 +87,9 @@ To play without this mod, launch MotS without this `-path` argument. Keep the ge
 
 ## Features and controls
 
-- **Dual sabers:** equip the Sith lightsaber and use SBX's existing **Lightsaber Stance** action. The cycle is **staff → Sariss → dual/Boc → staff**. No twenty-first action key is added. The retail conversion uses locally prepared KEY files and player-model variants instead of requiring the browser engine's runtime conversion.
+- **Dual sabers:** equip the Sith lightsaber and use SBX's existing **Lightsaber Stance** action. The cycle is **staff → Sariss → dual/Boc → reverse grip → staff**. No twenty-first action key is added. The retail conversion uses locally prepared KEY files and player-model variants instead of requiring the browser engine's runtime conversion.
+- **Reverse grip (v1.1.0):** both sabers blade-down, each blade leaving the little-finger side of the fist. Its stand, attacks (standing, moving forward, left, right and back, and turning fast), second-fire hop and spin, and dash come from SBX Dual Sabers 17, prepared locally like Boc's. The original executable can't turn a hilt round, so the stance's persistent upper idle (`rt_rgupper.key`) also turns both grip anchors end over end about the hilt's middle; positions come from SBX Kyle and fit 175 of the 178 models within 0.0001 units (the other three within 0.0007).
+- **Footsteps (v1.1.0):** SBX's 23 walk, walk-back and strafe keys get the original game's footstep markers back from Dual Sabers 17's `misc/keymarkers.dat`, as do the walks prepared for both two-saber stances. Only marker sections change.
 - **View:** use third-person view to see the two separate sabers. The first-person weapon view retains the existing staff presentation.
 - **Retail blade rendering:** dual mode uses two visible native saber polylines and separate hilts. The browser extension's duplicated mesh glow/fan is unavailable in the original executable, so dual mode has the native blade appearance and no mesh fan trails. The original staff, single and long saber mesh fans remain. Seven dual colors use original MotS materials; light-blue, dark-purple and silver use documented palette remaps.
 - **Attacks:** primary fire uses the supplied stance and movement-dependent attacks; secondary fire uses the heavy cut. Retail permits only a limited number of simultaneous animation tracks, so the conversion waits for an attack's **full key duration** before another attack. It also checks failed animation allocation before resetting a hit list. This intentionally differs from the browser add-on's overlapping attacks at 75% of the duration; the original executable was exercised with both attack buttons, but every attack on every skin has not been tested.
@@ -104,4 +106,4 @@ The SBX3.1 documentation reports that saving with a saber ignited can restore th
 
 Every multiplayer participant should use the same assembled overlay and base release. Connected multiplayer, host/client synchronization, respawn, custom skins outside the merged registry, custom episodes, and compatibility with other resource-changing mods are separate acceptance cases. The supplied browser add-on's statements about joining an unmodified SBX game do not establish that behavior for this retail MotS conversion.
 
-**QA status:** public documentation edition of the final tested delivery, with bounded native-executable validation. The exact final archive was reproduced from the portable builder. Static receipts, runtime scope, and untested cases are retained in `RETAIL-VALIDATION.md` and `docs/audit/`. Connected multiplayer and complete campaign acceptance remain unverified.
+**QA status (v1.1.0):** the tools here rebuild the same v1.1.0 overlay from the same inputs and pass the static checks; v1.1.0 has run in OpenJKDF2's MotS mode but not yet in the original executable (see `RETAIL-VALIDATION.md`). **QA status (v1.0.0):** public documentation edition of the final tested delivery, with bounded native-executable validation. The exact final archive was reproduced from the portable builder. Static receipts, runtime scope, and untested cases are retained in `RETAIL-VALIDATION.md` and `docs/audit/`. Connected multiplayer and complete campaign acceptance remain unverified.

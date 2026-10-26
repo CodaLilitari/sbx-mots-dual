@@ -22,12 +22,15 @@ INSTALL
 
 CONTROLS
 Equip the Sith lightsaber. Use the existing Lightsaber Stance action:
-staff -> Sariss -> dual/Boc -> staff.
+staff -> Sariss -> dual/Boc -> reverse grip -> staff.
 Use third-person view to see both separate sabers.
 The first-person model retains the original staff presentation.
 Primary/alternate attacks use the supplied twin-saber moves. Retail uses
 the full animation duration between attacks and native blade glows;
 the browser version's overlapping attacks/duplicated mesh fans differ.
+In the reverse grip both sabers are held blade-down. Primary attacks
+depend on how you move; alternate fire is a hop with a whole turn in the
+air. Running flat out for about half a second breaks into a dash.
 
 Force Throw (objects) is available through Inventory Next/Previous and
 Inventory Use: hold to target a living actor, release to throw nearby
@@ -53,8 +56,8 @@ See RETAIL-VALIDATION.md for the exact tests and remaining limitations,
 CREDITS.md for attribution, and the original readmes under docs/original.
 
 BROWSER MOTS
-The overlay is expected compatible from source inspection with MotS mode
-in tristamus/OpenJKDF2, but this exact package has not been browser-tested.
+This version ran in the MotS mode of tristamus/OpenJKDF2 (the jkdf2mp
+site's game, 8ccc356c) for the checks listed in RETAIL-VALIDATION.md.
 Load it above the SBX-MotS v3.0 base in the mod list. Do not also load the
 original JK/browser Dual Sabers add-on or its runtime retarget recipe.
 Use the main overlay's original textures for WebGL; the optional software
